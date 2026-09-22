@@ -40,9 +40,9 @@ aerolink/
     ├── hero-bilbao.jpg     # Fotografía real del Aeropuerto de Bilbao (Loiu)
     ├── hangar.jpg          # Fotografía real de hangar con avionetas
     │
-    ├── cessna172.jpg           # [Cessna 172S] Foto exterior real en vuelo
-    ├── cessna172_cabina.jpg    # [Cessna 172S] Foto real de cabina e instrumental
-    ├── cessna172_plano.svg     # [Cessna 172S] Plano oficial de tres vistas con cotas
+    ├── cessna172.jpg           # [Cessna 172S EC-MRX] Foto exterior real en hangar de Bilbao
+    ├── cessna172_cabina.jpg    # [Cessna 172S] Foto real de cabina de pilotaje e instrumental
+    ├── cessna172_plano.jpg     # [Cessna 172S] Plano oficial de tres vistas con cotas y dimensiones
     │
     ├── piper-pa28.jpg          # [Piper PA-28] Foto exterior real en plataforma
     ├── piper_pa28_cabina.jpg   # [Piper PA-28] Foto real de cabina de mandos
