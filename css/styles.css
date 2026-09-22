@@ -1,25 +1,25 @@
 /* ==========================================================================
    AeroLink - Estilos CSS (Entrega 1 de Ingeniería Web)
-   Diseño claro y ordenado para prototipo HTML5 y CSS3
+   Diseño claro, limpio y bien espaciado para prototipo HTML5 y CSS3
    Validado conforme a los estándares de la W3C
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1. SELECTOR RAÍZ Y VARIABLES (COLORES Y FUENTES)
+   1. VARIABLES Y SELECTOR RAÍZ
    -------------------------------------------------------------------------- */
 :root {
-  --color-principal: #0d47a1;       /* Azul aeronáutico */
-  --color-secundario: #1976d2;      /* Azul claro */
-  --color-fondo: #f4f6f9;           /* Gris muy suave */
+  --color-principal: #0d47a1;       /* Azul marino aeronáutico */
+  --color-secundario: #1976d2;      /* Azul cielo */
+  --color-fondo: #f4f6f9;           /* Fondo gris claro */
   --color-blanco: #ffffff;
-  --color-texto: #263238;           /* Gris oscuro para lectura */
-  --color-borde: #cfd8dc;           /* Gris para líneas y bordes */
-  --color-destacado: #e65100;       /* Naranja para llamadas de atención */
-  --color-suave: #e3f2fd;           /* Azul muy claro para fondos de aviso */
+  --color-texto: #263238;           /* Texto gris oscuro */
+  --color-borde: #cfd8dc;           /* Bordes suaves */
+  --color-destacado: #e65100;       /* Naranja */
+  --color-suave: #e3f2fd;           /* Azul claro suave */
 }
 
 /* --------------------------------------------------------------------------
-   2. REINICIO BÁSICO Y SELECTORES GENERALES (ETIQUETAS)
+   2. REINICIO Y ETIQUETAS GENERALES
    -------------------------------------------------------------------------- */
 * {
   box-sizing: border-box;
@@ -37,7 +37,7 @@ body {
 main {
   max-width: 1050px;
   margin: 0 auto;
-  padding: 20px 15px;
+  padding: 25px 15px;
 }
 
 h1 {
@@ -50,9 +50,9 @@ h2 {
   color: var(--color-principal);
   font-size: 1.5rem;
   border-bottom: 2px solid var(--color-secundario);
-  padding-bottom: 5px;
-  margin-top: 30px;
-  margin-bottom: 15px;
+  padding-bottom: 6px;
+  margin-top: 35px;
+  margin-bottom: 18px;
 }
 
 h3 {
@@ -84,23 +84,25 @@ img {
 blockquote {
   background-color: var(--color-blanco);
   border-left: 5px solid var(--color-principal);
-  padding: 12px 18px;
-  margin: 15px 0;
+  padding: 14px 20px;
+  margin: 20px 0;
   font-style: italic;
+  border-radius: 0 6px 6px 0;
 }
 
 mark {
   background-color: #fff9c4;
-  padding: 2px 5px;
+  padding: 2px 6px;
+  border-radius: 3px;
 }
 
 pre {
   background-color: #1a237e;
   color: #ffffff;
-  padding: 12px;
-  border-radius: 4px;
+  padding: 14px;
+  border-radius: 6px;
   overflow-x: auto;
-  margin: 15px 0;
+  margin: 18px 0;
 }
 
 code {
@@ -111,16 +113,16 @@ hr {
   border: none;
   height: 1px;
   background-color: var(--color-borde);
-  margin: 30px 0;
+  margin: 35px 0;
 }
 
 /* --------------------------------------------------------------------------
-   3. CABECERA Y NAVEGACIÓN COMÚN (ID Y CLASES)
+   3. CABECERA Y NAVEGACIÓN COMÚN
    -------------------------------------------------------------------------- */
 header#cabecera-principal {
   background-color: var(--color-blanco);
   border-bottom: 3px solid var(--color-principal);
-  padding: 12px 20px;
+  padding: 15px 20px;
 }
 
 .contenedor-cabecera {
@@ -134,7 +136,7 @@ header#cabecera-principal {
 }
 
 .logotipo img {
-  height: 45px;
+  height: 46px;
   width: auto;
 }
 
@@ -150,7 +152,7 @@ nav#menu-navegacion ul li a {
   text-decoration: none;
   color: var(--color-texto);
   font-weight: bold;
-  padding: 8px 14px;
+  padding: 9px 16px;
   border-radius: 4px;
   transition: background-color 0.2s;
 }
@@ -166,13 +168,13 @@ nav#menu-navegacion ul li a.activo {
 }
 
 /* --------------------------------------------------------------------------
-   4. ÍNDICE INTERNO NAVEGABLE POR SECCIONES (ANCLAS)
+   4. ÍNDICE INTERNO NAVEGABLE POR SECCIONES
    -------------------------------------------------------------------------- */
 nav.indice-pagina {
   background-color: var(--color-suave);
   border: 1px solid #bbdefb;
   border-radius: 6px;
-  padding: 12px 15px;
+  padding: 14px 18px;
   margin-bottom: 25px;
 }
 
@@ -192,7 +194,7 @@ nav.indice-pagina ul {
 nav.indice-pagina ul li a {
   background-color: var(--color-blanco);
   border: 1px solid #90caf9;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 4px;
   font-size: 0.9rem;
   text-decoration: none;
@@ -205,47 +207,60 @@ nav.indice-pagina ul li a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   5. SECCIÓN DE BIENVENIDA / HERO
+   5. SECCIÓN DE BIENVENIDA / HERO (ESPACIADO CORREGIDO)
    -------------------------------------------------------------------------- */
 section#seccion-bienvenida {
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
   border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 25px;
+  padding: 25px;
+  margin-bottom: 30px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .bienvenida-texto {
-  flex: 1 1 450px;
+  flex: 1 1 420px;
+}
+
+.bienvenida-texto p {
+  margin-bottom: 12px;
+}
+
+/* Contenedor de botones con margen seguro */
+.botones-bienvenida {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .bienvenida-imagen {
-  flex: 1 1 350px;
+  flex: 1 1 360px;
 }
 
 .bienvenida-imagen img {
   width: 100%;
-  max-height: 280px;
+  height: 280px;
   object-fit: cover;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
-/* Botones */
+/* Estilos de botones */
 .boton {
   display: inline-block;
-  padding: 9px 18px;
+  padding: 10px 20px;
   font-size: 0.95rem;
   font-weight: bold;
   text-decoration: none;
   border-radius: 4px;
   border: 1px solid transparent;
   cursor: pointer;
-  margin-top: 10px;
-  margin-right: 8px;
+  transition: all 0.2s;
 }
 
 .boton-principal {
@@ -269,13 +284,13 @@ section#seccion-bienvenida {
 }
 
 /* --------------------------------------------------------------------------
-   6. TARJETAS DE FLOTA (GRID Y TARJETA)
+   6. TARJETAS DE FLOTA (FOTOS REALES)
    -------------------------------------------------------------------------- */
 .contenedor-tarjetas {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  margin: 20px 0;
+  gap: 22px;
+  margin: 25px 0;
 }
 
 .tarjeta {
@@ -284,27 +299,34 @@ section#seccion-bienvenida {
   border-radius: 8px;
   flex: 1 1 300px;
   overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   display: flex;
   flex-direction: column;
 }
 
 .tarjeta img {
   width: 100%;
-  height: 200px;
+  height: 210px;
   object-fit: cover;
   border-radius: 0;
 }
 
 .tarjeta-cuerpo {
-  padding: 15px;
+  padding: 18px;
   flex: 1;
 }
 
+.tarjeta-cuerpo h3 {
+  margin-bottom: 6px;
+}
+
 .tarjeta-pie {
-  padding: 12px 15px;
+  padding: 14px 18px;
   background-color: #f8fafc;
   border-top: 1px solid var(--color-borde);
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .etiqueta {
@@ -315,7 +337,7 @@ section#seccion-bienvenida {
   color: var(--color-principal);
   padding: 3px 8px;
   border-radius: 3px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 /* --------------------------------------------------------------------------
@@ -323,25 +345,25 @@ section#seccion-bienvenida {
    -------------------------------------------------------------------------- */
 ul.lista-puntos, ol.lista-ordenada {
   margin-left: 25px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 ul.lista-puntos li, ol.lista-ordenada li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 dl.glosario {
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
   border-radius: 6px;
-  padding: 15px 20px;
-  margin: 15px 0;
+  padding: 18px 22px;
+  margin: 20px 0;
 }
 
 dl.glosario dt {
   font-weight: bold;
   color: var(--color-principal);
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 dl.glosario dt:first-child {
@@ -357,7 +379,7 @@ dl.glosario dd {
 .tabla-contenedor {
   width: 100%;
   overflow-x: auto;
-  margin: 20px 0;
+  margin: 22px 0;
 }
 
 table {
@@ -369,7 +391,7 @@ table {
 
 caption {
   font-weight: bold;
-  padding: 8px 12px;
+  padding: 10px 14px;
   background-color: #e0e0e0;
   text-align: left;
   border: 1px solid var(--color-borde);
@@ -382,7 +404,7 @@ thead tr {
 }
 
 th, td {
-  padding: 10px 12px;
+  padding: 11px 14px;
   border: 1px solid var(--color-borde);
   text-align: left;
 }
@@ -405,7 +427,7 @@ tfoot tr {
    8. MULTIMEDIA (FIGURE, VIDEO, AUDIO)
    -------------------------------------------------------------------------- */
 figure {
-  margin: 20px 0;
+  margin: 22px 0;
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
   border-radius: 6px;
@@ -420,7 +442,7 @@ figure img {
 }
 
 figcaption {
-  padding: 8px 14px;
+  padding: 10px 15px;
   font-size: 0.85rem;
   color: #546e7a;
   background-color: #fafafa;
@@ -431,13 +453,13 @@ figcaption {
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
   border-radius: 6px;
-  padding: 15px;
-  margin-bottom: 20px;
+  padding: 18px;
+  margin-bottom: 22px;
 }
 
 .caja-multimedia video, .caja-multimedia audio {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 /* --------------------------------------------------------------------------
@@ -447,7 +469,7 @@ figcaption {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 
 article.columna-principal {
@@ -455,7 +477,7 @@ article.columna-principal {
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
   border-radius: 6px;
-  padding: 20px;
+  padding: 22px;
 }
 
 aside.columna-lateral {
@@ -463,7 +485,7 @@ aside.columna-lateral {
   background-color: #e8eaf6;
   border: 1px solid #c5cae9;
   border-radius: 6px;
-  padding: 18px;
+  padding: 20px;
   height: fit-content;
 }
 
@@ -474,15 +496,15 @@ form#formulario-reserva {
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
   border-radius: 8px;
-  padding: 22px;
-  margin: 20px 0;
+  padding: 25px;
+  margin: 22px 0;
 }
 
 fieldset {
   border: 1px solid var(--color-borde);
   border-radius: 6px;
-  padding: 16px;
-  margin-bottom: 20px;
+  padding: 18px;
+  margin-bottom: 22px;
 }
 
 legend {
@@ -493,13 +515,13 @@ legend {
 }
 
 .campo {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 label {
   display: block;
   font-weight: bold;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
   font-size: 0.9rem;
 }
 
@@ -507,7 +529,7 @@ label {
   font-size: 0.8rem;
   color: #78909c;
   display: block;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 input[type="text"],
@@ -519,7 +541,7 @@ input[type="file"],
 select,
 textarea {
   width: 100%;
-  padding: 8px 10px;
+  padding: 9px 12px;
   border: 1px solid #90a4ae;
   border-radius: 4px;
   font-family: inherit;
@@ -534,8 +556,8 @@ input:focus, select:focus, textarea:focus {
 .opciones-radio, .opciones-checkbox {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-top: 5px;
+  gap: 8px;
+  margin-top: 6px;
 }
 
 .opcion-inline {
@@ -547,15 +569,15 @@ input:focus, select:focus, textarea:focus {
 }
 
 .opcion-inline input {
-  width: 17px;
-  height: 17px;
+  width: 18px;
+  height: 18px;
 }
 
 .botones-formulario {
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
-  margin-top: 15px;
+  gap: 12px;
+  margin-top: 18px;
 }
 
 /* --------------------------------------------------------------------------
@@ -565,8 +587,8 @@ footer#pie-principal {
   background-color: var(--color-principal);
   color: #e0e0e0;
   border-top: 4px solid var(--color-destacado);
-  margin-top: 40px;
-  padding: 25px 15px 15px 15px;
+  margin-top: 45px;
+  padding: 30px 15px 18px 15px;
 }
 
 .contenedor-pie {
@@ -584,7 +606,7 @@ footer#pie-principal {
 
 .seccion-pie h4 {
   color: var(--color-blanco);
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .seccion-pie p {
@@ -597,7 +619,7 @@ footer#pie-principal {
 }
 
 .seccion-pie ul li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .seccion-pie ul li a {
@@ -613,7 +635,7 @@ footer#pie-principal {
 
 .copyright {
   max-width: 1050px;
-  margin: 20px auto 0 auto;
+  margin: 25px auto 0 auto;
   padding-top: 15px;
   border-top: 1px solid rgba(255,255,255,0.2);
   text-align: center;
@@ -622,9 +644,9 @@ footer#pie-principal {
 }
 
 /* --------------------------------------------------------------------------
-   12. RESPONSIVE SIMPLE
+   12. RESPONSIVE Y SEPARACIONES
    -------------------------------------------------------------------------- */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .contenedor-cabecera {
     flex-direction: column;
     align-items: flex-start;
@@ -636,6 +658,11 @@ footer#pie-principal {
 
   section#seccion-bienvenida {
     flex-direction: column;
+    align-items: stretch;
+  }
+
+  .bienvenida-imagen {
+    margin-top: 15px;
   }
 
   .botones-formulario {
