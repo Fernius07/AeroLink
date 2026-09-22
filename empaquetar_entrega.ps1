@@ -1,15 +1,15 @@
 # Script para empaquetar la Entrega 1 de Ingenieria Web segun las normas del enunciado:
 # Formato exigido: IW-[DNI]-E1.zip
-# Uso: .\empaquetar_entrega.ps1 -DNI "12345678Z"
+# Alumno DNI: 79078777Q -> Archivo: IW-79078777Q-E1.zip
 
 param(
-    [string]$DNI = "12345678Z"
+    [string]$DNI = "79078777Q"
 )
 
 $nombreZip = "IW-$DNI-E1.zip"
 $elementos = @(
     "index.html",
-    "animales.html",
+    "flota.html",
     "detalle.html",
     "formulario.html",
     "url_sitio.txt",
@@ -19,10 +19,10 @@ $elementos = @(
     "media"
 )
 
-Write-Host "Comprobando existencia de ficheros..." -ForegroundColor Cyan
+Write-Host "Comprobando existencia de ficheros de la entrega..." -ForegroundColor Cyan
 foreach ($elem in $elementos) {
     if (-not (Test-Path $elem)) {
-        Write-Warning "Atención: No se encuentra '$elem'"
+        Write-Warning "Atencion: No se encuentra '$elem'"
     }
 }
 

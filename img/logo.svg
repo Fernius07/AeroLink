@@ -1,20 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 60" width="250" height="60">
   <defs>
-    <linearGradient id="gradLogo" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2d6a4f" />
-      <stop offset="100%" stop-color="#52b788" />
+    <linearGradient id="gradAero" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0077b6" />
+      <stop offset="100%" stop-color="#023e8a" />
     </linearGradient>
   </defs>
-  <!-- Icono de Huella Estilizada con Hoja -->
+  <!-- Icono de Alas e Instrumento -->
   <g transform="translate(10, 8)">
-    <path d="M 22 25 C 16 25 10 30 10 36 C 10 41 15 45 22 45 C 29 45 34 41 34 36 C 34 30 28 25 22 25 Z" fill="url(#gradLogo)" />
-    <ellipse cx="12" cy="18" rx="4.5" ry="6" fill="#2d6a4f" />
-    <ellipse cx="22" cy="14" rx="4.5" ry="6.5" fill="#40916c" />
-    <ellipse cx="32" cy="18" rx="4.5" ry="6" fill="#52b788" />
-    <!-- Hoja ecológica que sale de la huella -->
-    <path d="M 34 32 C 40 28 44 20 42 15 C 37 15 31 22 34 32 Z" fill="#74c69d" />
+    <circle cx="22" cy="22" r="20" fill="none" stroke="#0077b6" stroke-width="2.5" />
+    <!-- Silueta de Avión Ascendiendo -->
+    <path d="M 22 8 L 26 20 L 37 25 L 37 28 L 26 26 L 24 33 L 28 36 L 28 38 L 22 36 L 16 38 L 16 36 L 20 33 L 18 26 L 7 28 L 7 25 L 18 20 Z" fill="url(#gradAero)" />
+    <!-- Línea de horizonte artificial -->
+    <line x1="6" y1="22" x2="12" y2="22" stroke="#f77f00" stroke-width="2" />
+    <line x1="32" y1="22" x2="38" y2="22" stroke="#f77f00" stroke-width="2" />
   </g>
-  <!-- Texto EcoHuella -->
-  <text x="65" y="34" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#1b4332">Eco<tspan fill="#40916c">Huella</tspan></text>
-  <text x="66" y="47" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#52b788" letter-spacing="1.5">REFUGIO &amp; ADOPCIÓN</text>
+  <!-- Texto AeroLink -->
+  <text x="65" y="34" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="23" font-weight="800" fill="#03045e">Aero<tspan fill="#0077b6">Link</tspan></text>
+  <text x="66" y="47" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#f77f00" letter-spacing="1.5">AVIACIÓN &amp; ESCUELA DE VUELO</text>
 </svg>

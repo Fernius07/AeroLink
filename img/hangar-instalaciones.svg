@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="600" height="350">
+  <rect width="600" height="350" fill="#f1f5f9" rx="8" />
+  
+  <!-- Plataforma de estacionamiento (Apron) -->
+  <rect x="30" y="40" width="250" height="250" fill="#e2e8f0" stroke="#334155" stroke-width="2" rx="6" />
+  <circle cx="155" cy="150" r="70" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6 4" />
+  <!-- Puestos de parking de aeronaves -->
+  <rect x="60" y="70" width="80" height="60" fill="#ffffff" stroke="#94a3b8" />
+  <text x="100" y="105" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">Stand 1</text>
+  <rect x="160" y="70" width="80" height="60" fill="#ffffff" stroke="#94a3b8" />
+  <text x="200" y="105" font-family="sans-serif" font-size="12" font-weight="bold" fill="#0369a1" text-anchor="middle">Stand 2</text>
+  
+  <text x="155" y="320" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Plataforma y Hangares de Mantenimiento CAMO</text>
+  
+  <!-- Pista y calle de rodaje (Taxiway) -->
+  <rect x="320" y="40" width="250" height="250" fill="#0f172a" stroke="#475569" stroke-width="2" rx="6" />
+  <!-- Línea amarilla de rodaje -->
+  <line x1="320" y1="165" x2="570" y2="165" stroke="#facc15" stroke-width="4" />
+  <!-- Luces de borde azul -->
+  <circle cx="340" cy="55" r="4" fill="#38bdf8" />
+  <circle cx="440" cy="55" r="4" fill="#38bdf8" />
+  <circle cx="540" cy="55" r="4" fill="#38bdf8" />
+  <circle cx="340" cy="275" r="4" fill="#38bdf8" />
+  <circle cx="440" cy="275" r="4" fill="#38bdf8" />
+  <circle cx="540" cy="275" r="4" fill="#38bdf8" />
+  
+  <!-- Indicador de viento (Manga de viento) -->
+  <polygon points="445,100 455,100 452,140 448,140" fill="#ef4444" />
+  <line x1="450" y1="90" x2="450" y2="145" stroke="#ffffff" stroke-width="2" />
+  
+  <text x="445" y="320" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Calle de Rodaje 'Alpha' e Indicadores de Viento</text>
+</svg>

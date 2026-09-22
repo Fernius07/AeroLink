@@ -1,63 +1,74 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="1000" height="450">
   <defs>
-    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#d8f3dc" />
-      <stop offset="100%" stop-color="#b7e4c7" />
+    <linearGradient id="skyGradAero" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="60%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#e0f2fe" />
     </linearGradient>
-    <linearGradient id="hillGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#74c69d" />
-      <stop offset="100%" stop-color="#40916c" />
+    <linearGradient id="runwayGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#1e293b" />
     </linearGradient>
   </defs>
-  <rect width="1000" height="450" fill="url(#skyGrad)" />
   
-  <!-- Colinas de fondo -->
-  <path d="M 0 350 Q 250 240 550 320 T 1000 290 L 1000 450 L 0 450 Z" fill="#95d5b2" opacity="0.7" />
-  <path d="M 0 380 Q 300 300 700 360 T 1000 340 L 1000 450 L 0 450 Z" fill="url(#hillGrad)" />
+  <!-- Cielo -->
+  <rect width="1000" height="450" fill="url(#skyGradAero)" />
   
-  <!-- Árboles decorativos -->
-  <circle cx="120" cy="280" r="45" fill="#2d6a4f" />
-  <rect x="115" y="320" width="10" height="40" fill="#5c4033" />
-  <circle cx="160" cy="295" r="35" fill="#40916c" />
-  <rect x="156" y="325" width="8" height="35" fill="#5c4033" />
+  <!-- Nubes en capas -->
+  <ellipse cx="200" cy="120" rx="90" ry="25" fill="#ffffff" opacity="0.6" />
+  <ellipse cx="260" cy="110" rx="70" ry="30" fill="#ffffff" opacity="0.8" />
+  <ellipse cx="750" cy="90" rx="110" ry="28" fill="#ffffff" opacity="0.7" />
+  <ellipse cx="820" cy="80" rx="80" ry="32" fill="#ffffff" opacity="0.85" />
   
-  <circle cx="850" cy="270" r="50" fill="#2d6a4f" />
-  <rect x="845" y="315" width="10" height="45" fill="#5c4033" />
-  <circle cx="910" cy="290" r="40" fill="#52b788" />
-  <rect x="906" y="325" width="8" height="35" fill="#5c4033" />
+  <!-- Terreno y horizonte del aeródromo -->
+  <rect x="0" y="270" width="1000" height="180" fill="#64748b" opacity="0.4" />
+  
+  <!-- Pista de aterrizaje en perspectiva -->
+  <polygon points="380,270 620,270 850,450 150,450" fill="url(#runwayGrad)" />
+  <!-- Líneas centrales de pista (discontinuas blancas) -->
+  <polygon points="496,275 504,275 506,310 494,310" fill="#ffffff" />
+  <polygon points="494,325 506,325 509,370 491,370" fill="#ffffff" />
+  <polygon points="490,390 510,390 514,445 486,445" fill="#ffffff" />
+  
+  <!-- Cabecera de pista / Umbral (Runway Threshold) -->
+  <rect x="390" y="272" width="220" height="4" fill="#ffffff" />
+  <!-- Número de pista -->
+  <text x="500" y="440" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle">24L</text>
 
-  <!-- Caseta del refugio -->
-  <g transform="translate(420, 220)">
-    <!-- Base -->
-    <rect x="20" y="60" width="120" height="85" fill="#ffffff" stroke="#2d6a4f" stroke-width="3" rx="4" />
-    <!-- Tejado -->
-    <polygon points="10,60 80,10 150,60" fill="#b02a37" />
-    <!-- Puerta -->
-    <path d="M 60 145 L 60 100 A 20 20 0 0 1 100 100 L 100 145 Z" fill="#2d6a4f" />
-    <circle cx="80" cy="40" r="12" fill="#ffffff" />
-    <!-- Huella en el frontón -->
-    <circle cx="80" cy="43" r="5" fill="#b02a37" />
-    <circle cx="75" cy="35" r="2.2" fill="#b02a37" />
-    <circle cx="80" cy="33" r="2.2" fill="#b02a37" />
-    <circle cx="85" cy="35" r="2.2" fill="#b02a37" />
+  <!-- Torre de control al fondo -->
+  <g transform="translate(80, 160)">
+    <rect x="35" y="50" width="20" height="60" fill="#e2e8f0" stroke="#0f172a" stroke-width="2" />
+    <polygon points="25,50 65,50 60,30 30,30" fill="#38bdf8" stroke="#0f172a" stroke-width="2" />
+    <polygon points="20,30 70,30 45,15" fill="#ef4444" />
+    <!-- Antenas / Radar -->
+    <line x1="45" y1="15" x2="45" y2="2" stroke="#0f172a" stroke-width="2" />
+    <circle cx="45" cy="2" r="3" fill="#f77f00" />
   </g>
-  
-  <!-- Animales en el prado -->
-  <!-- Silueta perro jugando -->
-  <g transform="translate(600, 310)">
-    <ellipse cx="40" cy="30" rx="25" ry="16" fill="#1b4332" />
-    <circle cx="62" cy="18" r="12" fill="#1b4332" />
-    <polygon points="60,10 65,2 70,12" fill="#1b4332" />
-    <line x1="25" y1="40" x2="20" y2="60" stroke="#1b4332" stroke-width="5" stroke-linecap="round" />
-    <line x1="35" y1="42" x2="35" y2="60" stroke="#1b4332" stroke-width="5" stroke-linecap="round" />
-    <line x1="50" y1="42" x2="55" y2="58" stroke="#1b4332" stroke-width="5" stroke-linecap="round" />
-    <path d="M 18 25 Q 5 15 10 5" stroke="#1b4332" stroke-width="4" stroke-linecap="round" fill="none" />
+
+  <!-- Hangar del club -->
+  <g transform="translate(180, 200)">
+    <path d="M 0 70 L 0 30 Q 60 10 120 30 L 120 70 Z" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+    <rect x="20" y="35" width="80" height="35" fill="#1e293b" />
+    <text x="60" y="26" font-family="sans-serif" font-size="10" font-weight="bold" fill="#0284c7" text-anchor="middle">HANGAR AEROLINK</text>
   </g>
-  <!-- Pelota -->
-  <circle cx="690" cy="365" r="9" fill="#e76f51" />
-  
-  <!-- Mensaje decorativo en el cielo -->
-  <rect x="50" y="40" width="480" height="95" rx="10" fill="#ffffff" opacity="0.9" />
-  <text x="70" y="80" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="800" fill="#1b4332">Por un hogar para cada huella</text>
-  <text x="70" y="112" font-family="'Segoe UI', sans-serif" font-size="16" font-weight="500" fill="#2d6a4f">Centro de rescate, recuperación y adopción ética</text>
+
+  <!-- Avión en ascenso en primer plano -->
+  <g transform="translate(560, 140) rotate(-12)">
+    <!-- Alas -->
+    <polygon points="40,65 140,55 180,75 20,80" fill="#0284c7" />
+    <!-- Fuselaje -->
+    <path d="M 10 70 Q 100 50 200 65 L 225 50 L 225 75 L 180 75 Q 90 85 10 75 Z" fill="#ffffff" stroke="#0369a1" stroke-width="2" />
+    <path d="M 40 70 L 180 72 L 175 76 L 30 74 Z" fill="#f77f00" />
+    <!-- Cabina -->
+    <polygon points="70,60 110,55 125,68 65,68" fill="#38bdf8" />
+    <!-- Hélice girando -->
+    <ellipse cx="8" cy="72" rx="3" ry="24" fill="#64748b" opacity="0.6" />
+    <!-- Cola -->
+    <polygon points="190,65 210,30 225,30 220,65" fill="#0284c7" />
+  </g>
+
+  <!-- Cartel institucional -->
+  <rect x="50" y="30" width="480" height="95" rx="10" fill="#ffffff" opacity="0.9" />
+  <text x="70" y="70" font-family="'Segoe UI', sans-serif" font-size="28" font-weight="900" fill="#03045e">Libertad y precisión en cada vuelo</text>
+  <text x="70" y="100" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#0284c7">Flota de aeronaves certificadas • Escuela de Pilotos ATO-248</text>
 </svg>

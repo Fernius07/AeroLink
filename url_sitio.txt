@@ -1,7 +1,7 @@
 URL del proyecto desplegado en Vercel:
-https://ecohuella-adopciones.vercel.app/
+https://aerolink-aviacion.vercel.app/
 
 (Sustituir por la URL definitiva que te genere Vercel al conectar tu repositorio de GitHub)
 
 Repositorio de GitHub:
-https://github.com/TU-USUARIO/ecohuella-adopciones
+https://github.com/TU-USUARIO/aerolink-aviacion
