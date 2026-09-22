@@ -44,9 +44,9 @@ aerolink/
     ├── cessna172_cabina.jpg    # [Cessna 172S] Foto real de cabina de pilotaje e instrumental
     ├── cessna172_plano.jpg     # [Cessna 172S] Plano oficial de tres vistas con cotas y dimensiones
     │
-    ├── piper-pa28.jpg          # [Piper PA-28] Foto exterior real en plataforma
-    ├── piper_pa28_cabina.jpg   # [Piper PA-28] Foto real de cabina de mandos
-    ├── piper_pa28_plano.png    # [Piper PA-28] Plano oficial de tres vistas con cotas
+    ├── piper-pa28.jpg          # [Piper PA-28 EC-JMC] Foto exterior real en aeródromo
+    ├── piper_pa28_cabina.jpg   # [Piper PA-28] Foto real de cabina de pilotaje e instrumental
+    ├── piper_pa28_plano.jpg    # [Piper PA-28] Plano oficial de tres vistas con cotas
     │
     ├── diamond-da40.jpg        # [Diamond DA40] Foto exterior real
     ├── diamond_da40_cabina.jpg # [Diamond DA40] Foto real de cabina Garmin G1000
