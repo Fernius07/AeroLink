@@ -15,8 +15,7 @@ $elementos = @(
     "url_sitio.txt",
     "README.md",
     "css",
-    "img",
-    "media"
+    "img"
 )
 
 Write-Host "Comprobando existencia de ficheros de la entrega..." -ForegroundColor Cyan

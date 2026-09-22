@@ -21,7 +21,7 @@ La temática elegida es libre y pertenece al sector del **transporte y la aviaci
 ```text
 aerolink/
 │
-├── index.html              # Portada: bienvenida, seguridad, flota destacada, audio/vídeo y meteorología
+├── index.html              # Portada: bienvenida, seguridad, flota destacada, rutas de vuelo y meteorología
 ├── flota.html              # Catálogo con fotos reales, tabla comparativa técnica y glosario
 ├── detalle.html            # Ficha técnica de la Cessna 172 con foto real, cabina, checklist pre-vuelo y requisitos
 ├── formulario.html         # Formulario completo con validación HTML5 para solicitar reservas o cursos
@@ -40,9 +40,6 @@ aerolink/
 │   ├── diamond-da40.jpg    # Foto real de la avioneta Diamond DA40
 │   ├── cabina.jpg          # Foto real del puesto de pilotaje e instrumentos de cabina
 │   └── hangar.jpg          # Foto real del hangar de mantenimiento
-│
-└── media/
-    └── latido-refugio.wav  # Pista de audio para el reproductor HTML5 (baliza instrumental)
 ```
 
 ---
