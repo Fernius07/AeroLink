@@ -3,132 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Flota completa de aeronaves de AeroLink Aviación. Tabla técnica de rendimientos, matrículas, aviónica y glosario aeronáutico.">
-  <title>AeroLink | Flota de Aeronaves y Rendimiento</title>
+  <title>AeroLink | Catálogo y Tabla de la Flota</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- =====================================================================
-       CABECERA COMÚN
-       ===================================================================== -->
-  <header id="main-header">
-    <div class="header-container">
-      <a href="index.html" class="brand-link" title="Ir a la portada de AeroLink">
-        <img src="img/logo.svg" alt="Logotipo de AeroLink Aviación: silueta de aeronave ascendiendo con horizonte artificial" width="220" height="52">
+  <!-- CABECERA COMÚN -->
+  <header id="cabecera-principal">
+    <div class="contenedor-cabecera">
+      <a href="index.html" class="logotipo" title="AeroLink Aviación">
+        <img src="img/logo.svg" alt="Logotipo de AeroLink" width="180" height="45">
       </a>
-      <nav id="primary-nav" aria-label="Navegación principal">
+      <nav id="menu-navegacion" aria-label="Menú principal">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="flota.html" class="active">Flota de Aeronaves</a></li>
+          <li><a href="flota.html" class="activo">Flota</a></li>
           <li><a href="detalle.html">Ficha Técnica</a></li>
-          <li><a href="formulario.html">Reserva y Cursos</a></li>
+          <li><a href="formulario.html">Reservas</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- =====================================================================
-       CONTENIDO PRINCIPAL
-       ===================================================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
 
-    <!-- ÍNDICE INTERNO DE SECCIONES NAVEGABLE -->
-    <nav class="section-index" aria-label="Índice de apartados de esta página">
-      <p class="index-title">Índice de contenidos de la página:</p>
+    <!-- ÍNDICE INTERNO NAVEGABLE -->
+    <nav class="indice-pagina" aria-label="Índice interno">
+      <p>Apartados de esta página:</p>
       <ul>
-        <li><a href="#resumen-flota">1. Presentación de la Flota</a></li>
-        <li><a href="#tarjetas-aeronaves">2. Modelos Disponibles</a></li>
-        <li><a href="#tabla-rendimiento">3. Tabla Comparativa Oficial</a></li>
-        <li><a href="#glosario-aeronautico">4. Glosario Aeronáutico</a></li>
+        <li><a href="#descripcion-flota">1. Nuestra Flota</a></li>
+        <li><a href="#listado-modelos">2. Modelos Disponibles</a></li>
+        <li><a href="#tabla-aeronaves">3. Tabla Comparativa</a></li>
+        <li><a href="#glosario">4. Glosario de Aviación</a></li>
       </ul>
     </nav>
 
-    <!-- SECCIÓN 1: RESUMEN -->
-    <section id="resumen-flota">
-      <h1>Nuestra Flota de Aviación General y Deportiva</h1>
+    <!-- SECCIÓN 1: INTRODUCCIÓN -->
+    <section id="descripcion-flota">
+      <h1>Nuestras Aeronaves</h1>
       <p>
-        AeroLink cuenta con una flota heterogénea mantenida bajo los más exigentes estándares de la Unión Europea (EASA Part-ML). Todas las aeronaves disponen de transpondedor Modo S con capacidad ADS-B Out y radio con espaciado de canales de 8.33 kHz.
+        En AeroLink disponemos de avionetas monomotores pensadas para cubrir diferentes necesidades: desde el alumno que realiza su primer vuelo solo, hasta el piloto experimentado que desea hacer una ruta de fin de semana con amigos o familia.
       </p>
       <p>
-        Tanto si buscas sumar horas como piloto al mando (PIC) como si deseas iniciarte en el vuelo deportivo, consulta las especificaciones a continuación o visita la <a href="detalle.html">ficha técnica de la Cessna 172S</a>.
+        Puedes revisar la información de cada aparato en las tarjetas y consultar los datos técnicos detallados en la <a href="#tabla-aeronaves">tabla comparativa</a>.
       </p>
     </section>
 
     <hr>
 
-    <!-- SECCIÓN 2: TARJETAS DE AERONAVES -->
-    <section id="tarjetas-aeronaves">
-      <h2>Modelos Listos para Vuelo Inmediato</h2>
-      <p>
-        Selecciona cualquiera de las aeronaves para acceder a sus especificaciones de aviónica y motor:
-      </p>
+    <!-- SECCIÓN 2: TARJETAS DE MODELOS -->
+    <section id="listado-modelos">
+      <h2>Avionetas Disponibles para Vuelo</h2>
 
-      <div class="grid-cards">
+      <div class="contenedor-tarjetas">
 
-        <!-- Tarjeta 1: Cessna 172 -->
-        <article class="card">
-          <div class="card-img-wrapper">
-            <img src="img/cessna172.svg" alt="Cessna 172 Skyhawk matrícula EC-MRX" width="400" height="300">
-          </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="badge badge-info">Ala Alta</span>
-              <span class="badge badge-success">Garmin G1000</span>
-              <span class="badge badge-warning">4 Plazas</span>
-            </div>
+        <!-- Modelo 1 -->
+        <article class="tarjeta">
+          <img src="img/cessna172.jpg" alt="Cessna 172 Skyhawk en vuelo" width="400" height="200">
+          <div class="tarjeta-cuerpo">
+            <span class="etiqueta">Matrícula: EC-MRX</span>
             <h3>Cessna 172S Skyhawk</h3>
             <p>
-              Monomotor de cuatro plazas con motor Lycoming IO-360-L2A de 180 HP. Cabina de cristal integral con visión sintética y piloto automático de 2 ejes.
+              Motor Lycoming de 180 caballos y 4 plazas. Es el avión de escuela más fiable y sencillo de volar. Muy resistente y suave en los aterrizajes.
             </p>
           </div>
-          <div class="card-footer">
-            <a href="detalle.html" class="btn btn-primary">Ficha Detallada</a>
-            <a href="formulario.html" class="btn btn-outline">Reservar</a>
+          <div class="tarjeta-pie">
+            <a href="detalle.html" class="boton boton-principal">Ver ficha completa</a>
+            <a href="formulario.html" class="boton boton-secundario">Reservar</a>
           </div>
         </article>
 
-        <!-- Tarjeta 2: Piper PA-28 -->
-        <article class="card">
-          <div class="card-img-wrapper">
-            <img src="img/piper-pa28.svg" alt="Piper PA-28 Archer matrícula EC-KLM" width="400" height="300">
-          </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="badge badge-info">Ala Baja</span>
-              <span class="badge badge-success">VFR Nocturno</span>
-              <span class="badge badge-warning">4 Plazas</span>
-            </div>
-            <h3>Piper PA-28-181 Archer</h3>
+        <!-- Modelo 2 -->
+        <article class="tarjeta">
+          <img src="img/piper-pa28.jpg" alt="Piper PA-28 Archer aparcada" width="400" height="200">
+          <div class="tarjeta-cuerpo">
+            <span class="etiqueta">Matrícula: EC-KLM</span>
+            <h3>Piper PA-28 Archer</h3>
             <p>
-              Aeronave robusta de ala baja con gran estabilidad longitudinal. Excelente plataforma para la obtención de la habilitación de vuelo nocturno (NVFR).
+              Avión de ala baja con excelente respuesta de mandos. Cuenta con una gran autonomía de vuelo y es muy cómoda en navegaciones largas.
             </p>
           </div>
-          <div class="card-footer">
-            <a href="detalle.html" class="btn btn-primary">Ficha Detallada</a>
-            <a href="formulario.html" class="btn btn-outline">Reservar</a>
+          <div class="tarjeta-pie">
+            <a href="detalle.html" class="boton boton-principal">Ver ficha completa</a>
+            <a href="formulario.html" class="boton boton-secundario">Reservar</a>
           </div>
         </article>
 
-        <!-- Tarjeta 3: Diamond DA40 -->
-        <article class="card">
-          <div class="card-img-wrapper">
-            <img src="img/diamond-da40.svg" alt="Diamond DA40 Star matrícula EC-TGO" width="400" height="300">
-          </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="badge badge-info">Material Compuesto</span>
-              <span class="badge badge-success">Certificado IFR</span>
-              <span class="badge badge-warning">Jet-A1</span>
-            </div>
-            <h3>Diamond DA40 NG Star</h3>
+        <!-- Modelo 3 -->
+        <article class="tarjeta">
+          <img src="img/diamond-da40.jpg" alt="Diamond DA40 Star moderna" width="400" height="200">
+          <div class="tarjeta-cuerpo">
+            <span class="etiqueta">Matrícula: EC-TGO</span>
+            <h3>Diamond DA40 Star</h3>
             <p>
-              Tecnología aeronáutica de vanguardia con motor diésel FADEC de inyección directa. Eficiencia aerodinámica con consumo reducido de queroseno de aviación.
+              Avión moderno fabricado en materiales compuestos. Su cúpula de cristal permite una vista excelente durante todo el recorrido.
             </p>
           </div>
-          <div class="card-footer">
-            <a href="detalle.html" class="btn btn-primary">Ficha Detallada</a>
-            <a href="formulario.html" class="btn btn-outline">Reservar</a>
+          <div class="tarjeta-pie">
+            <a href="detalle.html" class="boton boton-principal">Ver ficha completa</a>
+            <a href="formulario.html" class="boton boton-secundario">Reservar</a>
           </div>
         </article>
 
@@ -137,26 +111,25 @@
 
     <hr>
 
-    <!-- SECCIÓN 3: TABLA COMPARATIVA DE RENDIMIENTO -->
-    <section id="tabla-rendimiento">
-      <h2>Tabla Técnica Comparativa de la Flota</h2>
+    <!-- SECCIÓN 3: TABLA DE RENDIMIENTO -->
+    <section id="tabla-aeronaves">
+      <h2>Tabla Comparativa de la Flota</h2>
       <p>
-        Datos de rendimiento operacional, certificación de reglas de vuelo y estado de mantenimiento preventivo de cada aeronave:
+        Resumen de las características técnicas, plazas y estado de mantenimiento de cada aeronave:
       </p>
 
-      <div class="table-responsive">
+      <div class="tabla-contenedor">
         <table>
-          <caption>Registro Operacional de la Flota AeroLink (Revisado a Septiembre 2026)</caption>
+          <caption>Tabla 1: Características de las aeronaves del club AeroLink (Septiembre 2026)</caption>
           <thead>
             <tr>
               <th scope="col">Matrícula</th>
               <th scope="col">Modelo</th>
+              <th scope="col">Tipo Ala</th>
               <th scope="col">Potencia</th>
-              <th scope="col">Crucero (KTAS)</th>
-              <th scope="col">Alcance (NM)</th>
-              <th scope="col">Aviónica</th>
-              <th scope="col">Reglas Vuelo</th>
-              <th scope="col">Horas p/ Revisión</th>
+              <th scope="col">Plazas</th>
+              <th scope="col">Velocidad Crucero</th>
+              <th scope="col">Combustible</th>
               <th scope="col">Estado</th>
             </tr>
           </thead>
@@ -164,52 +137,48 @@
             <tr>
               <th scope="row">EC-MRX</th>
               <td><strong>Cessna 172S</strong></td>
+              <td>Ala alta</td>
               <td>180 HP</td>
-              <td>122 kts</td>
-              <td>640 NM</td>
-              <td>Garmin G1000 NXi</td>
-              <td>VFR / NVFR / IFR</td>
-              <td>74 h</td>
-              <td><span class="badge badge-success">Disponible</span></td>
+              <td>4</td>
+              <td>120 nudos (222 km/h)</td>
+              <td>AVGAS 100LL</td>
+              <td>Disponible</td>
             </tr>
             <tr>
               <th scope="row">EC-KLM</th>
               <td><strong>Piper PA-28</strong></td>
+              <td>Ala baja</td>
               <td>180 HP</td>
-              <td>125 kts</td>
-              <td>520 NM</td>
-              <td>Aspen EFD1000 + Analógico</td>
-              <td>VFR / NVFR</td>
-              <td>32 h</td>
-              <td><span class="badge badge-success">Disponible</span></td>
+              <td>4</td>
+              <td>125 nudos (231 km/h)</td>
+              <td>AVGAS 100LL</td>
+              <td>Disponible</td>
             </tr>
             <tr>
               <th scope="row">EC-TGO</th>
               <td><strong>Diamond DA40</strong></td>
-              <td>168 HP (Jet-A1)</td>
-              <td>154 kts</td>
-              <td>940 NM</td>
-              <td>Garmin G1000 + GFC700</td>
-              <td>VFR / IFR</td>
-              <td>88 h</td>
-              <td><span class="badge badge-success">Disponible</span></td>
+              <td>Ala baja</td>
+              <td>168 HP</td>
+              <td>4</td>
+              <td>145 nudos (268 km/h)</td>
+              <td>Jet-A1</td>
+              <td>Disponible</td>
             </tr>
             <tr>
               <th scope="row">EC-JPR</th>
               <td><strong>Tecnam P2002</strong></td>
-              <td>100 HP (Rotax)</td>
-              <td>110 kts</td>
-              <td>450 NM</td>
-              <td>Garmin G3X Touch</td>
-              <td>VFR Día</td>
-              <td>12 h</td>
-              <td><span class="badge badge-warning">En Revisión 100h</span></td>
+              <td>Ala baja</td>
+              <td>100 HP</td>
+              <td>2</td>
+              <td>110 nudos (203 km/h)</td>
+              <td>Gasolina 95</td>
+              <td>En revisión 100h</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="4">Total de aeronaves activas en plataforma: 4</td>
-              <td colspan="5">Todas las aeronaves incluyen seguro a todo riesgo y rescate SAR homologado.</td>
+              <td colspan="4">Total de aeronaves: 4 unidades</td>
+              <td colspan="4">Todas las aeronaves cuentan con seguro de responsabilidad civil obligatorio.</td>
             </tr>
           </tfoot>
         </table>
@@ -218,80 +187,73 @@
 
     <hr>
 
-    <!-- SECCIÓN 4: GLOSARIO AERONÁUTICO -->
-    <section id="glosario-aeronautico">
-      <h2>Glosario de Términos Aeronáuticos</h2>
+    <!-- SECCIÓN 4: GLOSARIO -->
+    <section id="glosario">
+      <h2>Glosario de Términos de Aviación</h2>
       <p>
-        Conceptos técnicos fundamentales para comprender las especificaciones operativas y reglamentarias:
+        Si estás empezando en el mundo del vuelo, estas definiciones te ayudarán a entender el lenguaje básico:
       </p>
 
-      <dl class="definition-list">
+      <dl class="glosario">
         <dt>VFR (Visual Flight Rules)</dt>
         <dd>
-          Reglas de vuelo visual en las que el piloto conduce la aeronave manteniendo referencia visual continua con el terreno y separándose de obstáculos y otras aeronaves por observación directa.
+          Vuelo visual. Son las reglas de vuelo básicas donde el piloto navega viendo el terreno y vigilando el horizonte y otras aeronaves.
         </dd>
 
         <dt>IFR (Instrument Flight Rules)</dt>
         <dd>
-          Reglas de vuelo por instrumentos que permiten operar en condiciones meteorológicas adversas o sin visibilidad exterior guiándose exclusivamente por la aviónica de a bordo y las instrucciones del control de tráfico aéreo.
+          Vuelo instrumental. Reglas que permiten volar dentro de nubes o de noche guiándose exclusivamente por las pantallas y relojes de la cabina.
         </dd>
 
-        <dt>QNH Altimétrico</dt>
+        <dt>QNH</dt>
         <dd>
-          Presión barométrica ajustada al nivel medio del mar según la atmósfera estándar internacional. Al calibrar el altímetro con el QNH del aeródromo, este indica la elevación real sobre el nivel del mar.
+          Ajuste de presión del altímetro. Permite que el reloj de altitud marque la altura real del avión sobre el nivel del mar.
         </dd>
 
-        <dt>Nudo (Knot / KTAS)</dt>
+        <dt>Nudo (Knot)</dt>
         <dd>
-          Unidad de velocidad equivalente a una milla náutica por hora (1.852 km/h). KTAS denota la velocidad verdadera de la aeronave respecto a la masa de aire que atraviesa.
+          Unidad de velocidad que se usa en aviación y navegación marítima. Un nudo equivale a 1,852 kilómetros por hora.
         </dd>
       </dl>
 
       <p>
-        ¿Listo para volar o consultar tarifas? Accede a nuestro <a href="formulario.html">formulario de reservas y cursos</a>.
+        ¿Quieres reservar un vuelo? Pásate por nuestro <a href="formulario.html">formulario de solicitud</a>.
       </p>
     </section>
 
   </main>
 
-  <!-- =====================================================================
-       PIE DE PÁGINA COMÚN
-       ===================================================================== -->
-  <footer id="main-footer">
-    <div class="footer-container">
-      <div class="footer-section">
+  <!-- PIE DE PÁGINA COMÚN -->
+  <footer id="pie-principal">
+    <div class="contenedor-pie">
+      <div class="seccion-pie">
         <h4>AeroLink Aviación</h4>
-        <p>
-          Club de Vuelo, Alquiler de Aeronaves y Escuela de Pilotos (ATO-248) homologada por AESA y la Agencia Europea de Seguridad Aérea (EASA).
-        </p>
-        <p>
-          Hangar 4, Aeródromo de Cuatro Vientos, 28054 Madrid (España).
-        </p>
+        <p>Club de vuelo deportivo y escuela autorizada ATO-248.</p>
+        <p>Aeródromo de Cuatro Vientos, Hangar 4, Madrid.</p>
       </div>
 
-      <div class="footer-section">
-        <h4>Navegación del Sitio</h4>
+      <div class="seccion-pie">
+        <h4>Enlaces de la Web</h4>
         <ul>
-          <li><a href="index.html">Página Principal</a></li>
-          <li><a href="flota.html">Flota y Tabla Técnica</a></li>
-          <li><a href="detalle.html">Ficha Técnica Cessna 172</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="flota.html">Flota de Aeronaves</a></li>
+          <li><a href="detalle.html">Ficha Cessna 172</a></li>
           <li><a href="formulario.html">Formulario de Reserva</a></li>
         </ul>
       </div>
 
-      <div class="footer-section">
-        <h4>Normativa y Seguridad</h4>
+      <div class="seccion-pie">
+        <h4>Información Legal</h4>
         <ul>
-          <li><a href="flota.html#tabla-rendimiento">Certificados de Aeronavegabilidad</a></li>
-          <li><a href="flota.html#glosario-aeronautico">Terminología OACI</a></li>
-          <li><a href="formulario.html#normativa-seguridad">Protección de Datos RGPD</a></li>
-          <li><a href="index.html#mision-seguridad">Contacto y Operaciones</a></li>
+          <li><a href="index.html#servicios">Normativa de Seguridad Aérea</a></li>
+          <li><a href="formulario.html#aviso-legal">Política de Privacidad</a></li>
+          <li><a href="index.html#bienvenida">Contacto y Reservas</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>&copy; 2026 AeroLink Aviación - Prototipo para la asignatura de Ingeniería Web (Entrega 1: Alumno DNI 79078777Q). Código conforme a W3C.</p>
+    <div class="copyright">
+      <p>&copy; 2026 AeroLink Aviación - Entrega 1 de Ingeniería Web (Alumno DNI: 79078777Q)</p>
     </div>
   </footer>
 

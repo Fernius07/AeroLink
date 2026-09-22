@@ -3,86 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AeroLink - Club de aviación, escuela de vuelo y alquiler de aeronaves certificadas. Cursos de piloto privado PPL, vuelos de divulgación y flota moderna.">
-  <title>AeroLink | Club de Aviación y Escuela de Vuelo</title>
+  <title>AeroLink | Club de Aviación y Escuela de Pilotos</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- =====================================================================
-       CABECERA COMÚN
-       ===================================================================== -->
-  <header id="main-header">
-    <div class="header-container">
-      <a href="index.html" class="brand-link" title="Ir a la portada de AeroLink">
-        <img src="img/logo.svg" alt="Logotipo de AeroLink Aviación: silueta de aeronave ascendiendo con horizonte artificial" width="220" height="52">
+  <!-- CABECERA COMÚN -->
+  <header id="cabecera-principal">
+    <div class="contenedor-cabecera">
+      <a href="index.html" class="logotipo" title="AeroLink Aviación">
+        <img src="img/logo.svg" alt="Logotipo de AeroLink" width="180" height="45">
       </a>
-      <nav id="primary-nav" aria-label="Navegación principal">
+      <nav id="menu-navegacion" aria-label="Menú principal">
         <ul>
-          <li><a href="index.html" class="active">Inicio</a></li>
-          <li><a href="flota.html">Flota de Aeronaves</a></li>
+          <li><a href="index.html" class="activo">Inicio</a></li>
+          <li><a href="flota.html">Flota</a></li>
           <li><a href="detalle.html">Ficha Técnica</a></li>
-          <li><a href="formulario.html">Reserva y Cursos</a></li>
+          <li><a href="formulario.html">Reservas</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- =====================================================================
-       CONTENIDO PRINCIPAL
-       ===================================================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
 
-    <!-- ÍNDICE INTERNO DE SECCIONES NAVEGABLE -->
-    <nav class="section-index" aria-label="Índice de apartados de esta página">
-      <p class="index-title">Índice de contenidos de la página:</p>
+    <!-- ÍNDICE INTERNO NAVEGABLE -->
+    <nav class="indice-pagina" aria-label="Índice interno">
+      <p>Apartados de esta página:</p>
       <ul>
-        <li><a href="#hero">1. Portada del Aeroclub</a></li>
-        <li><a href="#mision-seguridad">2. Estándares y Seguridad Operativa</a></li>
-        <li><a href="#aeronaves-destacadas">3. Aeronaves en Servicio</a></li>
-        <li><a href="#multimedia">4. Sala Audiovisual y Radio ATC</a></li>
-        <li><a href="#operaciones-metar">5. Información Meteorológica y Operativa</a></li>
+        <li><a href="#bienvenida">1. Bienvenida</a></li>
+        <li><a href="#servicios">2. Seguridad y Escuela</a></li>
+        <li><a href="#aeronaves-destacadas">3. Aeronaves Destacadas</a></li>
+        <li><a href="#multimedia">4. Centro Multimedia</a></li>
+        <li><a href="#meteorologia">5. Meteorología y Radio</a></li>
       </ul>
     </nav>
 
-    <!-- SECCIÓN 1: HERO / PORTADA -->
-    <section id="hero">
-      <div class="hero-content">
-        <h1>Libertad, precisión y pasión por el vuelo</h1>
-        <p class="hero-subtitle">
-          AeroLink es un centro de operaciones aéreas y organización de entrenamiento aprobada (ATO-248) certificada por la Agencia Estatal de Seguridad Aérea (AESA). Ofrecemos alquiler de aeronaves para pilotos titulados, formación PPL(A) y experiencias de divulgación técnica.
-        </p>
-        <div class="hero-actions">
-          <a href="flota.html" class="btn btn-primary">Explorar flota disponible</a>
-          <a href="formulario.html" class="btn btn-outline">Reservar vuelo o curso</a>
+    <!-- SECCIÓN 1: BIENVENIDA -->
+    <section id="bienvenida">
+      <div id="seccion-bienvenida">
+        <div class="bienvenida-texto">
+          <h1>AeroLink: Pasión por Volar</h1>
+          <p>
+            Bienvenido a <strong>AeroLink</strong>, un club de aviación y escuela de pilotos con base en el aeródromo de Madrid Cuatro Vientos. Ofrecemos cursos de iniciación, alquiler de avionetas para pilotos titulados y vuelos de divulgación con instructor.
+          </p>
+          <p>
+            Nuestra flota está compuesta por aeronaves modernas y revisadas periódicamente para garantizar la máxima seguridad en el aire.
+          </p>
+          <div>
+            <a href="flota.html" class="boton boton-principal">Ver nuestra flota</a>
+            <a href="formulario.html" class="boton boton-secundario">Solicitar reserva</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-media">
-        <img src="img/hero-banner.svg" alt="Pista de aterrizaje 24L con torre de control y avión ligero despegando hacia el cielo" class="hero-banner-img" width="500" height="225">
+        <div class="bienvenida-imagen">
+          <img src="img/hero-avion.jpg" alt="Avioneta ligera en la pista al atardecer" width="500" height="300">
+        </div>
       </div>
     </section>
 
-    <!-- SECCIÓN 2: MISIÓN Y SEGURIDAD -->
-    <section id="mision-seguridad">
-      <h2>Cultura de Seguridad y Mantenimiento Aeronáutico</h2>
+    <!-- SECCIÓN 2: SERVICIOS Y SEGURIDAD -->
+    <section id="servicios">
+      <h2>Seguridad y Formación de Pilotos</h2>
       <p>
-        En <strong>AeroLink</strong> la seguridad aérea no es un objetivo negociable, sino la <mark>base innegociable de cada despegue</mark>. Todas nuestras aeronaves operan bajo un estricto programa de control de mantenimiento continuo supervisado por una organización certificada CAMO.
+        En AeroLink consideramos que la <mark>seguridad aérea es lo primero</mark>. Todas las operaciones se rigen por la normativa de la Agencia Estatal de Seguridad Aérea (AESA) y la normativa europea EASA.
       </p>
 
       <blockquote>
         <p>
-          "Un buen piloto es aquel que utiliza su criterio superior para evitar entrar en situaciones donde requeriría demostrar su habilidad superior."
+          "El cielo no es un límite, sino un espacio de aprendizaje donde la disciplina y el entrenamiento marcan la diferencia."
         </p>
-        <cite>— Comandante Francisco Varela, Jefe de Instrucción de AeroLink</cite>
+        <cite>— Francisco Varela, Instructor de Vuelo</cite>
       </blockquote>
 
       <p>
-        Cada aparato cuenta con certificación acústica, registro de horas al minuto, revisión de 50 y 100 horas al día y seguro de responsabilidad aeronáutica con cobertura europea <em>EASA Regulation (EC) 785/2004</em>.
+        Nuestros mecánicos titulados realizan inspecciones cada 50 y 100 horas de vuelo. Además, los instructores acompañan a cada alumno desde su primera clase teórica hasta la obtención de la licencia oficial <em>PPL(A)</em>.
       </p>
 
       <figure>
-        <img src="img/hangar-instalaciones.svg" alt="Diagrama técnico de las instalaciones: plataforma de estacionamiento, hangares de revisión CAMO y calle de rodaje" width="600" height="350">
-        <figcaption>Figura 1: Distribución operativa de los hangares de mantenimiento, plataforma de estacionamiento y calle de rodaje Alpha en nuestro aeródromo base.</figcaption>
+        <img src="img/hangar.jpg" alt="Interior del hangar con avionetas en mantenimiento" width="800" height="400">
+        <figcaption>Hangar de mantenimiento y puesta a punto de nuestras avionetas.</figcaption>
       </figure>
     </section>
 
@@ -90,76 +90,58 @@
 
     <!-- SECCIÓN 3: FLOTA DESTACADA -->
     <section id="aeronaves-destacadas">
-      <h2>Aeronaves Destacadas de Nuestra Flota</h2>
+      <h2>Aeronaves Principales</h2>
       <p>
-        Contamos con una flota moderna y versátil adaptada tanto a la instrucción básica de navegación visual (VFR) como a viajes de travesía por instrumentos (IFR):
+        A continuación puedes ver los tres modelos más solicitados por nuestros socios y alumnos:
       </p>
 
-      <div class="grid-cards">
+      <div class="contenedor-tarjetas">
 
-        <!-- Tarjeta 1: Cessna 172 -->
-        <article class="card">
-          <div class="card-img-wrapper">
-            <img src="img/cessna172.svg" alt="Ilustración técnica de Cessna 172 Skyhawk matrícula EC-MRX" width="400" height="300">
-          </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="badge badge-info">Ala Alta</span>
-              <span class="badge badge-success">Garmin G1000</span>
-              <span class="badge badge-warning">4 Plazas</span>
-            </div>
-            <h3>Cessna 172S Skyhawk</h3>
+        <!-- Tarjeta 1 -->
+        <article class="tarjeta">
+          <img src="img/cessna172.jpg" alt="Avioneta Cessna 172 volando entre nubes" width="400" height="200">
+          <div class="tarjeta-cuerpo">
+            <span class="etiqueta">Ala Alta • 4 Plazas</span>
+            <h3>Cessna 172 Skyhawk</h3>
             <p>
-              El monomotor más seguro y popular del mundo. Equipado con cabina de cristal (*Glass Cockpit*) y piloto automático integrado.
+              El avión monomotor más conocido y seguro del mundo. Muy estable y perfecto para aprender a navegar y aterrizar.
             </p>
-            <p><small>Última inspección 100h: <time datetime="2026-08-20">20 de agosto de 2026</time></small></p>
+            <p><small>Revisión anual: <time datetime="2026-08-15">15 de agosto de 2026</time></small></p>
           </div>
-          <div class="card-footer">
-            <a href="detalle.html" class="btn btn-outline">Ver ficha técnica</a>
+          <div class="tarjeta-pie">
+            <a href="detalle.html" class="boton boton-secundario">Ver ficha técnica</a>
           </div>
         </article>
 
-        <!-- Tarjeta 2: Piper PA-28 -->
-        <article class="card">
-          <div class="card-img-wrapper">
-            <img src="img/piper-pa28.svg" alt="Ilustración técnica de Piper PA-28 Archer matrícula EC-KLM" width="400" height="300">
-          </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="badge badge-info">Ala Baja</span>
-              <span class="badge badge-success">VFR Nocturno</span>
-              <span class="badge badge-warning">Crucero 125 Kts</span>
-            </div>
+        <!-- Tarjeta 2 -->
+        <article class="tarjeta">
+          <img src="img/piper-pa28.jpg" alt="Avioneta Piper PA-28 en plataforma de aterrizaje" width="400" height="200">
+          <div class="tarjeta-cuerpo">
+            <span class="etiqueta">Ala Baja • Crucero</span>
             <h3>Piper PA-28 Archer</h3>
             <p>
-              Excelente estabilidad lateral y gran comportamiento en tomas con viento cruzado. Ideal para navegación de travesía.
+              Avión de ala baja muy ágil y cómodo para viajes de media distancia y prácticas de viento cruzado.
             </p>
-            <p><small>Última inspección 100h: <time datetime="2026-09-02">2 de septiembre de 2026</time></small></p>
+            <p><small>Revisión anual: <time datetime="2026-09-01">1 de septiembre de 2026</time></small></p>
           </div>
-          <div class="card-footer">
-            <a href="flota.html#tarjetas-aeronaves" class="btn btn-outline">Más información</a>
+          <div class="tarjeta-pie">
+            <a href="flota.html#listado-modelos" class="boton boton-secundario">Más detalles</a>
           </div>
         </article>
 
-        <!-- Tarjeta 3: Diamond DA40 -->
-        <article class="card">
-          <div class="card-img-wrapper">
-            <img src="img/diamond-da40.svg" alt="Ilustración técnica de Diamond DA40 matrícula EC-TGO" width="400" height="300">
-          </div>
-          <div class="card-body">
-            <div class="card-tags">
-              <span class="badge badge-info">Compuesto</span>
-              <span class="badge badge-success">Habilitado IFR</span>
-              <span class="badge badge-warning">Motor Jet-A1</span>
-            </div>
+        <!-- Tarjeta 3 -->
+        <article class="tarjeta">
+          <img src="img/diamond-da40.jpg" alt="Avioneta moderna Diamond DA40" width="400" height="200">
+          <div class="tarjeta-cuerpo">
+            <span class="etiqueta">Compuesto • IFR</span>
             <h3>Diamond DA40 Star</h3>
             <p>
-              Estructura de fibra de carbono con motor diésel aeronáutico Austro Engine de bajo consumo. Visión panorámica insuperable.
+              Fabricada en fibra de carbono con motor diésel Jet-A1. Gran eficiencia y cabina con visibilidad panorámica.
             </p>
-            <p><small>Última inspección 100h: <time datetime="2026-09-11">11 de septiembre de 2026</time></small></p>
+            <p><small>Revisión anual: <time datetime="2026-09-10">10 de septiembre de 2026</time></small></p>
           </div>
-          <div class="card-footer">
-            <a href="flota.html#tarjetas-aeronaves" class="btn btn-outline">Más información</a>
+          <div class="tarjeta-pie">
+            <a href="flota.html#listado-modelos" class="boton boton-secundario">Más detalles</a>
           </div>
         </article>
 
@@ -168,115 +150,93 @@
 
     <hr>
 
-    <!-- SECCIÓN 4: CENTRO MULTIMEDIA -->
+    <!-- SECCIÓN 4: MULTIMEDIA -->
     <section id="multimedia">
-      <h2>Sala Audiovisual y Comunicaciones Radio ATC</h2>
+      <h2>Vídeo y Audio de Vuelo</h2>
       <p>
-        Accede a muestras multimedia reales para familiarizarte con las maniobras habituales y la fraseología estándar aeronáutica:
+        Conoce cómo es un vuelo real con estas muestras multimedia:
       </p>
 
-      <div class="media-container">
+      <div class="caja-multimedia">
+        <h3>Vídeo: Maniobra de Aproximación y Toma</h3>
+        <p>Grabación desde el interior de cabina en fase de aproximación a la pista:</p>
+        <video controls poster="img/video-poster.svg" width="640" height="360">
+          <source src="media/video-muestra.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de vídeo de HTML5.
+        </video>
+      </div>
 
-        <div class="media-card">
-          <h3>Vídeo Demostrativo: Maniobra de Aproximación y Toma</h3>
-          <p>
-            Grabación desde cabina mostrando el procedimiento de entrada al circuito de tránsito y aterrizaje en pista 24L.
-          </p>
-          <video controls poster="img/video-poster.svg" width="640" height="360">
-            <source src="media/video-muestra.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de vídeo HTML5 estándar.
-          </video>
-        </div>
-
-        <div class="media-card">
-          <h3>Audio Radio: Autorización de Despegue Torre (TWR)</h3>
-          <p>
-            Tono de audio y simulación de comunicaciones VHF en banda aérea (118.250 MHz).
-          </p>
-          <audio controls>
-            <source src="media/latido-refugio.wav" type="audio/wav">
-            Tu navegador no soporta el elemento de audio HTML5.
-          </audio>
-        </div>
-
+      <div class="caja-multimedia">
+        <h3>Audio: Comunicaciones con la Torre de Control</h3>
+        <p>Sonido ambiente y comunicaciones por radiofrecuencia aérea:</p>
+        <audio controls>
+          <source src="media/latido-refugio.wav" type="audio/wav">
+          Tu navegador no soporta el elemento de audio de HTML5.
+        </audio>
       </div>
     </section>
 
     <hr>
 
-    <!-- SECCIÓN 5: INFORMACIÓN OPERATIVA Y ASIDE -->
-    <section id="operaciones-metar">
-      <h2>Información Meteorológica y Frecuencias Operativas</h2>
+    <!-- SECCIÓN 5: METEOROLOGÍA Y ASIDE -->
+    <section id="meteorologia">
+      <h2>Información Meteorológica y Radio</h2>
 
-      <div class="layout-with-aside">
-        <article class="info-article">
-          <h3>Reporte Meteorológico Aeronáutico (METAR Actual)</h3>
+      <div class="contenedor-columnas">
+        <article class="columna-principal">
+          <h3>Parte Meteorológico Oficial (METAR)</h3>
           <p>
-            Antes de cualquier autorización de vuelo, el comandante debe comprobar la validez de los reportes METAR y TAF del aeródromo de origen, destino y alternativos:
+            Antes de despegar es obligatorio consultar el estado del viento y la visibilidad. Este es el reporte actual de nuestro aeródromo:
           </p>
-          
-          <pre><code>LECU 221000Z 24008KT 9999 FEW035 21/08 Q1018 NOSIG</code></pre>
+          <pre><code>LECU 221100Z 23007KT 9999 FEW030 22/09 Q1019 NOSIG</code></pre>
           <p>
-            <em>Desglose oficial:</em> Viento de rumbo 240 grados a 8 nudos, visibilidad superior a 10 kilómetros, pocas nubes a 3.500 pies, temperatura 21&deg;C, reglaje altimétrico QNH 1018 hPa, sin cambios significativos.
-          </p>
-          <p>
-            Las condiciones actuales se clasifican bajo reglas de vuelo visual: <mark>VFR óptimo</mark>.
+            <strong>Significado:</strong> Viento de dirección 230 grados a 7 nudos, visibilidad de más de 10 km y temperatura de 22&deg;C. Condiciones visuales favorables para el vuelo.
           </p>
         </article>
 
-        <aside class="sidebar-info">
-          <h3>Frecuencias de Radio (VHF)</h3>
-          <p>
-            Canales de comunicación oficiales asignados al aeródromo para pilotos en aproximación o en rodaje:
-          </p>
-          <p><strong>Torre de Control (TWR):</strong> <code>118.250 MHz</code></p>
-          <p><strong>Rodaje y Plataforma (GND):</strong> <code>121.800 MHz</code></p>
-          <p><strong>Información Meteorológica (ATIS):</strong> <code>126.400 MHz</code></p>
-          <p><small>Operaciones de vuelos autorizadas orto/ocaso los 365 días del año.</small></p>
+        <aside class="columna-lateral">
+          <h3>Frecuencias de Radio</h3>
+          <p>Canales de radio en banda aérea VHF:</p>
+          <p><strong>Torre de Control:</strong> <code>118.250 MHz</code></p>
+          <p><strong>Rodaje y Tierra:</strong> <code>121.800 MHz</code></p>
+          <p><small>Horario de pista: De 09:00 a 20:30 h.</small></p>
         </aside>
       </div>
     </section>
 
   </main>
 
-  <!-- =====================================================================
-       PIE DE PÁGINA COMÚN
-       ===================================================================== -->
-  <footer id="main-footer">
-    <div class="footer-container">
-      <div class="footer-section">
+  <!-- PIE DE PÁGINA COMÚN -->
+  <footer id="pie-principal">
+    <div class="contenedor-pie">
+      <div class="seccion-pie">
         <h4>AeroLink Aviación</h4>
-        <p>
-          Club de Vuelo, Alquiler de Aeronaves y Escuela de Pilotos (ATO-248) homologada por AESA y la Agencia Europea de Seguridad Aérea (EASA).
-        </p>
-        <p>
-          Hangar 4, Aeródromo de Cuatro Vientos, 28054 Madrid (España).
-        </p>
+        <p>Club de vuelo deportivo y escuela autorizada ATO-248.</p>
+        <p>Aeródromo de Cuatro Vientos, Hangar 4, Madrid.</p>
       </div>
 
-      <div class="footer-section">
-        <h4>Navegación del Sitio</h4>
+      <div class="seccion-pie">
+        <h4>Enlaces de la Web</h4>
         <ul>
-          <li><a href="index.html">Página Principal</a></li>
-          <li><a href="flota.html">Flota y Tabla Técnica</a></li>
-          <li><a href="detalle.html">Ficha Técnica Cessna 172</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="flota.html">Flota de Aeronaves</a></li>
+          <li><a href="detalle.html">Ficha Cessna 172</a></li>
           <li><a href="formulario.html">Formulario de Reserva</a></li>
         </ul>
       </div>
 
-      <div class="footer-section">
-        <h4>Normativa y Seguridad</h4>
+      <div class="seccion-pie">
+        <h4>Información Legal</h4>
         <ul>
-          <li><a href="index.html#mision-seguridad">Reglamento del Aire SERA</a></li>
-          <li><a href="flota.html#tabla-rendimiento">Certificados de Aeronavegabilidad</a></li>
-          <li><a href="formulario.html#normativa-seguridad">Protección de Datos RGPD</a></li>
-          <li><a href="index.html#operaciones-metar">Contacto y Operaciones</a></li>
+          <li><a href="index.html#servicios">Normativa de Seguridad Aérea</a></li>
+          <li><a href="formulario.html#aviso-legal">Política de Privacidad</a></li>
+          <li><a href="index.html#bienvenida">Contacto y Reservas</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>&copy; 2026 AeroLink Aviación - Prototipo para la asignatura de Ingeniería Web (Entrega 1: Alumno DNI 79078777Q). Código conforme a W3C.</p>
+    <div class="copyright">
+      <p>&copy; 2026 AeroLink Aviación - Entrega 1 de Ingeniería Web (Alumno DNI: 79078777Q)</p>
     </div>
   </footer>
 

@@ -3,239 +3,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Formulario oficial de reserva de aeronaves, bautismos aéreos y cursos de piloto en AeroLink Aviación.">
-  <title>AeroLink | Formulario de Reserva de Vuelo y Cursos</title>
+  <title>AeroLink | Formulario de Solicitud y Reserva</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- =====================================================================
-       CABECERA COMÚN
-       ===================================================================== -->
-  <header id="main-header">
-    <div class="header-container">
-      <a href="index.html" class="brand-link" title="Ir a la portada de AeroLink">
-        <img src="img/logo.svg" alt="Logotipo de AeroLink Aviación: silueta de aeronave ascendiendo con horizonte artificial" width="220" height="52">
+  <!-- CABECERA COMÚN -->
+  <header id="cabecera-principal">
+    <div class="contenedor-cabecera">
+      <a href="index.html" class="logotipo" title="AeroLink Aviación">
+        <img src="img/logo.svg" alt="Logotipo de AeroLink" width="180" height="45">
       </a>
-      <nav id="primary-nav" aria-label="Navegación principal">
+      <nav id="menu-navegacion" aria-label="Menú principal">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="flota.html">Flota de Aeronaves</a></li>
+          <li><a href="flota.html">Flota</a></li>
           <li><a href="detalle.html">Ficha Técnica</a></li>
-          <li><a href="formulario.html" class="active">Reserva y Cursos</a></li>
+          <li><a href="formulario.html" class="activo">Reservas</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- =====================================================================
-       CONTENIDO PRINCIPAL
-       ===================================================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
 
-    <!-- ÍNDICE INTERNO DE SECCIONES NAVEGABLE -->
-    <nav class="section-index" aria-label="Índice de apartados del formulario">
-      <p class="index-title">Índice de apartados de esta página:</p>
+    <!-- ÍNDICE INTERNO NAVEGABLE -->
+    <nav class="indice-pagina" aria-label="Índice interno">
+      <p>Apartados de esta página:</p>
       <ul>
-        <li><a href="#instrucciones-reserva">1. Instrucciones de Reserva</a></li>
-        <li><a href="#form-vuelo">2. Cuestionario de Solicitud de Vuelo</a></li>
-        <li><a href="#normativa-seguridad">3. Normativa AESA y Privacidad</a></li>
+        <li><a href="#instrucciones-reserva">1. Instrucciones</a></li>
+        <li><a href="#formulario-seccion">2. Formulario de Reserva</a></li>
+        <li><a href="#aviso-legal">3. Información y Protección de Datos</a></li>
       </ul>
     </nav>
 
     <!-- SECCIÓN 1: INSTRUCCIONES -->
     <section id="instrucciones-reserva">
-      <h1>Reserva de Aeronaves, Bautismos de Vuelo y Cursos</h1>
+      <h1>Reserva de Vuelo y Cursos de Piloto</h1>
       <p>
-        A través de este formulario puedes solicitar el alquiler de aeronaves de la flota como piloto al mando, agendar un vuelo de divulgación con instructor ("bautismo aéreo") o matricularte en nuestros cursos oficiales PPL(A).
+        Rellena el siguiente formulario para solicitar la reserva de una de nuestras avionetas o para pedir información sobre los cursos de piloto privado.
       </p>
       <p>
-        Los campos con asterisco (<strong>*</strong>) son obligatorios. Si aún no has seleccionado la aeronave que mejor se ajusta a tu plan, puedes revisar las especificaciones en nuestra <a href="flota.html">página de flota</a> o consultar la <a href="detalle.html">ficha de la Cessna 172S</a>.
+        Los campos marcados con un asterisco (<strong>*</strong>) son obligatorios. Si todavía no has visto qué avión te interesa, puedes consultar el <a href="flota.html">catálogo de la flota</a> o la <a href="detalle.html">ficha de la Cessna 172</a>.
       </p>
     </section>
 
     <hr>
 
     <!-- SECCIÓN 2: FORMULARIO -->
-    <section id="form-vuelo">
-      <h2>Solicitud de Operación Aérea</h2>
+    <section id="formulario-seccion">
+      <h2>Formulario de Solicitud</h2>
 
-      <form action="#" method="post" enctype="multipart/form-data" class="flight-form">
+      <form id="formulario-reserva" action="#" method="post" enctype="multipart/form-data">
 
-        <!-- FIELDSET 1: DATOS PERSONALES -->
+        <!-- BLOQUE 1: DATOS PERSONALES -->
         <fieldset>
-          <legend>1. Datos Personales y de Contacto</legend>
+          <legend>1. Datos Personales</legend>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="nombre-apellidos">Nombre y apellidos completos: *</label>
-              <input type="text" id="nombre-apellidos" name="nombre_apellidos" required placeholder="Ej. Alejandro Ramos Morales" autocomplete="name">
-            </div>
-
-            <div class="form-group">
-              <label for="dni-pasaporte">DNI / NIE o Pasaporte: *</label>
-              <input type="text" id="dni-pasaporte" name="dni_pasaporte" required placeholder="79078777Q" pattern="[0-9]{8}[A-Za-z]{1}|[XYZxyz][0-9]{7}[A-Za-z]{1}">
-              <span class="form-note">Formato estándar: 8 dígitos seguidos de la letra oficial.</span>
-            </div>
+          <div class="campo">
+            <label for="nombre">Nombre y apellidos: *</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez García">
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="correo-contacto">Correo electrónico: *</label>
-              <input type="email" id="correo-contacto" name="correo_contacto" required placeholder="piloto@correo.com" autocomplete="email">
-            </div>
-
-            <div class="form-group">
-              <label for="telefono-movil">Teléfono móvil de contacto: *</label>
-              <input type="tel" id="telefono-movil" name="telefono_movil" required placeholder="+34 612 345 678" autocomplete="tel">
-            </div>
+          <div class="campo">
+            <label for="dni">DNI o NIE: *</label>
+            <input type="text" id="dni" name="dni" required placeholder="79078777Q">
+            <span class="nota-campo">8 números y una letra sin espacios.</span>
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fecha-nacimiento">Fecha de nacimiento: *</label>
-              <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required>
-            </div>
+          <div class="campo">
+            <label for="correo">Correo electrónico: *</label>
+            <input type="email" id="correo" name="correo" required placeholder="tunombre@correo.com">
+          </div>
 
-            <div class="form-group">
-              <label for="peso-tripulante">Peso aproximado del piloto/pasajero (kg): *</label>
-              <input type="number" id="peso-tripulante" name="peso_tripulante" min="30" max="150" step="1" value="75" required>
-              <span class="form-note">Dato requerido para la hoja oficial de peso y centrado (W&amp;B).</span>
-            </div>
+          <div class="campo">
+            <label for="telefono">Teléfono móvil: *</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="600 000 000">
+          </div>
+
+          <div class="campo">
+            <label for="nacimiento">Fecha de nacimiento: *</label>
+            <input type="date" id="nacimiento" name="nacimiento" required>
           </div>
         </fieldset>
 
-        <!-- FIELDSET 2: PERFIL AERONÁUTICO -->
+        <!-- BLOQUE 2: TIPO DE SOLICITUD -->
         <fieldset>
-          <legend>2. Titulación y Perfil Aeronáutico</legend>
+          <legend>2. Modalidad y Perfil</legend>
 
-          <div class="form-group">
-            <label>Selecciona tu perfil de vuelo actual: *</label>
-            <div class="radio-group">
-              <label class="radio-label">
-                <input type="radio" name="perfil_piloto" value="piloto-titulado" checked> Piloto titulado con licencia en vigor (alquiler de flota o refresco)
+          <div class="campo">
+            <label>Indica tu situación actual: *</label>
+            <div class="opciones-radio">
+              <label class="opcion-inline">
+                <input type="radio" name="perfil" value="piloto" checked>
+                Soy piloto con licencia de vuelo
               </label>
-              <label class="radio-label">
-                <input type="radio" name="perfil_piloto" value="alumno-piloto"> Alumno piloto en fase de formación
+              <label class="opcion-inline">
+                <input type="radio" name="perfil" value="alumno">
+                Quiero empezar el curso de piloto
               </label>
-              <label class="radio-label">
-                <input type="radio" name="perfil_piloto" value="pasajero-bautismo"> Pasajero / Aficionado (solicito vuelo de divulgación con instructor)
+              <label class="opcion-inline">
+                <input type="radio" name="perfil" value="bautismo">
+                Quiero hacer un bautismo de vuelo (paseo con instructor)
               </label>
             </div>
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="numero-licencia">Número de licencia EASA (si aplica):</label>
-              <input type="text" id="numero-licencia" name="numero_licencia" placeholder="ES.FCL.PPL.123456">
-            </div>
-
-            <div class="form-group">
-              <label for="horas-totales">Horas totales de vuelo registradas (PIC):</label>
-              <input type="number" id="horas-totales" name="horas_totales" min="0" max="25000" step="1" value="0">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label>Habilitaciones anotadas en licencia (marca las aplicables):</label>
-            <div class="checkbox-group">
-              <label class="checkbox-label">
-                <input type="checkbox" name="hab_sep" value="si"> SEP (Land) Monomotor Terrestre
-              </label>
-              <label class="checkbox-label">
-                <input type="checkbox" name="hab_nvfr" value="si"> VFR Nocturno (NVFR)
-              </label>
-              <label class="checkbox-label">
-                <input type="checkbox" name="hab_ir" value="si"> Habilitación de Vuelo por Instrumentos (IR)
-              </label>
-              <label class="checkbox-label">
-                <input type="checkbox" name="hab_g1000" value="si"> Familiarización acreditada Garmin G1000
-              </label>
-            </div>
-          </div>
-        </fieldset>
-
-        <!-- FIELDSET 3: PARÁMETROS DE LA RESERVA -->
-        <fieldset>
-          <legend>3. Parámetros de la Reserva y Aeronave</legend>
-
-          <div class="form-group">
-            <label for="tipo-servicio">Modalidad de servicio solicitada: *</label>
-            <select id="tipo-servicio" name="tipo_servicio" required>
-              <option value="">-- Selecciona una modalidad --</option>
-              <optgroup label="Alquiler de Aeronaves">
-                <option value="alquiler-solo">Alquiler autónomo sin instructor (Piloto al mando)</option>
-                <option value="alquiler-checkout">Vuelo de refresco / Checkout con instructor</option>
-                <option value="travesia-larga">Travesía de fin de semana (mínimo 3 horas bloque)</option>
+          <div class="campo">
+            <label for="actividad">Tipo de actividad deseada: *</label>
+            <select id="actividad" name="actividad" required>
+              <option value="">-- Elige una opción --</option>
+              <optgroup label="Alquiler de Avión">
+                <option value="alquiler-solo">Alquiler por libre (sin instructor)</option>
+                <option value="alquiler-instructor">Vuelo con instructor acompañante</option>
               </optgroup>
-              <optgroup label="Instrucción y Escuela">
-                <option value="curso-ppl">Curso Completo Piloto Privado PPL(A)</option>
-                <option value="curso-nvfr">Habilitación VFR Nocturno</option>
-                <option value="transicion-g1000">Seminario Teórico y Práctico Garmin G1000</option>
+              <optgroup label="Cursos de Escuela">
+                <option value="curso-ppl">Curso de Piloto Privado PPL</option>
+                <option value="curso-nocturno">Habilitación de Vuelo Nocturno</option>
               </optgroup>
-              <optgroup label="Divulgación y Bautismos">
-                <option value="bautismo-30">Bautismo de Vuelo Panorámico (30 min)</option>
-                <option value="bautismo-60">Experiencia 'Piloto por un Día' con doble mando (60 min)</option>
+              <optgroup label="Bautismos y Paseos">
+                <option value="bautismo-30">Vuelo divulgación de 30 minutos</option>
+                <option value="bautismo-60">Vuelo divulgación de 60 minutos</option>
               </optgroup>
             </select>
           </div>
+        </fieldset>
 
-          <div class="form-group">
-            <label for="aeronave-preferida">Aeronave solicitada:</label>
-            <input list="lista-aeronaves" id="aeronave-preferida" name="aeronave_preferida" placeholder="Selecciona o escribe el modelo deseado">
-            <datalist id="lista-aeronaves">
-              <option value="Cessna 172S Skyhawk (EC-MRX) - Garmin G1000">
-              <option value="Piper PA-28 Archer (EC-KLM) - Ala Baja">
-              <option value="Diamond DA40 Star (EC-TGO) - Jet-A1 / IFR">
-              <option value="Tecnam P2002 Sierra (EC-JPR) - Rotax 100 HP">
-              <option value="Sin preferencia (a criterio de operaciones)">
+        <!-- BLOQUE 3: DETALLES DEL VUELO -->
+        <fieldset>
+          <legend>3. Detalles de la Reserva</legend>
+
+          <div class="campo">
+            <label for="avion">Avión que prefieres:</label>
+            <input list="lista-aviones" id="avion" name="avion" placeholder="Escribe o elige un modelo">
+            <datalist id="lista-aviones">
+              <option value="Cessna 172S Skyhawk (EC-MRX)">
+              <option value="Piper PA-28 Archer (EC-KLM)">
+              <option value="Diamond DA40 Star (EC-TGO)">
+              <option value="Tecnam P2002 (EC-JPR)">
+              <option value="Cualquiera que esté disponible">
             </datalist>
           </div>
 
-          <div class="form-row">
-            <div class="form-group">
-              <label for="fecha-vuelo">Fecha deseada de vuelo: *</label>
-              <input type="date" id="fecha-vuelo" name="fecha_vuelo" required>
-            </div>
-
-            <div class="form-group">
-              <label for="duracion-horas">Duración de bloque solicitada (horas calzo a calzo): *</label>
-              <input type="number" id="duracion-horas" name="duracion_horas" min="0.5" max="8" step="0.5" value="1.5" required>
-            </div>
+          <div class="campo">
+            <label for="fecha-vuelo">Fecha solicitada para volar: *</label>
+            <input type="date" id="fecha-vuelo" name="fecha_vuelo" required>
           </div>
 
-          <div class="form-group">
-            <label for="adjunto-documentacion">Adjuntar copia de licencia o certificado médico (PDF o imagen):</label>
-            <input type="file" id="adjunto-documentacion" name="adjunto_documentacion" accept=".pdf, .jpg, .jpeg, .png">
-            <span class="form-note">Formatos válidos: PDF, JPG, PNG (máx. 5 MB). Obligatorio para alquiler autónomo.</span>
+          <div class="campo">
+            <label for="horas">Horas estimadas de vuelo: *</label>
+            <input type="number" id="horas" name="horas" min="1" max="8" step="0.5" value="1" required>
           </div>
 
-          <div class="form-group">
-            <label for="plan-ruta">Ruta prevista, destinos de escala u observaciones especiales: *</label>
-            <textarea id="plan-ruta" name="plan_ruta" rows="4" required placeholder="Describe brevemente tu ruta planificada (ej. LECU - LEVD - LECU), ejercicios a practicar o peticiones particulares..."></textarea>
+          <div class="campo">
+            <label for="documento">Adjuntar documento o licencia (opcional):</label>
+            <input type="file" id="documento" name="documento" accept=".pdf, .jpg, .png">
+            <span class="nota-campo">Formatos permitidos: PDF o imagen JPG/PNG.</span>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Comentarios o ruta que te gustaría hacer: *</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntanos brevemente si quieres practicar maniobras, hacer alguna ruta concreta o si tienes alguna duda..."></textarea>
           </div>
         </fieldset>
 
-        <!-- FIELDSET 4: CONDICIONES LEGALES Y ENVÍO -->
+        <!-- BLOQUE 4: CONDICIONES -->
         <fieldset>
-          <legend>4. Declaración de Cumplimiento SERA y Protección de Datos</legend>
+          <legend>4. Condiciones y Envío</legend>
 
-          <div class="form-group">
-            <div class="checkbox-group">
-              <label class="checkbox-label">
-                <input type="checkbox" id="acepto-seguridad" name="acepto_seguridad" required>
-                <span>Declaro conocer y aceptar la normativa del Reglamento del Aire (Reglamento UE 923/2012 SERA) y las normas internas del Aeroclub. *</span>
+          <div class="campo">
+            <div class="opciones-checkbox">
+              <label class="opcion-inline">
+                <input type="checkbox" id="condiciones" name="condiciones" required>
+                <span>Acepto las normas de seguridad del club y las instrucciones del personal de vuelo. *</span>
               </label>
-              <label class="checkbox-label">
-                <input type="checkbox" id="acepto-rgpd" name="acepto_rgpd" required>
-                <span>Doy mi consentimiento para el tratamiento de mis datos de contacto con fines de coordinación de vuelo y despacho operacional (RGPD). *</span>
+              <label class="opcion-inline">
+                <input type="checkbox" id="privacidad" name="privacidad" required>
+                <span>Acepto la política de protección de datos para la gestión de la reserva. *</span>
               </label>
             </div>
           </div>
 
-          <div class="form-actions">
-            <button type="reset">Limpiar Datos</button>
-            <button type="submit">Enviar Solicitud de Reserva</button>
+          <div class="botones-formulario">
+            <button type="reset" class="boton boton-secundario">Borrar datos</button>
+            <button type="submit" class="boton boton-principal">Enviar solicitud</button>
           </div>
         </fieldset>
 
@@ -244,60 +196,52 @@
 
     <hr>
 
-    <!-- SECCIÓN 3: POLÍTICAS Y NORMATIVA -->
-    <section id="normativa-seguridad">
-      <h2>Compromiso Legal y Operacional</h2>
-      <article class="info-article">
-        <h3>Información Oficial sobre el Servicio de Despacho de Vuelos</h3>
-        <ul class="standard-list">
-          <li><strong>Condición Meteorológica:</strong> Toda reserva quedará supeditada a la no existencia de fenómenos meteorológicos adversos o condiciones por debajo de mínimos VFR. En caso de suspensión por causas meteorológicas, la reserva se reprogramará sin coste.</li>
-          <li><strong>Organización Aprobada:</strong> AeroLink opera bajo el certificado de ATO reconocido por la Agencia Estatal de Seguridad Aérea (AESA).</li>
-          <li><strong>Francelas y Tasas Aeroportuarias:</strong> Salvo indicación contraria, las tasas de aterrizaje en aeródromos de la red AENA no están incluidas en la tarifa básica de bloque horario.</li>
-          <li><strong>Protección de Datos:</strong> Los datos remitidos en este formulario se conservarán en el registro de operaciones del aeroclub conforme a la Ley Orgánica 3/2018 y el Reglamento General de Protección de Datos (UE 2016/679).</li>
+    <!-- SECCIÓN 3: AVISO LEGAL Y PROTECCIÓN -->
+    <section id="aviso-legal">
+      <h2>Información de Interés</h2>
+      <article class="columna-principal">
+        <h3>Condiciones de la Reserva</h3>
+        <ul class="lista-puntos">
+          <li><strong>Meteorología:</strong> Si el día de tu vuelo hace mal tiempo, lluvia o niebla, te avisaremos con antelación para cambiar la fecha sin coste alguno.</li>
+          <li><strong>Puntualidad:</strong> Se ruega llegar al hangar 15 minutos antes de la hora fijada para hacer la inspección con calma.</li>
+          <li><strong>Protección de datos:</strong> Los datos recogidos solo se usarán para gestionar tu reserva y no se compartirán con empresas de publicidad.</li>
         </ul>
       </article>
     </section>
 
   </main>
 
-  <!-- =====================================================================
-       PIE DE PÁGINA COMÚN
-       ===================================================================== -->
-  <footer id="main-footer">
-    <div class="footer-container">
-      <div class="footer-section">
+  <!-- PIE DE PÁGINA COMÚN -->
+  <footer id="pie-principal">
+    <div class="contenedor-pie">
+      <div class="seccion-pie">
         <h4>AeroLink Aviación</h4>
-        <p>
-          Club de Vuelo, Alquiler de Aeronaves y Escuela de Pilotos (ATO-248) homologada por AESA y la Agencia Europea de Seguridad Aérea (EASA).
-        </p>
-        <p>
-          Hangar 4, Aeródromo de Cuatro Vientos, 28054 Madrid (España).
-        </p>
+        <p>Club de vuelo deportivo y escuela autorizada ATO-248.</p>
+        <p>Aeródromo de Cuatro Vientos, Hangar 4, Madrid.</p>
       </div>
 
-      <div class="footer-section">
-        <h4>Navegación del Sitio</h4>
+      <div class="seccion-pie">
+        <h4>Enlaces de la Web</h4>
         <ul>
-          <li><a href="index.html">Página Principal</a></li>
-          <li><a href="flota.html">Flota y Tabla Técnica</a></li>
-          <li><a href="detalle.html">Ficha Técnica Cessna 172</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="flota.html">Flota de Aeronaves</a></li>
+          <li><a href="detalle.html">Ficha Cessna 172</a></li>
           <li><a href="formulario.html">Formulario de Reserva</a></li>
         </ul>
       </div>
 
-      <div class="footer-section">
-        <h4>Normativa y Seguridad</h4>
+      <div class="seccion-pie">
+        <h4>Información Legal</h4>
         <ul>
-          <li><a href="formulario.html#normativa-seguridad">Reglamento AESA / EASA</a></li>
-          <li><a href="flota.html#tabla-rendimiento">Certificados de Aeronavegabilidad</a></li>
-          <li><a href="formulario.html#normativa-seguridad">Política de Privacidad</a></li>
-          <li><a href="index.html#operaciones-metar">Contacto y Operaciones</a></li>
+          <li><a href="index.html#servicios">Normativa de Seguridad Aérea</a></li>
+          <li><a href="formulario.html#aviso-legal">Política de Privacidad</a></li>
+          <li><a href="index.html#bienvenida">Contacto y Reservas</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>&copy; 2026 AeroLink Aviación - Prototipo para la asignatura de Ingeniería Web (Entrega 1: Alumno DNI 79078777Q). Código conforme a W3C.</p>
+    <div class="copyright">
+      <p>&copy; 2026 AeroLink Aviación - Entrega 1 de Ingeniería Web (Alumno DNI: 79078777Q)</p>
     </div>
   </footer>
 

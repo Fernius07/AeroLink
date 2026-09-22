@@ -3,81 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Ficha técnica detallada de la aeronave Cessna 172S Skyhawk (matrícula EC-MRX) de AeroLink Aviación. Aviónica Garmin G1000, checklist pre-vuelo y requisitos de alquiler.">
-  <title>AeroLink | Ficha Técnica - Cessna 172S Skyhawk (EC-MRX)</title>
+  <title>AeroLink | Ficha Técnica - Cessna 172 Skyhawk</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- =====================================================================
-       CABECERA COMÚN
-       ===================================================================== -->
-  <header id="main-header">
-    <div class="header-container">
-      <a href="index.html" class="brand-link" title="Ir a la portada de AeroLink">
-        <img src="img/logo.svg" alt="Logotipo de AeroLink Aviación: silueta de aeronave ascendiendo con horizonte artificial" width="220" height="52">
+  <!-- CABECERA COMÚN -->
+  <header id="cabecera-principal">
+    <div class="contenedor-cabecera">
+      <a href="index.html" class="logotipo" title="AeroLink Aviación">
+        <img src="img/logo.svg" alt="Logotipo de AeroLink" width="180" height="45">
       </a>
-      <nav id="primary-nav" aria-label="Navegación principal">
+      <nav id="menu-navegacion" aria-label="Menú principal">
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="flota.html">Flota de Aeronaves</a></li>
-          <li><a href="detalle.html" class="active">Ficha Técnica</a></li>
-          <li><a href="formulario.html">Reserva y Cursos</a></li>
+          <li><a href="flota.html">Flota</a></li>
+          <li><a href="detalle.html" class="activo">Ficha Técnica</a></li>
+          <li><a href="formulario.html">Reservas</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- =====================================================================
-       CONTENIDO PRINCIPAL
-       ===================================================================== -->
+  <!-- CONTENIDO PRINCIPAL -->
   <main>
 
-    <!-- ÍNDICE INTERNO DE SECCIONES NAVEGABLE -->
-    <nav class="section-index" aria-label="Índice de apartados de la ficha técnica">
-      <p class="index-title">Índice de apartados de la aeronave:</p>
+    <!-- ÍNDICE INTERNO NAVEGABLE -->
+    <nav class="indice-pagina" aria-label="Índice interno">
+      <p>Apartados de esta página:</p>
       <ul>
-        <li><a href="#datos-aeronave">1. Ficha General Cessna 172S</a></li>
-        <li><a href="#equipamiento-avionica">2. Aviónica y Motorización</a></li>
-        <li><a href="#checklist-prevuelo">3. Lista de Chequeo Pre-Vuelo</a></li>
-        <li><a href="#requisitos-alquiler">4. Requisitos de Alquiler y Checkout</a></li>
+        <li><a href="#datos-principales">1. Datos de la Cessna 172</a></li>
+        <li><a href="#cabina-instrumentos">2. Cabina y Mandos</a></li>
+        <li><a href="#checklist-inspeccion">3. Pasos de la Inspección Pre-Vuelo</a></li>
+        <li><a href="#requisitos-piloto">4. Requisitos para Volarla</a></li>
       </ul>
     </nav>
 
-    <!-- SECCIÓN 1: DATOS PRINCIPALES DE LA AERONAVE -->
-    <section id="datos-aeronave">
-      <h1>Cessna 172S Skyhawk SP — Matrícula EC-MRX</h1>
+    <!-- SECCIÓN 1: DATOS PRINCIPALES -->
+    <section id="datos-principales">
+      <h1>Cessna 172S Skyhawk (Matrícula EC-MRX)</h1>
       <p>
-        <strong>Número de serie:</strong> <code>172S-10492</code> | <strong>Año de fabricación:</strong> <time datetime="2021">2021</time> | <strong>Base operativa:</strong> Aeródromo de Cuatro Vientos (LECU)
+        <strong>Base del avión:</strong> Aeródromo de Cuatro Vientos | <strong>Fabricante:</strong> Cessna Aircraft Company | <strong>Año:</strong> <time datetime="2021">2021</time>
       </p>
 
-      <div class="layout-with-aside">
-        <div>
-          <figure>
-            <img src="img/cessna172.svg" alt="Ilustración esquemática de la Cessna 172S Skyhawk matrícula EC-MRX en crucero" width="600" height="400">
-            <figcaption>Figura: Cessna 172S Skyhawk de AeroLink con configuración de cabina digital Garmin G1000 NXi.</figcaption>
-          </figure>
+      <figure>
+        <img src="img/cessna172.jpg" alt="Foto real de la avioneta Cessna 172 en vuelo" width="800" height="400">
+        <figcaption>Nuestra Cessna 172S matrícula EC-MRX realizando un vuelo de navegación visual.</figcaption>
+      </figure>
 
-          <h2>Resumen Operacional</h2>
+      <div class="contenedor-columnas">
+        <article class="columna-principal">
+          <h2>Descripción del Avión</h2>
           <p>
-            La Cessna 172S Skyhawk es la aeronave de entrenamiento avanzado y travesía de referencia internacional. Gracias a su configuración de <mark>ala alta con puntales de sujeción</mark>, ofrece una extraordinaria visibilidad hacia el terreno, una gran estabilidad pendular natural y una gran tolerancia a rachas de viento cruzado en aproximaciones complejas.
+            La Cessna 172 es probablemente la avioneta más famosa de la historia de la aviación. Destaca por tener sus alas en la parte superior del fuselaje (<mark>diseño de ala alta</mark>), lo que proporciona una enorme estabilidad y permite a los pasajeros disfrutar de una vista despejada del paisaje.
           </p>
-        </div>
+          <p>
+            Es el aparato ideal para las primeras lecciones de vuelo, para consolidar conocimientos de navegación visual y para hacer excursiones de día completo a otros aeródromos de España.
+          </p>
+        </article>
 
-        <aside class="sidebar-info">
-          <h3>Ficha Técnica Oficial</h3>
-          <ul class="standard-list">
-            <li><strong>Motor:</strong> Lycoming IO-360-L2A (4 cilindros opuestos)</li>
-            <li><strong>Potencia:</strong> 180 HP a 2.700 RPM</li>
-            <li><strong>Combustible:</strong> AVGAS 100LL (200 litros utilizables)</li>
-            <li><strong>Velocidad de crucero:</strong> 122 KTAS al 75% potencia</li>
-            <li><strong>Velocidad de pérdida (Vso):</strong> 40 KIAS (con flaps 30&deg;)</li>
-            <li><strong>Techo de servicio:</strong> 14.000 pies (FL140)</li>
-            <li><strong>Peso máximo al despegue (MTOW):</strong> 1.157 kg (2.550 lbs)</li>
-            <li><strong>Capacidad:</strong> 4 plazas adultas con maletero de 54 kg</li>
+        <aside class="columna-lateral">
+          <h3>Ficha Rápida</h3>
+          <ul class="lista-puntos">
+            <li><strong>Motor:</strong> Lycoming 180 HP</li>
+            <li><strong>Plazas:</strong> 4 personas</li>
+            <li><strong>Velocidad:</strong> 120 nudos (220 km/h)</li>
+            <li><strong>Alcance:</strong> 1.100 km</li>
+            <li><strong>Combustible:</strong> Gasolina de aviación 100LL</li>
           </ul>
-          <div style="margin-top: 1rem;">
-            <a href="formulario.html" class="btn btn-primary" style="display: block; text-align: center;">Reservar Vuelo en Cessna 172</a>
+          <div style="margin-top: 15px;">
+            <a href="formulario.html" class="boton boton-principal" style="display: block; text-align: center;">Reservar este avión</a>
           </div>
         </aside>
       </div>
@@ -85,115 +80,112 @@
 
     <hr>
 
-    <!-- SECCIÓN 2: AVIÓNICA Y MOTORIZACIÓN -->
-    <section id="equipamiento-avionica">
-      <h2>Suite de Aviónica Integrada Garmin G1000 NXi</h2>
-      <article class="info-article">
-        <h3>Tecnología de Cabina de Cristal</h3>
-        <p>
-          La unidad <code>EC-MRX</code> cuenta con la suite integrada de última generación <em>Garmin G1000 NXi</em> compuesta por dos pantallas de cristal líquido de alta resolución de 10.4 pulgadas: la pantalla principal de vuelo (PFD) y la pantalla multifunción (MFD).
-        </p>
+    <!-- SECCIÓN 2: CABINA Y MANDOS -->
+    <section id="cabina-instrumentos">
+      <h2>Cabina y Puesto de Pilotaje</h2>
+      <p>
+        El avión dispone de doble mando para que alumno e instructor puedan pilotar indistintamente. Cuenta con radio digital, transpondedor y los relojes clásicos de navegación.
+      </p>
 
-        <blockquote>
-          <p>
-            "La transición de instrumentos analógicos tradicionales al entorno G1000 NXi optimiza drásticamente la conciencia situacional del piloto y prepara al alumno para la cabina de cualquier reactor comercial moderno."
-          </p>
-          <cite>— Rodrigo de la Fuente, Instructor Jefe de Vuelo Instrumental de AeroLink</cite>
-        </blockquote>
+      <figure>
+        <img src="img/cabina.jpg" alt="Foto real de la cabina de mandos con el panel de instrumentos y cuernos de pilotaje" width="800" height="400">
+        <figcaption>Panel de mandos e instrumental de cabina de la Cessna 172.</figcaption>
+      </figure>
 
+      <blockquote>
         <p>
-          Dispone de sistema de alerta de tráfico activo ADS-B In/Out, visión sintética en 3D (SVT), mapa móvil vectorial con cartas de aproximación Jeppesen georreferenciadas y piloto automático digital Garmin GFC 700 con director de vuelo.
+          "La Cessna 172 perdona muchos errores de novato en la toma de tierra. Su tren de aterrizaje triciclo absorbe los baches con suavidad y transmite muchísima confianza."
         </p>
-      </article>
+        <cite>— Carlos Navarro, Instructor de vuelo en AeroLink</cite>
+      </blockquote>
     </section>
 
     <hr>
 
-    <!-- SECCIÓN 3: CHECKLIST PRE-VUELO -->
-    <section id="checklist-prevuelo">
-      <h2>Lista de Chequeo Pre-Vuelo (Inspección Exterior y Cabina)</h2>
+    <!-- SECCIÓN 3: CHECKLIST PRE-VUELO (LISTA ORDENADA) -->
+    <section id="checklist-inspeccion">
+      <h2>Inspección Antes del Vuelo (Checklist)</h2>
       <p>
-        Siguiendo el Manual de Operaciones de la Aeronave (POH), todo piloto al mando debe completar estrictamente los siguientes pasos ordenados antes de solicitar puesta en marcha:
+        Todo piloto debe realizar una comprobación exterior siguiendo obligatoriamente estos pasos en orden antes de subir al avión:
       </p>
 
-      <ol class="standard-list">
-        <li><strong>Documentación y cabina:</strong> Verificar certificado de aeronavegabilidad, seguro en vigor, peso y centrado (W&amp;B) y retirar el traba-mandos del timón.</li>
-        <li><strong>Comprobación eléctrica inicial:</strong> Activar llave Master, verificar nivel de combustible en displays, encender luces de navegación/anticolisión, bajar flaps y desconectar Master.</li>
-        <li><strong>Fuselaje y empenaje de cola:</strong> Inspeccionar superficie del estabilizador vertical y timón de profundidad, retirar fundas de amarre y verificar libertad de movimiento en bisagras.</li>
-        <li><strong>Ala derecha y drenadores:</strong> Comprobar integridad del borde de ataque, drenar muestra de combustible del depósito derecho para descartar agua y verificar presión del neumático principal.</li>
-        <li><strong>Morro y planta motriz:</strong> Comprobar nivel de aceite del motor (mínimo 6 cuartos de galón), drenar filtro principal de combustible, inspeccionar hélice, toma de aire y estado de la correa del alternador.</li>
-        <li><strong>Ala izquierda y tubo Pitot:</strong> Retirar funda del tubo Pitot, verificar toma estática limpia, comprobar sensor de pérdida y drenar depósito de combustible izquierdo.</li>
+      <ol class="lista-ordenada">
+        <li><strong>Comprobación de cabina:</strong> Verificar que la documentación está a bordo y que los mandos se mueven libremente.</li>
+        <li><strong>Cola y timón:</strong> Revisar las bisagras del timón de cola y retirar la cinta de amarre.</li>
+        <li><strong>Ala derecha:</strong> Sacar una muestra de gasolina con la pipeta para comprobar que no tiene agua ni suciedad, y comprobar la presión de la rueda derecha.</li>
+        <li><strong>Motor y hélice:</strong> Abrir el capó y medir el nivel de aceite (debe tener entre 6 y 8 cuartos). Mirar que la hélice no tenga golpes.</li>
+        <li><strong>Ala izquierda y tubo pitot:</strong> Quitar la funda roja del tubo pitot (el sensor que mide la velocidad) y drenar el depósito izquierdo.</li>
+        <li><strong>Documento de vuelo:</strong> Anotar las horas del contador antes de arrancar.</li>
       </ol>
     </section>
 
     <hr>
 
-    <!-- SECCIÓN 4: REQUISITOS DE ALQUILER -->
-    <section id="requisitos-alquiler">
-      <h2>Condiciones y Requisitos para el Alquiler como Piloto al Mando</h2>
-      
-      <h3>Requisitos Exigidos</h3>
+    <!-- SECCIÓN 4: REQUISITOS (LISTA NO ORDENADA) -->
+    <section id="requisitos-piloto">
+      <h2>Requisitos para Volar la Cessna 172</h2>
       <p>
-        Para alquilar la aeronave de forma autónoma sin instructor, el piloto debe acreditar ante la jefatura de vuelos:
+        Dependiendo del tipo de actividad que vayas a realizar, los requisitos son:
       </p>
-      <ul class="standard-list">
-        <li>Licencia oficial de piloto en vigor (PPL, CPL o ATPL) emitida conforme a normativa EASA-FCL.</li>
-        <li>Habilitación de clase monomotor de pistón terrestre (SEP Land) vigente.</li>
-        <li>Certificado médico aeronáutico Clase 2 o Clase 1 en vigor.</li>
-        <li>Mínimo de 25 horas totales de vuelo en aviones monomotores.</li>
-        <li>Haber completado un vuelo de refresco y chequeo (*Checkout*) de 45 minutos con un instructor del club dentro de los últimos 90 días.</li>
+
+      <h3>Si quieres alquilar el avión como piloto al mando:</h3>
+      <ul class="lista-puntos">
+        <li>Tener la licencia de piloto privado <em>PPL(A)</em> o superior en vigor.</li>
+        <li>Certificado médico de aviación (Clase 2 o Clase 1) actualizado.</li>
+        <li>Haber realizado al menos 3 despegues y aterrizajes en los últimos 90 días.</li>
+        <li>Hacer un vuelo de chequeo de 30 minutos con un instructor del club.</li>
       </ul>
 
-      <div style="background-color: #f0f9ff; border: 1px solid #7dd3fc; padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
-        <h3>¿Quieres planificar tu próxima travesía o bautismo aéreo?</h3>
+      <h3>Si eres alumno o vienes a un bautismo de vuelo:</h3>
+      <ul class="lista-puntos">
+        <li>No se necesita ninguna experiencia previa.</li>
+        <li>Ser mayor de 16 años (o tener autorización paterna si eres menor).</li>
+        <li>Tener ganas de aprender y disfrutar de las vistas desde el aire.</li>
+      </ul>
+
+      <div style="background-color: #e3f2fd; border: 1px solid #90caf9; padding: 15px; border-radius: 6px; margin-top: 20px;">
+        <h3>¿Te gustaría volar en esta Cessna?</h3>
         <p>
-          Reserva franja horaria en nuestra agenda o inscríbete en nuestros programas de adaptación a cabina digital G1000.
+          Rellena la solicitud y nuestro equipo te contactará para coordinar el día y la hora de tu vuelo.
         </p>
-        <a href="formulario.html" class="btn btn-primary">Ir al Formulario de Reserva</a>
-        <a href="flota.html" class="btn btn-secondary" style="margin-left: 0.5rem;">Volver al Catálogo de Flota</a>
+        <a href="formulario.html" class="boton boton-principal">Ir al formulario de reserva</a>
+        <a href="flota.html" class="boton boton-secundario">Volver al catálogo</a>
       </div>
     </section>
 
   </main>
 
-  <!-- =====================================================================
-       PIE DE PÁGINA COMÚN
-       ===================================================================== -->
-  <footer id="main-footer">
-    <div class="footer-container">
-      <div class="footer-section">
+  <!-- PIE DE PÁGINA COMÚN -->
+  <footer id="pie-principal">
+    <div class="contenedor-pie">
+      <div class="seccion-pie">
         <h4>AeroLink Aviación</h4>
-        <p>
-          Club de Vuelo, Alquiler de Aeronaves y Escuela de Pilotos (ATO-248) homologada por AESA y la Agencia Europea de Seguridad Aérea (EASA).
-        </p>
-        <p>
-          Hangar 4, Aeródromo de Cuatro Vientos, 28054 Madrid (España).
-        </p>
+        <p>Club de vuelo deportivo y escuela autorizada ATO-248.</p>
+        <p>Aeródromo de Cuatro Vientos, Hangar 4, Madrid.</p>
       </div>
 
-      <div class="footer-section">
-        <h4>Navegación del Sitio</h4>
+      <div class="seccion-pie">
+        <h4>Enlaces de la Web</h4>
         <ul>
-          <li><a href="index.html">Página Principal</a></li>
-          <li><a href="flota.html">Flota y Tabla Técnica</a></li>
-          <li><a href="detalle.html">Ficha Técnica Cessna 172</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="flota.html">Flota de Aeronaves</a></li>
+          <li><a href="detalle.html">Ficha Cessna 172</a></li>
           <li><a href="formulario.html">Formulario de Reserva</a></li>
         </ul>
       </div>
 
-      <div class="footer-section">
-        <h4>Normativa y Seguridad</h4>
+      <div class="seccion-pie">
+        <h4>Información Legal</h4>
         <ul>
-          <li><a href="detalle.html#checklist-prevuelo">Manual de Operaciones POH</a></li>
-          <li><a href="detalle.html#requisitos-alquiler">Normas EASA Part-FCL</a></li>
-          <li><a href="formulario.html#normativa-seguridad">Política de Privacidad</a></li>
-          <li><a href="index.html#mision-seguridad">Contacto y Operaciones</a></li>
+          <li><a href="index.html#servicios">Normativa de Seguridad Aérea</a></li>
+          <li><a href="formulario.html#aviso-legal">Política de Privacidad</a></li>
+          <li><a href="index.html#bienvenida">Contacto y Reservas</a></li>
         </ul>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <p>&copy; 2026 AeroLink Aviación - Prototipo para la asignatura de Ingeniería Web (Entrega 1: Alumno DNI 79078777Q). Código conforme a W3C.</p>
+    <div class="copyright">
+      <p>&copy; 2026 AeroLink Aviación - Entrega 1 de Ingeniería Web (Alumno DNI: 79078777Q)</p>
     </div>
   </footer>
 

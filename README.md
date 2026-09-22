@@ -1,18 +1,18 @@
-# AeroLink Aviación - Prototipo Web de Club de Vuelo y Escuela de Pilotos
+# AeroLink Aviación - Prototipo Web para Ingeniería Web
 
 > **Asignatura**: Ingeniería Web (IW)  
 > **Entrega**: Primera Entrega (E1) - Maqueta y Prototipo HTML5 & CSS3  
 > **Alumno / DNI**: `79078777Q`  
-> **Archivo comprimido**: `IW-79078777Q-E1.zip`  
-> **Tecnologías**: HTML5 puro y CSS3 puro (sin JavaScript ni backend).
+> **Archivo de entrega**: `IW-79078777Q-E1.zip`  
+> **Tecnologías**: HTML5 y CSS3 puros (sin JavaScript ni servidor backend).
 
 ---
 
-## 1. Descripción del Proyecto y Temática
+## 1. Temática y Descripción
 
-**AeroLink Aviación** es un prototipo de portal web para una escuela de pilotos (ATO homologada por AESA) y centro de operaciones de aviación general y deportiva. La plataforma permite a alumnos y pilotos examinar las especificaciones y avionica de la flota de aeronaves, consultar reportes meteorológicos operativos (METAR), revisar las listas de chequeo pre-vuelo (*Pre-Flight Checklist*) y cursar solicitudes de reserva de aeronaves, vuelos de divulgación (*bautismos aéreos*) o matrícula en cursos PPL(A).
+**AeroLink** es la maqueta web de un club de aviación y escuela de pilotos con base en Madrid. El sitio web permite a los usuarios conocer las instalaciones, consultar las avionetas disponibles (con fotos reales y datos técnicos), ver la ficha detallada de una de ellas con su lista de comprobación (*checklist*) y realizar una reserva o pedir información a través de un formulario.
 
-La temática ha sido seleccionada en el ámbito de **transporte, aviación y utilidad técnica**, excluyendo expresamente todos los ejemplos citados en el enunciado (gestión de proyectos, incidencias, CRM o stock), proporcionando un marco creíble, técnico y rico para el uso de tablas complejas, listas ordenadas, diagramas vectoriales, recursos multimedia y formularios enriquecidos.
+La temática elegida es libre y pertenece al sector del **transporte y la aviación deportiva**, evitando todos los ejemplos del enunciado (proyectos, tickets/incidencias, CRM o inventario).
 
 ---
 
@@ -21,111 +21,88 @@ La temática ha sido seleccionada en el ámbito de **transporte, aviación y uti
 ```text
 aerolink/
 │
-├── index.html              # Landing page (portada, seguridad aérea, flota destacada, multimedia, METAR)
-├── flota.html              # Catálogo de aeronaves, tabla comparativa de rendimiento y glosario
-├── detalle.html            # Ficha técnica ampliada (Cessna 172S EC-MRX), Garmin G1000 y checklist
-├── formulario.html         # Solicitud de vuelo, perfiles de piloto, datos W&B y consentimiento AESA
-├── url_sitio.txt           # Documento de texto con la URI pública de despliegue (Vercel)
-├── README.md               # Memoria técnica y documentación de la entrega
-├── empaquetar_entrega.ps1  # Script PowerShell para generar automáticamente IW-79078777Q-E1.zip
+├── index.html              # Portada: bienvenida, seguridad, flota destacada, audio/vídeo y meteorología
+├── flota.html              # Catálogo con fotos reales, tabla comparativa técnica y glosario
+├── detalle.html            # Ficha técnica de la Cessna 172 con foto real, cabina, checklist pre-vuelo y requisitos
+├── formulario.html         # Formulario completo con validación HTML5 para solicitar reservas o cursos
+├── url_sitio.txt           # Archivo de texto con el enlace de la web desplegada en Vercel
+├── README.md               # Esta memoria explicativa del proyecto
+├── empaquetar_entrega.ps1  # Script para generar automáticamente el archivo IW-79078777Q-E1.zip
 │
 ├── css/
-│   └── styles.css          # Hoja de estilo global CSS3 (diseño responsive, Flexbox, Grid, variables)
+│   └── styles.css          # Hoja de estilos con variables, diseño responsive (Flexbox) y selectores CSS
 │
 ├── img/
-│   ├── logo.svg            # Logotipo vectorial de AeroLink Aviación
-│   ├── hero-banner.svg     # Banner ilustrado de pista 24L y aeronave en ascenso
-│   ├── hangar-instalaciones.svg # Diagrama técnico de hangares CAMO y calle de rodaje Alpha
-│   ├── cessna172.svg       # Ilustración técnica de Cessna 172S Skyhawk (EC-MRX)
-│   ├── piper-pa28.svg      # Ilustración técnica de Piper PA-28 Archer (EC-KLM)
-│   ├── diamond-da40.svg    # Ilustración técnica de Diamond DA40 NG (EC-TGO)
+│   ├── logo.svg            # Logotipo de AeroLink
+│   ├── hero-avion.jpg      # Foto real de avioneta al atardecer en pista
+│   ├── cessna172.jpg       # Foto real de la Cessna 172 en vuelo
+│   ├── piper-pa28.jpg      # Foto real de la avioneta Piper PA-28 en plataforma
+│   ├── diamond-da40.jpg    # Foto real de la avioneta Diamond DA40
+│   ├── cabina.jpg          # Foto real del puesto de pilotaje e instrumentos de cabina
+│   ├── hangar.jpg          # Foto real del hangar de mantenimiento
 │   └── video-poster.svg    # Carátula del reproductor de vídeo
 │
 └── media/
     ├── latido-refugio.wav  # Pista de audio para el reproductor HTML5
-    └── video-muestra.mp4   # Pista de vídeo de muestra
+    └── video-muestra.mp4   # Vídeo de muestra para el reproductor HTML5
 ```
 
 ---
 
-## 3. Cumplimiento Exhaustivo de Requisitos del Enunciado
+## 3. Cumplimiento de los Requisitos del Enunciado
 
-| Requisito del Enunciado | Estado | Implementación en el Proyecto |
-| :--- | :---: | :--- |
-| **Mínimo 4 páginas enlazadas** | Cumplido | `index.html`, `flota.html`, `detalle.html` y `formulario.html`, interconectadas mediante hipervínculos en cabecera, contenido y pie. |
-| **Página principal `index.html`** | Cumplido | Portada estructurada con llamadas a la acción, seguridad operacional y presentación. |
-| **Formulario funcional como maqueta** | Cumplido | `formulario.html` con validación nativa HTML5, fieldsets, labels y múltiples tipos de entrada. |
-| **Layout común** | Cumplido | Todas las páginas comparten la misma cabecera (`<header id="main-header">`), menú de navegación con enlace activo (`.active`) y pie de página común (`<footer id="main-footer">`). |
-| **Índice interno navegable por página** | Cumplido | Cada página incluye al inicio un `<nav class="section-index">` con enlaces ancla tipo `#id` que dirigen al usuario a cada apartado de la página. |
-| **Uso de todos los elementos HTML5** | Cumplido | Ver catálogo detallado de elementos a continuación. |
-| **Selectores CSS convenientes** | Cumplido | Uso equilibrado de selectores generales, clases, identificadores, pseudo-clases (`:hover`, `:focus`, `:nth-child`) y combinadores. |
-| **Estándares W3C** | Cumplido | Código 100% válido, etiquetas correctamente cerradas, atributos obligatorios (`alt`, `lang="es"`, `charset="UTF-8"`). |
-| **URI de proveedor externo** | Cumplido | Incluido archivo `url_sitio.txt` preparado para el despliegue en Vercel. |
-| **Normas de empaquetado** | Cumplido | ZIP generado con el prefijo IW seguido del DNI del alumno: `IW-79078777Q-E1.zip`. |
-
----
-
-## 4. Catálogo de Elementos HTML Empleados
-
-- **Estructura y semántica**: `<!DOCTYPE html>`, `<html lang="es">`, `<head>`, `<meta charset="UTF-8">`, `<meta name="viewport">`, `<title>`, `<link>`, `<body>`, `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`.
-- **Encabezados y texto**: `<h1>` a `<h4>`, `<p>`, `<strong>`, `<em>`, `<small>`, `<mark>`, `<time>`, `<blockquote>`, `<cite>`, `<pre>`, `<code>`, `<hr>`.
-- **Listas**:
-  - Lista no ordenada (`<ul>`, `<li>`).
-  - Lista ordenada secuencial (`<ol>`, `<li>`).
-  - Lista de definiciones (`<dl>`, `<dt>`, `<dd>`).
-- **Tablas**: `<table>`, `<caption>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<th scope="col">`, `<th scope="row">`, `<td>` (con `colspan`).
-- **Multimedia y gráficos**: `<figure>`, `<img>` (con atributos `alt`, `width`, `height`), `<figcaption>`, `<video>` (con `controls`, `poster`, `<source>`), `<audio>` (con `controls`, `<source>`).
-- **Formularios**: `<form>`, `<fieldset>`, `<legend>`, `<label for="...">`, `<input>` (`text`, `email`, `tel`, `date`, `number`, `radio`, `checkbox`, `file`), `<select>`, `<optgroup>`, `<option>`, `<datalist>`, `<textarea>`, `<button type="submit">`, `<button type="reset">`.
-
----
-
-## 5. Selectores CSS Empleados en `styles.css`
-
-1. **Selectores de tipo / generales**: `*`, `html`, `body`, `main`, `h1`, `h2`, `h3`, `p`, `a`, `img`, `table`, `thead`, `tbody`, `figure`, `input`, `textarea`, `button`.
-2. **Selectores de clase**: `.header-container`, `.btn`, `.btn-primary`, `.btn-outline`, `.card`, `.badge`, `.table-responsive`, `.grid-cards`, `.section-index`, `.form-group`, `.form-row`.
-3. **Selectores de identificador**: `#main-header`, `#primary-nav`, `#hero`, `#mision-seguridad`, `#aeronaves-destacadas`, `#multimedia`, `#operaciones-metar`, `#main-footer`, `#form-vuelo`.
-4. **Pseudo-clases**:
-   - `:root` (definición de paleta y variables).
-   - `:hover` y `:focus` (interactividad accesible en botones, inputs y enlaces).
-   - `:nth-child(even)` (filas alternas de tablas).
-   - `:first-child` (ajustes tipográficos en listas de definición).
-5. **Combinadores**:
-   - Descendientes: `header#main-header nav ul li a`.
-   - Hijos directos: `.card-body > h3`.
-6. **Diseño Adaptable (Responsive)**: `@media (max-width: 768px)` con ajuste de navegación, rejillas y formularios.
+1. **Mínimo 4 páginas enlazadas entre sí**:
+   - `index.html`, `flota.html`, `detalle.html` y `formulario.html`. Desde cualquier página se puede navegar a las demás usando el menú de cabecera o el pie de página.
+2. **Página principal llamada `index.html`**:
+   - Cumplido.
+3. **Página con formulario**:
+   - `formulario.html` contiene 4 bloques temáticos (`fieldset`), etiquetas (`label`) para cada campo, campos de texto, email, teléfono, fecha, número, opciones de radio, casillas de verificación, lista desplegable (`select` con `optgroup`), sugerencias con `datalist`, subida de ficheros (`input type="file"`) y área de texto (`textarea`).
+4. **Layout común (Cabecera y Pie)**:
+   - Todas las páginas comparten la misma cabecera (`<header id="cabecera-principal">`) con el logotipo y el menú de navegación con la página actual destacada (`.activo`), y el mismo pie de página (`<footer id="pie-principal">`).
+5. **Índice interno navegable por página**:
+   - Cada una de las 4 páginas incluye al principio un menú de navegación por anclas (`<nav class="indice-pagina">`) que permite saltar a las diferentes secciones de esa misma página.
+6. **Uso de elementos HTML explicados en clase**:
+   - Estructura: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`.
+   - Textos: `<h1>`, `<h2>`, `<h3>`, `<p>`, `<strong>`, `<em>`, `<blockquote>`, `<cite>`, `<mark>`, `<small>`, `<time>`, `<hr>`, `<pre>`, `<code>`.
+   - Listas: Lista no ordenada (`<ul>`, `<li>`), lista ordenada secuencial (`<ol>`, `<li>`) y lista de definición (`<dl>`, `<dt>`, `<dd>`).
+   - Tablas: `<table>`, `<caption>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<th>`, `<td>`.
+   - Multimedia: `<figure>`, `<img>` (fotos reales en JPG con atributo `alt`), `<figcaption>`, `<video>`, `<audio>`.
+   - Formularios: `<form>`, `<fieldset>`, `<legend>`, `<label>`, `<input>`, `<select>`, `<optgroup>`, `<datalist>`, `<textarea>`, `<button type="submit">`, `<button type="reset">`.
+7. **Selectores CSS convenientes**:
+   - Selectores de etiqueta (generales): `body`, `h1`, `h2`, `p`, `table`, `a`, `img`, `fieldset`, `button`.
+   - Selectores de clase: `.tarjeta`, `.boton`, `.indice-pagina`, `.etiqueta`, `.campo`, `.tabla-contenedor`.
+   - Selectores de identificador (ID): `#cabecera-principal`, `#menu-navegacion`, `#pie-principal`, `#formulario-reserva`.
+   - Pseudo-clases: `:hover` en enlaces y botones, `:focus` en campos del formulario, `:nth-child(even)` en las filas de la tabla.
+8. **Validación W3C**:
+   - Código limpio, etiquetas cerradas correctamente y atributos obligatorios presentes (`alt`, `lang="es"`, `charset="UTF-8"`).
+9. **URL de proveedor externo y archivo comprimido**:
+   - Archivo `url_sitio.txt` preparado con la URL de Vercel y script para generar `IW-79078777Q-E1.zip`.
 
 ---
 
-## 6. Instrucciones para Subir a GitHub y Desplegar en Vercel
+## 4. Instrucciones para Subir a GitHub y Vercel
 
 ### Paso 1: Subir a GitHub
-Abre la terminal en la carpeta del proyecto y ejecuta:
 ```bash
 git add .
-git commit -m "Entrega 1 IW: Prototipo AeroLink Aviacion (Alumno 79078777Q)"
+git commit -m "Entrega 1 IW: Prototipo AeroLink con fotos reales (DNI 79078777Q)"
 git branch -M main
 git remote add origin https://github.com/TU-USUARIO/aerolink-aviacion.git
 git push -u origin main
 ```
 
 ### Paso 2: Desplegar en Vercel
-1. Entra en [vercel.com](https://vercel.com/) e inicia sesión con tu cuenta de GitHub.
-2. Pulsa en **"Add New..."** > **"Project"**.
-3. Selecciona tu repositorio (`aerolink-aviacion`).
-4. En **Framework Preset**, déjalo en **"Other"** (es un proyecto estático puro HTML/CSS).
-5. Haz clic en **"Deploy"**.
-6. En 15 segundos tendrás tu URL pública activa (ejemplo: `https://aerolink-aviacion.vercel.app`).
-7. Pega esa URL en el archivo `url_sitio.txt`.
+1. Entra en [vercel.com](https://vercel.com/) e inicia sesión con tu usuario de GitHub.
+2. Pulsa en **Add New...** > **Project** y selecciona el repositorio `aerolink-aviacion`.
+3. Haz clic en **Deploy**. Al ser una web estática en HTML y CSS se publicará en unos 15 segundos.
+4. Copia la URL pública que te proporcione Vercel y pégala en el fichero `url_sitio.txt`.
 
 ---
 
-## 7. Instrucciones para Generar el Archivo Comprimido de Entrega
+## 5. Cómo Generar el Archivo ZIP de Entrega
 
-Según las normas del enunciado, debes entregar el archivo con tu DNI:
-`IW-79078777Q-E1.zip`.
-
-Para generarlo automáticamente en Windows desde PowerShell, simplemente ejecuta:
+Para crear el archivo comprimido exigido por la asignatura (`IW-79078777Q-E1.zip`), ejecuta en PowerShell:
 ```powershell
 .\empaquetar_entrega.ps1
 ```
-El script generará el archivo `IW-79078777Q-E1.zip` con todo el material necesario (HTML, CSS, imágenes, audio, video, README y url_sitio.txt).
+El archivo se creará en la raíz del proyecto listo para entregar en el campus virtual.
