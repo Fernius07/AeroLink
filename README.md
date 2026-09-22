@@ -2,7 +2,9 @@
 
 > **Asignatura**: Ingeniería Web (IW)  
 > **Entrega**: Primera Entrega (E1) - Maqueta y Prototipo HTML5 & CSS3  
-> **Alumno / DNI**: `79078777Q`  
+> **Alumno**: Iñigo Fernandez  
+> **Correo**: fernandez.inigo@opendeusto.es  
+> **DNI**: `79078777Q`  
 > **Archivo comprimido**: `IW-79078777Q-E1.zip`  
 > **Base de operaciones**: Aeropuerto de Bilbao (LEBB / BIO / Loiu, Bizkaia)  
 > **Tecnologías**: HTML5 y CSS3 puros (sin JavaScript ni servidor backend).
@@ -64,7 +66,7 @@ aerolink/
 2. **Página principal llamada `index.html`**:
    - Cumplido con fotografía real del Aeropuerto de Bilbao y reporte METAR real.
 3. **Página con formulario completo**:
-   - `formulario.html` con 4 bloques temáticos (`fieldset`), etiquetas (`label`), inputs variados (`text`, `email`, `tel`, `date`, `number`, `radio`, `checkbox`, `file`), selector con `optgroup`, sugerencias con `datalist` y `textarea`.
+   - `formulario.html` organizado en 6 bloques temáticos (`fieldset`), etiquetas accesibles (`label`), selector para cursos de **Escuela de Vuelo** (PPL, NVFR, transición G1000) y selector para **Vuelo Turístico** con 6 rutas panorámicas (Gaztelugatxe, Cabo Matxitxako, Ría de Bilbao, Donostia, Santander y personalizada), `datalist` para aeronaves de Bilbao, inputs variados (`text`, `email`, `tel`, `date`, `number`, `radio`, `checkbox`, `file`) y `textarea`.
 4. **Layout común (Cabecera y Pie)**:
    - Todas las páginas comparten la misma cabecera (`<header id="cabecera-principal">`) con el logotipo y menú con la página activa (`.activo`), y el mismo pie de página (`<footer id="pie-principal">`) con la dirección en Loiu (Bizkaia).
 5. **Índice interno navegable por apartados**:
