@@ -457,9 +457,29 @@ figcaption {
   margin-bottom: 22px;
 }
 
-.caja-multimedia video, .caja-multimedia audio {
+.caja-multimedia audio {
   width: 100%;
   margin-top: 12px;
+}
+
+/* Contenedor responsivo para vídeos de YouTube (relación 16:9) */
+.video-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-top: 12px;
+}
+
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* --------------------------------------------------------------------------

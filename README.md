@@ -39,12 +39,10 @@ aerolink/
 │   ├── piper-pa28.jpg      # Foto real de la avioneta Piper PA-28 en plataforma
 │   ├── diamond-da40.jpg    # Foto real de la avioneta Diamond DA40
 │   ├── cabina.jpg          # Foto real del puesto de pilotaje e instrumentos de cabina
-│   ├── hangar.jpg          # Foto real del hangar de mantenimiento
-│   └── video-poster.svg    # Carátula del reproductor de vídeo
+│   └── hangar.jpg          # Foto real del hangar de mantenimiento
 │
 └── media/
-    ├── latido-refugio.wav  # Pista de audio para el reproductor HTML5
-    └── video-muestra.mp4   # Vídeo de muestra para el reproductor HTML5
+    └── latido-refugio.wav  # Pista de audio para el reproductor HTML5 (baliza instrumental)
 ```
 
 ---
