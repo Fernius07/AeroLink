@@ -250,6 +250,70 @@ section#seccion-bienvenida {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
+/* Galería de 3 imágenes por avión (Exterior, Cabina, Plano) */
+.galeria-avion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.item-galeria {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-galeria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.item-galeria.item-plano img {
+  object-fit: contain;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+.item-galeria p {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--color-principal);
+  background-color: #f8fafc;
+  border-top: 1px solid var(--color-borde);
+  margin: 0;
+  text-align: center;
+}
+
+/* Ficha de datos técnicos por avión */
+.contenedor-ficha-avion {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.tabla-datos-tecnicos {
+  width: 100%;
+  margin: 15px 0 20px 0;
+}
+
+.tabla-datos-tecnicos td:first-child {
+  font-weight: bold;
+  width: 35%;
+  background-color: #f8fafc;
+  color: var(--color-principal);
+}
+
 /* Estilos de botones */
 .boton {
   display: inline-block;

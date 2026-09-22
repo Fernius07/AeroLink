@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AeroLink | Formulario de Solicitud y Reserva</title>
+  <title>AeroLink | Formulario de Solicitud y Reserva - Aeropuerto de Bilbao</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
   <!-- CABECERA COMÚN -->
   <header id="cabecera-principal">
     <div class="contenedor-cabecera">
-      <a href="index.html" class="logotipo" title="AeroLink Aviación">
+      <a href="index.html" class="logotipo" title="AeroLink Aviación Bilbao">
         <img src="img/logo.svg" alt="Logotipo de AeroLink" width="180" height="45">
       </a>
       <nav id="menu-navegacion" aria-label="Menú principal">
@@ -40,12 +40,12 @@
 
     <!-- SECCIÓN 1: INSTRUCCIONES -->
     <section id="instrucciones-reserva">
-      <h1>Reserva de Vuelo y Cursos de Piloto</h1>
+      <h1>Reserva de Vuelo y Cursos de Piloto en Bilbao</h1>
       <p>
-        Rellena el siguiente formulario para solicitar la reserva de una de nuestras avionetas o para pedir información sobre los cursos de piloto privado.
+        Rellena el siguiente formulario para solicitar la reserva de cualquiera de nuestras 4 avionetas con base en el <strong>Aeropuerto de Bilbao (Loiu)</strong> o para pedir información sobre los cursos de piloto privado PPL(A).
       </p>
       <p>
-        Los campos marcados con un asterisco (<strong>*</strong>) son obligatorios. Si todavía no has visto qué avión te interesa, puedes consultar el <a href="flota.html">catálogo de la flota</a> o la <a href="detalle.html">ficha de la Cessna 172</a>.
+        Los campos marcados con un asterisco (<strong>*</strong>) son obligatorios. Si todavía no has decidido el modelo adecuado, consulta el <a href="flota.html">catálogo de la flota</a> o revisa las <a href="detalle.html">fichas técnicas completas con planos y fotos de cabina</a>.
       </p>
     </section>
 
@@ -53,7 +53,7 @@
 
     <!-- SECCIÓN 2: FORMULARIO -->
     <section id="formulario-seccion">
-      <h2>Formulario de Solicitud</h2>
+      <h2>Formulario de Solicitud de Operación Aérea</h2>
 
       <form id="formulario-reserva" action="#" method="post" enctype="multipart/form-data">
 
@@ -63,7 +63,7 @@
 
           <div class="campo">
             <label for="nombre">Nombre y apellidos: *</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez García">
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Aitor García Etxebarria">
           </div>
 
           <div class="campo">
@@ -74,7 +74,7 @@
 
           <div class="campo">
             <label for="correo">Correo electrónico: *</label>
-            <input type="email" id="correo" name="correo" required placeholder="tunombre@correo.com">
+            <input type="email" id="correo" name="correo" required placeholder="piloto@correo.com">
           </div>
 
           <div class="campo">
@@ -90,22 +90,22 @@
 
         <!-- BLOQUE 2: TIPO DE SOLICITUD -->
         <fieldset>
-          <legend>2. Modalidad y Perfil</legend>
+          <legend>2. Modalidad y Perfil Aeronáutico</legend>
 
           <div class="campo">
             <label>Indica tu situación actual: *</label>
             <div class="opciones-radio">
               <label class="opcion-inline">
                 <input type="radio" name="perfil" value="piloto" checked>
-                Soy piloto con licencia de vuelo
+                Soy piloto con licencia de vuelo en vigor (alquiler de flota o vuelo de chequeo)
               </label>
               <label class="opcion-inline">
                 <input type="radio" name="perfil" value="alumno">
-                Quiero empezar el curso de piloto
+                Quiero matricularme en el curso de piloto privado PPL(A)
               </label>
               <label class="opcion-inline">
                 <input type="radio" name="perfil" value="bautismo">
-                Quiero hacer un bautismo de vuelo (paseo con instructor)
+                Quiero hacer un vuelo de divulgación sobre la Costa Vasca (bautismo de vuelo)
               </label>
             </div>
           </div>
@@ -114,17 +114,19 @@
             <label for="actividad">Tipo de actividad deseada: *</label>
             <select id="actividad" name="actividad" required>
               <option value="">-- Elige una opción --</option>
-              <optgroup label="Alquiler de Avión">
-                <option value="alquiler-solo">Alquiler por libre (sin instructor)</option>
+              <optgroup label="Alquiler de Aeronave en Bilbao">
+                <option value="alquiler-solo">Alquiler por libre sin instructor (Piloto al mando)</option>
                 <option value="alquiler-instructor">Vuelo con instructor acompañante</option>
+                <option value="travesia-cantabrico">Travesía por el Cantábrico (Bilbao - Santander / San Sebastián)</option>
               </optgroup>
-              <optgroup label="Cursos de Escuela">
-                <option value="curso-ppl">Curso de Piloto Privado PPL</option>
-                <option value="curso-nocturno">Habilitación de Vuelo Nocturno</option>
+              <optgroup label="Cursos de Escuela ATO-248">
+                <option value="curso-ppl">Curso Completo Piloto Privado PPL(A)</option>
+                <option value="curso-nocturno">Habilitación de Vuelo Nocturno NVFR</option>
+                <option value="adaptacion-g1000">Curso de Adaptación a Cabina Digital Garmin G1000</option>
               </optgroup>
-              <optgroup label="Bautismos y Paseos">
-                <option value="bautismo-30">Vuelo divulgación de 30 minutos</option>
-                <option value="bautismo-60">Vuelo divulgación de 60 minutos</option>
+              <optgroup label="Bautismos de Vuelo">
+                <option value="bautismo-30">Vuelo Costa Vasca y Gaztelugatxe (30 minutos)</option>
+                <option value="bautismo-60">Experiencia 'Piloto por un Día' sobre la Ría y Costa (60 minutos)</option>
               </optgroup>
             </select>
           </div>
@@ -132,62 +134,62 @@
 
         <!-- BLOQUE 3: DETALLES DEL VUELO -->
         <fieldset>
-          <legend>3. Detalles de la Reserva</legend>
+          <legend>3. Aeronave y Parámetros del Vuelo</legend>
 
           <div class="campo">
-            <label for="avion">Avión que prefieres:</label>
-            <input list="lista-aviones" id="avion" name="avion" placeholder="Escribe o elige un modelo">
+            <label for="avion">Aeronave solicitada:</label>
+            <input list="lista-aviones" id="avion" name="avion" placeholder="Escribe o selecciona una de las 4 aeronaves">
             <datalist id="lista-aviones">
-              <option value="Cessna 172S Skyhawk (EC-MRX)">
-              <option value="Piper PA-28 Archer (EC-KLM)">
-              <option value="Diamond DA40 Star (EC-TGO)">
-              <option value="Tecnam P2002 (EC-JPR)">
-              <option value="Cualquiera que esté disponible">
+              <option value="Cessna 172S Skyhawk (EC-MRX) - 180 HP • 4 Plazas">
+              <option value="Piper PA-28 Archer (EC-KLM) - 180 HP • 4 Plazas">
+              <option value="Diamond DA40 NG Star (EC-TGO) - Jet-A1 / IFR • 4 Plazas">
+              <option value="Tecnam P2002 Sierra (EC-JPR) - Rotax 100 HP • 2 Plazas">
+              <option value="Sin preferencia (a criterio de la jefatura de vuelos)">
             </datalist>
           </div>
 
           <div class="campo">
-            <label for="fecha-vuelo">Fecha solicitada para volar: *</label>
+            <label for="fecha-vuelo">Fecha solicitada para el vuelo: *</label>
             <input type="date" id="fecha-vuelo" name="fecha_vuelo" required>
           </div>
 
           <div class="campo">
-            <label for="horas">Horas estimadas de vuelo: *</label>
-            <input type="number" id="horas" name="horas" min="1" max="8" step="0.5" value="1" required>
+            <label for="horas">Horas estimadas de vuelo (tiempo de calzo a calzo): *</label>
+            <input type="number" id="horas" name="horas" min="0.5" max="8" step="0.5" value="1.5" required>
           </div>
 
           <div class="campo">
-            <label for="documento">Adjuntar documento o licencia (opcional):</label>
+            <label for="documento">Adjuntar copia de licencia o certificado médico (opcional):</label>
             <input type="file" id="documento" name="documento" accept=".pdf, .jpg, .png">
-            <span class="nota-campo">Formatos permitidos: PDF o imagen JPG/PNG.</span>
+            <span class="nota-campo">Formatos válidos: PDF o imagen JPG/PNG (máx. 5 MB).</span>
           </div>
 
           <div class="campo">
-            <label for="mensaje">Comentarios o ruta que te gustaría hacer: *</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntanos brevemente si quieres practicar maniobras, hacer alguna ruta concreta o si tienes alguna duda..."></textarea>
+            <label for="mensaje">Ruta planificada o comentarios especiales: *</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Indica brevemente la ruta prevista (ej. Salida LEBB - Bermeo - Gaztelugatxe - LEBB), maniobras a practicar o cualquier consulta..."></textarea>
           </div>
         </fieldset>
 
-        <!-- BLOQUE 4: CONDICIONES -->
+        <!-- BLOQUE 4: CONDICIONES LEGALES -->
         <fieldset>
-          <legend>4. Condiciones y Envío</legend>
+          <legend>4. Condiciones Operativas y Protección de Datos</legend>
 
           <div class="campo">
             <div class="opciones-checkbox">
               <label class="opcion-inline">
                 <input type="checkbox" id="condiciones" name="condiciones" required>
-                <span>Acepto las normas de seguridad del club y las instrucciones del personal de vuelo. *</span>
+                <span>Acepto las normas de seguridad del club y las instrucciones de control del Aeropuerto de Bilbao (LEBB). *</span>
               </label>
               <label class="opcion-inline">
                 <input type="checkbox" id="privacidad" name="privacidad" required>
-                <span>Acepto la política de protección de datos para la gestión de la reserva. *</span>
+                <span>Acepto el tratamiento de mis datos de contacto para la tramitación de la reserva conforme al RGPD. *</span>
               </label>
             </div>
           </div>
 
           <div class="botones-formulario">
             <button type="reset" class="boton boton-secundario">Borrar datos</button>
-            <button type="submit" class="boton boton-principal">Enviar solicitud</button>
+            <button type="submit" class="boton boton-principal">Enviar solicitud de reserva</button>
           </div>
         </fieldset>
 
@@ -198,13 +200,13 @@
 
     <!-- SECCIÓN 3: AVISO LEGAL Y PROTECCIÓN -->
     <section id="aviso-legal">
-      <h2>Información de Interés</h2>
+      <h2>Información de Interés Operacional</h2>
       <article class="columna-principal">
-        <h3>Condiciones de la Reserva</h3>
+        <h3>Condiciones del Servicio en Bilbao Loiu</h3>
         <ul class="lista-puntos">
-          <li><strong>Meteorología:</strong> Si el día de tu vuelo hace mal tiempo, lluvia o niebla, te avisaremos con antelación para cambiar la fecha sin coste alguno.</li>
-          <li><strong>Puntualidad:</strong> Se ruega llegar al hangar 15 minutos antes de la hora fijada para hacer la inspección con calma.</li>
-          <li><strong>Protección de datos:</strong> Los datos recogidos solo se usarán para gestionar tu reserva y no se compartirán con empresas de publicidad.</li>
+          <li><strong>Meteorología cantábrica:</strong> En caso de niebla costera, nubes bajas en el valle del Txorierri o viento fuera de límites de seguridad, el vuelo se aplazará sin recargo.</li>
+          <li><strong>Acceso a plataforma:</strong> El punto de encuentro es el mostrador de operaciones de aviación general del Aeropuerto de Bilbao 20 minutos antes de la hora acordada.</li>
+          <li><strong>Protección de datos:</strong> Los datos personales se tratarán únicamente con fines de despacho de vuelo y seguro aeronáutico.</li>
         </ul>
       </article>
     </section>
@@ -215,9 +217,9 @@
   <footer id="pie-principal">
     <div class="contenedor-pie">
       <div class="seccion-pie">
-        <h4>AeroLink Aviación</h4>
-        <p>Club de vuelo deportivo y escuela autorizada ATO-248.</p>
-        <p>Aeródromo de Cuatro Vientos, Hangar 4, Madrid.</p>
+        <h4>AeroLink Aviación Bilbao</h4>
+        <p>Club de vuelo y escuela de pilotos autorizada ATO-248.</p>
+        <p>Terminal de Aviación General, Aeropuerto de Bilbao (Loiu), 48180 Bizkaia.</p>
       </div>
 
       <div class="seccion-pie">
@@ -225,7 +227,7 @@
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="flota.html">Flota de Aeronaves</a></li>
-          <li><a href="detalle.html">Ficha Cessna 172</a></li>
+          <li><a href="detalle.html">Fichas Técnicas</a></li>
           <li><a href="formulario.html">Formulario de Reserva</a></li>
         </ul>
       </div>
@@ -241,7 +243,7 @@
     </div>
 
     <div class="copyright">
-      <p>&copy; 2026 AeroLink Aviación - Entrega 1 de Ingeniería Web (Alumno DNI: 79078777Q)</p>
+      <p>&copy; 2026 AeroLink Aviación Bilbao - Entrega 1 de Ingeniería Web (Alumno DNI: 79078777Q)</p>
     </div>
   </footer>
 

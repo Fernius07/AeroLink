@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AeroLink | Catálogo y Tabla de la Flota</title>
+  <title>AeroLink | Catálogo y Tabla de la Flota - Aeropuerto de Bilbao</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,7 +11,7 @@
   <!-- CABECERA COMÚN -->
   <header id="cabecera-principal">
     <div class="contenedor-cabecera">
-      <a href="index.html" class="logotipo" title="AeroLink Aviación">
+      <a href="index.html" class="logotipo" title="AeroLink Aviación Bilbao">
         <img src="img/logo.svg" alt="Logotipo de AeroLink" width="180" height="45">
       </a>
       <nav id="menu-navegacion" aria-label="Menú principal">
@@ -32,76 +32,92 @@
     <nav class="indice-pagina" aria-label="Índice interno">
       <p>Apartados de esta página:</p>
       <ul>
-        <li><a href="#descripcion-flota">1. Nuestra Flota</a></li>
-        <li><a href="#listado-modelos">2. Modelos Disponibles</a></li>
-        <li><a href="#tabla-aeronaves">3. Tabla Comparativa</a></li>
-        <li><a href="#glosario">4. Glosario de Aviación</a></li>
+        <li><a href="#descripcion-flota">1. Nuestra Flota en Bilbao</a></li>
+        <li><a href="#listado-modelos">2. Los 4 Modelos Disponibles</a></li>
+        <li><a href="#tabla-aeronaves">3. Tabla Comparativa de Rendimiento</a></li>
+        <li><a href="#glosario">4. Glosario Aeronáutico</a></li>
       </ul>
     </nav>
 
     <!-- SECCIÓN 1: INTRODUCCIÓN -->
     <section id="descripcion-flota">
-      <h1>Nuestras Aeronaves</h1>
+      <h1>Flota de Aeronaves en el Aeropuerto de Bilbao</h1>
       <p>
-        En AeroLink disponemos de avionetas monomotores pensadas para cubrir diferentes necesidades: desde el alumno que realiza su primer vuelo solo, hasta el piloto experimentado que desea hacer una ruta de fin de semana con amigos o familia.
+        En AeroLink operamos una flota compuesta por cuatro aeronaves monomotores con base permanente en la terminal de aviación general de <strong>Bilbao Loiu (LEBB)</strong>. Cada modelo cuenta con características adaptadas a distintas fases del entrenamiento de pilotos y vuelos de travesía.
       </p>
       <p>
-        Puedes revisar la información de cada aparato en las tarjetas y consultar los datos técnicos detallados en la <a href="#tabla-aeronaves">tabla comparativa</a>.
+        Haz clic en cualquiera de los aviones para ver su ficha técnica ampliada con <strong>fotos de exterior, cabina y plano ortogonal de tres vistas</strong> en nuestra página de <a href="detalle.html">fichas técnicas detalladas</a>.
       </p>
     </section>
 
     <hr>
 
-    <!-- SECCIÓN 2: TARJETAS DE MODELOS -->
+    <!-- SECCIÓN 2: TARJETAS DE LOS 4 MODELOS -->
     <section id="listado-modelos">
-      <h2>Avionetas Disponibles para Vuelo</h2>
+      <h2>Nuestras 4 Aeronaves en Servicio</h2>
 
       <div class="contenedor-tarjetas">
 
-        <!-- Modelo 1 -->
+        <!-- Modelo 1: Cessna 172 -->
         <article class="tarjeta">
           <img src="img/cessna172.jpg" alt="Cessna 172 Skyhawk en vuelo" width="400" height="200">
           <div class="tarjeta-cuerpo">
-            <span class="etiqueta">Matrícula: EC-MRX</span>
-            <h3>Cessna 172S Skyhawk</h3>
+            <span class="etiqueta">Ala Alta • Matrícula: EC-MRX</span>
+            <h3>Cessna 172S Skyhawk SP</h3>
             <p>
-              Motor Lycoming de 180 caballos y 4 plazas. Es el avión de escuela más fiable y sencillo de volar. Muy resistente y suave en los aterrizajes.
+              Motor Lycoming IO-360 de 180 HP y 4 plazas. El monomotor más seguro del mundo, muy dócil en la aproximación al aeropuerto de Bilbao.
             </p>
           </div>
           <div class="tarjeta-pie">
-            <a href="detalle.html" class="boton boton-principal">Ver ficha completa</a>
+            <a href="detalle.html#cessna172" class="boton boton-principal">Ver ficha técnica y planos</a>
             <a href="formulario.html" class="boton boton-secundario">Reservar</a>
           </div>
         </article>
 
-        <!-- Modelo 2 -->
+        <!-- Modelo 2: Piper PA-28 -->
         <article class="tarjeta">
-          <img src="img/piper-pa28.jpg" alt="Piper PA-28 Archer aparcada" width="400" height="200">
+          <img src="img/piper-pa28.jpg" alt="Piper PA-28 Archer en plataforma de aeródromo" width="400" height="200">
           <div class="tarjeta-cuerpo">
-            <span class="etiqueta">Matrícula: EC-KLM</span>
-            <h3>Piper PA-28 Archer</h3>
+            <span class="etiqueta">Ala Baja • Matrícula: EC-KLM</span>
+            <h3>Piper PA-28-181 Archer III</h3>
             <p>
-              Avión de ala baja con excelente respuesta de mandos. Cuenta con una gran autonomía de vuelo y es muy cómoda en navegaciones largas.
+              Monomotor de ala baja con motor de 180 HP. Excelente estabilidad en crucero para travesías por el Cantábrico y la meseta norte.
             </p>
           </div>
           <div class="tarjeta-pie">
-            <a href="detalle.html" class="boton boton-principal">Ver ficha completa</a>
+            <a href="detalle.html#piper-pa28" class="boton boton-principal">Ver ficha técnica y planos</a>
             <a href="formulario.html" class="boton boton-secundario">Reservar</a>
           </div>
         </article>
 
-        <!-- Modelo 3 -->
+        <!-- Modelo 3: Diamond DA40 -->
         <article class="tarjeta">
           <img src="img/diamond-da40.jpg" alt="Diamond DA40 Star moderna" width="400" height="200">
           <div class="tarjeta-cuerpo">
-            <span class="etiqueta">Matrícula: EC-TGO</span>
-            <h3>Diamond DA40 Star</h3>
+            <span class="etiqueta">Compuesto • Matrícula: EC-TGO</span>
+            <h3>Diamond DA40 NG Star</h3>
             <p>
-              Avión moderno fabricado en materiales compuestos. Su cúpula de cristal permite una vista excelente durante todo el recorrido.
+              Aparato moderno fabricado en fibra de carbono con motor turbodiésel Austro Engine de 168 HP alimentado por queroseno Jet-A1.
             </p>
           </div>
           <div class="tarjeta-pie">
-            <a href="detalle.html" class="boton boton-principal">Ver ficha completa</a>
+            <a href="detalle.html#diamond-da40" class="boton boton-principal">Ver ficha técnica y planos</a>
+            <a href="formulario.html" class="boton boton-secundario">Reservar</a>
+          </div>
+        </article>
+
+        <!-- Modelo 4: Tecnam P2002 -->
+        <article class="tarjeta">
+          <img src="img/tecnam_p2002.jpg" alt="Avioneta ligera Tecnam P2002 Sierra" width="400" height="200">
+          <div class="tarjeta-cuerpo">
+            <span class="etiqueta">Biplaza LSA • Matrícula: EC-JPR</span>
+            <h3>Tecnam P2002 Sierra</h3>
+            <p>
+              Aeronave biplaza ligera con motor Rotax 912 de 100 HP. Muy maniobrable y con coste horario muy económico para las primeras horas de escuela.
+            </p>
+          </div>
+          <div class="tarjeta-pie">
+            <a href="detalle.html#tecnam-p2002" class="boton boton-principal">Ver ficha técnica y planos</a>
             <a href="formulario.html" class="boton boton-secundario">Reservar</a>
           </div>
         </article>
@@ -111,24 +127,25 @@
 
     <hr>
 
-    <!-- SECCIÓN 3: TABLA DE RENDIMIENTO -->
+    <!-- SECCIÓN 3: TABLA DE RENDIMIENTO OFICIAL (DATOS POH) -->
     <section id="tabla-aeronaves">
-      <h2>Tabla Comparativa de la Flota</h2>
+      <h2>Tabla Comparativa Oficial de la Flota (Datos Manuales POH)</h2>
       <p>
-        Resumen de las características técnicas, plazas y estado de mantenimiento de cada aeronave:
+        Datos técnicos certificados extraídos de los manuales de vuelo del fabricante de cada aeronave:
       </p>
 
       <div class="tabla-contenedor">
         <table>
-          <caption>Tabla 1: Características de las aeronaves del club AeroLink (Septiembre 2026)</caption>
+          <caption>Tabla 1: Comparativa de rendimiento de la flota AeroLink con base en Bilbao (LEBB)</caption>
           <thead>
             <tr>
               <th scope="col">Matrícula</th>
-              <th scope="col">Modelo</th>
-              <th scope="col">Tipo Ala</th>
+              <th scope="col">Modelo Exacto</th>
+              <th scope="col">Motorización</th>
               <th scope="col">Potencia</th>
               <th scope="col">Plazas</th>
-              <th scope="col">Velocidad Crucero</th>
+              <th scope="col">Crucero (KTAS)</th>
+              <th scope="col">Alcance (NM)</th>
               <th scope="col">Combustible</th>
               <th scope="col">Estado</th>
             </tr>
@@ -136,49 +153,53 @@
           <tbody>
             <tr>
               <th scope="row">EC-MRX</th>
-              <td><strong>Cessna 172S</strong></td>
-              <td>Ala alta</td>
+              <td><strong>Cessna 172S Skyhawk</strong></td>
+              <td>Lycoming IO-360-L2A</td>
               <td>180 HP</td>
               <td>4</td>
-              <td>120 nudos (222 km/h)</td>
+              <td>124 kts (230 km/h)</td>
+              <td>640 NM</td>
               <td>AVGAS 100LL</td>
               <td>Disponible</td>
             </tr>
             <tr>
               <th scope="row">EC-KLM</th>
-              <td><strong>Piper PA-28</strong></td>
-              <td>Ala baja</td>
+              <td><strong>Piper PA-28-181 Archer</strong></td>
+              <td>Lycoming O-360-A4M</td>
               <td>180 HP</td>
               <td>4</td>
-              <td>125 nudos (231 km/h)</td>
+              <td>128 kts (237 km/h)</td>
+              <td>520 NM</td>
               <td>AVGAS 100LL</td>
               <td>Disponible</td>
             </tr>
             <tr>
               <th scope="row">EC-TGO</th>
-              <td><strong>Diamond DA40</strong></td>
-              <td>Ala baja</td>
+              <td><strong>Diamond DA40 NG Star</strong></td>
+              <td>Austro Engine AE300</td>
               <td>168 HP</td>
               <td>4</td>
-              <td>145 nudos (268 km/h)</td>
-              <td>Jet-A1</td>
+              <td>154 kts (285 km/h)</td>
+              <td>940 NM</td>
+              <td>Jet-A1 / Diésel</td>
               <td>Disponible</td>
             </tr>
             <tr>
               <th scope="row">EC-JPR</th>
-              <td><strong>Tecnam P2002</strong></td>
-              <td>Ala baja</td>
+              <td><strong>Tecnam P2002 Sierra</strong></td>
+              <td>Rotax 912 S2</td>
               <td>100 HP</td>
               <td>2</td>
-              <td>110 nudos (203 km/h)</td>
-              <td>Gasolina 95</td>
-              <td>En revisión 100h</td>
+              <td>115 kts (213 km/h)</td>
+              <td>450 NM</td>
+              <td>Gasolina 95 / AVGAS</td>
+              <td>Disponible</td>
             </tr>
           </tbody>
           <tfoot>
             <tr>
-              <td colspan="4">Total de aeronaves: 4 unidades</td>
-              <td colspan="4">Todas las aeronaves cuentan con seguro de responsabilidad civil obligatorio.</td>
+              <td colspan="4">Total de aeronaves: 4 unidades en hangar</td>
+              <td colspan="5">Todas las aeronaves operan con certificado de aeronavegabilidad en vigor (EASA Part-ML).</td>
             </tr>
           </tfoot>
         </table>
@@ -189,30 +210,30 @@
 
     <!-- SECCIÓN 4: GLOSARIO -->
     <section id="glosario">
-      <h2>Glosario de Términos de Aviación</h2>
+      <h2>Glosario de Términos Aeronáuticos</h2>
       <p>
-        Si estás empezando en el mundo del vuelo, estas definiciones te ayudarán a entender el lenguaje básico:
+        Definiciones básicas para comprender el funcionamiento y los datos técnicos de los aviones:
       </p>
 
       <dl class="glosario">
-        <dt>VFR (Visual Flight Rules)</dt>
+        <dt>POH (Pilot's Operating Handbook)</dt>
         <dd>
-          Vuelo visual. Son las reglas de vuelo básicas donde el piloto navega viendo el terreno y vigilando el horizonte y otras aeronaves.
+          Manual de operaciones del piloto. Es el documento oficial certificado por la autoridad aeronáutica donde figuran las velocidades límites, peso máximo, actuaciones y listas de comprobación obligatorias.
         </dd>
 
-        <dt>IFR (Instrument Flight Rules)</dt>
+        <dt>KTAS (Knots True Airspeed)</dt>
         <dd>
-          Vuelo instrumental. Reglas que permiten volar dentro de nubes o de noche guiándose exclusivamente por las pantallas y relojes de la cabina.
+          Nudos de velocidad verdadera. Indica la velocidad real del avión respecto al aire que atraviesa, corregida por altitud y temperatura. Un nudo equivale a 1,852 km/h.
         </dd>
 
-        <dt>QNH</dt>
+        <dt>MTOW (Maximum Takeoff Weight)</dt>
         <dd>
-          Ajuste de presión del altímetro. Permite que el reloj de altitud marque la altura real del avión sobre el nivel del mar.
+          Peso máximo autorizado al despegue. Es el límite de masa estructural que el avión no puede sobrepasar al soltar frenos en pista.
         </dd>
 
-        <dt>Nudo (Knot)</dt>
+        <dt>VFR / IFR</dt>
         <dd>
-          Unidad de velocidad que se usa en aviación y navegación marítima. Un nudo equivale a 1,852 kilómetros por hora.
+          Reglas de vuelo visual (VFR) en las que el piloto mantiene separación del terreno por referencias exteriores, frente a reglas instrumentales (IFR) donde se vuela con apoyo de aviónica y control radar.
         </dd>
       </dl>
 
@@ -227,9 +248,9 @@
   <footer id="pie-principal">
     <div class="contenedor-pie">
       <div class="seccion-pie">
-        <h4>AeroLink Aviación</h4>
-        <p>Club de vuelo deportivo y escuela autorizada ATO-248.</p>
-        <p>Aeródromo de Cuatro Vientos, Hangar 4, Madrid.</p>
+        <h4>AeroLink Aviación Bilbao</h4>
+        <p>Club de vuelo y escuela de pilotos autorizada ATO-248.</p>
+        <p>Terminal de Aviación General, Aeropuerto de Bilbao (Loiu), 48180 Bizkaia.</p>
       </div>
 
       <div class="seccion-pie">
@@ -237,7 +258,7 @@
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="flota.html">Flota de Aeronaves</a></li>
-          <li><a href="detalle.html">Ficha Cessna 172</a></li>
+          <li><a href="detalle.html">Fichas Técnicas</a></li>
           <li><a href="formulario.html">Formulario de Reserva</a></li>
         </ul>
       </div>
@@ -253,7 +274,7 @@
     </div>
 
     <div class="copyright">
-      <p>&copy; 2026 AeroLink Aviación - Entrega 1 de Ingeniería Web (Alumno DNI: 79078777Q)</p>
+      <p>&copy; 2026 AeroLink Aviación Bilbao - Entrega 1 de Ingeniería Web (Alumno DNI: 79078777Q)</p>
     </div>
   </footer>
 

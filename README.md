@@ -1,18 +1,19 @@
-# AeroLink Aviación - Prototipo Web para Ingeniería Web
+# AeroLink Aviación Bilbao - Prototipo Web para Ingeniería Web
 
 > **Asignatura**: Ingeniería Web (IW)  
 > **Entrega**: Primera Entrega (E1) - Maqueta y Prototipo HTML5 & CSS3  
 > **Alumno / DNI**: `79078777Q`  
-> **Archivo de entrega**: `IW-79078777Q-E1.zip`  
+> **Archivo comprimido**: `IW-79078777Q-E1.zip`  
+> **Base de operaciones**: Aeropuerto de Bilbao (LEBB / BIO / Loiu, Bizkaia)  
 > **Tecnologías**: HTML5 y CSS3 puros (sin JavaScript ni servidor backend).
 
 ---
 
 ## 1. Temática y Descripción
 
-**AeroLink** es la maqueta web de un club de aviación y escuela de pilotos con base en Madrid. El sitio web permite a los usuarios conocer las instalaciones, consultar las avionetas disponibles (con fotos reales y datos técnicos), ver la ficha detallada de una de ellas con su lista de comprobación (*checklist*) y realizar una reserva o pedir información a través de un formulario.
+**AeroLink Bilbao** es el prototipo web de un club de aviación deportiva y escuela de pilotos autorizada (ATO-248) con base en la terminal de aviación general del **Aeropuerto de Bilbao (Loiu, Bizkaia)**. El portal permite a alumnos y pilotos conocer las instalaciones, informarse sobre la meteorología oficial del aeropuerto (reporte METAR de Bilbao), consultar las 4 aeronaves de la flota, examinar las **fichas técnicas oficiales completas con fotografías reales de exterior, cabina y planos técnicos de tres vistas**, y cumplimentar una solicitud de reserva o curso.
 
-La temática elegida es libre y pertenece al sector del **transporte y la aviación deportiva**, evitando todos los ejemplos del enunciado (proyectos, tickets/incidencias, CRM o inventario).
+La temática seleccionada pertenece al ámbito del **transporte y la aviación general**, excluyendo expresamente todos los ejemplos citados en el enunciado (gestión de proyectos, incidencias/tickets, CRM o inventario de stock).
 
 ---
 
@@ -21,25 +22,37 @@ La temática elegida es libre y pertenece al sector del **transporte y la aviaci
 ```text
 aerolink/
 │
-├── index.html              # Portada: bienvenida, seguridad, flota destacada, rutas de vuelo y meteorología
-├── flota.html              # Catálogo con fotos reales, tabla comparativa técnica y glosario
-├── detalle.html            # Ficha técnica de la Cessna 172 con foto real, cabina, checklist pre-vuelo y requisitos
-├── formulario.html         # Formulario completo con validación HTML5 para solicitar reservas o cursos
-├── url_sitio.txt           # Archivo de texto con el enlace de la web desplegada en Vercel
-├── README.md               # Esta memoria explicativa del proyecto
+├── index.html              # Portada: bienvenida, seguridad, 4 aeronaves, rutas de la Costa Vasca y METAR Bilbao
+├── flota.html              # Catálogo con las 4 avionetas, tabla comparativa de rendimiento POH y glosario
+├── detalle.html            # 4 Fichas Técnicas Oficiales (Exterior, Cabina y Plano de cada uno de los 4 aviones)
+├── formulario.html         # Formulario de solicitud de vuelo y cursos en Bilbao con validación HTML5
+├── url_sitio.txt           # Archivo con la dirección web pública de despliegue en Vercel
+├── README.md               # Memoria explicativa del proyecto
 ├── empaquetar_entrega.ps1  # Script para generar automáticamente el archivo IW-79078777Q-E1.zip
 │
 ├── css/
-│   └── styles.css          # Hoja de estilos con variables, diseño responsive (Flexbox) y selectores CSS
+│   └── styles.css          # Hoja de estilos con variables, diseño responsive (Flexbox/Grid) y selectores CSS
 │
-├── img/
-│   ├── logo.svg            # Logotipo de AeroLink
-│   ├── hero-avion.jpg      # Foto real de avioneta al atardecer en pista
-│   ├── cessna172.jpg       # Foto real de la Cessna 172 en vuelo
-│   ├── piper-pa28.jpg      # Foto real de la avioneta Piper PA-28 en plataforma
-│   ├── diamond-da40.jpg    # Foto real de la avioneta Diamond DA40
-│   ├── cabina.jpg          # Foto real del puesto de pilotaje e instrumentos de cabina
-│   └── hangar.jpg          # Foto real del hangar de mantenimiento
+└── img/
+    ├── logo.svg            # Logotipo de AeroLink
+    ├── hero-bilbao.jpg     # Fotografía real del Aeropuerto de Bilbao (Loiu)
+    ├── hangar.jpg          # Fotografía real de hangar con avionetas
+    │
+    ├── cessna172.jpg           # [Cessna 172S] Foto exterior real en vuelo
+    ├── cessna172_cabina.jpg    # [Cessna 172S] Foto real de cabina e instrumental
+    ├── cessna172_plano.svg     # [Cessna 172S] Plano oficial de tres vistas con cotas
+    │
+    ├── piper-pa28.jpg          # [Piper PA-28] Foto exterior real en plataforma
+    ├── piper_pa28_cabina.jpg   # [Piper PA-28] Foto real de cabina de mandos
+    ├── piper_pa28_plano.png    # [Piper PA-28] Plano oficial de tres vistas con cotas
+    │
+    ├── diamond-da40.jpg        # [Diamond DA40] Foto exterior real
+    ├── diamond_da40_cabina.jpg # [Diamond DA40] Foto real de cabina Garmin G1000
+    ├── diamond_da40_plano.svg  # [Diamond DA40] Plano oficial de tres vistas con cotas
+    │
+    ├── tecnam_p2002.jpg        # [Tecnam P2002] Foto exterior real en tierra
+    ├── tecnam_p2002_cabina.jpg # [Tecnam P2002] Foto real de cabina biplaza
+    └── tecnam_p2002_plano.svg  # [Tecnam P2002] Plano oficial de tres vistas con cotas
 ```
 
 ---
@@ -47,56 +60,52 @@ aerolink/
 ## 3. Cumplimiento de los Requisitos del Enunciado
 
 1. **Mínimo 4 páginas enlazadas entre sí**:
-   - `index.html`, `flota.html`, `detalle.html` y `formulario.html`. Desde cualquier página se puede navegar a las demás usando el menú de cabecera o el pie de página.
+   - `index.html`, `flota.html`, `detalle.html` y `formulario.html`, todas interconectadas con enlaces en cabecera, botones de contenido y pie de página.
 2. **Página principal llamada `index.html`**:
-   - Cumplido.
-3. **Página con formulario**:
-   - `formulario.html` contiene 4 bloques temáticos (`fieldset`), etiquetas (`label`) para cada campo, campos de texto, email, teléfono, fecha, número, opciones de radio, casillas de verificación, lista desplegable (`select` con `optgroup`), sugerencias con `datalist`, subida de ficheros (`input type="file"`) y área de texto (`textarea`).
+   - Cumplido con fotografía real del Aeropuerto de Bilbao y reporte METAR real.
+3. **Página con formulario completo**:
+   - `formulario.html` con 4 bloques temáticos (`fieldset`), etiquetas (`label`), inputs variados (`text`, `email`, `tel`, `date`, `number`, `radio`, `checkbox`, `file`), selector con `optgroup`, sugerencias con `datalist` y `textarea`.
 4. **Layout común (Cabecera y Pie)**:
-   - Todas las páginas comparten la misma cabecera (`<header id="cabecera-principal">`) con el logotipo y el menú de navegación con la página actual destacada (`.activo`), y el mismo pie de página (`<footer id="pie-principal">`).
-5. **Índice interno navegable por página**:
-   - Cada una de las 4 páginas incluye al principio un menú de navegación por anclas (`<nav class="indice-pagina">`) que permite saltar a las diferentes secciones de esa misma página.
-6. **Uso de elementos HTML explicados en clase**:
-   - Estructura: `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`.
-   - Textos: `<h1>`, `<h2>`, `<h3>`, `<p>`, `<strong>`, `<em>`, `<blockquote>`, `<cite>`, `<mark>`, `<small>`, `<time>`, `<hr>`, `<pre>`, `<code>`.
-   - Listas: Lista no ordenada (`<ul>`, `<li>`), lista ordenada secuencial (`<ol>`, `<li>`) y lista de definición (`<dl>`, `<dt>`, `<dd>`).
-   - Tablas: `<table>`, `<caption>`, `<thead>`, `<tbody>`, `<tfoot>`, `<tr>`, `<th>`, `<td>`.
-   - Multimedia: `<figure>`, `<img>` (fotos reales en JPG con atributo `alt`), `<figcaption>`, `<video>`, `<audio>`.
-   - Formularios: `<form>`, `<fieldset>`, `<legend>`, `<label>`, `<input>`, `<select>`, `<optgroup>`, `<datalist>`, `<textarea>`, `<button type="submit">`, `<button type="reset">`.
-7. **Selectores CSS convenientes**:
-   - Selectores de etiqueta (generales): `body`, `h1`, `h2`, `p`, `table`, `a`, `img`, `fieldset`, `button`.
-   - Selectores de clase: `.tarjeta`, `.boton`, `.indice-pagina`, `.etiqueta`, `.campo`, `.tabla-contenedor`.
-   - Selectores de identificador (ID): `#cabecera-principal`, `#menu-navegacion`, `#pie-principal`, `#formulario-reserva`.
-   - Pseudo-clases: `:hover` en enlaces y botones, `:focus` en campos del formulario, `:nth-child(even)` en las filas de la tabla.
+   - Todas las páginas comparten la misma cabecera (`<header id="cabecera-principal">`) con el logotipo y menú con la página activa (`.activo`), y el mismo pie de página (`<footer id="pie-principal">`) con la dirección en Loiu (Bizkaia).
+5. **Índice interno navegable por apartados**:
+   - Cada una de las 4 páginas incluye al inicio un menú de anclas (`<nav class="indice-pagina">`) que permite saltar a las diferentes secciones. En `detalle.html` permite saltar directamente a la ficha de cualquiera de los 4 aviones.
+6. **Las 4 Fichas Técnicas con 3 imágenes cada una y datos reales de POH**:
+   - Cada avión cuenta con:
+     1. Foto exterior real.
+     2. Foto real de cabina de pilotaje.
+     3. Plano ortogonal oficial de 3 vistas con cotas en metros.
+     4. Tabla de especificaciones con datos certificados de los manuales de vuelo del fabricante (motor, potencia, consumo, velocidades KTAS/KIAS, techo de servicio, carreras de despegue y pesos).
+7. **Selectores CSS variados y estructurados**:
+   - Selectores de etiqueta (generales), selectores de clase, selectores de identificador (ID), combinadores y pseudo-clases (`:hover`, `:focus`, `:nth-child(even)`).
 8. **Validación W3C**:
-   - Código limpio, etiquetas cerradas correctamente y atributos obligatorios presentes (`alt`, `lang="es"`, `charset="UTF-8"`).
-9. **URL de proveedor externo y archivo comprimido**:
-   - Archivo `url_sitio.txt` preparado con la URL de Vercel y script para generar `IW-79078777Q-E1.zip`.
+   - Código limpio, semántico, etiquetas cerradas y atributos obligatorios (`alt`, `lang="es"`, `charset="UTF-8"`).
+9. **Normas de entrega del archivo ZIP**:
+   - Formato exigido: `IW-79078777Q-E1.zip`, conteniendo los archivos necesarios y `url_sitio.txt`.
 
 ---
 
-## 4. Instrucciones para Subir a GitHub y Vercel
+## 4. Instrucciones para Subir a GitHub y Desplegar en Vercel
 
 ### Paso 1: Subir a GitHub
 ```bash
 git add .
-git commit -m "Entrega 1 IW: Prototipo AeroLink con fotos reales (DNI 79078777Q)"
+git commit -m "Entrega 1 IW: Prototipo AeroLink Bilbao con 4 fichas completas (DNI 79078777Q)"
 git branch -M main
-git remote add origin https://github.com/TU-USUARIO/aerolink-aviacion.git
+git remote add origin https://github.com/TU-USUARIO/aerolink-bilbao.git
 git push -u origin main
 ```
 
 ### Paso 2: Desplegar en Vercel
-1. Entra en [vercel.com](https://vercel.com/) e inicia sesión con tu usuario de GitHub.
-2. Pulsa en **Add New...** > **Project** y selecciona el repositorio `aerolink-aviacion`.
-3. Haz clic en **Deploy**. Al ser una web estática en HTML y CSS se publicará en unos 15 segundos.
-4. Copia la URL pública que te proporcione Vercel y pégala en el fichero `url_sitio.txt`.
+1. Inicia sesión en [vercel.com](https://vercel.com/) con tu cuenta de GitHub.
+2. Pulsa en **Add New...** > **Project** e importa el repositorio de AeroLink.
+3. Haz clic en **Deploy**. Al ser un sitio web estático puro (HTML y CSS), el despliegue tarda apenas unos segundos.
+4. Pega la URL pública en el archivo `url_sitio.txt`.
 
 ---
 
 ## 5. Cómo Generar el Archivo ZIP de Entrega
 
-Para crear el archivo comprimido exigido por la asignatura (`IW-79078777Q-E1.zip`), ejecuta en PowerShell:
+Para generar el archivo comprimido oficial exigido por la asignatura (`IW-79078777Q-E1.zip`), ejecuta en PowerShell:
 ```powershell
 .\empaquetar_entrega.ps1
 ```
