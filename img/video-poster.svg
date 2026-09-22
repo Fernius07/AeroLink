@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360">
+  <rect width="640" height="360" fill="#1b4332" rx="8" />
+  <circle cx="320" cy="180" r="120" fill="#2d6a4f" opacity="0.5" />
+  <!-- Boton de Play grande -->
+  <circle cx="320" cy="180" r="45" fill="#52b788" />
+  <polygon points="310,160 340,180 310,200" fill="#ffffff" />
+  <text x="320" y="270" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="700" fill="#d8f3dc" text-anchor="middle">Recorrido por las instalaciones de EcoHuella</text>
+  <text x="320" y="300" font-family="'Segoe UI', sans-serif" font-size="14" fill="#95d5b2" text-anchor="middle">Haz clic para reproducir el vídeo de presentación (0:45 min)</text>
+</svg>

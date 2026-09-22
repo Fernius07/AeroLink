@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="240" height="60">
+  <defs>
+    <linearGradient id="gradLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d6a4f" />
+      <stop offset="100%" stop-color="#52b788" />
+    </linearGradient>
+  </defs>
+  <!-- Icono de Huella Estilizada con Hoja -->
+  <g transform="translate(10, 8)">
+    <path d="M 22 25 C 16 25 10 30 10 36 C 10 41 15 45 22 45 C 29 45 34 41 34 36 C 34 30 28 25 22 25 Z" fill="url(#gradLogo)" />
+    <ellipse cx="12" cy="18" rx="4.5" ry="6" fill="#2d6a4f" />
+    <ellipse cx="22" cy="14" rx="4.5" ry="6.5" fill="#40916c" />
+    <ellipse cx="32" cy="18" rx="4.5" ry="6" fill="#52b788" />
+    <!-- Hoja ecológica que sale de la huella -->
+    <path d="M 34 32 C 40 28 44 20 42 15 C 37 15 31 22 34 32 Z" fill="#74c69d" />
+  </g>
+  <!-- Texto EcoHuella -->
+  <text x="65" y="34" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="22" font-weight="800" fill="#1b4332">Eco<tspan fill="#40916c">Huella</tspan></text>
+  <text x="66" y="47" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="9" font-weight="600" fill="#52b788" letter-spacing="1.5">REFUGIO &amp; ADOPCIÓN</text>
+</svg>

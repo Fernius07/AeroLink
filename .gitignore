@@ -1,0 +1,10 @@
+# Archivos de entrega comprimidos (se generan localmente)
+*.zip
+*.tar.gz
+*.rar
+
+# Archivos del sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

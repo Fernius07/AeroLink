@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EcoHuella - Refugio de animales y centro de adopción responsable. Encuentra a tu compañero de vida y apoya nuestro voluntariado.">
+  <title>EcoHuella | Refugio y Adopción Responsable</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- =====================================================================
+       CABECERA COMÚN
+       ===================================================================== -->
+  <header id="main-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" title="Ir a la portada de EcoHuella">
+        <img src="img/logo.svg" alt="Logotipo de EcoHuella: huella con una hoja verde" width="200" height="50">
+      </a>
+      <nav id="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="animales.html">Animales en Adopción</a></li>
+          <li><a href="detalle.html">Ficha de Mascota</a></li>
+          <li><a href="formulario.html">Solicitud de Adopción</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       CONTENIDO PRINCIPAL
+       ===================================================================== -->
+  <main>
+
+    <!-- ÍNDICE INTERNO DE SECCIONES NAVEGABLE -->
+    <nav class="section-index" aria-label="Índice de apartados de esta página">
+      <p class="index-title">Índice de contenidos de la página:</p>
+      <ul>
+        <li><a href="#hero">1. Portada</a></li>
+        <li><a href="#mision">2. Misión y Valores</a></li>
+        <li><a href="#destacados">3. Casos Destacados</a></li>
+        <li><a href="#multimedia">4. Centro Multimedia</a></li>
+        <li><a href="#noticias">5. Artículos y Novedades</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECCIÓN 1: HERO / PORTADA -->
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Por un hogar digno para cada huella</h1>
+        <p class="hero-subtitle">
+          Somos una asociación sin ánimo de lucro dedicada al rescate, atención veterinaria, rehabilitación y adopción ética de animales en situación de vulnerabilidad.
+        </p>
+        <div class="hero-actions">
+          <a href="animales.html" class="btn btn-primary">Ver animales disponibles</a>
+          <a href="formulario.html" class="btn btn-outline">Tramitar solicitud</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="img/hero-banner.svg" alt="Ilustración de las instalaciones al aire libre del refugio EcoHuella con animales jugando" class="hero-banner-img" width="500" height="225">
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: MISIÓN Y VALORES -->
+    <section id="mision">
+      <h2>Nuestra Misión y Filosofía</h2>
+      <p>
+        En <strong>EcoHuella</strong> defendemos el principio de que la adopción es un <mark>acto consciente y transformador</mark>. Cada perro y gato rescatado pasa por un exhaustivo chequeo médico, tratamiento antiparasitario y un proceso de socialización con adiestradores en positivo.
+      </p>
+
+      <blockquote>
+        <p>
+          "Adoptar a un animal no cambiará el mundo entero, pero sin duda cambiará por completo el mundo de ese animal."
+        </p>
+        <cite>— Dra. Elena Morales, Directora Veterinaria de EcoHuella</cite>
+      </blockquote>
+
+      <p>
+        Todos nuestros animales se entregan con <em>microchip homologado</em>, cartilla de vacunación al día y compromiso obligatorio de esterilización, garantizando una tenencia responsable respaldada por la normativa vigente de bienestar animal.
+      </p>
+
+      <figure>
+        <img src="img/instalaciones.svg" alt="Diagrama de las instalaciones: área clínica veterinaria y recinto de agility al aire libre" width="600" height="350">
+        <figcaption>Figura 1: Plano y distribución funcional de nuestras instalaciones ecológicas y áreas de recreo.</figcaption>
+      </figure>
+    </section>
+
+    <hr>
+
+    <!-- SECCIÓN 3: MASCOTAS DESTACADAS -->
+    <section id="destacados">
+      <h2>Mascotas en Búsqueda Urgente de Familia</h2>
+      <p>
+        Conoce a tres de nuestros compañeros que llevan más de seis meses esperando un hogar definitivo:
+      </p>
+
+      <div class="grid-cards">
+
+        <!-- Tarjeta 1: Toby -->
+        <article class="card">
+          <div class="card-img-wrapper">
+            <img src="img/toby.svg" alt="Retrato ilustrado de Toby, perro mestizo marrón y crema de orejas caídas" width="400" height="300">
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="badge badge-success">Perro</span>
+              <span class="badge badge-info">2 años</span>
+            </div>
+            <h3>Toby</h3>
+            <p>
+              Mestizo cariñoso y lleno de energía. Ideal para familias activas que disfruten del senderismo o paseos por el campo.
+            </p>
+            <p><small>Llegada al refugio: <time datetime="2026-03-15">15 de marzo de 2026</time></small></p>
+          </div>
+          <div class="card-footer">
+            <a href="detalle.html" class="btn btn-outline">Ver ficha completa</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2: Luna -->
+        <article class="card">
+          <div class="card-img-wrapper">
+            <img src="img/luna.svg" alt="Retrato ilustrado de Luna, gata europea atigrada naranja de ojos verdes" width="400" height="300">
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="badge badge-warning">Gata</span>
+              <span class="badge badge-info">1 año</span>
+            </div>
+            <h3>Luna</h3>
+            <p>
+              Gatita tranquila y ronroneadora. Se adapta perfectamente a la vida en piso y busca un rincón soleado junto a la ventana.
+            </p>
+            <p><small>Llegada al refugio: <time datetime="2026-05-02">2 de mayo de 2026</time></small></p>
+          </div>
+          <div class="card-footer">
+            <a href="animales.html#listado-animales" class="btn btn-outline">Más información</a>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3: Rocky -->
+        <article class="card">
+          <div class="card-img-wrapper">
+            <img src="img/rocky.svg" alt="Retrato ilustrado de Rocky, perro de porte mediano con máscara oscura" width="400" height="300">
+          </div>
+          <div class="card-body">
+            <div class="card-tags">
+              <span class="badge badge-success">Perro</span>
+              <span class="badge badge-info">3 años</span>
+            </div>
+            <h3>Rocky</h3>
+            <p>
+              Noble, leal y muy atento. Excelente compañero con adiestramiento básico completado con éxito.
+            </p>
+            <p><small>Llegada al refugio: <time datetime="2026-06-18">18 de junio de 2026</time></small></p>
+          </div>
+          <div class="card-footer">
+            <a href="animales.html#listado-animales" class="btn btn-outline">Más información</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- SECCIÓN 4: CENTRO MULTIMEDIA -->
+    <section id="multimedia">
+      <h2>Centro Audiovisual del Refugio</h2>
+      <p>
+        Accede a nuestros contenidos multimedia para conocer la atmósfera y el día a día de nuestro centro:
+      </p>
+
+      <div class="media-container">
+
+        <div class="media-card">
+          <h3>Vídeo informativo: Jornada de Puertas Abiertas</h3>
+          <p>
+            Vídeo promocional con recorrido guiado por nuestros espacios de recreo, enfermería y zonas de paseo.
+          </p>
+          <video controls poster="img/video-poster.svg" width="640" height="360">
+            <source src="media/video-muestra.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de vídeo HTML5. Te invitamos a visitarnos en persona.
+          </video>
+        </div>
+
+        <div class="media-card">
+          <h3>Audio ambiental: Bienvenida sonora al refugio</h3>
+          <p>
+            Tono de audio generado para nuestra guía sonora explicativa y bienvenida interactiva.
+          </p>
+          <audio controls>
+            <source src="media/latido-refugio.wav" type="audio/wav">
+            Tu navegador no soporta el elemento de audio HTML5.
+          </audio>
+        </div>
+
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- SECCIÓN 5: ARTÍCULOS Y ASIDE -->
+    <section id="noticias">
+      <h2>Actualidad y Consejos de Tenencia Responsable</h2>
+
+      <div class="layout-with-aside">
+        <article class="info-article">
+          <h3>¿Por qué la esterilización salva vidas?</h3>
+          <p>
+            La esterilización no solo previene camadas indeseadas y el consiguiente colapso de los centros de acogida, sino que reduce notablemente el riesgo de tumores mamarios, infecciones uterinas y problemas testiculares.
+          </p>
+          <p>
+            En nuestra clínica colaboradora aplicamos protocolos quirúrgicos de mínima invasión con recuperación en menos de 48 horas.
+          </p>
+          
+          <h4>Identificación electrónica estándar</h4>
+          <p>
+            Todo animal registrado en EcoHuella dispone de un código numérico estándar conforme a la norma <code>ISO 11784/11785</code>:
+          </p>
+          <pre><code>FORMATO ISO: 981 0981 2345 6789 (España: código de país 724)</code></pre>
+        </article>
+
+        <aside class="sidebar-info">
+          <h3>Teléfono de Urgencias</h3>
+          <p>
+            Si has encontrado un animal herido o extraviado en el municipio, contacta con nuestro servicio de rescate:
+          </p>
+          <p><strong>Línea 24h:</strong> <a href="tel:+34900112233">900 11 22 33</a></p>
+          <p><strong>Correo:</strong> <a href="mailto:urgencias@ecohuella.org">urgencias@ecohuella.org</a></p>
+          <p><small>Horario de atención presencial: Lunes a Sábado de 09:30 a 19:30.</small></p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       PIE DE PÁGINA COMÚN
+       ===================================================================== -->
+  <footer id="main-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>EcoHuella Animal</h4>
+        <p>
+          Asociación Protectora y Centro de Adopción Responsable inscrita en el Registro Oficial de Entidades de Protección Animal.
+        </p>
+        <p>
+          Camino de la Vega s/n, 28000 Madrid (España).
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Enlaces de Interés</h4>
+        <ul>
+          <li><a href="index.html">Página de Inicio</a></li>
+          <li><a href="animales.html">Catálogo de Animales</a></li>
+          <li><a href="detalle.html">Ficha de Ejemplo (Toby)</a></li>
+          <li><a href="formulario.html">Formulario de Solicitud</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Marco Legal y Ético</h4>
+        <ul>
+          <li><a href="#hero">Ley de Bienestar Animal 7/2023</a></li>
+          <li><a href="#hero">Protocolo Veterinario Oficial</a></li>
+          <li><a href="#hero">Política de Privacidad</a></li>
+          <li><a href="#hero">Contacto y Donaciones</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 EcoHuella - Prototipo desarrollado para la asignatura de Ingeniería Web (Entrega 1). Código conforme a W3C.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

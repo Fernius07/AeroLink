@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgLuna" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e0" />
+      <stop offset="100%" stop-color="#ffe0b2" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgLuna)" rx="12" />
+  <circle cx="200" cy="150" r="95" fill="#ffffff" opacity="0.6" />
+  <!-- Gata Luna -->
+  <g transform="translate(145, 75)">
+    <!-- Orejas -->
+    <polygon points="15,60 25,15 45,50" fill="#e65100" />
+    <polygon points="20,55 25,25 40,50" fill="#ffccbc" />
+    <polygon points="95,60 85,15 65,50" fill="#e65100" />
+    <polygon points="90,55 85,25 70,50" fill="#ffccbc" />
+    <!-- Cabeza -->
+    <ellipse cx="55" cy="70" rx="45" ry="38" fill="#ff9800" />
+    <!-- Manchas -->
+    <path d="M 40 35 Q 55 50 70 35 Z" fill="#e65100" />
+    <!-- Ojos verdes -->
+    <ellipse cx="38" cy="65" rx="7" ry="9" fill="#2e7d32" />
+    <circle cx="39" cy="63" r="2" fill="#ffffff" />
+    <ellipse cx="72" cy="65" rx="7" ry="9" fill="#2e7d32" />
+    <circle cx="73" cy="63" r="2" fill="#ffffff" />
+    <!-- Nariz y Bigotes -->
+    <polygon points="55,75 51,70 59,70" fill="#d81b60" />
+    <line x1="20" y1="72" x2="45" y2="74" stroke="#424242" stroke-width="1.5" />
+    <line x1="18" y1="78" x2="45" y2="77" stroke="#424242" stroke-width="1.5" />
+    <line x1="90" y1="72" x2="65" y2="74" stroke="#424242" stroke-width="1.5" />
+    <line x1="92" y1="78" x2="65" y2="77" stroke="#424242" stroke-width="1.5" />
+    <!-- Boca -->
+    <path d="M 55 75 Q 50 82 45 78" stroke="#424242" stroke-width="1.5" fill="none" />
+    <path d="M 55 75 Q 60 82 65 78" stroke="#424242" stroke-width="1.5" fill="none" />
+  </g>
+  <rect x="20" y="245" width="130" height="34" rx="8" fill="#e65100" />
+  <text x="85" y="267" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Luna • 1 año</text>
+  <rect x="250" y="245" width="130" height="34" rx="8" fill="#f57c00" />
+  <text x="315" y="267" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Tranquila &amp; Mimosa</text>
+</svg>

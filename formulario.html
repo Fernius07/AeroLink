@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Formulario oficial de solicitud de adopción y voluntariado en EcoHuella. Introduce tus datos y preferencias de convivencia.">
+  <title>EcoHuella | Formulario de Solicitud de Adopción</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- =====================================================================
+       CABECERA COMÚN
+       ===================================================================== -->
+  <header id="main-header">
+    <div class="header-container">
+      <a href="index.html" class="brand-link" title="Ir a la portada de EcoHuella">
+        <img src="img/logo.svg" alt="Logotipo de EcoHuella: huella con una hoja verde" width="200" height="50">
+      </a>
+      <nav id="primary-nav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="animales.html">Animales en Adopción</a></li>
+          <li><a href="detalle.html">Ficha de Mascota</a></li>
+          <li><a href="formulario.html" class="active">Solicitud de Adopción</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =====================================================================
+       CONTENIDO PRINCIPAL
+       ===================================================================== -->
+  <main>
+
+    <!-- ÍNDICE INTERNO DE SECCIONES NAVEGABLE -->
+    <nav class="section-index" aria-label="Índice de apartados del formulario">
+      <p class="index-title">Índice de apartados de esta página:</p>
+      <ul>
+        <li><a href="#instrucciones">1. Instrucciones Previas</a></li>
+        <li><a href="#form-solicitud">2. Formulario de Solicitud</a></li>
+        <li><a href="#politicas-proteccion">3. Compromiso y Protección de Datos</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECCIÓN 1: INSTRUCCIONES -->
+    <section id="instrucciones">
+      <h1>Formulario de Solicitud de Adopción y Acogida</h1>
+      <p>
+        Este cuestionario tiene como objetivo conocer el entorno en el que vivirá el animal y asegurar la compatibilidad mutua. Rogamos responder con la mayor sinceridad y detalle posible.
+      </p>
+      <p>
+        Los campos marcados con un asterisco (<strong>*</strong>) son de cumplimentación obligatoria. Si deseas conocer previamente a los candidatos disponibles, visita el <a href="animales.html">catálogo de animales</a> o consulta la <a href="detalle.html">ficha de Toby</a>.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- SECCIÓN 2: FORMULARIO DE ADOPCIÓN -->
+    <section id="form-solicitud">
+      <h2>Cuestionario de Pre-Adopción</h2>
+
+      <!-- Formulario accesible y estándar -->
+      <form action="#" method="post" enctype="multipart/form-data" class="adoption-form">
+
+        <!-- FIELDSET 1: DATOS DEL SOLICITANTE -->
+        <fieldset>
+          <legend>1. Datos Personales del Solicitante</legend>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre-apellidos">Nombre y apellidos: *</label>
+              <input type="text" id="nombre-apellidos" name="nombre_apellidos" required placeholder="Ej. Lucía Gómez Fernández" autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="dni-nie">DNI / NIE / Pasaporte: *</label>
+              <input type="text" id="dni-nie" name="dni_nie" required placeholder="12345678Z" pattern="[0-9]{8}[A-Za-z]{1}|[XYZxyz][0-9]{7}[A-Za-z]{1}">
+              <span class="form-note">Formato: 8 números y letra o NIE.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="correo-electronico">Correo electrónico: *</label>
+              <input type="email" id="correo-electronico" name="correo_electronico" required placeholder="ejemplo@correo.com" autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="telefono-contacto">Teléfono móvil de contacto: *</label>
+              <input type="tel" id="telefono-contacto" name="telefono_contacto" required placeholder="+34 600 000 000" autocomplete="tel">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fecha-nacimiento">Fecha de nacimiento: *</label>
+              <input type="date" id="fecha-nacimiento" name="fecha_nacimiento" required>
+              <span class="form-note">Debe ser mayor de 18 años para cursar la solicitud.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="localidad-provincia">Municipio y provincia de residencia: *</label>
+              <input type="text" id="localidad-provincia" name="localidad_provincia" required placeholder="Ej. Alcalá de Henares (Madrid)">
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- FIELDSET 2: VIVIENDA Y RUTINAS -->
+        <fieldset>
+          <legend>2. Características de la Vivienda y Convivencia</legend>
+
+          <div class="form-group">
+            <label for="tipo-vivienda">Tipo de vivienda principal: *</label>
+            <select id="tipo-vivienda" name="tipo_vivienda" required>
+              <option value="">-- Selecciona una opción --</option>
+              <optgroup label="Viviendas Colectivas">
+                <option value="piso-sin-balcon">Piso / Apartamento sin balcón ni terraza</option>
+                <option value="piso-con-balcon">Piso con balcón o terraza asegurada</option>
+                <option value="atico">Ático con terraza amplia</option>
+              </optgroup>
+              <optgroup label="Viviendas Unifamiliares">
+                <option value="adosado">Chalet adosado con patio/jardín</option>
+                <option value="independiente">Chalet independiente con parcela vallada</option>
+                <option value="finca-rustica">Finca rústica o casa de campo</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="num-personas">Número de personas que conviven en el hogar: *</label>
+              <input type="number" id="num-personas" name="num_personas" min="1" max="15" value="2" required>
+            </div>
+
+            <div class="form-group">
+              <label for="horas-solo">Horas aproximadas que el animal estaría solo al día: *</label>
+              <input type="number" id="horas-solo" name="horas_solo" min="0" max="24" step="0.5" value="4" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Régimen de la vivienda: *</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="regimen_vivienda" value="propiedad" checked> Vivienda en propiedad
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="regimen_vivienda" value="alquiler-permiso"> Vivienda de alquiler con autorización expresa para animales
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="regimen_vivienda" value="familiar"> Vivienda familiar compartida
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- FIELDSET 3: PREFERENCIAS DEL ANIMAL -->
+        <fieldset>
+          <legend>3. Preferencias de Adopción e Interés</legend>
+
+          <div class="form-group">
+            <label for="animal-interes">Animal por el que tienes interés específico:</label>
+            <input list="lista-animales" id="animal-interes" name="animal_interes" placeholder="Escribe o selecciona (Ej. Toby, Luna, Rocky...)">
+            <datalist id="lista-animales">
+              <option value="Toby (Perro Mestizo - Ref. EH-2026-041)">
+              <option value="Luna (Gata Europea - Ref. EH-2026-059)">
+              <option value="Rocky (Cruce de Pastor - Ref. EH-2026-083)">
+              <option value="Bimba (Cachorra - Ref. EH-2026-092)">
+              <option value="Sin preferencia (busco asesoramiento del refugio)">
+            </datalist>
+            <span class="form-note">Puedes escribir el nombre o dejarlo abierto para que el equipo te recomiende.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="tipo-tramite">Tipo de solicitud a cursar: *</label>
+            <select id="tipo-tramite" name="tipo_tramite" required>
+              <option value="adopcion-definitiva">Adopción Definitiva</option>
+              <option value="casa-acogida">Casa de Acogida Temporal</option>
+              <option value="voluntariado">Voluntariado en Paseos y Centro</option>
+              <option value="padrino">Apadrinamiento Mensual</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Experiencia previa y convivencia actual (marca todas las que apliquen):</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="exp_perros" value="si"> He tenido o convivido previamente con perros.
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="exp_gatos" value="si"> He tenido o convivido previamente con gatos.
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="mascotas_actuales" value="si"> Actualmente conviven otros animales en mi domicilio.
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="veterinario_confianza" value="si"> Cuento con veterinario de confianza de referencia.
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="adjunto-vivienda">Fotografía o documento del espacio de estancia (opcional):</label>
+            <input type="file" id="adjunto-vivienda" name="adjunto_vivienda" accept=".jpg, .jpeg, .png, .pdf">
+            <span class="form-note">Archivos permitidos: JPG, PNG, PDF (máx. 5 MB).</span>
+          </div>
+
+          <div class="form-group">
+            <label for="motivacion">¿Por qué deseas adoptar y qué esperas de la convivencia? *</label>
+            <textarea id="motivacion" name="motivacion" rows="4" required placeholder="Cuéntanos brevemente tu estilo de vida, paseos previstos, motivos para dar este paso y cualquier duda que tengas..."></textarea>
+          </div>
+        </fieldset>
+
+        <!-- FIELDSET 4: CONSENTIMIENTO Y ENVÍO -->
+        <fieldset>
+          <legend>4. Declaración de Responsabilidad y Términos</legend>
+
+          <div class="form-group">
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="acepto-terminos" name="acepto_terminos" required>
+                <span>Declaro bajo juramento que toda la información aportada es veraz y asumo el compromiso legal de tenencia responsable. *</span>
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" id="acepto-privacidad" name="acepto_privacidad" required>
+                <span>Acepto la política de privacidad y autorizo el tratamiento de mis datos personales según el RGPD para la tramitación de esta solicitud. *</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="reset">Restablecer Formulario</button>
+            <button type="submit">Enviar Solicitud de Adopción</button>
+          </div>
+        </fieldset>
+
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- SECCIÓN 3: POLÍTICAS DE PROTECCIÓN -->
+    <section id="politicas-proteccion">
+      <h2>Garantías y Protección de Datos</h2>
+      <article class="info-article">
+        <h3>Información Básica sobre Tratamiento de Datos (RGPD)</h3>
+        <ul class="standard-list">
+          <li><strong>Responsable:</strong> Asociación Protectora EcoHuella.</li>
+          <li><strong>Finalidad:</strong> Gestión y valoración de expedientes de adopción, seguimiento veterinario y contacto informativo.</li>
+          <li><strong>Legitimación:</strong> Consentimiento expreso de la persona interesada manifestado al enviar este formulario.</li>
+          <li><strong>Destinatarios:</strong> No se cederán datos a terceros salvo obligación legal expresa o registro oficial de identificación animal (RIAC).</li>
+          <li><strong>Derechos:</strong> Acceso, rectificación, supresión y portabilidad enviando un correo a <code>protecciondatos@ecohuella.org</code>.</li>
+        </ul>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- =====================================================================
+       PIE DE PÁGINA COMÚN
+       ===================================================================== -->
+  <footer id="main-footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>EcoHuella Animal</h4>
+        <p>
+          Asociación Protectora y Centro de Adopción Responsable inscrita en el Registro Oficial de Entidades de Protección Animal.
+        </p>
+        <p>
+          Camino de la Vega s/n, 28000 Madrid (España).
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h4>Enlaces de Interés</h4>
+        <ul>
+          <li><a href="index.html">Página de Inicio</a></li>
+          <li><a href="animales.html">Catálogo de Animales</a></li>
+          <li><a href="detalle.html">Ficha de Ejemplo (Toby)</a></li>
+          <li><a href="formulario.html">Solicitud de Adopción</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>Marco Legal y Ético</h4>
+        <ul>
+          <li><a href="formulario.html#politicas-proteccion">Ley de Bienestar Animal 7/2023</a></li>
+          <li><a href="animales.html#glosario-terminos">Protocolo Veterinario Oficial</a></li>
+          <li><a href="formulario.html#politicas-proteccion">Política de Privacidad</a></li>
+          <li><a href="index.html#mision">Contacto y Donaciones</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 EcoHuella - Prototipo desarrollado para la asignatura de Ingeniería Web (Entrega 1). Código conforme a W3C.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

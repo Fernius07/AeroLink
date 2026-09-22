@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <linearGradient id="bgToby" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9" />
+      <stop offset="100%" stop-color="#c8e6c9" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#bgToby)" rx="12" />
+  
+  <!-- Círculo decorativo -->
+  <circle cx="200" cy="150" r="100" fill="#ffffff" opacity="0.6" />
+  
+  <!-- Ilustración Perro Toby -->
+  <g transform="translate(140, 70)">
+    <!-- Orejas -->
+    <path d="M 15 50 C -5 20 0 100 15 110 Z" fill="#8d6e63" />
+    <path d="M 105 50 C 125 20 120 100 105 110 Z" fill="#8d6e63" />
+    <!-- Cabeza -->
+    <ellipse cx="60" cy="70" rx="50" ry="45" fill="#d7ccc8" />
+    <path d="M 45 35 C 55 25 65 25 75 35 C 68 55 52 55 45 35 Z" fill="#8d6e63" />
+    <!-- Ojos -->
+    <circle cx="45" cy="65" r="6" fill="#3e2723" />
+    <circle cx="47" cy="63" r="2" fill="#ffffff" />
+    <circle cx="75" cy="65" r="6" fill="#3e2723" />
+    <circle cx="77" cy="63" r="2" fill="#ffffff" />
+    <!-- Hocico -->
+    <ellipse cx="60" cy="85" rx="20" ry="15" fill="#f5ebe0" />
+    <ellipse cx="60" cy="78" rx="8" ry="6" fill="#3e2723" />
+    <path d="M 60 84 Q 54 94 48 90" stroke="#3e2723" stroke-width="2" fill="none" />
+    <path d="M 60 84 Q 66 94 72 90" stroke="#3e2723" stroke-width="2" fill="none" />
+    <path d="M 57 93 C 57 98 63 98 63 93 Z" fill="#e57373" />
+    <!-- Collar con chapa -->
+    <path d="M 30 110 Q 60 125 90 110" stroke="#2d6a4f" stroke-width="8" stroke-linecap="round" fill="none" />
+    <circle cx="60" cy="122" r="7" fill="#ffd166" />
+    <text x="58" y="125" font-family="sans-serif" font-size="8" font-weight="bold" fill="#2d6a4f">T</text>
+  </g>
+  <!-- Etiqueta -->
+  <rect x="20" y="245" width="130" height="34" rx="8" fill="#2d6a4f" />
+  <text x="85" y="267" font-family="'Segoe UI', sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">Toby • 2 años</text>
+  <rect x="250" y="245" width="130" height="34" rx="8" fill="#40916c" />
+  <text x="315" y="267" font-family="'Segoe UI', sans-serif" font-size="13" font-weight="600" fill="#ffffff" text-anchor="middle">Sociable &amp; Activo</text>
+</svg>
