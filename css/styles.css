@@ -66,6 +66,15 @@ a:hover {
   color: var(--color-destacado);
 }
 
+p a {
+  display: inline-block;
+  min-height: 24px;
+  line-height: 1.5;
+  padding: 2px 6px;
+  margin: 2px 0;
+  border-radius: 3px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -180,6 +189,9 @@ nav.indice-pagina ul {
 }
 
 nav.indice-pagina ul li a {
+  display: inline-block;
+  min-height: 24px;
+  line-height: 1.4;
   background-color: var(--color-blanco);
   border: 1px solid #90caf9;
   padding: 5px 12px;
@@ -563,8 +575,8 @@ label {
 }
 
 .nota-campo {
-  font-size: 0.8rem;
-  color: #78909c;
+  font-size: 0.82rem;
+  color: #37474f;
   display: block;
   margin-top: 3px;
 }
@@ -639,8 +651,10 @@ footer#pie-principal {
   flex: 1 1 250px;
 }
 
+.seccion-pie h3,
 .seccion-pie h4 {
   color: var(--color-blanco);
+  font-size: 1.1rem;
   margin-bottom: 12px;
 }
 
@@ -658,6 +672,10 @@ footer#pie-principal {
 }
 
 .seccion-pie ul li a {
+  display: inline-block;
+  min-height: 24px;
+  line-height: 1.4;
+  padding: 2px 0;
   color: #bbdefb;
   text-decoration: none;
   font-size: 0.9rem;
