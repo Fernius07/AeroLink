@@ -52,9 +52,9 @@ aerolink/
     ├── diamond_da40_cabina.jpg # [Diamond DA40] Foto real de cabina Garmin G1000
     ├── diamond_da40_plano.jpg  # [Diamond DA40] Plano oficial de tres vistas con cotas
     │
-    ├── tecnam_p2002.jpg        # [Tecnam P2002] Foto exterior real en tierra
+    ├── tecnam_p2002.jpg        # [Tecnam P2002 EC-LPI] Foto exterior real en tierra
     ├── tecnam_p2002_cabina.jpg # [Tecnam P2002] Foto real de cabina biplaza
-    └── tecnam_p2002_plano.svg  # [Tecnam P2002] Plano oficial de tres vistas con cotas
+    └── tecnam_p2002_plano.jpg  # [Tecnam P2002] Plano oficial de tres vistas con cotas
 ```
 
 ---
