@@ -5,10 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AeroLink | Club de Aviación y Escuela de Pilotos - Aeropuerto de Bilbao</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
 
@@ -60,7 +56,7 @@
           </div>
         </div>
         <div class="bienvenida-imagen">
-          <img src="img/hero-bilbao.jpg" alt="Pista y terminal del Aeropuerto de Bilbao en Loiu" width="500" height="300">
+          <img src="img/hero-bilbao.jpg" alt="Pista y terminal del Aeropuerto de Bilbao en Loiu" width="500" height="300" decoding="async">
         </div>
       </div>
     </section>
@@ -84,7 +80,7 @@
       </p>
 
       <figure>
-        <img src="img/hangar.jpg" alt="Hangar con avionetas en el aeropuerto de Bilbao" width="800" height="400">
+        <img src="img/hangar.jpg" alt="Hangar con avionetas en el aeropuerto de Bilbao" width="800" height="400" loading="lazy" decoding="async">
         <figcaption>Hangar donde guardamos y revisamos nuestras avionetas en el Aeropuerto de Bilbao.</figcaption>
       </figure>
     </section>
@@ -101,7 +97,7 @@
       <div class="contenedor-tarjetas">
 
         <article class="tarjeta">
-          <img src="img/cessna172.jpg" alt="Avioneta Cessna 172S Skyhawk matrícula EC-MRX en hangar de Bilbao" width="400" height="200">
+          <img src="img/cessna172.jpg" alt="Avioneta Cessna 172S Skyhawk matrícula EC-MRX en hangar de Bilbao" width="400" height="200" loading="lazy" decoding="async">
           <div class="tarjeta-cuerpo">
             <span class="etiqueta">Ala Alta • 4 Plazas • EC-MRX</span>
             <h3>Cessna 172S Skyhawk</h3>
@@ -116,7 +112,7 @@
         </article>
 
         <article class="tarjeta">
-          <img src="img/piper-pa28.jpg" alt="Avioneta Piper PA-28-181 Archer III matrícula EC-JMC en aeródromo" width="400" height="200">
+          <img src="img/piper-pa28.jpg" alt="Avioneta Piper PA-28-181 Archer III matrícula EC-JMC en aeródromo" width="400" height="200" loading="lazy" decoding="async">
           <div class="tarjeta-cuerpo">
             <span class="etiqueta">Ala Baja • Crucero • EC-JMC</span>
             <h3>Piper PA-28 Archer</h3>
@@ -131,7 +127,7 @@
         </article>
 
         <article class="tarjeta">
-          <img src="img/diamond-da40.jpg" alt="Avioneta moderna Diamond DA40 NG Star matrícula EC-LRF en plataforma" width="400" height="200">
+          <img src="img/diamond-da40.jpg" alt="Avioneta moderna Diamond DA40 NG Star matrícula EC-LRF en plataforma" width="400" height="200" loading="lazy" decoding="async">
           <div class="tarjeta-cuerpo">
             <span class="etiqueta">Compuesto • Jet-A1 • EC-LRF</span>
             <h3>Diamond DA40 Star</h3>
@@ -146,7 +142,7 @@
         </article>
 
         <article class="tarjeta">
-          <img src="img/tecnam_p2002.jpg" alt="Avioneta biplaza Tecnam P2002 Sierra matrícula EC-LPI en plataforma de Bilbao" width="400" height="200">
+          <img src="img/tecnam_p2002.jpg" alt="Avioneta biplaza Tecnam P2002 Sierra matrícula EC-LPI en plataforma de Bilbao" width="400" height="200" loading="lazy" decoding="async">
           <div class="tarjeta-cuerpo">
             <span class="etiqueta">Biplaza LSA • Rotax 100 HP • EC-LPI</span>
             <h3>Tecnam P2002 Sierra</h3>
@@ -294,5 +290,9 @@
     </div>
   </footer>
 
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
