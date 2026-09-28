@@ -351,9 +351,9 @@ section#seccion-bienvenida {
    6. TARJETAS DE FLOTA (FOTOS REALES)
    -------------------------------------------------------------------------- */
 .contenedor-tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
   margin: 25px 0;
 }
 
@@ -361,7 +361,6 @@ section#seccion-bienvenida {
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
   border-radius: 8px;
-  flex: 1 1 300px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   display: flex;
@@ -755,5 +754,9 @@ footer#pie-principal {
 
   .botones-formulario button {
     width: 100%;
+  }
+
+  .contenedor-tarjetas {
+    grid-template-columns: 1fr;
   }
 }
