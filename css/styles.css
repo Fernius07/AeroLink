@@ -66,6 +66,13 @@ a:hover {
   color: var(--color-destacado);
 }
 
+a:focus-visible,
+button:focus-visible,
+.boton:focus-visible {
+  outline: 3px solid var(--color-destacado);
+  outline-offset: 3px;
+}
+
 p a {
   display: inline-block;
   min-height: 24px;
@@ -398,6 +405,10 @@ section#seccion-bienvenida {
   margin-top: 25px;
 }
 
+.caja-dudas h3 {
+  color: var(--color-principal);
+}
+
 /* Listas y glosario */
 ul.lista-puntos, ol.lista-ordenada {
   margin-left: 25px;
@@ -510,7 +521,7 @@ figure img {
 figcaption {
   padding: 10px 15px;
   font-size: 0.85rem;
-  color: #546e7a;
+  color: #37474f;
   background-color: #fafafa;
   border-top: 1px solid var(--color-borde);
 }
@@ -538,6 +549,10 @@ aside.columna-lateral {
   border-radius: 6px;
   padding: 20px;
   height: fit-content;
+}
+
+aside.columna-lateral h3 {
+  color: var(--color-principal);
 }
 
 /* Formulario */
@@ -632,7 +647,7 @@ input:focus, select:focus, textarea:focus {
 /* Pie de pagina */
 footer#pie-principal {
   background-color: var(--color-principal);
-  color: #e0e0e0;
+  color: #ffffff;
   border-top: 4px solid var(--color-destacado);
   margin-top: 45px;
   padding: 30px 15px 18px 15px;
@@ -676,24 +691,24 @@ footer#pie-principal {
   min-height: 24px;
   line-height: 1.4;
   padding: 2px 0;
-  color: #bbdefb;
-  text-decoration: none;
+  color: #ffffff;
+  text-decoration: underline;
   font-size: 0.9rem;
 }
 
 .seccion-pie ul li a:hover {
   text-decoration: underline;
-  color: var(--color-blanco);
+  color: #ffe082;
 }
 
 .copyright {
   max-width: 1050px;
   margin: 25px auto 0 auto;
   padding-top: 15px;
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 1px solid rgba(255,255,255,0.35);
   text-align: center;
   font-size: 0.85rem;
-  color: #b0bec5;
+  color: #ffffff;
 }
 
 /* Adaptacion a pantallas pequenas */

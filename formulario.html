@@ -11,15 +11,15 @@
   <!-- Cabecera -->
   <header id="cabecera-principal">
     <div class="contenedor-cabecera">
-      <a href="index.html" class="logotipo" title="AeroLink Aviación Bilbao">
-        <img src="img/logo.svg" alt="Logotipo de AeroLink" width="180" height="45">
+      <a href="index.html" class="logotipo" aria-label="AeroLink Aviación Bilbao - Ir a la página de inicio">
+        <img src="img/logo.svg" alt="AeroLink Aviación Bilbao" width="180" height="45">
       </a>
       <nav id="menu-navegacion" aria-label="Menú principal">
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="flota.html">Flota</a></li>
           <li><a href="detalle.html">Ficha Técnica</a></li>
-          <li><a href="formulario.html" class="activo">Reservas</a></li>
+          <li><a href="formulario.html" class="activo" aria-current="page">Reservas</a></li>
         </ul>
       </nav>
     </div>
@@ -116,7 +116,7 @@
           <div class="campo">
             <label for="opcion-escuela">Si vas a realizar un curso, elige el programa que te interesa:</label>
             <select id="opcion-escuela" name="opcion_escuela">
-              <option value="">-- Selecciona un curso formativo --</option>
+              <option value="" disabled selected>-- Selecciona un curso formativo --</option>
               <optgroup label="Cursos Oficiales">
                 <option value="ppl-completo">Curso de Piloto Privado de Avión PPL(A)</option>
                 <option value="curso-iniciacion">Pack de Iniciación (5 horas de vuelo con instructor)</option>
@@ -139,7 +139,7 @@
           <div class="campo">
             <label for="ruta-turistica">Si vas a realizar un vuelo turístico, elige la ruta deseada:</label>
             <select id="ruta-turistica" name="ruta_turistica">
-              <option value="">-- Selecciona una ruta aérea --</option>
+              <option value="" disabled selected>-- Selecciona una ruta aérea --</option>
               <optgroup label="Rutas por Bizkaia">
                 <option value="ruta-gaztelugatxe">Ruta 1: San Juan de Gaztelugatxe, Bermeo y Urdaibai (40 minutos)</option>
                 <option value="ruta-matxitxako">Ruta 2: Cabo Matxitxako, Bakio y Plentzia (45 minutos)</option>
