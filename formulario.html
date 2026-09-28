@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <!-- CABECERA COMÚN -->
+  <!-- Cabecera -->
   <header id="cabecera-principal">
     <div class="contenedor-cabecera">
       <a href="index.html" class="logotipo" title="AeroLink Aviación Bilbao">
@@ -25,41 +25,40 @@
     </div>
   </header>
 
-  <!-- CONTENIDO PRINCIPAL -->
   <main>
 
-    <!-- ÍNDICE INTERNO NAVEGABLE -->
+    <!-- Indice de la pagina -->
     <nav class="indice-pagina" aria-label="Índice interno">
       <p>Apartados de esta página:</p>
       <ul>
         <li><a href="#instrucciones-reserva">1. Instrucciones</a></li>
         <li><a href="#formulario-seccion">2. Formulario de Reserva</a></li>
-        <li><a href="#aviso-legal">3. Información y Protección de Datos</a></li>
+        <li><a href="#aviso-legal">3. Información Importante</a></li>
       </ul>
     </nav>
 
-    <!-- SECCIÓN 1: INSTRUCCIONES -->
+    <!-- Instrucciones -->
     <section id="instrucciones-reserva">
       <h1>Solicitud de Escuela de Vuelo y Vuelos Turísticos en Bilbao</h1>
       <p>
-        A través de este formulario puedes solicitar información y matrícula para nuestra <strong>Escuela de Vuelo</strong>, o reservar un <strong>Vuelo Turístico</strong> seleccionando entre las diferentes rutas panorámicas disponibles sobre la Costa Vasca y el Cantábrico.
+        Desde este formulario puedes pedir información sobre los cursos de nuestra <strong>Escuela de Vuelo</strong> o reservar un <strong>Vuelo Turístico</strong> eligiendo una de las rutas disponibles por la costa y alrededores de Bilbao.
       </p>
       <p>
-        Los campos marcados con un asterisco (<strong>*</strong>) son obligatorios. Si todavía no has revisado los modelos de nuestra flota, puedes consultar el <a href="flota.html">catálogo de aeronaves</a> o examinar las <a href="detalle.html">fichas técnicas completas con planos y fotos de cabina</a>.
+        Los campos con un asterisco (<strong>*</strong>) son obligatorios. Si todavía no has visto las características de cada avión, puedes revisar el <a href="flota.html">catálogo de la flota</a> o entrar en las <a href="detalle.html">fichas técnicas con fotos y planos</a>.
       </p>
     </section>
 
     <hr>
 
-    <!-- SECCIÓN 2: FORMULARIO -->
+    <!-- Formulario de reserva -->
     <section id="formulario-seccion">
-      <h2>Formulario de Solicitud de Operación Aérea</h2>
+      <h2>Formulario de Reserva y Contacto</h2>
 
       <form id="formulario-reserva" action="#" method="post" enctype="multipart/form-data">
 
-        <!-- BLOQUE 1: DATOS PERSONALES -->
+        <!-- 1. Datos personales -->
         <fieldset>
-          <legend>1. Datos Personales del Solicitante</legend>
+          <legend>1. Datos Personales</legend>
 
           <div class="campo">
             <label for="nombre">Nombre y apellidos: *</label>
@@ -69,7 +68,7 @@
           <div class="campo">
             <label for="dni">DNI o NIE: *</label>
             <input type="text" id="dni" name="dni" required placeholder="79078777Q">
-            <span class="nota-campo">Formato oficial: 8 números y letra sin espacios.</span>
+            <span class="nota-campo">Introduce 8 números y la letra sin espacios.</span>
           </div>
 
           <div class="campo">
@@ -88,96 +87,88 @@
           </div>
         </fieldset>
 
-        <!-- BLOQUE 2: MODALIDAD PRINCIPAL -->
+        <!-- 2. Modalidad del servicio -->
         <fieldset>
-          <legend>2. Modalidad Principal del Servicio</legend>
+          <legend>2. ¿Qué actividad quieres realizar?</legend>
 
           <div class="campo">
-            <label>Elige la opción que mejor se ajusta a lo que buscas: *</label>
+            <label>Selecciona una opción: *</label>
             <div class="opciones-radio">
               <label class="opcion-inline">
                 <input type="radio" name="modalidad_principal" value="escuela" checked>
-                <strong>Escuela de Vuelo:</strong> Cursos formativos para ser piloto (PPL, nocturno, Garmin G1000).
+                <span><strong>Escuela de Vuelo:</strong> Cursos para aprender a volar y obtener la licencia oficial.</span>
               </label>
               <label class="opcion-inline">
                 <input type="radio" name="modalidad_principal" value="turistico">
-                <strong>Vuelo Turístico:</strong> Vuelos panorámicos y paseos aéreos con instructor por rutas costeras.
+                <span><strong>Vuelo Turístico:</strong> Vuelos panorámicos con instructor por la costa y alrededores.</span>
               </label>
               <label class="opcion-inline">
                 <input type="radio" name="modalidad_principal" value="alquiler">
-                <strong>Alquiler Autónomo:</strong> Alquiler de avioneta por horas para pilotos con licencia en vigor.
+                <span><strong>Alquiler de Avión:</strong> Alquiler de avionetas por horas para pilotos con licencia.</span>
               </label>
             </div>
           </div>
         </fieldset>
 
-        <!-- BLOQUE 3: OPCIONES DE ESCUELA DE VUELO -->
+        <!-- 3. Opciones de escuela -->
         <fieldset>
-          <legend>3. Opciones de Escuela de Vuelo (ATO-248)</legend>
-          <p class="nota-campo" style="margin-bottom: 12px;">
-            Si has seleccionado la modalidad de Escuela de Vuelo, elige el programa en el que deseas matricularte o pedir información:
-          </p>
-
+          <legend>3. Cursos de la Escuela de Vuelo</legend>
           <div class="campo">
-            <label for="opcion-escuela">Programa de formación aeronáutica:</label>
+            <label for="opcion-escuela">Si vas a realizar un curso, elige el programa que te interesa:</label>
             <select id="opcion-escuela" name="opcion_escuela">
-              <option value="">-- Selecciona un curso de escuela --</option>
-              <optgroup label="Cursos Oficiales de Licencia">
-                <option value="ppl-completo">Curso Completo de Piloto Privado de Avión PPL(A)</option>
-                <option value="curso-iniciacion">Pack de Iniciación al Pilotaje (5 horas prácticas con instructor)</option>
+              <option value="">-- Selecciona un curso formativo --</option>
+              <optgroup label="Cursos Oficiales">
+                <option value="ppl-completo">Curso de Piloto Privado de Avión PPL(A)</option>
+                <option value="curso-iniciacion">Pack de Iniciación (5 horas de vuelo con instructor)</option>
               </optgroup>
-              <optgroup label="Habilitaciones y Especializaciones">
-                <option value="nvfr-nocturno">Habilitación de Vuelo Visual Nocturno (NVFR)</option>
-                <option value="transicion-g1000">Curso de Transición a Cabina Digital Garmin G1000</option>
-                <option value="renovacion-sep">Vuelo de Chequeo y Renovación de Habilitación SEP Land</option>
+              <optgroup label="Habilitaciones y Avanzado">
+                <option value="nvfr-nocturno">Habilitación de Vuelo Nocturno (NVFR)</option>
+                <option value="transicion-g1000">Transición a Pantallas Digitales Garmin G1000</option>
+                <option value="renovacion-sep">Renovación de Habilitación SEP Land</option>
               </optgroup>
-              <optgroup label="Formación Teórica">
-                <option value="teoria-online">Clases Teóricas Online PPL(A) y Legislación Aérea</option>
+              <optgroup label="Teoría">
+                <option value="teoria-online">Clases Teóricas Online y Legislación Aérea</option>
               </optgroup>
             </select>
           </div>
         </fieldset>
 
-        <!-- BLOQUE 4: OPCIONES DE VUELO TURÍSTICO (RUTAS POSIBLES) -->
+        <!-- 4. Opciones de vuelo turistico -->
         <fieldset>
-          <legend>4. Opciones de Vuelo Turístico (Rutas Panorámicas Disponibles)</legend>
-          <p class="nota-campo" style="margin-bottom: 12px;">
-            Si has seleccionado la modalidad de Vuelo Turístico o Divulgación, selecciona la ruta aérea que deseas realizar:
-          </p>
-
+          <legend>4. Rutas de Vuelo Turístico</legend>
           <div class="campo">
-            <label for="ruta-turistica">Ruta turística elegida:</label>
+            <label for="ruta-turistica">Si vas a realizar un vuelo turístico, elige la ruta deseada:</label>
             <select id="ruta-turistica" name="ruta_turistica">
               <option value="">-- Selecciona una ruta aérea --</option>
-              <optgroup label="Rutas por la Costa de Bizkaia">
+              <optgroup label="Rutas por Bizkaia">
                 <option value="ruta-gaztelugatxe">Ruta 1: San Juan de Gaztelugatxe, Bermeo y Urdaibai (40 minutos)</option>
-                <option value="ruta-matxitxako">Ruta 2: Cabo Matxitxako, Bakio y Costa de Plentzia (45 minutos)</option>
-                <option value="ruta-ria-bilbao">Ruta 3: Ría de Bilbao, Museo Guggenheim y Puente Colgante (30 minutos)</option>
+                <option value="ruta-matxitxako">Ruta 2: Cabo Matxitxako, Bakio y Plentzia (45 minutos)</option>
+                <option value="ruta-ria-bilbao">Ruta 3: Ría de Bilbao, Guggenheim y Puente Colgante (30 minutos)</option>
               </optgroup>
-              <optgroup label="Rutas de Media Distancia (Gipuzkoa y Cantabria)">
-                <option value="ruta-san-sebastian">Ruta 4: Donostia / San Sebastián, Bahía de La Concha y Zarautz (1h 10 minutos)</option>
-                <option value="ruta-santander">Ruta 5: Bahía de Santander, Castro Urdiales y Laredo (1h 30 minutos)</option>
+              <optgroup label="Rutas de Mayor Distancia">
+                <option value="ruta-san-sebastian">Ruta 4: Donostia / San Sebastián y Bahía de La Concha (1h 10 min)</option>
+                <option value="ruta-santander">Ruta 5: Bahía de Santander, Castro Urdiales y Laredo (1h 30 min)</option>
               </optgroup>
-              <optgroup label="Vuelos a Medida">
-                <option value="ruta-personalizada">Ruta 6: Ruta aérea personalizada (a convenir con el instructor de vuelo)</option>
+              <optgroup label="Ruta Personalizada">
+                <option value="ruta-personalizada">Ruta 6: Ruta a medida (a concretar con el piloto)</option>
               </optgroup>
             </select>
           </div>
         </fieldset>
 
-        <!-- BLOQUE 5: AERONAVE Y DETALLES DE RESERVA -->
+        <!-- 5. Preferencias de avion y fecha -->
         <fieldset>
-          <legend>5. Preferencias de Aeronave y Calendario</legend>
+          <legend>5. Avión Preferido y Fecha</legend>
 
           <div class="campo">
-            <label for="avion">Aeronave preferida de la flota:</label>
-            <input list="lista-aviones" id="avion" name="avion" placeholder="Elige una de las 4 avionetas de Bilbao">
+            <label for="avion">Avión preferido de la flota:</label>
+            <input list="lista-aviones" id="avion" name="avion" placeholder="Elige o escribe un avión de Bilbao">
             <datalist id="lista-aviones">
               <option value="Cessna 172S Skyhawk SP (EC-MRX) - 180 HP • 4 Plazas">
               <option value="Piper PA-28-181 Archer III (EC-JMC) - 180 HP • 4 Plazas">
               <option value="Diamond DA40 NG Star (EC-LRF) - Jet-A1 / IFR • 4 Plazas">
               <option value="Tecnam P2002 Sierra (EC-LPI) - Rotax 100 HP • 2 Plazas">
-              <option value="Sin preferencia (a criterio de la escuela según disponibilidad)">
+              <option value="Sin preferencia (el que esté disponible según la actividad)">
             </datalist>
           </div>
 
@@ -187,43 +178,43 @@
           </div>
 
           <div class="campo">
-            <label for="pasajeros">Número de personas / acompañantes: *</label>
+            <label for="pasajeros">Número de acompañantes: *</label>
             <input type="number" id="pasajeros" name="pasajeros" min="1" max="3" value="1" required>
-            <span class="nota-campo">Capacidad máxima: 3 acompañantes en Cessna/Piper/Diamond, o 1 en Tecnam biplaza.</span>
+            <span class="nota-campo">Máximo 3 personas en Cessna, Piper y Diamond, o 1 persona en la Tecnam biplaza.</span>
           </div>
 
           <div class="campo">
-            <label for="documento">Adjuntar documento o licencia si dispones de ella (opcional):</label>
+            <label for="documento">Adjuntar licencia de vuelo o DNI (opcional):</label>
             <input type="file" id="documento" name="documento" accept=".pdf, .jpg, .png">
-            <span class="nota-campo">Formatos válidos: PDF o imagen JPG/PNG (máx. 5 MB).</span>
+            <span class="nota-campo">Formatos permitidos: PDF o imagen JPG/PNG.</span>
           </div>
 
           <div class="campo">
-            <label for="mensaje">Peticiones especiales, dudas o comentarios de tu ruta: *</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntanos si tienes alguna preferencia de horario, si se trata de un regalo sorpresa, si deseas practicar alguna maniobra concreta..."></textarea>
+            <label for="mensaje">Comentarios o peticiones para el vuelo: *</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Indica si tienes preferencia de mañana o tarde, si es para un regalo, o cualquier detalle sobre la ruta..."></textarea>
           </div>
         </fieldset>
 
-        <!-- BLOQUE 6: CONDICIONES Y ENVÍO -->
+        <!-- 6. Condiciones y envio -->
         <fieldset>
-          <legend>6. Declaración de Cumplimiento y Envío</legend>
+          <legend>6. Condiciones y Envío</legend>
 
           <div class="campo">
             <div class="opciones-checkbox">
               <label class="opcion-inline">
                 <input type="checkbox" id="condiciones" name="condiciones" required>
-                <span>Acepto las normas de seguridad del club y las instrucciones del personal de vuelo en el Aeropuerto de Bilbao (LEBB). *</span>
+                <span>Acepto las normas de seguridad del club y las indicaciones del instructor en el Aeropuerto de Bilbao. *</span>
               </label>
               <label class="opcion-inline">
                 <input type="checkbox" id="privacidad" name="privacidad" required>
-                <span>Acepto la política de protección de datos para la gestión y tramitación de esta solicitud conforme al RGPD. *</span>
+                <span>Acepto la política de protección de datos para la gestión de esta reserva. *</span>
               </label>
             </div>
           </div>
 
           <div class="botones-formulario">
             <button type="reset" class="boton boton-secundario">Borrar datos</button>
-            <button type="submit" class="boton boton-principal">Enviar solicitud de reserva</button>
+            <button type="submit" class="boton boton-principal">Enviar solicitud</button>
           </div>
         </fieldset>
 
@@ -232,32 +223,32 @@
 
     <hr>
 
-    <!-- SECCIÓN 3: AVISO LEGAL Y PROTECCIÓN -->
+    <!-- Informacion de interes -->
     <section id="aviso-legal">
-      <h2>Información de Interés Operacional</h2>
+      <h2>Información de Interés</h2>
       <article class="columna-principal">
-        <h3>Condiciones del Servicio en Bilbao Loiu</h3>
+        <h3>Cómo funciona el servicio en Bilbao Loiu</h3>
         <ul class="lista-puntos">
-          <li><strong>Meteorología cantábrica:</strong> En caso de niebla costera, nubes bajas en el valle del Txorierri o viento fuera de límites de seguridad, el vuelo se aplazará sin recargo alguno.</li>
-          <li><strong>Acceso a plataforma:</strong> El punto de encuentro es el mostrador de operaciones de aviación general del Aeropuerto de Bilbao 20 minutos antes de la hora acordada.</li>
-          <li><strong>Protección de datos:</strong> Los datos personales se tratarán únicamente con fines de gestión de reserva y seguro aeronáutico.</li>
+          <li><strong>Meteorología:</strong> Si el día del vuelo hay niebla densa o viento fuerte en el aeropuerto, la actividad se aplaza a otra fecha que te venga bien sin ningún coste.</li>
+          <li><strong>Punto de encuentro:</strong> Nos vemos en la terminal de aviación general del Aeropuerto de Bilbao unos 20 minutos antes de la hora fijada para preparar el plan de vuelo.</li>
+          <li><strong>Seguridad y datos:</strong> Los datos se usan únicamente para organizar el vuelo y tramitar el seguro correspondiente.</li>
         </ul>
       </article>
     </section>
 
   </main>
 
-  <!-- PIE DE PÁGINA COMÚN -->
+  <!-- Pie de pagina -->
   <footer id="pie-principal">
     <div class="contenedor-pie">
       <div class="seccion-pie">
         <h4>AeroLink Aviación Bilbao</h4>
-        <p>Club de vuelo y escuela de pilotos autorizada ATO-248.</p>
+        <p>Club de vuelo y escuela de pilotos en Bilbao.</p>
         <p>Terminal de Aviación General, Aeropuerto de Bilbao (Loiu), 48180 Bizkaia.</p>
       </div>
 
       <div class="seccion-pie">
-        <h4>Enlaces de la Web</h4>
+        <h4>Navegación</h4>
         <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="flota.html">Flota de Aeronaves</a></li>
@@ -267,11 +258,11 @@
       </div>
 
       <div class="seccion-pie">
-        <h4>Información Legal</h4>
+        <h4>Información</h4>
         <ul>
-          <li><a href="index.html#servicios">Normativa de Seguridad Aérea</a></li>
-          <li><a href="formulario.html#aviso-legal">Política de Privacidad</a></li>
-          <li><a href="index.html#bienvenida">Contacto y Reservas</a></li>
+          <li><a href="index.html#servicios">Seguridad y Normas</a></li>
+          <li><a href="formulario.html#aviso-legal">Protección de Datos</a></li>
+          <li><a href="index.html#bienvenida">Contacto</a></li>
         </ul>
       </div>
     </div>

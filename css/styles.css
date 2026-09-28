@@ -1,26 +1,18 @@
-/* ==========================================================================
-   AeroLink - Estilos CSS (Entrega 1 de Ingeniería Web)
-   Diseño claro, limpio y bien espaciado para prototipo HTML5 y CSS3
-   Validado conforme a los estándares de la W3C
-   ========================================================================== */
+/* Estilos generales de la web de AeroLink Bilbao */
 
-/* --------------------------------------------------------------------------
-   1. VARIABLES Y SELECTOR RAÍZ
-   -------------------------------------------------------------------------- */
+/* Variables de color */
 :root {
-  --color-principal: #0d47a1;       /* Azul marino aeronáutico */
-  --color-secundario: #1976d2;      /* Azul cielo */
-  --color-fondo: #f4f6f9;           /* Fondo gris claro */
+  --color-principal: #0d47a1;
+  --color-secundario: #1976d2;
+  --color-fondo: #f4f6f9;
   --color-blanco: #ffffff;
-  --color-texto: #263238;           /* Texto gris oscuro */
-  --color-borde: #cfd8dc;           /* Bordes suaves */
-  --color-destacado: #e65100;       /* Naranja */
-  --color-suave: #e3f2fd;           /* Azul claro suave */
+  --color-texto: #263238;
+  --color-borde: #cfd8dc;
+  --color-destacado: #e65100;
+  --color-suave: #e3f2fd;
 }
 
-/* --------------------------------------------------------------------------
-   2. REINICIO Y ETIQUETAS GENERALES
-   -------------------------------------------------------------------------- */
+/* Reset basico y estilos generales */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -116,9 +108,7 @@ hr {
   margin: 35px 0;
 }
 
-/* --------------------------------------------------------------------------
-   3. CABECERA Y NAVEGACIÓN COMÚN
-   -------------------------------------------------------------------------- */
+/* Cabecera y menu de navegacion */
 header#cabecera-principal {
   background-color: var(--color-blanco);
   border-bottom: 3px solid var(--color-principal);
@@ -167,9 +157,7 @@ nav#menu-navegacion ul li a.activo {
   color: var(--color-blanco);
 }
 
-/* --------------------------------------------------------------------------
-   4. ÍNDICE INTERNO NAVEGABLE POR SECCIONES
-   -------------------------------------------------------------------------- */
+/* Indice interno de la pagina */
 nav.indice-pagina {
   background-color: var(--color-suave);
   border: 1px solid #bbdefb;
@@ -206,9 +194,7 @@ nav.indice-pagina ul li a:hover {
   color: var(--color-blanco);
 }
 
-/* --------------------------------------------------------------------------
-   5. SECCIÓN DE BIENVENIDA / HERO (ESPACIADO CORREGIDO)
-   -------------------------------------------------------------------------- */
+/* Seccion de bienvenida */
 section#seccion-bienvenida {
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
@@ -229,7 +215,6 @@ section#seccion-bienvenida {
   margin-bottom: 12px;
 }
 
-/* Contenedor de botones con margen seguro */
 .botones-bienvenida {
   display: flex;
   flex-wrap: wrap;
@@ -250,71 +235,7 @@ section#seccion-bienvenida {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
 }
 
-/* Galería de 3 imágenes por avión (Exterior, Cabina, Plano) */
-.galeria-avion {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
-  margin: 20px 0;
-}
-
-.item-galeria {
-  background-color: var(--color-blanco);
-  border: 1px solid var(--color-borde);
-  border-radius: 6px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.item-galeria img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 0;
-  background-color: #ffffff;
-}
-
-.item-galeria.item-plano img {
-  object-fit: contain;
-  padding: 8px;
-  background-color: #ffffff;
-}
-
-.item-galeria p {
-  padding: 8px 12px;
-  font-size: 0.85rem;
-  font-weight: bold;
-  color: var(--color-principal);
-  background-color: #f8fafc;
-  border-top: 1px solid var(--color-borde);
-  margin: 0;
-  text-align: center;
-}
-
-/* Ficha de datos técnicos por avión */
-.contenedor-ficha-avion {
-  background-color: var(--color-blanco);
-  border: 1px solid var(--color-borde);
-  border-radius: 8px;
-  padding: 24px;
-  margin-bottom: 40px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-
-.tabla-datos-tecnicos {
-  width: 100%;
-  margin: 15px 0 20px 0;
-}
-
-.tabla-datos-tecnicos td:first-child {
-  font-weight: bold;
-  width: 35%;
-  background-color: #f8fafc;
-  color: var(--color-principal);
-}
-
-/* Estilos de botones */
+/* Botones */
 .boton {
   display: inline-block;
   padding: 10px 20px;
@@ -347,9 +268,7 @@ section#seccion-bienvenida {
   background-color: var(--color-suave);
 }
 
-/* --------------------------------------------------------------------------
-   6. TARJETAS DE FLOTA (FOTOS REALES)
-   -------------------------------------------------------------------------- */
+/* Tarjetas de aviones (cuadricula 2x2) */
 .contenedor-tarjetas {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -403,9 +322,71 @@ section#seccion-bienvenida {
   margin-bottom: 10px;
 }
 
-/* --------------------------------------------------------------------------
-   7. LISTAS Y TABLAS
-   -------------------------------------------------------------------------- */
+/* Galeria de fotos de cada avion (exterior, cabina y plano) */
+.galeria-avion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.item-galeria {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-galeria img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.item-galeria.item-plano img {
+  object-fit: contain;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+.item-galeria p {
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: var(--color-principal);
+  background-color: #f8fafc;
+  border-top: 1px solid var(--color-borde);
+  margin: 0;
+  text-align: center;
+}
+
+/* Ficha de cada avion */
+.contenedor-ficha-avion {
+  background-color: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.boton-reserva-avion {
+  margin-top: 15px;
+}
+
+.caja-dudas {
+  background-color: var(--color-suave);
+  border: 1px solid #90caf9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+
+/* Listas y glosario */
 ul.lista-puntos, ol.lista-ordenada {
   margin-left: 25px;
   margin-bottom: 20px;
@@ -438,7 +419,7 @@ dl.glosario dd {
   margin-bottom: 8px;
 }
 
-/* Tabla */
+/* Tablas de datos */
 .tabla-contenedor {
   width: 100%;
   overflow-x: auto;
@@ -486,9 +467,19 @@ tfoot tr {
   font-style: italic;
 }
 
-/* --------------------------------------------------------------------------
-   8. MULTIMEDIA (FIGURE, VIDEO, AUDIO)
-   -------------------------------------------------------------------------- */
+.tabla-datos-tecnicos {
+  width: 100%;
+  margin: 15px 0 20px 0;
+}
+
+.tabla-datos-tecnicos td:first-child {
+  font-weight: bold;
+  width: 35%;
+  background-color: #f8fafc;
+  color: var(--color-principal);
+}
+
+/* Imagen con pie de foto */
 figure {
   margin: 22px 0;
   background-color: var(--color-blanco);
@@ -512,42 +503,7 @@ figcaption {
   border-top: 1px solid var(--color-borde);
 }
 
-.caja-multimedia {
-  background-color: var(--color-blanco);
-  border: 1px solid var(--color-borde);
-  border-radius: 6px;
-  padding: 18px;
-  margin-bottom: 22px;
-}
-
-.caja-multimedia audio {
-  width: 100%;
-  margin-top: 12px;
-}
-
-/* Contenedor responsivo para vídeos de YouTube (relación 16:9) */
-.video-responsive {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 6px;
-  margin-top: 12px;
-}
-
-.video-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* --------------------------------------------------------------------------
-   9. COLUMNAS CON ASIDE
-   -------------------------------------------------------------------------- */
+/* Columnas con aside */
 .contenedor-columnas {
   display: flex;
   gap: 25px;
@@ -572,9 +528,7 @@ aside.columna-lateral {
   height: fit-content;
 }
 
-/* --------------------------------------------------------------------------
-   10. FORMULARIO ACCESIBLE
-   -------------------------------------------------------------------------- */
+/* Formulario */
 form#formulario-reserva {
   background-color: var(--color-blanco);
   border: 1px solid var(--color-borde);
@@ -663,9 +617,7 @@ input:focus, select:focus, textarea:focus {
   margin-top: 18px;
 }
 
-/* --------------------------------------------------------------------------
-   11. PIE DE PÁGINA COMÚN
-   -------------------------------------------------------------------------- */
+/* Pie de pagina */
 footer#pie-principal {
   background-color: var(--color-principal);
   color: #e0e0e0;
@@ -726,9 +678,7 @@ footer#pie-principal {
   color: #b0bec5;
 }
 
-/* --------------------------------------------------------------------------
-   12. RESPONSIVE Y SEPARACIONES
-   -------------------------------------------------------------------------- */
+/* Adaptacion a pantallas pequenas */
 @media (max-width: 768px) {
   .contenedor-cabecera {
     flex-direction: column;
