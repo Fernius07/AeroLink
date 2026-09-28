@@ -48,9 +48,9 @@ aerolink/
     ├── piper_pa28_cabina.jpg   # [Piper PA-28] Foto real de cabina de pilotaje e instrumental
     ├── piper_pa28_plano.jpg    # [Piper PA-28] Plano oficial de tres vistas con cotas
     │
-    ├── diamond-da40.jpg        # [Diamond DA40] Foto exterior real
+    ├── diamond-da40.jpg        # [Diamond DA40 EC-LRF] Foto exterior real en plataforma
     ├── diamond_da40_cabina.jpg # [Diamond DA40] Foto real de cabina Garmin G1000
-    ├── diamond_da40_plano.svg  # [Diamond DA40] Plano oficial de tres vistas con cotas
+    ├── diamond_da40_plano.jpg  # [Diamond DA40] Plano oficial de tres vistas con cotas
     │
     ├── tecnam_p2002.jpg        # [Tecnam P2002] Foto exterior real en tierra
     ├── tecnam_p2002_cabina.jpg # [Tecnam P2002] Foto real de cabina biplaza
