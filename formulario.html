@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AeroLink | Formulario de Solicitud y Reserva - Aeropuerto de Bilbao</title>
+  <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -85,6 +86,12 @@
             <label for="nacimiento">Fecha de nacimiento: *</label>
             <input type="date" id="nacimiento" name="nacimiento" required>
           </div>
+
+          <div class="campo">
+            <label for="clave-socio">Contraseña de socio / alumno (opcional):</label>
+            <input type="password" id="clave-socio" name="clave_socio" placeholder="Introduce tu contraseña si ya eres socio">
+            <span class="nota-campo">Rellenar solo si ya dispones de cuenta de socio o alumno en AeroLink.</span>
+          </div>
         </fieldset>
 
         <!-- 2. Modalidad del servicio -->
@@ -92,20 +99,20 @@
           <legend>2. ¿Qué actividad quieres realizar?</legend>
 
           <div class="campo">
-            <label>Selecciona una opción: *</label>
+            <span class="etiqueta-campo"><strong>Selecciona una opción: *</strong></span>
             <div class="opciones-radio">
-              <label class="opcion-inline">
-                <input type="radio" name="modalidad_principal" value="escuela" checked>
-                <span><strong>Escuela de Vuelo:</strong> Cursos para aprender a volar y obtener la licencia oficial.</span>
-              </label>
-              <label class="opcion-inline">
-                <input type="radio" name="modalidad_principal" value="turistico">
-                <span><strong>Vuelo Turístico:</strong> Vuelos panorámicos con instructor por la costa y alrededores.</span>
-              </label>
-              <label class="opcion-inline">
-                <input type="radio" name="modalidad_principal" value="alquiler">
-                <span><strong>Alquiler de Avión:</strong> Alquiler de avionetas por horas para pilotos con licencia.</span>
-              </label>
+              <div class="opcion-item">
+                <input type="radio" id="modalidad-escuela" name="modalidad_principal" value="escuela" checked>
+                <label for="modalidad-escuela" class="opcion-inline"><strong>Escuela de Vuelo:</strong> Cursos para aprender a volar y obtener la licencia oficial.</label>
+              </div>
+              <div class="opcion-item">
+                <input type="radio" id="modalidad-turistico" name="modalidad_principal" value="turistico">
+                <label for="modalidad-turistico" class="opcion-inline"><strong>Vuelo Turístico:</strong> Vuelos panorámicos con instructor por la costa y alrededores.</label>
+              </div>
+              <div class="opcion-item">
+                <input type="radio" id="modalidad-alquiler" name="modalidad_principal" value="alquiler">
+                <label for="modalidad-alquiler" class="opcion-inline"><strong>Alquiler de Avión:</strong> Alquiler de avionetas por horas para pilotos con licencia.</label>
+              </div>
             </div>
           </div>
         </fieldset>
@@ -201,14 +208,14 @@
 
           <div class="campo">
             <div class="opciones-checkbox">
-              <label class="opcion-inline">
+              <div class="opcion-item">
                 <input type="checkbox" id="condiciones" name="condiciones" required>
-                <span>Acepto las normas de seguridad del club y las indicaciones del instructor en el Aeropuerto de Bilbao. *</span>
-              </label>
-              <label class="opcion-inline">
+                <label for="condiciones" class="opcion-inline">Acepto las normas de seguridad del club y las indicaciones del instructor en el Aeropuerto de Bilbao. *</label>
+              </div>
+              <div class="opcion-item">
                 <input type="checkbox" id="privacidad" name="privacidad" required>
-                <span>Acepto la política de protección de datos para la gestión de esta reserva. *</span>
-              </label>
+                <label for="privacidad" class="opcion-inline">Acepto la política de protección de datos para la gestión de esta reserva. *</label>
+              </div>
             </div>
           </div>
 
@@ -226,14 +233,23 @@
     <!-- Informacion de interes -->
     <section id="aviso-legal">
       <h2>Información de Interés</h2>
-      <article class="columna-principal">
-        <h3>Cómo funciona el servicio en Bilbao Loiu</h3>
-        <ul class="lista-puntos">
-          <li><strong>Meteorología:</strong> Si el día del vuelo hay niebla densa o viento fuerte en el aeropuerto, la actividad se aplaza a otra fecha que te venga bien sin ningún coste.</li>
-          <li><strong>Punto de encuentro:</strong> Nos vemos en la terminal de aviación general del Aeropuerto de Bilbao unos 20 minutos antes de la hora fijada para preparar el plan de vuelo.</li>
-          <li><strong>Seguridad y datos:</strong> Los datos se usan únicamente para organizar el vuelo y tramitar el seguro correspondiente.</li>
-        </ul>
-      </article>
+      <div class="contenedor-columnas">
+        <article class="columna-principal">
+          <h3>Procedimiento y Funcionamiento del Servicio</h3>
+          <ol class="lista-ordenada">
+            <li><strong>Solicitud y comprobación:</strong> Revisamos la disponibilidad de la avioneta y del instructor en la fecha seleccionada.</li>
+            <li><strong>Confirmación y meteorología:</strong> Te contactamos para confirmar el plan de vuelo y verificar el parte meteorológico (METAR) en Loiu.</li>
+            <li><strong>Briefing y despegue:</strong> Nos encontramos en la terminal de aviación general unos 20 minutos antes de la hora fijada para preparar la ruta.</li>
+          </ol>
+        </article>
+
+        <aside class="columna-lateral">
+          <h3>Atención y Oficina en Loiu</h3>
+          <p><strong>Ubicación:</strong> Terminal de Aviación General, Aeropuerto de Bilbao (Loiu).</p>
+          <p><strong>Horario de atención:</strong> De lunes a domingo de 08:30 a 20:00.</p>
+          <p><strong>Teléfono directo:</strong> +34 944 869 000</p>
+        </aside>
+      </div>
     </section>
 
   </main>
@@ -244,7 +260,7 @@
       <div class="seccion-pie">
         <h3>AeroLink Aviación Bilbao</h3>
         <p>Club de vuelo y escuela de pilotos en Bilbao.</p>
-        <p>Terminal de Aviación General, Aeropuerto de Bilbao (Loiu), 48180 Bizkaia.</p>
+        <p>Terminal de Aviación General, Aeropuerto de Bilbao (Loiu),<br>48180 Bizkaia.</p>
       </div>
 
       <div class="seccion-pie">
