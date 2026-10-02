@@ -1,7 +1,5 @@
 URL del proyecto desplegado en Vercel:
-https://aerolink-aviacion.vercel.app/
-
-(Sustituir por la URL definitiva que te genere Vercel al conectar tu repositorio de GitHub)
+https://aero-link-two.vercel.app/
 
 Repositorio de GitHub:
-https://github.com/TU-USUARIO/aerolink-aviacion
+https://github.com/Fernius07/AeroLink
