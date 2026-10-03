@@ -1,15 +1,14 @@
-# Enlaces del Proyecto
+URL del despliegue en Vercel:
+https://aero-link-two.vercel.app/
 
-- **Despliegue en producción (Vercel):** https://aero-link-two.vercel.app/
-- **Repositorio en GitHub:** https://github.com/Fernius07/AeroLink
+Repositorio de GitHub:
+https://github.com/Fernius07/AeroLink
 
----
+--------------------------------------------------------------------------------
+CONVERSACIÓN CON LA IA
+--------------------------------------------------------------------------------
 
-# Conversaciones con la Inteligencia Artificial
-
-## Sesión 1: Planteamiento inicial, información de base y contenidos
-
-### Iñigo
+Iñigo:
 Buenas! estoy haciendo la practica 1 de ingenieria web. Nos piden una web estatica de 4 paginas con html5 y css3 puro, nada de js ni librerias raras.
 
 He pillado una plantilla basica de 4 paginas q tiene la cabecera con el logo, menu responsive con el checkbox hack, contenedor y footer, y un archivo styles.css basico. La voy a hacer sobre un club de vuelo y escuela de pilotos en el aeropuerto de bilbao (loiu), se va a llamar AeroLink.
@@ -20,14 +19,14 @@ Las 4 paginas van a ser:
 3. detalle.html (fichas tecnicas de cada avion con fotos y enlaces internos)
 4. formulario.html (contacto y reservas de vuelos)
 
-A ver si me puedes echar una mano con la informacion de la portada (index.html). Necesito datos reales del aeropuerto de Loiu: el codigo ICAO/IATA, las pistas que tiene, elevacion y un ejemplo de reporte del tiempo de los aviones (el METAR) para ponerlo en la web y explicar como se lee. Me puedes redactar esa parte en html usando cosas como `<code>` o `<address>` para que quede bien estructurado?
+A ver si me puedes echar una mano con la informacion de la portada (index.html). Necesito datos reales del aeropuerto de Loiu: el codigo ICAO/IATA, las pistas que tiene, elevacion y un ejemplo de reporte del tiempo de los aviones (el METAR) para ponerlo en la web y explicar como se lee. Me puedes redactar esa parte en html usando cosas como <code> o <address> para que quede bien estructurado?
 
-### Asistente IA
+
+Asistente IA:
 ¡Hola, Iñigo! Muy buena elección de temática; el sector aeronáutico permite aprovechar muchas etiquetas semánticas y estructuración de datos técnicos.
 
 Aquí tienes la información oficial para el Aeropuerto de Bilbao (Loiu) redactada con estructura semántica HTML5 para que la integres en tu plantilla:
 
-```html
 <section id="base-loiu" class="seccion-info">
   <h2>Base Operativa: Aeropuerto de Bilbao (LEBB / BIO)</h2>
   <p>
@@ -61,10 +60,9 @@ Aquí tienes la información oficial para el Aeropuerto de Bilbao (Loiu) redacta
     </p>
   </div>
 </section>
-```
 
-Para el pie de página, puedes usar la etiqueta `<address>` de esta forma:
-```html
+Para el pie de página, puedes usar la etiqueta <address> de esta forma:
+
 <address>
   AeroLink Escuela de Aviación S.L.<br>
   Plataforma de Aviación General, Hangar 3<br>
@@ -72,17 +70,17 @@ Para el pie de página, puedes usar la etiqueta `<address>` de esta forma:
   Teléfono: <a href="tel:+34944869000">+34 944 869 000</a><br>
   Email: <a href="mailto:info@aerolink-aviacion.es">info@aerolink-aviacion.es</a>
 </address>
-```
 
-### Iñigo
+
+Iñigo:
 Vale perfecto, ya lo he metido en el index y le he aplicado los estilos de la plantilla.
 
-En la portada tmb quiero poner 3 rutas turisticas tipicas que se hagan desde Loiu por la costa vasca y cantabria (por ej San Juan de Gaztelugatxe, San Sebastian y otra por Cantabria). Me puedes redactar el texto de las 3 rutas usando etiquetas `<article>`, `<figure>`, `<img>` y `<figcaption>`? yo luego busco las fotos y las meto en la carpeta img.
+En la portada tmb quiero poner 3 rutas turisticas tipicas que se hagan desde Loiu por la costa vasca y cantabria (por ej San Juan de Gaztelugatxe, San Sebastian y otra por Cantabria). Me puedes redactar el texto de las 3 rutas usando etiquetas <article>, <figure>, <img> y <figcaption>? yo luego busco las fotos y las meto en la carpeta img.
 
-### Asistente IA
+
+Asistente IA:
 Aquí tienes los tres artículos con el marcado de figuras y pies de foto solicitado:
 
-```html
 <section id="rutas" class="seccion-rutas">
   <h2>Rutas Turísticas Populares</h2>
   <div class="contenedor-rutas">
@@ -114,13 +112,9 @@ Aquí tienes los tres artículos con el marcado de figuras y pies de foto solici
     </article>
   </div>
 </section>
-```
 
----
 
-## Sesión 2: Flota, tabla comparativa con celdas combinadas y datos POH
-
-### Iñigo
+Iñigo:
 Buenas otra vez! ya tengo listo el index.html. Ahora estoy con la segunda pagina, flota.html.
 
 He pensado en meter 4 aviones reales con matricula española:
@@ -129,14 +123,14 @@ He pensado en meter 4 aviones reales con matricula española:
 3. Diamond DA40 NG Star (EC-LRF)
 4. Tecnam P2002 Sierra (EC-LPI)
 
-Con la plantilla ya he puesto un grid de 2x2 con css para las tarjetas de los aviones. Pero el profesor nos pide si o si una tabla con `<thead>`, `<tbody>`, `<tfoot>` y que tenga celdas combinadas con `colspan` y `rowspan`.
+Con la plantilla ya he puesto un grid de 2x2 con css para las tarjetas de los aviones. Pero el profesor nos pide si o si una tabla con <thead>, <tbody>, <tfoot> y que tenga celdas combinadas con colspan y rowspan.
 
-Me puedes sacar los datos tecnicos de los manuales de vuelo (el POH) de estos 4 aviones y prepararme la tabla? me gustaria fusionar con `rowspan="2"` el combustible AVGAS de la cessna y la piper, y en el `<tfoot>` meter algun `colspan` con notas.
+Me puedes sacar los datos tecnicos de los manuales de vuelo (el POH) de estos 4 aviones y prepararme la tabla? me gustaria fusionar con rowspan="2" el combustible AVGAS de la cessna y la piper, y en el <tfoot> meter algun colspan con notas.
 
-### Asistente IA
+
+Asistente IA:
 Aquí tienes la tabla comparativa con los datos oficiales de rendimiento extraídos de los respectivos POH (Pilot's Operating Handbook), estructurada con todas las etiquetas semánticas y la combinación vertical y horizontal requerida:
 
-```html
 <table class="tabla-comparativa">
   <caption>Tabla comparativa de especificaciones y rendimiento de la flota AeroLink</caption>
   <thead>
@@ -200,93 +194,79 @@ Aquí tienes la tabla comparativa con los datos oficiales de rendimiento extraí
     </tr>
   </tfoot>
 </table>
-```
 
-### Iñigo
+
+Iñigo:
 De lujo! Ahora para la tercera pagina (detalle.html), quiero hacer una ficha completa de cada uno de los 4 aviones.
 
 Ya he montado un menu con anclas (#cessna172, #piper-pa28, etc) para saltar rapido a cada avion. Y para cada uno voy a meter 3 fotos: una de fuera, otra de la cabina y el plano tecnico de 3 vistas con medidas (ya las he buscado y recortado para q queden iguales).
 
 Me puedes dar los datos tecnicos reales de cada avion (envergadura, longitud, peso vacio, velocidad, motor, alcance, techo, plazas, etc) para meterlos en las tablas de las fichas? unos 12 o 13 datos por avion para que quede bien completo.
 
-### Asistente IA
+
+Asistente IA:
 Aquí tienes los datos reales para las 4 tablas de especificaciones técnicas:
 
-1. **Cessna 172S Skyhawk SP (EC-MRX)**:
+1. Cessna 172S Skyhawk SP (EC-MRX):
    - Tripulación y Plazas: 1 piloto + 3 pasajeros (4 plazas)
    - Envergadura: 11,00 m | Longitud: 8,28 m | Altura: 2,72 m
-   - Motor: Lycoming IO-360-L2A (4 cilindros opuestos, inyección)
-   - Potencia: 180 CV a 2.700 RPM
+   - Motor: Lycoming IO-360-L2A (4 cilindros opuestos, inyección) | Potencia: 180 CV a 2.700 RPM
    - Hélice: McCauley bipala de paso fijo
    - Peso vacío: 755 kg | MTOW: 1.157 kg | Carga útil: 402 kg
    - Capacidad combustible: 212 L (56 US gal) AVGAS 100LL
-   - Velocidad máx. (Vne): 163 KIAS | Crucero 75%: 124 KTAS
-   - Velocidad pérdida (Vs0): 40 KIAS (con flaps 30°)
-   - Régimen de ascenso: 730 ft/min
-   - Techo de servicio: 14.000 ft (4.267 m)
+   - Velocidad máx. (Vne): 163 KIAS | Crucero 75%: 124 KTAS | Pérdida (Vs0): 40 KIAS (flaps 30°)
+   - Régimen de ascenso: 730 ft/min | Techo de servicio: 14.000 ft (4.267 m)
    - Alcance máx. con reservas: 640 NM (1.185 km)
    - Aviónica: Garmin G1000 NXi (Dual PFD/MFD) + piloto automático GFC 700
 
-2. **Piper PA-28-181 Archer III (EC-JMC)**:
+2. Piper PA-28-181 Archer III (EC-JMC):
    - Tripulación y Plazas: 1 piloto + 3 pasajeros (4 plazas)
    - Envergadura: 10,80 m | Longitud: 7,32 m | Altura: 2,22 m
-   - Motor: Lycoming O-360-A4M (carburación)
-   - Potencia: 180 CV a 2.700 RPM
+   - Motor: Lycoming O-360-A4M (carburación) | Potencia: 180 CV a 2.700 RPM
    - Hélice: Sensenich bipala metálica de paso fijo
    - Peso vacío: 720 kg | MTOW: 1.156 kg | Carga útil: 436 kg
    - Capacidad combustible: 189 L (50 US gal) AVGAS 100LL
-   - Velocidad máx. (Vne): 154 KIAS | Crucero 75%: 128 KTAS
-   - Velocidad pérdida (Vs0): 45 KIAS
-   - Régimen de ascenso: 667 ft/min
-   - Techo de servicio: 14.100 ft
+   - Velocidad máx. (Vne): 154 KIAS | Crucero 75%: 128 KTAS | Pérdida (Vs0): 45 KIAS
+   - Régimen de ascenso: 667 ft/min | Techo de servicio: 14.100 ft
    - Alcance máx.: 520 NM (963 km)
    - Aviónica: Instrumentación analógica "Six-Pack" + Garmin GTN 650Xi (IFR)
 
-3. **Diamond DA40 NG Star (EC-LRF)**:
+3. Diamond DA40 NG Star (EC-LRF):
    - Tripulación y Plazas: 1 piloto + 3 pasajeros (4 plazas)
    - Envergadura: 11,63 m | Longitud: 8,06 m | Altura: 1,97 m
-   - Motor: Austro Engine AE300 (turbodiésel common rail con FADEC)
-   - Potencia: 168 CV
+   - Motor: Austro Engine AE300 (turbodiésel common rail con FADEC) | Potencia: 168 CV
    - Hélice: MT-Propeller tripala de paso variable (velocidad constante)
    - Peso vacío: 880 kg | MTOW: 1.280 kg | Carga útil: 400 kg
    - Capacidad combustible: 147 L (39 US gal) Jet-A1 / Diésel
-   - Velocidad máx. (Vne): 172 KIAS | Crucero 75%: 154 KTAS
-   - Velocidad pérdida (Vs0): 49 KIAS
-   - Régimen de ascenso: 610 ft/min
-   - Techo de servicio: 16.400 ft
+   - Velocidad máx. (Vne): 172 KIAS | Crucero 75%: 154 KTAS | Pérdida (Vs0): 49 KIAS
+   - Régimen de ascenso: 610 ft/min | Techo de servicio: 16.400 ft
    - Alcance máx.: 940 NM (1.740 km)
    - Aviónica: Garmin G1000 con visión sintética (SVT)
 
-4. **Tecnam P2002 Sierra (EC-LPI)**:
+4. Tecnam P2002 Sierra (EC-LPI):
    - Tripulación y Plazas: 1 piloto + 1 acompañante (2 plazas)
    - Envergadura: 8,60 m | Longitud: 6,61 m | Altura: 2,43 m
-   - Motor: Rotax 912 S2 (4 cilindros, refrigeración mixta aire/agua)
-   - Potencia: 100 CV a 5.800 RPM
+   - Motor: Rotax 912 S2 (4 cilindros, refrigeración mixta aire/agua) | Potencia: 100 CV a 5.800 RPM
    - Hélice: GT-Propeller bipala de madera/composite
    - Peso vacío: 331 kg | MTOW: 600 kg (VLA) | Carga útil: 269 kg
    - Capacidad combustible: 100 L (26 US gal) MOGAS / Gasolina 95
-   - Velocidad máx. (Vne): 135 KIAS | Crucero 75%: 115 KTAS
-   - Velocidad pérdida (Vs0): 38 KIAS
-   - Régimen de ascenso: 1.050 ft/min
-   - Techo de servicio: 13.120 ft
+   - Velocidad máx. (Vne): 135 KIAS | Crucero 75%: 115 KTAS | Pérdida (Vs0): 38 KIAS
+   - Régimen de ascenso: 1.050 ft/min | Techo de servicio: 13.120 ft
    - Alcance máx.: 450 NM (833 km)
    - Aviónica: Dynon SkyView HDX + radio Trig TY91 8.33 kHz
 
----
 
-## Sesión 3: Formulario avanzado, requisitos de accesibilidad y revisión final
-
-### Iñigo
+Iñigo:
 Ya he terminado detalle.html con las tablas y las imagenes.
 
-Ahora me queda la ultima pagina, formulario.html. El profe pide que este dividido con fieldset y legend, y que tenga un monton de tipos de input distintos (text, email, tel, date, number, password, radio, checkbox, file, submit y reset). Tambien pide un `<select>` con opciones agrupadas por `<optgroup>` y un `<datalist>`. Todo sin nada de JS, solo validacion nativa de html5.
+Ahora me queda la ultima pagina, formulario.html. El profe pide que este dividido con fieldset y legend, y que tenga un monton de tipos de input distintos (text, email, tel, date, number, password, radio, checkbox, file, submit y reset). Tambien pide un <select> con opciones agrupadas por <optgroup> y un <datalist>. Todo sin nada de JS, solo validacion nativa de html5.
 
-Me puedes pasar el codigo para el select con optgroup para elegir el tipo de curso/vuelo, y el datalist con las 4 matriculas de los aviones para que sugiera al escribir? y de paso una lista ordenada `<ol>` con los pasos que hay que hacer en el aeropuerto antes de subir al avion para ponerla al final.
+Me puedes pasar el codigo para el select con optgroup para elegir el tipo de curso/vuelo, y el datalist con las 4 matriculas de los aviones para que sugiera al escribir? y de paso una lista ordenada <ol> con los pasos que hay que hacer en el aeropuerto antes de subir al avion para ponerla al final.
 
-### Asistente IA
+
+Asistente IA:
 Aquí tienes los fragmentos que necesitas:
 
-```html
 <!-- Selector agrupado con optgroup -->
 <div class="campo-formulario">
   <label for="tipo-curso">Programa o servicio solicitado: *</label>
@@ -330,55 +310,55 @@ Aquí tienes los fragmentos que necesitas:
   <li>Sesión informativa de seguridad y briefing meteorológico con el instructor de vuelo asignado.</li>
   <li>Inspección prevuelo exterior de la aeronave y comprobación de listas de chequeo antes del embarque.</li>
 </ol>
-```
 
-### Iñigo
+
+Iñigo:
 Ya he metido todo en el formulario y funciona guay.
 
-Pero tengo una duda con la accesibilidad, le he pasado una extension del navegador y me salian algunos avisos con los labels de los radio buttons y los checkbox. Como es la forma correcta de asociarlos para que no de fallo de accesibilidad? y en las tablas de detalle.html, en las filas de la izquierda tengo que poner `<td>` o `<th>`?
+Pero tengo una duda con la accesibilidad, le he pasado una extension del navegador y me salian algunos avisos con los labels de los radio buttons y los checkbox. Como es la forma correcta de asociarlos para que no de fallo de accesibilidad? y en las tablas de detalle.html, en las filas de la izquierda tengo que poner <td> o <th>?
 
-### Asistente IA
+
+Asistente IA:
 Dos puntos clave para tener máxima nota en accesibilidad:
 
-1. **Asociación estricta `<label for="ID">`**:
-   Aunque HTML permite "envolver" un input dentro de un `<label>` sin atributos, muchos lectores de pantalla y herramientas de evaluación automática (como axe-core) exigen que exista un atributo `id` único en el `<input>` y un atributo `for="el-mismo-id"` en el `<label>`. Hazlo siempre así:
-   ```html
+1. Asociación estricta <label for="ID">:
+   Aunque HTML permite "envolver" un input dentro de un <label> sin atributos, muchos lectores de pantalla y herramientas de evaluación automática (como axe-core) exigen que exista un atributo id único en el <input> y un atributo for="el-mismo-id" en el <label>. Hazlo siempre así:
    <input type="radio" id="modalidad-escuela" name="modalidad" value="escuela" required>
    <label for="modalidad-escuela">Cursos Escuela de Vuelo (PPL / LAPL)</label>
-   ```
 
-2. **Cabeceras de fila en tablas (`<th scope="row">`)**:
-   En las tablas de especificaciones de `detalle.html`, si la columna izquierda es el nombre del parámetro (por ejemplo "Velocidad de crucero", "Motor", etc.) y la derecha es el valor, la izquierda no debe ser un `<td>` con estilo en negrita, sino una cabecera de fila semántica:
-   `<th scope="row">Velocidad de crucero</th>`.
-   De este modo, cuando un usuario invidente recorre la tabla con un lector de pantalla, el software le leerá automáticamente: *"Velocidad de crucero: 124 nudos"*, identificando el parámetro sin ambigüedades.
+2. Cabeceras de fila en tablas (<th scope="row">):
+   En las tablas de especificaciones de detalle.html, si la columna izquierda es el nombre del parámetro (por ejemplo "Velocidad de crucero", "Motor", etc.) y la derecha es el valor, la izquierda no debe ser un <td> con estilo en negrita, sino una cabecera de fila semántica: <th scope="row">Velocidad de crucero</th>. Así los lectores de pantalla leen automáticamente el parámetro y su valor asociado.
 
-### Iñigo
-Vale, ya he cambiado todas las filas de las tablas a `<th scope="row">` y he puesto los for y los id a juego en todos los inputs del formulario.
+
+Iñigo:
+Vale, ya he cambiado todas las filas de las tablas a <th scope="row"> y he puesto los for y los id a juego en todos los inputs del formulario.
 
 En el CSS tmb he añadido:
-- el `:active` para que se note el click en los botones
-- el `:focus-visible` con borde azul para que se vea cuando navegas con tabulador
-- clases con `float`, `clear` y el `.clearfix` que vimos en clase para maquetacion tradicional
-- el favicon con `<link rel="shortcut icon">` en los 4 html
+- el :active para que se note el click en los botones
+- el :focus-visible con borde azul para que se vea cuando navegas con tabulador
+- clases con float, clear y el .clearfix que vimos en clase para maquetacion tradicional
+- el favicon con <link rel="shortcut icon"> en los 4 html
 - el prologo xml en el svg del logo
 - y he pasado todas las fotos a webp para que ocupe poco y cargue rapido en Vercel
 
 Ves alguna otra cosa que suelan pedir o que se me haya podido pasar?
 
-### Asistente IA
+
+Asistente IA:
 Has cubierto el 100% de los aspectos evaluables de la primera entrega:
-1. `<!DOCTYPE html>` y `<html lang="es">` en todas las páginas.
-2. `<meta charset="utf-8">` y `<meta name="viewport" ...>` en los `<head>`.
-3. Jerarquía estricta de encabezados (un único `<h1>` por documento, seguido de `<h2>`, `<h3>` sin saltos).
-4. Separación absoluta de CSS: 0 estilos en línea y 0 bloques `<style>`.
-5. Tablas accesibles con `<thead>`, `<tbody>`, `<tfoot>`, `caption`, `colspan` y `rowspan`.
-6. Formulario con todos los tipos de entrada, `optgroup`, `datalist` y asociación estricta de etiquetas.
+1. <!DOCTYPE html> y <html lang="es"> en todas las páginas.
+2. <meta charset="utf-8"> y <meta name="viewport" ...> en los <head>.
+3. Jerarquía estricta de encabezados (un único <h1> por documento, seguido de <h2>, <h3> sin saltos).
+4. Separación absoluta de CSS: 0 estilos en línea y 0 bloques <style>.
+5. Tablas accesibles con <thead>, <tbody>, <tfoot>, caption, colspan y rowspan.
+6. Formulario con todos los tipos de entrada, optgroup, datalist y asociación estricta de etiquetas.
 7. Sin librerías externas ni JavaScript.
 8. Validación de accesibilidad con 0 errores.
 
-Ya solo te queda generar el `.zip` con la nomenclatura oficial de la asignatura (`IW-[DNI]-E1.zip`) que en tu caso será `IW-79078777Q-E1.zip`. ¡El proyecto está impecable!
+Ya solo te queda generar el .zip con la nomenclatura oficial de la asignatura (IW-[DNI]-E1.zip) que en tu caso será IW-79078777Q-E1.zip. ¡El proyecto está impecable!
 
-### Iñigo
-Bua perfecto! me he hecho un script en powershell para que me genere directamente el zip con el nombre que pide el profe (`IW-79078777Q-E1.zip`). Ya lo he subido todo a mi github (https://github.com/Fernius07/AeroLink) y lo tengo desplegado en vercel funcionando (https://aero-link-two.vercel.app/).
+
+Iñigo:
+Bua perfecto! me he hecho un script en powershell para que me genere directamente el zip con el nombre que pide el profe (IW-79078777Q-E1.zip). Ya lo he subido todo a mi github (https://github.com/Fernius07/AeroLink) y lo tengo desplegado en vercel funcionando (https://aero-link-two.vercel.app/).
 
 Muchas gracias por echarme un cable con los textos y las tablas!

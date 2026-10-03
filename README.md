@@ -210,8 +210,8 @@ AeroLink/
 ├── formulario.html             # Formulario de reservas, cursos y contacto
 │
 ├── README.md                   # Documentación técnica completa para el profesor
-├── conversacion_ia.pdf         # PDF con los enlaces del proyecto y las conversaciones con la IA
-├── conversacion_ia.md          # Versión Markdown del registro de enlaces y conversaciones
+├── url_sitio.txt               # Enlaces al despliegue en Vercel y repositorio GitHub
+├── conversacion_ia.txt         # Registro de conversación y uso de IA solicitado
 ├── empaquetar_entrega.ps1      # Script PowerShell para generar el ZIP oficial
 ├── IW-79078777Q-E1.zip         # Archivo comprimido final para entrega académica
 │
@@ -267,7 +267,7 @@ El proyecto incluye un script en PowerShell para verificar la integridad de los 
 ```powershell
 .\empaquetar_entrega.ps1
 ```
-El script verifica la presencia obligatoria de los archivos HTML, CSS, imágenes, `conversacion_ia.pdf` y `README.md`, y genera el fichero `IW-79078777Q-E1.zip` en la raíz del proyecto.
+El script verifica la presencia obligatoria de los archivos HTML, CSS, imágenes, `url_sitio.txt`, `conversacion_ia.txt` y `README.md`, y genera el fichero `IW-79078777Q-E1.zip` en la raíz del proyecto.
 
 ---
 
