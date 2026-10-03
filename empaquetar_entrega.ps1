@@ -13,6 +13,7 @@ $elementos = @(
     "detalle.html",
     "formulario.html",
     "url_sitio.txt",
+    "conversacion_ia.txt",
     "README.md",
     "css",
     "img"

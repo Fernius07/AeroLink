@@ -211,6 +211,7 @@ AeroLink/
 │
 ├── README.md                   # Documentación técnica completa para el profesor
 ├── url_sitio.txt               # Enlaces al despliegue en Vercel y repositorio GitHub
+├── conversacion_ia.txt         # Registro de conversación y uso de IA solicitado
 ├── empaquetar_entrega.ps1      # Script PowerShell para generar el ZIP oficial
 ├── IW-79078777Q-E1.zip         # Archivo comprimido final para entrega académica
 │
