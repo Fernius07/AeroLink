@@ -2,6 +2,7 @@
 *.zip
 *.tar.gz
 *.rar
+empaquetar_entrega.ps1
 
 # Archivos del sistema operativo y editores
 .DS_Store

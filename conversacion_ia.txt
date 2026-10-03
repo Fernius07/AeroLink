@@ -9,9 +9,9 @@ CONVERSACIÓN CON LA IA
 --------------------------------------------------------------------------------
 
 Iñigo:
-Buenas! estoy haciendo la practica 1 de ingenieria web. Nos piden una web estatica de 4 paginas con html5 y css3 puro, nada de js ni librerias raras.
+Hola estoy haciendo la practica 1 de ingenieria web. Nos piden una web estatica de 4 paginas con html5 y css3 puro, nada de js ni librerias raras.
 
-He pillado una plantilla basica de 4 paginas q tiene la cabecera con el logo, menu responsive con el checkbox hack, contenedor y footer, y un archivo styles.css basico. La voy a hacer sobre un club de vuelo y escuela de pilotos en el aeropuerto de bilbao (loiu), se va a llamar AeroLink.
+He pillado una plantilla basica de 4 paginas q tiene la cabecera con el logo, menu interactivo, contenedor y footer, y un archivo styles.css basico. La voy a hacer sobre un club de vuelo y escuela de pilotos en el aeropuerto de bilbao (loiu), se va a llamar AeroLink.
 
 Las 4 paginas van a ser:
 1. index.html (portada y presentacion de la escuela)
@@ -197,7 +197,7 @@ Aquí tienes la tabla comparativa con los datos oficiales de rendimiento extraí
 
 
 Iñigo:
-De lujo! Ahora para la tercera pagina (detalle.html), quiero hacer una ficha completa de cada uno de los 4 aviones.
+perfecto ahora para la tercera pagina (detalle.html), quiero hacer una ficha completa de cada uno de los 4 aviones.
 
 Ya he montado un menu con anclas (#cessna172, #piper-pa28, etc) para saltar rapido a cada avion. Y para cada uno voy a meter 3 fotos: una de fuera, otra de la cabina y el plano tecnico de 3 vistas con medidas (ya las he buscado y recortado para q queden iguales).
 
@@ -356,9 +356,3 @@ Has cubierto el 100% de los aspectos evaluables de la primera entrega:
 8. Validación de accesibilidad con 0 errores.
 
 Ya solo te queda generar el .zip con la nomenclatura oficial de la asignatura (IW-[DNI]-E1.zip) que en tu caso será IW-79078777Q-E1.zip. ¡El proyecto está impecable!
-
-
-Iñigo:
-Bua perfecto! me he hecho un script en powershell para que me genere directamente el zip con el nombre que pide el profe (IW-79078777Q-E1.zip). Ya lo he subido todo a mi github (https://github.com/Fernius07/AeroLink) y lo tengo desplegado en vercel funcionando (https://aero-link-two.vercel.app/).
-
-Muchas gracias por echarme un cable con los textos y las tablas!
