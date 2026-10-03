@@ -12,8 +12,8 @@ $elementos = @(
     "flota.html",
     "detalle.html",
     "formulario.html",
-    "url_sitio.txt",
-    "conversacion_ia.txt",
+    "conversacion_ia.pdf",
+    "conversacion_ia.md",
     "README.md",
     "css",
     "img"

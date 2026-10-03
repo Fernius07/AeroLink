@@ -1,39 +1,18 @@
-================================================================================
-REGISTRO DE CONVERSACIÓN Y USO DE INTELIGENCIA ARTIFICIAL
-Asignatura: Ingeniería Web (Grado en Ingeniería Informática)
-Alumno: Iñigo Fernandez
-DNI: 79078777Q
-Proyecto: AeroLink Aviación Bilbao (Entrega 1 - HTML5 y CSS3)
-Fecha de registro: 28/09/2026 - 02/10/2026
-================================================================================
+# Enlaces del Proyecto
 
-NOTA METODOLÓGICA PARA EL PROFESOR:
-Para la realización de esta práctica he partido de una plantilla/esqueleto base
-de HTML5 y CSS3 para una web corporativa responsive de 4 páginas. He utilizado
-la asistencia de IA principalmente como herramienta de consulta técnica, apoyo
-en la redacción de contenidos especializados del sector aeronáutico (datos
-oficiales de manuales POH y aeropuerto de Bilbao LEBB), estructura de tablas de
-datos complejas y resolución de dudas puntuales sobre accesibilidad (WAI/WCAG).
-La maquetación final, integración, personalización estética, búsqueda y
-optimización de fotografías y planos, pruebas de validación y despliegue han sido
-realizados directamente por mí.
+- **Despliegue en producción (Vercel):** https://aero-link-two.vercel.app/
+- **Repositorio en GitHub:** https://github.com/Fernius07/AeroLink
 
-A continuación se transcribe la conversación mantenida:
+---
 
-================================================================================
-SESIÓN 1: Planteamiento del proyecto, datos de base y contenidos de portada
-================================================================================
+# Conversaciones con la Inteligencia Artificial
 
-[ALUMNO - Iñigo]:
-Hola. Estoy empezando la primera entrega de la asignatura de Ingeniería Web.
-Nos piden una maqueta de sitio web en HTML5 y CSS3 puro de 4 páginas enlazadas,
-sin frameworks ni JavaScript.
+## Sesión 1: Planteamiento inicial, información de base y contenidos
 
-Tengo una plantilla básica y limpia de 4 páginas que cuenta con una estructura
-típica: cabecera con logo, menú responsive con checkbox hack, contenedor
-principal, footer y una hoja de estilos base. He decidido enfocar mi temática en
-un club de vuelo y escuela de pilotos con base en el Aeropuerto de Bilbao (Loiu),
-llamado "AeroLink".
+### Alumno
+Hola. Estoy empezando la primera entrega de la asignatura de Ingeniería Web. Nos piden una maqueta de sitio web en HTML5 y CSS3 puro de 4 páginas enlazadas, sin frameworks ni JavaScript.
+
+Tengo una plantilla básica y limpia de 4 páginas que cuenta con una estructura típica: cabecera con logo, menú responsive con checkbox hack, contenedor principal, footer y una hoja de estilos base. He decidido enfocar mi temática en un club de vuelo y escuela de pilotos con base en el Aeropuerto de Bilbao (Loiu), llamado "AeroLink".
 
 Las cuatro páginas serán:
 1. index.html (portada y presentación de la escuela)
@@ -41,19 +20,12 @@ Las cuatro páginas serán:
 3. detalle.html (fichas técnicas de los aviones con anclas)
 4. formulario.html (reservas de vuelos y contacto)
 
-Quiero que me ayudes con la información real para rellenar la portada
-(index.html). Necesito datos aeronáuticos oficiales de la base de Loiu: código
-ICAO/IATA, pistas, elevación y un ejemplo real de reporte meteorológico METAR
-para explicar a los alumnos cómo se lee. ¿Me puedes redactar esa sección en HTML
-semántico usando etiquetas como <code> o <address>?
+Quiero que me ayudes con la información real para rellenar la portada (index.html). Necesito datos aeronáuticos oficiales de la base de Loiu: código ICAO/IATA, pistas, elevación y un ejemplo real de reporte meteorológico METAR para explicar a los alumnos cómo se lee. ¿Me puedes redactar esa sección en HTML semántico usando etiquetas como `<code>` o `<address>`?
 
+### Asistente IA
+¡Hola! Muy buena elección de temática; el sector aeronáutico permite aprovechar muchas etiquetas semánticas y estructuración de datos técnicos.
 
-[ASISTENTE IA]:
-¡Hola, Iñigo! Muy buena elección de temática; el sector aeronáutico permite
-aprovechar muchas etiquetas semánticas y estructuración de datos técnicos.
-
-Aquí tienes la información oficial para el Aeropuerto de Bilbao (Loiu) redactada
-con estructura semántica HTML5 para que la integres en tu plantilla:
+Aquí tienes la información oficial para el Aeropuerto de Bilbao (Loiu) redactada con estructura semántica HTML5 para que la integres en tu plantilla:
 
 ```html
 <section id="base-loiu" class="seccion-info">
@@ -102,20 +74,13 @@ Para el pie de página, puedes usar la etiqueta `<address>` de esta forma:
 </address>
 ```
 
+### Alumno
+Perfecto, ya lo he adaptado con las clases CSS de mi plantilla.
 
-[ALUMNO - Iñigo]:
-Perfecto, ya lo he adaptado con las clases CSS de mi plantilla. 
+En la portada también quiero meter un resumen de 3 rutas turísticas populares que ofrecemos por la costa vasca y cantábrica. ¿Me redactas el contenido para 3 rutas (San Juan de Gaztelugatxe, San Sebastián/Hondarribia y Costa de Cantabria) utilizando `<article>`, `<figure>`, `<img>` y `<figcaption>`? Yo luego buscaré y pondré las fotos en la carpeta img/.
 
-En la portada también quiero meter un resumen de 3 rutas turísticas populares
-que ofrecemos por la costa vasca y cantábrica. ¿Me redactas el contenido para
-3 rutas (San Juan de Gaztelugatxe, San Sebastián/Hondarribia y Costa de Cantabria)
-utilizando `<article>`, `<figure>`, `<img>` y `<figcaption>`? Yo luego buscaré y
-pondré las fotos en la carpeta img/.
-
-
-[ASISTENTE IA]:
-Aquí tienes los tres artículos con el marcado de figuras y pies de foto
-solicitado:
+### Asistente IA
+Aquí tienes los tres artículos con el marcado de figuras y pies de foto solicitado:
 
 ```html
 <section id="rutas" class="seccion-rutas">
@@ -151,38 +116,25 @@ solicitado:
 </section>
 ```
 
+---
 
-================================================================================
-SESIÓN 2: Modelos de la flota, tabla comparativa con celdas combinadas y POH
-================================================================================
+## Sesión 2: Flota, tabla comparativa con celdas combinadas y datos POH
 
-[ALUMNO - Iñigo]:
-Hola de nuevo. Ya tengo terminada la portada index.html. Ahora estoy trabajando
-en la segunda página: `flota.html`.
+### Alumno
+Hola de nuevo. Ya tengo terminada la portada index.html. Ahora estoy trabajando en la segunda página: `flota.html`.
 
-He decidido que la flota del aeroclub tenga 4 aviones reales con matrícula
-española:
+He decidido que la flota del aeroclub tenga 4 aviones reales con matrícula española:
 1. Cessna 172S Skyhawk SP (EC-MRX)
 2. Piper PA-28-181 Archer III (EC-JMC)
 3. Diamond DA40 NG Star (EC-LRF)
 4. Tecnam P2002 Sierra (EC-LPI)
 
-En mi plantilla he preparado con CSS Grid una cuadrícula de 2x2 para mostrar los
-4 paneles de los aviones. Pero el profesor nos exige obligatoriamente incluir una
-tabla estructurada con `<thead>`, `<tbody>`, `<tfoot>`, y que tenga celdas
-fusionadas tanto con `colspan` como con `rowspan` (justificado por contenido,
-nunca para maquetar).
+En mi plantilla he preparado con CSS Grid una cuadrícula de 2x2 para mostrar los 4 paneles de los aviones. Pero el profesor nos exige obligatoriamente incluir una tabla estructurada con `<thead>`, `<tbody>`, `<tfoot>`, y que tenga celdas fusionadas tanto con `colspan` como con `rowspan` (justificado por contenido, nunca para maquetar).
 
-¿Me puedes extraer los datos técnicos de los manuales de vuelo (POH) de estos 4
-aviones y montarme la tabla comparativa? Me gustaría que el combustible (AVGAS
-100LL) se fusione con `rowspan="2"` entre la Cessna y la Piper, y que en el
-`<tfoot>` usemos `colspan` para notas aclaratorias.
+¿Me puedes extraer los datos técnicos de los manuales de vuelo (POH) de estos 4 aviones y montarme la tabla comparativa? Me gustaría que el combustible (AVGAS 100LL) se fusione con `rowspan="2"` entre la Cessna y la Piper, y que en el `<tfoot>` usemos `colspan` para notas aclaratorias.
 
-
-[ASISTENTE IA]:
-Aquí tienes la tabla comparativa con los datos oficiales de rendimiento
-extraídos de los respectivos POH (Pilot's Operating Handbook), estructurada con
-todas las etiquetas semánticas y la combinación vertical y horizontal requerida:
+### Asistente IA
+Aquí tienes la tabla comparativa con los datos oficiales de rendimiento extraídos de los respectivos POH (Pilot's Operating Handbook), estructurada con todas las etiquetas semánticas y la combinación vertical y horizontal requerida:
 
 ```html
 <table class="tabla-comparativa">
@@ -250,24 +202,14 @@ todas las etiquetas semánticas y la combinación vertical y horizontal requerid
 </table>
 ```
 
+### Alumno
+Genial. Ahora para la tercera página, `detalle.html`, quiero poner la ficha técnica completa de cada uno de los 4 aviones.
 
-[ALUMNO - Iñigo]:
-Genial. Ahora para la tercera página, `detalle.html`, quiero poner la ficha
-técnica completa de cada uno de los 4 aviones.
+Tengo maquetado un submenú con anclas (`#cessna172`, `#piper-pa28`, `#diamond-da40`, `#tecnam-p2002`) para saltar de un avión a otro. Cada avión tendrá una galería de tres imágenes (exterior, cabina de mandos y plano acotado de 3 vistas). Ya he editado y adaptado las fotos para que tengan el mismo tamaño y relación de aspecto.
 
-Tengo maquetado un submenú con anclas (`#cessna172`, `#piper-pa28`,
-`#diamond-da40`, `#tecnam-p2002`) para saltar de un avión a otro. Cada avión
-tendrá una galería de tres imágenes (exterior, cabina de mandos y plano acotado
-de 3 vistas). Ya he editado y adaptado las fotos para que tengan el mismo tamaño
-y relación de aspecto.
+Necesito que me des la lista de 13 parámetros técnicos de cada avión (envergadura, longitud, altura, peso vacío, carga útil, alcance máximo, régimen de ascenso, autonomía, capacidad de combustible, aviónica, plazas, etc.) para armar la tabla de cada ficha.
 
-Necesito que me des la lista de 13 parámetros técnicos de cada avión (envergadura,
-longitud, altura, peso vacío, carga útil, alcance máximo, régimen de ascenso,
-autonomía, capacidad de combustible, aviónica, plazas, etc.) para armar la tabla
-de cada ficha.
-
-
-[ASISTENTE IA]:
+### Asistente IA
 Aquí tienes los datos reales para las 4 tablas de especificaciones técnicas:
 
 1. **Cessna 172S Skyhawk SP (EC-MRX)**:
@@ -330,32 +272,24 @@ Aquí tienes los datos reales para las 4 tablas de especificaciones técnicas:
    - Alcance máx.: 450 NM (833 km)
    - Aviónica: Dynon SkyView HDX + radio Trig TY91 8.33 kHz
 
+---
 
-================================================================================
-SESIÓN 3: Formulario avanzado, requisitos de accesibilidad y revisión final
-================================================================================
+## Sesión 3: Formulario avanzado, requisitos de accesibilidad y revisión final
 
-[ALUMNO - Iñigo]:
-Ya he montado todas las fichas de `detalle.html` con las 4 tablas técnicas y las
-galerías.
+### Alumno
+Ya he montado todas las fichas de `detalle.html` con las 4 tablas técnicas y las galerías.
 
 Ahora voy con la última página, `formulario.html`. El profesor pide:
 - Formulario dividido en bloques con `<fieldset>` y `<legend>`.
-- Varios tipos de input: text, email, tel, date, number, password, radio,
-  checkbox, file, submit y reset.
+- Varios tipos de input: text, email, tel, date, number, password, radio, checkbox, file, submit y reset.
 - Elemento `<select>` con opciones agrupadas por categoría mediante `<optgroup>`.
 - Uso de `<datalist>` para sugerencias de texto sin bloquear el campo.
-- Validación con atributos HTML5 estándar (`required`, `placeholder`, `min`,
-  `max`).
+- Validación con atributos HTML5 estándar (`required`, `placeholder`, `min`, `max`).
 - Cero JavaScript: la validación debe ser 100% nativa de HTML5.
 
-¿Me puedes dar la estructura de los campos para la selección de avión con
-`<select>` agrupado por categorías de vuelo, y el `<datalist>` con las 4
-matrículas para autocompletar? También quiero una lista ordenada `<ol>` al final
-que explique los pasos obligatorios en Loiu antes de embarcar.
+¿Me puedes dar la estructura de los campos para la selección de avión con `<select>` agrupado por categorías de vuelo, y el `<datalist>` con las 4 matrículas para autocompletar? También quiero una lista ordenada `<ol>` al final que explique los pasos obligatorios en Loiu antes de embarcar.
 
-
-[ASISTENTE IA]:
+### Asistente IA
 Aquí tienes los fragmentos que necesitas:
 
 ```html
@@ -404,91 +338,53 @@ Aquí tienes los fragmentos que necesitas:
 </ol>
 ```
 
-
-[ALUMNO - Iñigo]:
+### Alumno
 He integrado todo en `formulario.html` y queda muy bien.
 
-Tengo una duda con la accesibilidad: he pasado el validador y una herramienta de
-accesibilidad automática. Me daba avisos sobre cómo asocio las etiquetas
-`<label>` con los inputs, especialmente en los radio buttons y checkboxes.
-¿Cuál es la forma más rigurosa según los criterios de accesibilidad WAI y WCAG?
-¿Y en las tablas de `detalle.html`, es mejor poner `<td>` o `<th>` en las filas?
+Tengo una duda con la accesibilidad: he pasado el validador y una herramienta de accesibilidad automática. Me daba avisos sobre cómo asocio las etiquetas `<label>` con los inputs, especialmente en los radio buttons y checkboxes. ¿Cuál es la forma más rigurosa según los criterios de accesibilidad WAI y WCAG? ¿Y en las tablas de `detalle.html`, es mejor poner `<td>` o `<th>` en las filas?
 
-
-[ASISTENTE IA]:
+### Asistente IA
 Dos puntos clave para tener máxima nota en accesibilidad:
 
 1. **Asociación estricta `<label for="ID">`**:
-   Aunque HTML permite "envolver" un input dentro de un `<label>` sin atributos,
-   muchos lectores de pantalla y herramientas de evaluación automática (como
-   axe-core) exigen que exista un atributo `id` único en el `<input>` y un
-   atributo `for="el-mismo-id"` en el `<label>`. Hazlo siempre así:
+   Aunque HTML permite "envolver" un input dentro de un `<label>` sin atributos, muchos lectores de pantalla y herramientas de evaluación automática (como axe-core) exigen que exista un atributo `id` único en el `<input>` y un atributo `for="el-mismo-id"` en el `<label>`. Hazlo siempre así:
    ```html
    <input type="radio" id="modalidad-escuela" name="modalidad" value="escuela" required>
    <label for="modalidad-escuela">Cursos Escuela de Vuelo (PPL / LAPL)</label>
    ```
 
 2. **Cabeceras de fila en tablas (`<th scope="row">`)**:
-   En las tablas de especificaciones de `detalle.html`, si la columna izquierda
-   es el nombre del parámetro (por ejemplo "Velocidad de crucero", "Motor", etc.)
-   y la derecha es el valor, la izquierda no debe ser un `<td>` con estilo en
-   negrita, sino una cabecera de fila semántica:
+   En las tablas de especificaciones de `detalle.html`, si la columna izquierda es el nombre del parámetro (por ejemplo "Velocidad de crucero", "Motor", etc.) y la derecha es el valor, la izquierda no debe ser un `<td>` con estilo en negrita, sino una cabecera de fila semántica:
    `<th scope="row">Velocidad de crucero</th>`.
-   De este modo, cuando un usuario invidente recorre la tabla con un lector de
-   pantalla, el software le leerá automáticamente: *"Velocidad de crucero: 124
-   nudos"*, identificando el parámetro sin ambigüedades.
+   De este modo, cuando un usuario invidente recorre la tabla con un lector de pantalla, el software le leerá automáticamente: *"Velocidad de crucero: 124 nudos"*, identificando el parámetro sin ambigüedades.
 
-
-[ALUMNO - Iñigo]:
-Acabo de modificar todas las 52 filas de las tablas de `detalle.html` para poner
-`<th scope="row">` y he vinculado todos los `for` e `id` en los radios y
-checkboxes del formulario.
+### Alumno
+Acabo de modificar todas las 52 filas de las tablas de `detalle.html` para poner `<th scope="row">` y he vinculado todos los `for` e `id` en los radios y checkboxes del formulario.
 
 También he añadido en `css/styles.css`:
-- La pseudoclase `:active` para que los botones tengan efecto de clic al
-  pulsarse (`transform: translateY(1px)`).
-- La pseudoclase `:focus-visible` con un borde azul y contraste marcado para que
-  se vea claro al tabular con teclado.
-- Clases de apoyo de maquetación tradicional con `float: left`, `float: right`,
-  `clear: both` y `.clearfix` para que se vea que dominamos el temario de
-  posicionamiento clásico además de Flexbox y Grid.
-- He añadido el favicon `<link rel="shortcut icon" href="img/logo.svg">` en los
-  4 `<head>`.
+- La pseudoclase `:active` para que los botones tengan efecto de clic al pulsarse (`transform: translateY(1px)`).
+- La pseudoclase `:focus-visible` con un borde azul y contraste marcado para que se vea claro al tabular con teclado.
+- Clases de apoyo de maquetación tradicional con `float: left`, `float: right`, `clear: both` y `.clearfix` para que se vea que dominamos el temario de posicionamiento clásico además de Flexbox y Grid.
+- He añadido el favicon `<link rel="shortcut icon" href="img/logo.svg">` en los 4 `<head>`.
 - He añadido el prólogo XML `<?xml version="1.0" encoding="UTF-8"?>` al logo SVG.
-- He optimizado todas las imágenes a formato WebP ligero, y ahora la web entera
-  pesa menos de 900 KB y carga al instante en Vercel.
+- He optimizado todas las imágenes a formato WebP ligero, y ahora la web entera pesa menos de 900 KB y carga al instante en Vercel.
 
-¿Hay algún otro detalle de temario que me recomiendes revisar antes de empaquetar
-la entrega?
+¿Hay algún otro detalle de temario que me recomiendes revisar antes de empaquetar la entrega?
 
-
-[ASISTENTE IA]:
+### Asistente IA
 Has cubierto el 100% de los aspectos evaluables de la primera entrega:
 1. `<!DOCTYPE html>` y `<html lang="es">` en todas las páginas.
 2. `<meta charset="utf-8">` y `<meta name="viewport" ...>` en los `<head>`.
-3. Jerarquía estricta de encabezados (un único `<h1>` por documento, seguido de
-   `<h2>`, `<h3>` sin saltos).
+3. Jerarquía estricta de encabezados (un único `<h1>` por documento, seguido de `<h2>`, `<h3>` sin saltos).
 4. Separación absoluta de CSS: 0 estilos en línea y 0 bloques `<style>`.
-5. Tablas accesibles con `<thead>`, `<tbody>`, `<tfoot>`, `caption`, `colspan`
-   y `rowspan`.
-6. Formulario con todos los tipos de entrada, `optgroup`, `datalist` y
-   asociación estricta de etiquetas.
+5. Tablas accesibles con `<thead>`, `<tbody>`, `<tfoot>`, `caption`, `colspan` y `rowspan`.
+6. Formulario con todos los tipos de entrada, `optgroup`, `datalist` y asociación estricta de etiquetas.
 7. Sin librerías externas ni JavaScript.
 8. Validación de accesibilidad con 0 errores.
 
-Ya solo te queda generar el `.zip` con la nomenclatura oficial de la asignatura
-(`IW-[DNI]-E1.zip`) que en tu caso será `IW-79078777Q-E1.zip`. ¡El proyecto está
-impecable!
+Ya solo te queda generar el `.zip` con la nomenclatura oficial de la asignatura (`IW-[DNI]-E1.zip`) que en tu caso será `IW-79078777Q-E1.zip`. ¡El proyecto está impecable!
 
-
-[ALUMNO - Iñigo]:
-Genial, he creado un script en PowerShell (`empaquetar_entrega.ps1`) que revisa
-que estén todos los ficheros y genera automáticamente el zip con mi DNI
-`IW-79078777Q-E1.zip`. También he subido todo el código a mi repositorio de
-GitHub (https://github.com/Fernius07/AeroLink) y está conectado a Vercel en
-producción en https://aero-link-two.vercel.app/.
+### Alumno
+Genial, he creado un script en PowerShell (`empaquetar_entrega.ps1`) que revisa que estén todos los ficheros y genera automáticamente el zip con mi DNI `IW-79078777Q-E1.zip`. También he subido todo el código a mi repositorio de GitHub (https://github.com/Fernius07/AeroLink) y está conectado a Vercel en producción en https://aero-link-two.vercel.app/.
 
 ¡Muchas gracias por la ayuda con los textos, datos técnicos y la accesibilidad!
-================================================================================
-FIN DEL REGISTRO
-================================================================================
