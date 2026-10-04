@@ -1,8 +1,5 @@
-URL DEL SITIO EN NETLIFY (PROVEEDOR EXTERNO):
-https://aeroops-bilbao.netlify.app/
-
-URL ESPEJO / ALTERNATIVA (VERCEL):
-https://aeroops-aeroclub.vercel.app/
+URL DEL SITIO EN VERCEL (PROVEEDOR EXTERNO):
+https://aero-link-two.vercel.app/
 
 REPOSITORIO EN GITHUB:
 https://github.com/Fernius07/AeroLink
@@ -246,13 +243,13 @@ Tu proyecto cumple de sobra con todos los requisitos del enunciado. Vamos a repa
    - Es excelente que hayas verificado y corregido las etiquetas con los validadores oficiales. Ambos deben dar 0 errores.
 
 5. Normas de entrega:
-   - Recuerda desplegar la carpeta en Netlify (usando Netlify Drop o conectando el repo).
+   - Recuerda desplegar el proyecto en un proveedor externo como Vercel conectando tu repositorio de GitHub.
    - Genera el archivo comprimido con el formato exacto: `IW-[DNI]-E1.zip` (por ejemplo `IW-79078777Q-E1.zip`).
-   - El ZIP debe incluir la carpeta con los archivos web, el documento con la URL de Netlify y este registro de conversación con la IA.
+   - El ZIP debe incluir los archivos web (.html, .css, imágenes) y el documento con la URL y este registro de conversación con la IA.
 
 
 Usuario:
-muchas gracias, voy a revisar que el zip tenga todo y lo subo a netlify
+muchas gracias, voy a revisar que el zip tenga todo y lo subo a vercel
 
 IA:
 De nada. Mucho ánimo con la entrega, el proyecto ha quedado muy ordenado, realista y fiel a lo visto en la asignatura. ¡Éxito en la corrección!

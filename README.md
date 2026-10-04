@@ -6,8 +6,7 @@
 - **Asignatura**: Ingeniería Web (Grado en Ingeniería Informática)
 - **Convocatoria / Entrega**: Entrega 1 (E1) – Maquetación y Diseño de Aplicación Web con HTML5 y CSS3
 - **Archivo comprimido de entrega**: `IW-79078777Q-E1.zip`
-- **Despliegue oficial en proveedor externo (Netlify)**: [https://aeroops-bilbao.netlify.app/](https://aeroops-bilbao.netlify.app/)
-- **Despliegue alternativo (Vercel)**: [https://aeroops-aeroclub.vercel.app/](https://aeroops-aeroclub.vercel.app/)
+- **Despliegue oficial en proveedor externo (Vercel)**: [https://aero-link-two.vercel.app/](https://aero-link-two.vercel.app/)
 - **Repositorio oficial en GitHub**: [https://github.com/Fernius07/AeroLink](https://github.com/Fernius07/AeroLink)
 
 ---
@@ -257,10 +256,9 @@ AeroLink/
 
 El profesor puede comprobar y evaluar el proyecto a través de cualquiera de los siguientes métodos:
 
-### Opción A: Despliegue en la Nube (Netlify)
+### Opción A: Despliegue en la Nube (Vercel)
 Acceder directamente a la URL pública:
-- **Enlace de Netlify**: [https://aeroops-bilbao.netlify.app/](https://aeroops-bilbao.netlify.app/)
-- **Enlace de Vercel**: [https://aeroops-aeroclub.vercel.app/](https://aeroops-aeroclub.vercel.app/)
+- **Enlace oficial en Vercel**: [https://aero-link-two.vercel.app/](https://aero-link-two.vercel.app/)
 
 ### Opción B: Inspección en Local (Navegador Directo)
 1. Descomprimir el archivo oficial `IW-79078777Q-E1.zip`.

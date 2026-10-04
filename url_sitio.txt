@@ -5,20 +5,13 @@ Alumno: Iñigo Fernandez (DNI: 79078777Q)
 Universidad de Deusto
 ================================================================================
 
-1. DESPLIEGUE EN PRODUCCIÓN (PROVEEDOR EXTERNO NETLIFY):
+1. DESPLIEGUE EN PRODUCCIÓN (PROVEEDOR EXTERNO VERCEL):
 --------------------------------------------------------------------------------
-URL Oficial en Netlify:
-https://aeroops-bilbao.netlify.app/
+URL Oficial del Proyecto en Vercel:
+https://aero-link-two.vercel.app/
 
-URL de Espejo / Alternativa en Vercel:
-https://aeroops-aeroclub.vercel.app/
-
-* El proyecto es 100% estático (HTML5 semántico, CSS3 nativo y assets locales),
-  por lo que es compatible con cualquier proveedor estático moderno (Netlify,
-  Vercel, GitHub Pages o Cloudflare Pages).
-* Para desplegar en Netlify: basta con arrastrar y soltar la carpeta del
-  proyecto en "Netlify Drop" (https://app.netlify.com/drop) o vincular el
-  repositorio de GitHub.
+* Aplicación web 100% estática (HTML5 semántico, CSS3 nativo y recursos locales).
+* Despliegue continuo sincronizado directamente con la rama principal de GitHub.
 
 2. REPOSITORIO DE CONTROL DE VERSIONES (GITHUB):
 --------------------------------------------------------------------------------
