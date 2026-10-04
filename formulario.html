@@ -1,296 +1,315 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AeroLink | Formulario de Solicitud y Reserva - Aeropuerto de Bilbao</title>
-  <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
+  <meta name="description" content="AeroLink V2 - Módulo de Despacho de Vuelo, Alta de Operación, Cálculo de Carga y Centrado (W&B) y Firma Digital para pilotos del Aeroclub de Bilbao.">
+  <title>AeroLink V2 | Despacho de Vuelo y Hoja de Carga</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
 </head>
 <body>
 
-  <!-- Cabecera -->
-  <header id="cabecera-principal">
-    <div class="contenedor-cabecera">
-      <a href="index.html" class="logotipo" aria-label="AeroLink Aviación Bilbao - Ir a la página de inicio">
-        <img src="img/logo.svg" alt="AeroLink Aviación Bilbao" width="180" height="45">
-      </a>
-      <nav id="menu-navegacion" aria-label="Menú principal">
+  <!-- Cabecera general -->
+  <header class="app-header">
+    <!-- Barra superior -->
+    <div class="barra-superior">
+      <div class="contenedor-barra">
+        <p><strong>Base Operativa:</strong> Aeropuerto de Bilbao (LEBB / BIO) | <strong>Torre:</strong> 118.500 MHz | <strong>Pista activa:</strong> 30</p>
+        <p>Operador: <strong>Cap. Iñigo Fernandez</strong> (Jefe de Vuelos)</p>
+      </div>
+    </div>
+
+    <!-- Barra principal con logo y navegacion -->
+    <div class="cabecera-principal">
+      <div class="bloque-marca">
+        <img src="img/logo.svg" alt="Emblema del Aeroclub AeroLink V2" class="logo-img" width="48" height="48">
+        <div class="marca-texto">
+          <h1>AeroLink V2</h1>
+          <p class="subtitulo-app">Gestión del Aeroclub de Bilbao</p>
+        </div>
+      </div>
+
+      <nav class="nav-principal">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="flota.html">Flota</a></li>
-          <li><a href="detalle.html">Ficha Técnica</a></li>
-          <li><a href="formulario.html" class="activo" aria-current="page">Reservas</a></li>
+          <li><a href="index.html">Panel Operativo</a></li>
+          <li><a href="flota.html">Control de Flota</a></li>
+          <li><a href="detalle.html">Expediente de Aeronave</a></li>
+          <li><a href="formulario.html" class="activo">Despacho de Vuelo</a></li>
+          <li><a href="protocolos.html">Manual SOP &amp; FAQ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-
-    <!-- Indice de la pagina -->
-    <nav class="indice-pagina" aria-label="Índice interno">
-      <p>Apartados de esta página:</p>
+  <!-- Indice interno navegable -->
+  <aside class="subbarra-indice">
+    <nav class="indice-interno">
+      <span class="indice-etiqueta">Apartados del formulario:</span>
       <ul>
-        <li><a href="#instrucciones-reserva">1. Instrucciones</a></li>
-        <li><a href="#formulario-seccion">2. Formulario de Reserva</a></li>
-        <li><a href="#aviso-legal">3. Información Importante</a></li>
+        <li><a href="#bloque-tripulacion">1. Datos del Piloto</a></li>
+        <li><a href="#bloque-mision">2. Aeronave y Ruta</a></li>
+        <li><a href="#bloque-pesos">3. Combustible y Carga</a></li>
+        <li><a href="#bloque-checklist">4. Verificación y Firma</a></li>
       </ul>
     </nav>
+  </aside>
 
-    <!-- Instrucciones -->
-    <section id="instrucciones-reserva">
-      <h1>Solicitud de Escuela de Vuelo y Vuelos Turísticos en Bilbao</h1>
-      <p>
-        Desde este formulario puedes pedir información sobre los cursos de nuestra <strong>Escuela de Vuelo</strong> o reservar un <strong>Vuelo Turístico</strong> eligiendo una de las rutas disponibles por la costa y alrededores de Bilbao.
-      </p>
-      <p>
-        Los campos con un asterisco (<strong>*</strong>) son obligatorios. Si todavía no has visto las características de cada avión, puedes revisar el <a href="flota.html">catálogo de la flota</a> o entrar en las <a href="detalle.html">fichas técnicas con fotos y planos</a>.
-      </p>
-    </section>
+  <!-- Contenido principal -->
+  <main class="contenedor-app">
 
-    <hr>
-
-    <!-- Formulario de reserva -->
-    <section id="formulario-seccion">
-      <h2>Formulario de Reserva y Contacto</h2>
-
-      <form id="formulario-reserva" action="#" method="post" enctype="multipart/form-data">
-
-        <!-- 1. Datos personales -->
-        <fieldset>
-          <legend>1. Datos Personales</legend>
-
-          <div class="campo">
-            <label for="nombre">Nombre y apellidos: *</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Iñigo Fernandez">
-          </div>
-
-          <div class="campo">
-            <label for="dni">DNI o NIE: *</label>
-            <input type="text" id="dni" name="dni" required placeholder="79078777Q">
-            <span class="nota-campo">Introduce 8 números y la letra sin espacios.</span>
-          </div>
-
-          <div class="campo">
-            <label for="correo">Correo electrónico: *</label>
-            <input type="email" id="correo" name="correo" required placeholder="fernandez.inigo@opendeusto.es">
-          </div>
-
-          <div class="campo">
-            <label for="telefono">Teléfono móvil de contacto: *</label>
-            <input type="tel" id="telefono" name="telefono" required placeholder="600 000 000">
-          </div>
-
-          <div class="campo">
-            <label for="nacimiento">Fecha de nacimiento: *</label>
-            <input type="date" id="nacimiento" name="nacimiento" required>
-          </div>
-
-          <div class="campo">
-            <label for="clave-socio">Contraseña de socio / alumno (opcional):</label>
-            <input type="password" id="clave-socio" name="clave_socio" placeholder="Introduce tu contraseña si ya eres socio">
-            <span class="nota-campo">Rellenar solo si ya dispones de cuenta de socio o alumno en AeroLink.</span>
-          </div>
-        </fieldset>
-
-        <!-- 2. Modalidad del servicio -->
-        <fieldset>
-          <legend>2. ¿Qué actividad quieres realizar?</legend>
-
-          <div class="campo">
-            <span class="etiqueta-campo"><strong>Selecciona una opción: *</strong></span>
-            <div class="opciones-radio">
-              <div class="opcion-item">
-                <input type="radio" id="modalidad-escuela" name="modalidad_principal" value="escuela" checked>
-                <label for="modalidad-escuela" class="opcion-inline"><strong>Escuela de Vuelo:</strong> Cursos para aprender a volar y obtener la licencia oficial.</label>
-              </div>
-              <div class="opcion-item">
-                <input type="radio" id="modalidad-turistico" name="modalidad_principal" value="turistico">
-                <label for="modalidad-turistico" class="opcion-inline"><strong>Vuelo Turístico:</strong> Vuelos panorámicos con instructor por la costa y alrededores.</label>
-              </div>
-              <div class="opcion-item">
-                <input type="radio" id="modalidad-alquiler" name="modalidad_principal" value="alquiler">
-                <label for="modalidad-alquiler" class="opcion-inline"><strong>Alquiler de Avión:</strong> Alquiler de avionetas por horas para pilotos con licencia.</label>
-              </div>
-            </div>
-          </div>
-        </fieldset>
-
-        <!-- 3. Opciones de escuela -->
-        <fieldset>
-          <legend>3. Cursos de la Escuela de Vuelo</legend>
-          <div class="campo">
-            <label for="opcion-escuela">Si vas a realizar un curso, elige el programa que te interesa:</label>
-            <select id="opcion-escuela" name="opcion_escuela">
-              <option value="" disabled selected>-- Selecciona un curso formativo --</option>
-              <optgroup label="Cursos Oficiales">
-                <option value="ppl-completo">Curso de Piloto Privado de Avión PPL(A)</option>
-                <option value="curso-iniciacion">Pack de Iniciación (5 horas de vuelo con instructor)</option>
-              </optgroup>
-              <optgroup label="Habilitaciones y Avanzado">
-                <option value="nvfr-nocturno">Habilitación de Vuelo Nocturno (NVFR)</option>
-                <option value="transicion-g1000">Transición a Pantallas Digitales Garmin G1000</option>
-                <option value="renovacion-sep">Renovación de Habilitación SEP Land</option>
-              </optgroup>
-              <optgroup label="Teoría">
-                <option value="teoria-online">Clases Teóricas Online y Legislación Aérea</option>
-              </optgroup>
-            </select>
-          </div>
-        </fieldset>
-
-        <!-- 4. Opciones de vuelo turistico -->
-        <fieldset>
-          <legend>4. Rutas de Vuelo Turístico</legend>
-          <div class="campo">
-            <label for="ruta-turistica">Si vas a realizar un vuelo turístico, elige la ruta deseada:</label>
-            <select id="ruta-turistica" name="ruta_turistica">
-              <option value="" disabled selected>-- Selecciona una ruta aérea --</option>
-              <optgroup label="Rutas por Bizkaia">
-                <option value="ruta-gaztelugatxe">Ruta 1: San Juan de Gaztelugatxe, Bermeo y Urdaibai (40 minutos)</option>
-                <option value="ruta-matxitxako">Ruta 2: Cabo Matxitxako, Bakio y Plentzia (45 minutos)</option>
-                <option value="ruta-ria-bilbao">Ruta 3: Ría de Bilbao, Guggenheim y Puente Colgante (30 minutos)</option>
-              </optgroup>
-              <optgroup label="Rutas de Mayor Distancia">
-                <option value="ruta-san-sebastian">Ruta 4: Donostia / San Sebastián y Bahía de La Concha (1h 10 min)</option>
-                <option value="ruta-santander">Ruta 5: Bahía de Santander, Castro Urdiales y Laredo (1h 30 min)</option>
-              </optgroup>
-              <optgroup label="Ruta Personalizada">
-                <option value="ruta-personalizada">Ruta 6: Ruta a medida (a concretar con el piloto)</option>
-              </optgroup>
-            </select>
-          </div>
-        </fieldset>
-
-        <!-- 5. Preferencias de avion y fecha -->
-        <fieldset>
-          <legend>5. Avión Preferido y Fecha</legend>
-
-          <div class="campo">
-            <label for="avion">Avión preferido de la flota:</label>
-            <input list="lista-aviones" id="avion" name="avion" placeholder="Elige o escribe un avión de Bilbao">
-            <datalist id="lista-aviones">
-              <option value="Cessna 172S Skyhawk SP (EC-MRX) - 180 HP • 4 Plazas">
-              <option value="Piper PA-28-181 Archer III (EC-JMC) - 180 HP • 4 Plazas">
-              <option value="Diamond DA40 NG Star (EC-LRF) - Jet-A1 / IFR • 4 Plazas">
-              <option value="Tecnam P2002 Sierra (EC-LPI) - Rotax 100 HP • 2 Plazas">
-              <option value="Sin preferencia (el que esté disponible según la actividad)">
-            </datalist>
-          </div>
-
-          <div class="campo">
-            <label for="fecha-vuelo">Fecha deseada para la actividad: *</label>
-            <input type="date" id="fecha-vuelo" name="fecha_vuelo" required>
-          </div>
-
-          <div class="campo">
-            <label for="pasajeros">Número de acompañantes: *</label>
-            <input type="number" id="pasajeros" name="pasajeros" min="1" max="3" value="1" required>
-            <span class="nota-campo">Máximo 3 personas en Cessna, Piper y Diamond, o 1 persona en la Tecnam biplaza.</span>
-          </div>
-
-          <div class="campo">
-            <label for="documento">Adjuntar licencia de vuelo o DNI (opcional):</label>
-            <input type="file" id="documento" name="documento" accept=".pdf, .jpg, .png">
-            <span class="nota-campo">Formatos permitidos: PDF o imagen JPG/PNG.</span>
-          </div>
-
-          <div class="campo">
-            <label for="mensaje">Comentarios o peticiones para el vuelo: *</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Indica si tienes preferencia de mañana o tarde, si es para un regalo, o cualquier detalle sobre la ruta..."></textarea>
-          </div>
-        </fieldset>
-
-        <!-- 6. Condiciones y envio -->
-        <fieldset>
-          <legend>6. Condiciones y Envío</legend>
-
-          <div class="campo">
-            <div class="opciones-checkbox">
-              <div class="opcion-item">
-                <input type="checkbox" id="condiciones" name="condiciones" required>
-                <label for="condiciones" class="opcion-inline">Acepto las normas de seguridad del club y las indicaciones del instructor en el Aeropuerto de Bilbao. *</label>
-              </div>
-              <div class="opcion-item">
-                <input type="checkbox" id="privacidad" name="privacidad" required>
-                <label for="privacidad" class="opcion-inline">Acepto la política de protección de datos para la gestión de esta reserva. *</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="botones-formulario">
-            <button type="reset" class="boton boton-secundario">Borrar datos</button>
-            <button type="submit" class="boton boton-principal">Enviar solicitud</button>
-          </div>
-        </fieldset>
-
-      </form>
-    </section>
-
-    <hr>
-
-    <!-- Informacion de interes -->
-    <section id="aviso-legal">
-      <h2>Información de Interés</h2>
-      <div class="contenedor-columnas">
-        <article class="columna-principal">
-          <h3>Procedimiento y Funcionamiento del Servicio</h3>
-          <ol class="lista-ordenada">
-            <li><strong>Solicitud y comprobación:</strong> Revisamos la disponibilidad de la avioneta y del instructor en la fecha seleccionada.</li>
-            <li><strong>Confirmación y meteorología:</strong> Te contactamos para confirmar el plan de vuelo y verificar el parte meteorológico (METAR) en Loiu.</li>
-            <li><strong>Briefing y despegue:</strong> Nos encontramos en la terminal de aviación general unos 20 minutos antes de la hora fijada para preparar la ruta.</li>
-          </ol>
-        </article>
-
-        <aside class="columna-lateral">
-          <h3>Atención y Oficina en Loiu</h3>
-          <p><strong>Ubicación:</strong> Terminal de Aviación General, Aeropuerto de Bilbao (Loiu).</p>
-          <p><strong>Horario de atención:</strong> De lunes a domingo de 08:30 a 20:00.</p>
-          <p><strong>Teléfono directo:</strong> +34 944 869 000</p>
-        </aside>
+    <!-- Titulo del formulario -->
+    <section class="cabecera-seccion">
+      <div class="titular">
+        <h2>Despacho de Vuelo &amp; Hoja de Carga</h2>
+        <p>Cumplimentación oficial de vuelo conforme a normativa EASA OPS.</p>
+      </div>
+      <div class="acciones-cabecera">
+        <span class="badge badge-info">Ref. FPL-2026</span>
       </div>
     </section>
+
+    <!-- Progreso del formulario -->
+    <section class="panel-modulo">
+      <h3>Progreso del Despacho de Vuelo</h3>
+      <p>Paso 3 de 4 completado (75%). Por favor, revise todos los campos antes de enviar el plan.</p>
+      <div class="barra-horas">
+        <div class="barra-relleno" style="width: 75%;"></div>
+      </div>
+    </section>
+
+    <!-- Formulario de despacho de vuelo -->
+    <form action="formulario.html" method="post" enctype="multipart/form-data" class="formulario-app">
+      <!-- Token de sesion -->
+      <input type="hidden" name="session_token" value="LEBB_DESPACHO_98243">
+
+      <!-- 1. Datos del piloto al mando -->
+      <fieldset id="bloque-tripulacion" class="grupo-formulario">
+        <legend>1. Datos del Piloto al Mando</legend>
+
+        <div class="fila-formulario">
+          <div class="campo-control">
+            <label for="campo-nombre-pic">Nombre y Apellidos <span class="requerido">*</span></label>
+            <input type="text" id="campo-nombre-pic" name="nombre_pic" placeholder="Nombre completo" required autofocus>
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-licencia-pic">Nº de Licencia <span class="requerido">*</span></label>
+            <input type="text" id="campo-licencia-pic" name="licencia_pic" placeholder="Ej. ES.FCL.PPL.84920" pattern="[A-Za-z0-9\.\-]+" required>
+          </div>
+        </div>
+
+        <div class="fila-formulario">
+          <div class="campo-control">
+            <label for="campo-email">Correo Electrónico <span class="requerido">*</span></label>
+            <input type="email" id="campo-email" name="email_pic" placeholder="correo@aerolink-bilbao.com" required>
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-telefono">Teléfono <span class="requerido">*</span></label>
+            <input type="tel" id="campo-telefono" name="telefono_pic" placeholder="+34 600 123 456" required>
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-pin">PIN de Socio <span class="requerido">*</span></label>
+            <input type="password" id="campo-pin" name="pin_socio" maxlength="6" placeholder="******" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- 2. Aeronave y plan de vuelo -->
+      <fieldset id="bloque-mision" class="grupo-formulario">
+        <legend>2. Aeronave, Misión y Ruta</legend>
+
+        <div class="fila-formulario">
+          <div class="campo-control">
+            <label for="selector-aeronave">Aeronave <span class="requerido">*</span></label>
+            <select id="selector-aeronave" name="aeronave" required>
+              <option value="" disabled selected>-- Seleccionar avión --</option>
+              <optgroup label="Ala Alta">
+                <option value="EC-MRX">Cessna 172S (EC-MRX)</option>
+              </optgroup>
+              <optgroup label="Ala Baja">
+                <option value="EC-JMC">Piper PA-28 (EC-JMC)</option>
+                <option value="EC-LPI">Tecnam P2002 (EC-LPI)</option>
+              </optgroup>
+              <optgroup label="Diésel">
+                <option value="EC-LRF">Diamond DA40 (EC-LRF)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-base-origen">Base de Salida</label>
+            <input type="text" id="campo-base-origen" name="base_origen" value="LEBB - Bilbao" disabled>
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-fecha-vuelo">Fecha <span class="requerido">*</span></label>
+            <input type="date" id="campo-fecha-vuelo" name="fecha_vuelo" value="2026-10-04" required>
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-hora-salida">Hora de Salida <span class="requerido">*</span></label>
+            <input type="time" id="campo-hora-salida" name="hora_salida" value="11:30" required>
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-duracion">Duración (min) <span class="requerido">*</span></label>
+            <input type="number" id="campo-duracion" name="duracion_minutos" min="20" max="300" step="10" value="90" required>
+          </div>
+        </div>
+
+        <div class="fila-formulario">
+          <div class="campo-control">
+            <label>Tipo de Misión <span class="requerido">*</span></label>
+            <div class="opciones-seleccion">
+              <label class="control-check-radio">
+                <input type="radio" name="tipo_mision" value="instruccion" checked>
+                <span>Instrucción dual</span>
+              </label>
+              <label class="control-check-radio">
+                <input type="radio" name="tipo_mision" value="solo">
+                <span>Vuelo solo</span>
+              </label>
+              <label class="control-check-radio">
+                <input type="radio" name="tipo_mision" value="privado">
+                <span>Alquiler privado</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-destino">Destino <span class="requerido">*</span></label>
+            <input type="search" id="campo-destino" name="destino" list="aerodromos-sugeridos" placeholder="Ej. LEBB o LEVT" required>
+            <datalist id="aerodromos-sugeridos">
+              <option value="LEBB - Bilbao">
+              <option value="LESO - San Sebastián">
+              <option value="LEVT - Vitoria">
+              <option value="LEAS - Asturias">
+            </datalist>
+          </div>
+        </div>
+
+        <div class="fila-formulario">
+          <div class="campo-control">
+            <label for="campo-color-ficha">Color en Radar</label>
+            <input type="color" id="campo-color-ficha" name="color_ficha" value="#0077b6">
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-url-liveatc">Enlace de Plan de Vuelo (Opcional)</label>
+            <input type="url" id="campo-url-liveatc" name="url_seguimiento" placeholder="https://enaire.es/plan/...">
+          </div>
+        </div>
+      </fieldset>
+
+      <!-- 3. Combustible y carga -->
+      <fieldset id="bloque-pesos" class="grupo-formulario">
+        <legend>3. Combustible y Carga</legend>
+
+        <div class="fila-formulario">
+          <div class="campo-control">
+            <label for="campo-combustible">Combustible (Litros) <span class="requerido">*</span></label>
+            <div class="control-rango">
+              <input type="range" id="campo-combustible" name="combustible_litros" min="40" max="212" value="150">
+              <span id="salidaCombustible" class="salida-rango">150 L</span>
+            </div>
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-pasajeros">Pasajeros <span class="requerido">*</span></label>
+            <input type="number" id="campo-pasajeros" name="num_pasajeros" min="0" max="3" value="1" required>
+          </div>
+
+          <div class="campo-control">
+            <label for="campo-equipaje">Equipaje (<abbr title="Kilogramos">kg</abbr>) <span class="requerido">*</span></label>
+            <input type="number" id="campo-equipaje" name="peso_equipaje" min="0" max="54" value="10" required>
+          </div>
+        </div>
+
+        <div class="campo-control">
+          <label for="campo-observaciones">Observaciones</label>
+          <textarea id="campo-observaciones" name="observaciones" rows="3" placeholder="Puntos de notificación, notas o incidencias..."></textarea>
+        </div>
+      </fieldset>
+
+      <!-- 4. Verificacion previa y firma -->
+      <fieldset id="bloque-checklist" class="grupo-formulario">
+        <legend>4. Verificación y Firma</legend>
+
+        <div class="campo-control">
+          <label>Comprobaciones Previas <span class="requerido">*</span></label>
+          <div class="opciones-seleccion">
+            <label class="control-check-radio">
+              <input type="checkbox" name="chk_inspeccion" required>
+              <span>Inspección exterior y combustible realizada.</span>
+            </label>
+            <label class="control-check-radio">
+              <input type="checkbox" name="chk_meteo" required>
+              <span>Condiciones meteorológicas VMC comprobadas.</span>
+            </label>
+            <label class="control-check-radio">
+              <input type="checkbox" name="chk_documentacion" required>
+              <span>Documentación y licencias en vigor a bordo.</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="fila-formulario">
+          <div class="campo-control">
+            <label for="campo-adjunto-fpl">Adjuntar Archivo (PDF o Imagen)</label>
+            <input type="file" id="campo-adjunto-fpl" name="archivo_plan" accept=".pdf,.png,.jpg,.jpeg">
+          </div>
+        </div>
+
+        <!-- Botonera de envio y reset -->
+        <div class="botonera-formulario">
+          <button type="reset" class="btn btn-secundario">Limpiar</button>
+          <button type="submit" class="btn btn-primario">Enviar Despacho &rarr;</button>
+        </div>
+      </fieldset>
+    </form>
 
   </main>
 
   <!-- Pie de pagina -->
-  <footer id="pie-principal">
-    <div class="contenedor-pie">
-      <div class="seccion-pie">
-        <h3>AeroLink Aviación Bilbao</h3>
-        <p>Club de vuelo y escuela de pilotos en Bilbao.</p>
-        <p>Terminal de Aviación General, Aeropuerto de Bilbao (Loiu),<br>48180 Bizkaia.</p>
+  <footer class="app-footer">
+    <div class="footer-contenido">
+      <div class="footer-col">
+        <h3>AeroLink V2 Bilbao</h3>
+        <p>Sistema de gestión interna, despacho de operaciones y control de flota del Aeroclub de Bilbao (LEBB).</p>
+        <p><small>Versión del prototipo: <strong>v2.4</strong> &bull; Conforme a normativa EASA.</small></p>
       </div>
 
-      <div class="seccion-pie">
-        <h3>Navegación</h3>
+      <div class="footer-col">
+        <h3>Módulos del Sistema</h3>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="flota.html">Flota de Aeronaves</a></li>
-          <li><a href="detalle.html">Fichas Técnicas</a></li>
-          <li><a href="formulario.html">Formulario de Reserva</a></li>
+          <li><a href="index.html">Panel Operativo</a></li>
+          <li><a href="flota.html">Gestión de Flota</a></li>
+          <li><a href="detalle.html">Expedientes de Aeronaves</a></li>
+          <li><a href="formulario.html">Despacho de Vuelos</a></li>
+          <li><a href="protocolos.html">Procedimientos SOP &amp; FAQ</a></li>
         </ul>
       </div>
 
-      <div class="seccion-pie">
-        <h3>Información</h3>
-        <ul>
-          <li><a href="index.html#servicios">Seguridad y Normas</a></li>
-          <li><a href="formulario.html#aviso-legal">Protección de Datos</a></li>
-          <li><a href="index.html#bienvenida">Contacto</a></li>
-        </ul>
+      <div class="footer-col">
+        <h3>Base de Operaciones</h3>
+        <address>
+          <strong>Hangar de Aviación General - Puesto R</strong><br>
+          Aeropuerto de Bilbao (LEBB / BIO)<br>
+          Carretera de Loiu s/n, 48180 Loiu (Bizkaia)<br>
+          Teléfono: <a href="tel:+34944869000">+34 944 869 000</a><br>
+          Email: <a href="mailto:operaciones@aerolink-bilbao.com">operaciones@aerolink-bilbao.com</a>
+        </address>
       </div>
     </div>
 
-    <div class="copyright">
-      <p>&copy; 2026 AeroLink Aviación Bilbao - Entrega 1 de Ingeniería Web (Iñigo Fernandez - DNI: 79078777Q - fernandez.inigo@opendeusto.es)</p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AeroLink V2 &bull; Asignatura Ingeniería Web &bull; Universidad de Deusto. Todos los derechos reservados.</p>
+      <p>Base LEBB &bull; Estado: <span class="badge badge-exito">Operativo</span></p>
     </div>
   </footer>
 
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

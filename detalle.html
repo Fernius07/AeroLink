@@ -1,492 +1,459 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AeroLink | Fichas Técnicas Oficiales de la Flota - Aeropuerto de Bilbao</title>
-  <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
+  <meta name="description" content="AeroLink V2 - Expedientes técnicos de la flota del aeroclub: Cessna 172S, Piper PA-28, Diamond DA40 y Tecnam P2002. Fichas de peso, centrado y mantenimiento.">
+  <title>AeroLink V2 | Expedientes de Aeronaves</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
 </head>
 <body>
 
-  <!-- Cabecera -->
-  <header id="cabecera-principal">
-    <div class="contenedor-cabecera">
-      <a href="index.html" class="logotipo" aria-label="AeroLink Aviación Bilbao - Ir a la página de inicio">
-        <img src="img/logo.svg" alt="AeroLink Aviación Bilbao" width="180" height="45">
-      </a>
-      <nav id="menu-navegacion" aria-label="Menú principal">
+  <!-- Cabecera general -->
+  <header class="app-header">
+    <div class="barra-superior">
+      <div class="contenedor-barra">
+        <p><strong>Base Operativa:</strong> Aeropuerto de Bilbao (LEBB / BIO) | <strong>Torre:</strong> 118.500 MHz | <strong>Pista activa:</strong> 30</p>
+        <p>Operador: <strong>Cap. Iñigo Fernandez</strong> (Jefe de Vuelos)</p>
+      </div>
+    </div>
+
+    <div class="cabecera-principal">
+      <div class="bloque-marca">
+        <img src="img/logo.svg" alt="Emblema del Aeroclub AeroLink V2" class="logo-img" width="48" height="48">
+        <div class="marca-texto">
+          <h1>AeroLink V2</h1>
+          <p class="subtitulo-app">Gestión del Aeroclub de Bilbao</p>
+        </div>
+      </div>
+
+      <nav class="nav-principal">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="flota.html">Flota</a></li>
-          <li><a href="detalle.html" class="activo" aria-current="page">Ficha Técnica</a></li>
-          <li><a href="formulario.html">Reservas</a></li>
+          <li><a href="index.html">Panel Operativo</a></li>
+          <li><a href="flota.html">Control de Flota</a></li>
+          <li><a href="detalle.html" class="activo">Expediente de Aeronave</a></li>
+          <li><a href="formulario.html">Despacho de Vuelo</a></li>
+          <li><a href="protocolos.html">Manual SOP &amp; FAQ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-
-    <!-- Indice de la pagina -->
-    <nav class="indice-pagina" aria-label="Índice de aeronaves">
-      <p>Selecciona un avión para ir directamente a su ficha:</p>
+  <!-- Indice interno navegable -->
+  <aside class="subbarra-indice">
+    <nav class="indice-interno">
+      <span class="indice-etiqueta">Aeronaves:</span>
       <ul>
-        <li><a href="#cessna172">1. Cessna 172S Skyhawk (EC-MRX)</a></li>
-        <li><a href="#piper-pa28">2. Piper PA-28 Archer (EC-JMC)</a></li>
-        <li><a href="#diamond-da40">3. Diamond DA40 Star (EC-LRF)</a></li>
-        <li><a href="#tecnam-p2002">4. Tecnam P2002 Sierra (EC-LPI)</a></li>
+        <li><a href="#ec-mrx">1. Cessna 172S (EC-MRX)</a></li>
+        <li><a href="#ec-jmc">2. Piper PA-28 (EC-JMC)</a></li>
+        <li><a href="#ec-lrf">3. Diamond DA40 (EC-LRF)</a></li>
+        <li><a href="#ec-lpi">4. Tecnam P2002 (EC-LPI)</a></li>
+        <li><a href="#registro-squawks">5. Libro de Averías</a></li>
       </ul>
     </nav>
+  </aside>
 
-    <!-- Introduccion -->
-    <section>
-      <h1>Fichas Técnicas de los Aviones (Datos Reales POH)</h1>
-      <p>
-        En este apartado se detallan las especificaciones técnicas reales de cada uno de los cuatro aviones de nuestra flota en el <strong>Aeropuerto de Bilbao (LEBB)</strong>. Los datos proceden de los manuales de vuelo del fabricante (POH).
-      </p>
-      <p>
-        Para cada modelo incluimos una <strong>fotografía real del exterior</strong>, una <strong>foto de la cabina de mandos</strong> y un <strong>plano técnico de tres vistas con las dimensiones en metros</strong>.
-      </p>
-    </section>
+  <!-- Contenido principal -->
+  <main class="contenedor-app">
 
-    <hr>
-
-    <!-- Ficha 1: Cessna 172S -->
-    <section id="cessna172" class="contenedor-ficha-avion">
-      <h2>1. Cessna 172S Skyhawk SP — Matrícula EC-MRX</h2>
-      <p>
-        <strong>Fabricante:</strong> Cessna Aircraft Company | <strong>Año:</strong> <time datetime="2021">2021</time> | <strong>Base:</strong> Bilbao Loiu (LEBB)
-      </p>
-      <p>
-        Avión de ala alta muy noble y seguro. Es el modelo más utilizado para aprender a volar porque perdona pequeños errores del alumno y permite ver muy bien el terreno por debajo del ala.
-      </p>
-
-      <div class="galeria-avion">
-        <div class="item-galeria">
-          <img src="img/cessna172.jpg" alt="Fotografía real de la Cessna 172S Skyhawk matrícula EC-MRX en el hangar de Bilbao" width="400" height="200" loading="lazy" decoding="async">
-          <p>Vista Exterior (EC-MRX)</p>
-        </div>
-        <div class="item-galeria">
-          <img src="img/cessna172_cabina.jpg" alt="Fotografía real de la cabina de mandos e instrumental de la Cessna 172" width="400" height="200" loading="lazy" decoding="async">
-          <p>Cabina y Panel de Mandos</p>
-        </div>
-        <div class="item-galeria item-plano">
-          <img src="img/cessna172_plano.jpg" alt="Plano técnico oficial de 3 vistas con cotas y dimensiones de la Cessna 172" width="400" height="200" loading="lazy" decoding="async">
-          <p>Plano de 3 Vistas con Medidas</p>
-        </div>
+    <section class="cabecera-seccion">
+      <div class="titular">
+        <h2>Expedientes Técnicos de la Flota</h2>
+        <p>Documentación técnica, fotografías de cabina, planos de tres vistas y límites de peso de los 4 aviones del aeroclub.</p>
       </div>
-
-      <h3>Especificaciones Técnicas (Manual POH Cessna 172S)</h3>
-      <table class="tabla-datos-tecnicos">
-        <tbody>
-          <tr>
-            <th scope="row">Motor</th>
-            <td>Lycoming IO-360-L2A (4 cilindros, inyección directa)</td>
-          </tr>
-          <tr>
-            <th scope="row">Potencia</th>
-            <td>180 caballos a 2.700 RPM</td>
-          </tr>
-          <tr>
-            <th scope="row">Combustible y Capacidad</th>
-            <td>Gasolina de aviación AVGAS 100LL • Capacidad: 212 litros (200 útiles)</td>
-          </tr>
-          <tr>
-            <th scope="row">Consumo Medio</th>
-            <td>Aproximadamente 36 litros por hora al 75% de potencia</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad de Crucero</th>
-            <td>124 nudos (unos 230 km/h)</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad de Pérdida (Vs0)</th>
-            <td>40 nudos (74 km/h) con flaps bajados</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad Máxima Nunca Exceder (Vne)</th>
-            <td>163 nudos (302 km/h)</td>
-          </tr>
-          <tr>
-            <th scope="row">Altitud Máxima (Techo)</th>
-            <td>14.000 pies (unos 4.260 metros)</td>
-          </tr>
-          <tr>
-            <th scope="row">Distancia de Despegue</th>
-            <td>293 metros a nivel del mar</td>
-          </tr>
-          <tr>
-            <th scope="row">Autonomía</th>
-            <td>640 Millas Náuticas (unos 1.185 km)</td>
-          </tr>
-          <tr>
-            <th scope="row">Pesos</th>
-            <td>Peso vacío: 755 kg • Carga útil: 402 kg • Peso máximo al despegue: 1.157 kg</td>
-          </tr>
-          <tr>
-            <th scope="row">Dimensiones</th>
-            <td>Envergadura: 11,00 m • Longitud: 8,28 m • Altura: 2,72 m</td>
-          </tr>
-          <tr>
-            <th scope="row">Plazas</th>
-            <td>4 plazas (piloto + 3 pasajeros)</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>Cómo se vuela este avión</h3>
-      <ul class="lista-puntos">
-        <li><strong>Despegue:</strong> Se levanta la rueda delantera a 55 nudos y se asciende a unos 74 nudos.</li>
-        <li><strong>Aterrizaje:</strong> Aproximación a unos 65 nudos con flaps a 20 o 30 grados para tocar suave en pista.</li>
-        <li><strong>Visibilidad:</strong> Al tener el ala arriba, la vista del suelo y de la costa durante los virajes es muy limpia.</li>
-      </ul>
-
-      <div class="boton-reserva-avion">
-        <a href="formulario.html" class="boton boton-principal" aria-label="Reservar Cessna 172S Skyhawk matrícula EC-MRX">Reservar Cessna 172 (EC-MRX)</a>
+      <div class="acciones-cabecera">
+        <a href="formulario.html" class="btn btn-primario">+ Despachar Vuelo</a>
       </div>
     </section>
 
-    <hr>
+    <!-- Cessna 172S (EC-MRX) -->
+    <section id="ec-mrx" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>1. Cessna 172S Skyhawk SP &bull; <span class="matricula-aero">EC-MRX</span></h3>
+        <span class="badge badge-exito">Apta para Vuelo</span>
+      </div>
+      <p>Monomotor de ala alta para instrucción y vuelos instrumentales. Equipada con aviónica Garmin G1000 NXi.</p>
 
-    <!-- Ficha 2: Piper PA-28 -->
-    <section id="piper-pa28" class="contenedor-ficha-avion">
-      <h2>2. Piper PA-28-181 Archer III — Matrícula EC-JMC</h2>
-      <p>
-        <strong>Fabricante:</strong> Piper Aircraft | <strong>Año:</strong> <time datetime="2019">2019</time> | <strong>Base:</strong> Bilbao Loiu (LEBB)
-      </p>
-      <p>
-        Avión de ala baja muy cómodo para viajes. Tiene un vuelo muy estable en crucero y responde de forma predecible con viento en el aeropuerto de Loiu.
-      </p>
+      <!-- Fotos y plano -->
+      <div class="galeria-tecnica">
+        <div class="item-galeria">
+          <figure>
+            <img src="img/cessna172.jpg" alt="Cessna 172S EC-MRX en plataforma de Loiu" width="400" height="220">
+            <figcaption>Exterior: Plataforma de Aviación General (LEBB).</figcaption>
+          </figure>
+        </div>
 
-      <div class="galeria-avion">
         <div class="item-galeria">
-          <img src="img/piper-pa28.jpg" alt="Fotografía real de la Piper PA-28-181 Archer III matrícula EC-JMC" width="400" height="200" loading="lazy" decoding="async">
-          <p>Vista Exterior (EC-JMC)</p>
+          <figure>
+            <img src="img/cessna172_cabina.jpg" alt="Cabina de mandos Garmin G1000 de Cessna 172S" width="400" height="220">
+            <figcaption>Cabina: Suite digital integrada Garmin G1000 NXi.</figcaption>
+          </figure>
         </div>
+
         <div class="item-galeria">
-          <img src="img/piper_pa28_cabina.jpg" alt="Fotografía real de la cabina de mandos e instrumental de la Piper PA-28" width="400" height="200" loading="lazy" decoding="async">
-          <p>Cabina y Cuernos Piper</p>
-        </div>
-        <div class="item-galeria item-plano">
-          <img src="img/piper_pa28_plano.jpg" alt="Plano técnico de 3 vistas oficial de la Piper PA-28 Archer" width="400" height="200" loading="lazy" decoding="async">
-          <p>Plano de 3 Vistas con Medidas</p>
+          <figure>
+            <img src="img/cessna172_plano.jpg" alt="Plano técnico acotado de Cessna 172S" width="400" height="220">
+            <figcaption>Plano: Envergadura 11,00 m &bull; Longitud 8,28 m.</figcaption>
+          </figure>
         </div>
       </div>
 
-      <h3>Especificaciones Técnicas (Manual POH Piper PA-28-181)</h3>
-      <table class="tabla-datos-tecnicos">
-        <tbody>
-          <tr>
-            <th scope="row">Motor</th>
-            <td>Lycoming O-360-A4M (4 cilindros, carburador)</td>
-          </tr>
-          <tr>
-            <th scope="row">Potencia</th>
-            <td>180 caballos a 2.700 RPM</td>
-          </tr>
-          <tr>
-            <th scope="row">Combustible y Capacidad</th>
-            <td>AVGAS 100LL • Capacidad: 189 litros (182 útiles)</td>
-          </tr>
-          <tr>
-            <th scope="row">Consumo Medio</th>
-            <td>Unos 38 litros por hora</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad de Crucero</th>
-            <td>128 nudos (unos 237 km/h)</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad de Pérdida (Vs0)</th>
-            <td>45 nudos (83 km/h) con flaps</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad Máxima Nunca Exceder (Vne)</th>
-            <td>154 nudos (285 km/h)</td>
-          </tr>
-          <tr>
-            <th scope="row">Altitud Máxima (Techo)</th>
-            <td>14.100 pies (unos 4.300 metros)</td>
-          </tr>
-          <tr>
-            <th scope="row">Distancia de Despegue</th>
-            <td>344 metros a nivel del mar</td>
-          </tr>
-          <tr>
-            <th scope="row">Autonomía</th>
-            <td>520 Millas Náuticas (unos 963 km)</td>
-          </tr>
-          <tr>
-            <th scope="row">Pesos</th>
-            <td>Peso vacío: 760 kg • Carga útil: 397 kg • Peso máximo al despegue: 1.157 kg</td>
-          </tr>
-          <tr>
-            <th scope="row">Dimensiones</th>
-            <td>Envergadura: 10,80 m • Longitud: 7,30 m • Altura: 2,22 m</td>
-          </tr>
-          <tr>
-            <th scope="row">Plazas</th>
-            <td>4 plazas con maletero posterior</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>Cómo se vuela este avión</h3>
-      <ul class="lista-puntos">
-        <li><strong>Ala baja:</strong> Al estar cerca del suelo produce efecto suelo al aterrizar, lo que ayuda a posarse suavemente.</li>
-        <li><strong>Bomba eléctrica:</strong> Se conecta de forma obligatoria durante el despegue y el aterrizaje por seguridad.</li>
-        <li><strong>Flaps manuales:</strong> Se accionan mediante una palanca entre los dos asientos, similar al freno de mano de un coche.</li>
-      </ul>
-
-      <div class="boton-reserva-avion">
-        <a href="formulario.html" class="boton boton-principal" aria-label="Reservar Piper PA-28 Archer matrícula EC-JMC">Reservar Piper PA-28 (EC-JMC)</a>
+      <!-- Ficha tecnica -->
+      <div class="contenedor-tabla">
+        <table class="tabla-app">
+          <caption>Especificaciones del Manual POH - Cessna 172S (EC-MRX)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Parámetro</th>
+              <th scope="col">Valor Certificado</th>
+              <th scope="col">Detalle Operativo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Motor y Potencia</th>
+              <td>Lycoming IO-360-L2A</td>
+              <td>180 CV a 2.700 RPM &bull; Inyección directa</td>
+            </tr>
+            <tr>
+              <th scope="row">Pesos (MTOW / Vacío)</th>
+              <td>1.157 kg / 744 kg</td>
+              <td>Carga útil disponible: 413 kg</td>
+            </tr>
+            <tr>
+              <th scope="row">Superficie Alar</th>
+              <td>16,2 m<sup>2</sup></td>
+              <td>Carga alar: 71,4 kg/m<sup>2</sup></td>
+            </tr>
+            <tr>
+              <th scope="row">Velocidades Clave</th>
+              <td><em>V<sub>SO</sub></em>: 40 kt | <em>V<sub>X</sub></em>: 62 kt | <em>V<sub>Y</sub></em>: 74 kt</td>
+              <td>Velocidad nunca exceder (<em>V<sub>NE</sub></em>): 163 kt</td>
+            </tr>
+            <tr>
+              <th scope="row">Horómetro TTAF</th>
+              <td>2.450,4 h <small class="texto-mutado">(anterior: 2.449,1 h)</small></td>
+              <td>Revisión de 50h prevista en 18,0 h</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <hr>
+    <!-- Piper PA-28 (EC-JMC) -->
+    <section id="ec-jmc" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>2. Piper PA-28-181 Archer III &bull; <span class="matricula-aero">EC-JMC</span></h3>
+        <span class="badge badge-exito">Apta para Vuelo</span>
+      </div>
+      <p>Monomotor de ala baja con gran estabilidad en crucero. Cabina clásica de seis relojes analógicos para vuelo visual e instrumental.</p>
 
-    <!-- Ficha 3: Diamond DA40 -->
-    <section id="diamond-da40" class="contenedor-ficha-avion">
-      <h2>3. Diamond DA40 NG Star — Matrícula EC-LRF</h2>
-      <p>
-        <strong>Fabricante:</strong> Diamond Aircraft Industries | <strong>Año:</strong> <time datetime="2022">2022</time> | <strong>Base:</strong> Bilbao Loiu (LEBB)
-      </p>
-      <p>
-        Avión moderno construido en fibra de vidrio y carbono. Su motor turbodiésel gasta poco y utiliza queroseno Jet-A1. Por dentro cuenta con pantallas Garmin G1000 que sustituyen los relojes clásicos.
-      </p>
+      <!-- Fotos y plano -->
+      <div class="galeria-tecnica">
+        <div class="item-galeria">
+          <figure>
+            <img src="img/piper-pa28.jpg" alt="Piper PA-28 Archer III EC-JMC en rodadura" width="400" height="220">
+            <figcaption>Exterior: Vista en calle de rodaje de Loiu.</figcaption>
+          </figure>
+        </div>
 
-      <div class="galeria-avion">
         <div class="item-galeria">
-          <img src="img/diamond-da40.jpg" alt="Fotografía real de la Diamond DA40 NG Star matrícula EC-LRF en plataforma" width="400" height="200" loading="lazy" decoding="async">
-          <p>Vista Exterior (EC-LRF)</p>
+          <figure>
+            <img src="img/piper_pa28_cabina.jpg" alt="Cabina analógica de seis instrumentos de Piper PA-28" width="400" height="220">
+            <figcaption>Cabina: Instrumentación clásica analógica IFR.</figcaption>
+          </figure>
         </div>
+
         <div class="item-galeria">
-          <img src="img/diamond_da40_cabina.jpg" alt="Fotografía real de la cabina digital Garmin G1000 de la Diamond DA40 NG" width="400" height="200" loading="lazy" decoding="async">
-          <p>Cabina Digital Garmin G1000</p>
-        </div>
-        <div class="item-galeria item-plano">
-          <img src="img/diamond_da40_plano.jpg" alt="Plano técnico oficial de 3 vistas con cotas y dimensiones de la Diamond DA40 NG" width="400" height="200" loading="lazy" decoding="async">
-          <p>Plano de 3 Vistas con Medidas</p>
+          <figure>
+            <img src="img/piper_pa28_plano.jpg" alt="Plano técnico acotado de Piper Archer III" width="400" height="220">
+            <figcaption>Plano: Envergadura 10,80 m &bull; Longitud 7,30 m.</figcaption>
+          </figure>
         </div>
       </div>
 
-      <h3>Especificaciones Técnicas (Manual POH Diamond DA40 NG)</h3>
-      <table class="tabla-datos-tecnicos">
-        <tbody>
-          <tr>
-            <th scope="row">Motor</th>
-            <td>Austro Engine AE300 (turbodiésel con centralita FADEC)</td>
-          </tr>
-          <tr>
-            <th scope="row">Potencia</th>
-            <td>168 caballos con hélice de 3 palas</td>
-          </tr>
-          <tr>
-            <th scope="row">Combustible y Capacidad</th>
-            <td>Queroseno Jet-A1 / Diésel • Capacidad: 147 litros</td>
-          </tr>
-          <tr>
-            <th scope="row">Consumo Medio</th>
-            <td>Apenas 22 litros por hora (muy bajo consumo)</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad de Crucero</th>
-            <td>154 nudos (unos 285 km/h, el más rápido de la flota)</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad de Pérdida (Vs0)</th>
-            <td>49 nudos (91 km/h)</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad Máxima Nunca Exceder (Vne)</th>
-            <td>172 nudos (318 km/h)</td>
-          </tr>
-          <tr>
-            <th scope="row">Altitud Máxima (Techo)</th>
-            <td>16.400 pies (unos 5.000 metros)</td>
-          </tr>
-          <tr>
-            <th scope="row">Distancia de Despegue</th>
-            <td>390 metros en asfalto</td>
-          </tr>
-          <tr>
-            <th scope="row">Autonomía</th>
-            <td>940 Millas Náuticas (unos 1.740 km de alcance)</td>
-          </tr>
-          <tr>
-            <th scope="row">Pesos</th>
-            <td>Peso vacío: 880 kg • Carga útil: 430 kg • Peso máximo al despegue: 1.310 kg</td>
-          </tr>
-          <tr>
-            <th scope="row">Dimensiones</th>
-            <td>Envergadura: 11,63 m • Longitud: 8,15 m • Altura: 1,98 m</td>
-          </tr>
-          <tr>
-            <th scope="row">Plazas</th>
-            <td>4 plazas con cúpula acristalada que se abre hacia atrás</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>Cómo se vuela este avión</h3>
-      <ul class="lista-puntos">
-        <li><strong>Control monomando:</strong> Una sola palanca de gases ajusta la potencia, la mezcla y las revoluciones gracias al ordenador del motor.</li>
-        <li><strong>Pantallas digitales:</strong> Muestran el horizonte artificial, velocidad, altitud y mapa GPS en dos pantallas grandes.</li>
-        <li><strong>Cola en T:</strong> El timón trasero está elevado, lo que hace el avión muy suave en virajes y maniobras.</li>
-      </ul>
-
-      <div class="boton-reserva-avion">
-        <a href="formulario.html" class="boton boton-principal" aria-label="Reservar Diamond DA40 Star matrícula EC-LRF">Reservar Diamond DA40 (EC-LRF)</a>
+      <!-- Ficha tecnica -->
+      <div class="contenedor-tabla">
+        <table class="tabla-app">
+          <caption>Especificaciones del Manual POH - Piper Archer III (EC-JMC)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Parámetro</th>
+              <th scope="col">Valor Certificado</th>
+              <th scope="col">Detalle Operativo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Motor y Potencia</th>
+              <td>Lycoming O-360-A4M</td>
+              <td>180 CV a 2.700 RPM &bull; Carburación</td>
+            </tr>
+            <tr>
+              <th scope="row">Pesos (MTOW / Vacío)</th>
+              <td>1.157 kg / 735 kg</td>
+              <td>Carga útil disponible: 422 kg</td>
+            </tr>
+            <tr>
+              <th scope="row">Superficie Alar</th>
+              <td>15,8 m<sup>2</sup></td>
+              <td>Ala semielíptica de ala baja</td>
+            </tr>
+            <tr>
+              <th scope="row">Velocidades Clave</th>
+              <td><em>V<sub>SO</sub></em>: 45 kt | <em>V<sub>X</sub></em>: 64 kt | <em>V<sub>Y</sub></em>: 76 kt</td>
+              <td>Velocidad nunca exceder (<em>V<sub>NE</sub></em>): 154 kt</td>
+            </tr>
+            <tr>
+              <th scope="row">Horómetro TTAF</th>
+              <td>3.120,8 h</td>
+              <td>Revisión de 100h prevista en 55,0 h</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <hr>
+    <!-- Diamond DA40 (EC-LRF) -->
+    <section id="ec-lrf" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>3. Diamond DA40 NG Star &bull; <span class="matricula-aero">EC-LRF</span></h3>
+        <span class="badge badge-info">En Vuelo</span>
+      </div>
+      <p>Aeronave moderna de fibra de carbono. Motor turbo diésel con control monomando FADEC y combustible de aviación JET-A1.</p>
 
-    <!-- Ficha 4: Tecnam P2002 -->
-    <section id="tecnam-p2002" class="contenedor-ficha-avion">
-      <h2>4. Tecnam P2002 Sierra — Matrícula EC-LPI</h2>
-      <p>
-        <strong>Fabricante:</strong> Costruzioni Aeronautiche Tecnam | <strong>Año:</strong> <time datetime="2020">2020</time> | <strong>Base:</strong> Bilbao Loiu (LEBB)
-      </p>
-      <p>
-        Avión biplaza ligero construido íntegramente en aluminio. Es muy fácil de maniobrar, consume muy poca gasolina y es perfecto para dar los primeros pasos en el pilotaje.
-      </p>
+      <!-- Fotos y plano -->
+      <div class="galeria-tecnica">
+        <div class="item-galeria">
+          <figure>
+            <img src="img/diamond-da40.jpg" alt="Diamond DA40 NG EC-LRF en plataforma" width="400" height="220">
+            <figcaption>Exterior: Construcción en composite de alta eficiencia.</figcaption>
+          </figure>
+        </div>
 
-      <div class="galeria-avion">
         <div class="item-galeria">
-          <img src="img/tecnam_p2002.jpg" alt="Fotografía real de la Tecnam P2002 Sierra matrícula EC-LPI en plataforma" width="400" height="200" loading="lazy" decoding="async">
-          <p>Vista Exterior (EC-LPI)</p>
+          <figure>
+            <img src="img/diamond_da40_cabina.jpg" alt="Cabina digital de Diamond DA40 NG" width="400" height="220">
+            <figcaption>Cabina: Pantallas de cristal Garmin y mando FADEC.</figcaption>
+          </figure>
         </div>
+
         <div class="item-galeria">
-          <img src="img/tecnam_p2002_cabina.jpg" alt="Fotografía real de la cabina y puesto de mando de la Tecnam P2002 Sierra" width="400" height="200" loading="lazy" decoding="async">
-          <p>Cabina Biplaza con Palancas</p>
-        </div>
-        <div class="item-galeria item-plano">
-          <img src="img/tecnam_p2002_plano.jpg" alt="Plano técnico oficial de 3 vistas con cotas y dimensiones de la Tecnam P2002 Sierra" width="400" height="200" loading="lazy" decoding="async">
-          <p>Plano de 3 Vistas con Medidas</p>
+          <figure>
+            <img src="img/diamond_da40_plano.jpg" alt="Plano técnico acotado de Diamond DA40" width="400" height="220">
+            <figcaption>Plano: Envergadura 11,63 m &bull; Longitud 8,06 m.</figcaption>
+          </figure>
         </div>
       </div>
 
-      <h3>Especificaciones Técnicas (Manual POH Tecnam P2002)</h3>
-      <table class="tabla-datos-tecnicos">
-        <tbody>
-          <tr>
-            <th scope="row">Motor</th>
-            <td>Rotax 912 S2 (4 cilindros con reductora)</td>
-          </tr>
-          <tr>
-            <th scope="row">Potencia</th>
-            <td>100 caballos a 5.800 RPM</td>
-          </tr>
-          <tr>
-            <th scope="row">Combustible y Capacidad</th>
-            <td>Gasolina normal de 95 octanos o AVGAS 100LL • Capacidad: 100 litros</td>
-          </tr>
-          <tr>
-            <th scope="row">Consumo Medio</th>
-            <td>Unos 17 litros por hora (la opción más económica)</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad de Crucero</th>
-            <td>115 nudos (unos 213 km/h)</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad de Pérdida (Vs0)</th>
-            <td>38 nudos (70 km/h)</td>
-          </tr>
-          <tr>
-            <th scope="row">Velocidad Máxima Nunca Exceder (Vne)</th>
-            <td>138 nudos (255 km/h)</td>
-          </tr>
-          <tr>
-            <th scope="row">Altitud Máxima (Techo)</th>
-            <td>15.000 pies (unos 4.570 metros)</td>
-          </tr>
-          <tr>
-            <th scope="row">Distancia de Despegue</th>
-            <td>140 metros (despega en muy poca distancia)</td>
-          </tr>
-          <tr>
-            <th scope="row">Autonomía</th>
-            <td>450 Millas Náuticas (unos 833 km)</td>
-          </tr>
-          <tr>
-            <th scope="row">Pesos</th>
-            <td>Peso vacío: 331 kg • Carga útil: 269 kg • Peso máximo al despegue: 600 kg</td>
-          </tr>
-          <tr>
-            <th scope="row">Dimensiones</th>
-            <td>Envergadura: 8,60 m • Longitud: 6,61 m • Altura: 2,43 m</td>
-          </tr>
-          <tr>
-            <th scope="row">Plazas</th>
-            <td>2 plazas con palancas tipo stick</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <h3>Cómo se vuela este avión</h3>
-      <ul class="lista-puntos">
-        <li><strong>Mandos de palanca:</strong> En lugar de cuernos redondos lleva una palanca vertical de mandos, lo que da una sensación de vuelo muy ágil y deportiva.</li>
-        <li><strong>Despegue corto:</strong> Al pesar poco, se va al aire en apenas 140 metros de carrera sobre la pista.</li>
-        <li><strong>Flaps eléctricos:</strong> Se suben y bajan con un interruptor en el panel central.</li>
-      </ul>
-
-      <div class="boton-reserva-avion">
-        <a href="formulario.html" class="boton boton-principal" aria-label="Reservar Tecnam P2002 Sierra matrícula EC-LPI">Reservar Tecnam P2002 (EC-LPI)</a>
+      <!-- Ficha tecnica -->
+      <div class="contenedor-tabla">
+        <table class="tabla-app">
+          <caption>Especificaciones del Manual POH - Diamond DA40 NG (EC-LRF)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Parámetro</th>
+              <th scope="col">Valor Certificado</th>
+              <th scope="col">Detalle Operativo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Motor y Potencia</th>
+              <td>Austro Engine AE300</td>
+              <td>168 CV &bull; Turbo diésel (combustible JET-A1)</td>
+            </tr>
+            <tr>
+              <th scope="row">Pesos (MTOW / Vacío)</th>
+              <td>1.280 kg / 880 kg</td>
+              <td>Carga útil disponible: 400 kg</td>
+            </tr>
+            <tr>
+              <th scope="row">Superficie Alar</th>
+              <td>13,5 m<sup>2</sup></td>
+              <td>Perfil alar aerodinámico con winglets</td>
+            </tr>
+            <tr>
+              <th scope="row">Velocidades Clave</th>
+              <td><em>V<sub>SO</sub></em>: 49 kt | <em>V<sub>X</sub></em>: 67 kt | <em>V<sub>Y</sub></em>: 72 kt</td>
+              <td>Velocidad nunca exceder (<em>V<sub>NE</sub></em>): 172 kt</td>
+            </tr>
+            <tr>
+              <th scope="row">Horómetro TTAF</th>
+              <td>1.180,2 h</td>
+              <td>Revisión de 100h prevista en 9,0 h</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
-    <!-- Resumen y enlaces -->
-    <aside class="caja-dudas" aria-label="Ayuda para elegir avión">
-      <h3>¿Tienes dudas sobre qué avión elegir para tu vuelo?</h3>
-      <p>
-        Si no tienes claro cuál se ajusta mejor a lo que quieres hacer en Bilbao, puedes consultarnos o indicarlo en el formulario para que te recomendemos uno.
-      </p>
-      <a href="formulario.html" class="boton boton-principal">Ir al formulario de reserva</a>
-      <a href="flota.html" class="boton boton-secundario">Volver al catálogo general</a>
-    </aside>
+    <!-- Tecnam P2002 (EC-LPI) -->
+    <section id="ec-lpi" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>4. Tecnam P2002 Sierra &bull; <span class="matricula-aero">EC-LPI</span></h3>
+        <span class="badge badge-peligro">En Mantenimiento</span>
+      </div>
+      <p>Biplaza ligero de ala baja, ideal para el entrenamiento básico de alumnos piloto y vuelos visuales por la cornisa cantábrica.</p>
+
+      <!-- Fotos y plano -->
+      <div class="galeria-tecnica">
+        <div class="item-galeria">
+          <figure>
+            <img src="img/tecnam_p2002.jpg" alt="Tecnam P2002 Sierra EC-LPI en hangar" width="400" height="220">
+            <figcaption>Exterior: Biplaza ligero en hangar del aeroclub.</figcaption>
+          </figure>
+        </div>
+
+        <div class="item-galeria">
+          <figure>
+            <img src="img/tecnam_p2002_cabina.jpg" alt="Cabina biplaza de mandos dobles de Tecnam P2002" width="400" height="220">
+            <figcaption>Cabina: Mandos duales y cúpula de gran visibilidad.</figcaption>
+          </figure>
+        </div>
+
+        <div class="item-galeria">
+          <figure>
+            <img src="img/tecnam_p2002_plano.jpg" alt="Plano técnico acotado de Tecnam P2002" width="400" height="220">
+            <figcaption>Plano: Envergadura 8,60 m &bull; Longitud 6,61 m.</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Ficha tecnica -->
+      <div class="contenedor-tabla">
+        <table class="tabla-app">
+          <caption>Especificaciones del Manual POH - Tecnam P2002 (EC-LPI)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Parámetro</th>
+              <th scope="col">Valor Certificado</th>
+              <th scope="col">Detalle Operativo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Motor y Potencia</th>
+              <td>Rotax 912 S2</td>
+              <td>100 CV &bull; Bajo consumo (17 L/h MOGAS 95)</td>
+            </tr>
+            <tr>
+              <th scope="row">Pesos (MTOW / Vacío)</th>
+              <td>600 kg / 345 kg</td>
+              <td>Carga útil disponible: 255 kg</td>
+            </tr>
+            <tr>
+              <th scope="row">Superficie Alar</th>
+              <td>11,5 m<sup>2</sup></td>
+              <td>Ala baja metálica con flaps ranurados</td>
+            </tr>
+            <tr>
+              <th scope="row">Velocidades Clave</th>
+              <td><em>V<sub>SO</sub></em>: 38 kt | <em>V<sub>X</sub></em>: 56 kt | <em>V<sub>Y</sub></em>: 65 kt</td>
+              <td>Velocidad nunca exceder (<em>V<sub>NE</sub></em>): 136 kt</td>
+            </tr>
+            <tr>
+              <th scope="row">Horómetro TTAF</th>
+              <td>980,5 h</td>
+              <td>En revisión periódica en taller CAMO</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Libro de averias y reparaciones -->
+    <section id="registro-squawks" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>5. Libro de Discrepancias Mecánicas &amp; Averías (Squawks)</h3>
+      </div>
+      <p>Historial reciente de incidencias notificadas por los pilotos y cerradas por los técnicos certificados del taller.</p>
+
+      <div class="contenedor-tabla">
+        <table class="tabla-app">
+          <caption>Registro de mantenimiento correctivo de la flota</caption>
+          <thead>
+            <tr>
+              <th scope="col">Avión</th>
+              <th scope="col">Fecha</th>
+              <th scope="col">Discrepancia Notificada</th>
+              <th scope="col">Acción Técnica Realizada</th>
+              <th scope="col">Certificación</th>
+              <th scope="col">Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="matricula-aero">EC-MRX</span></td>
+              <td><time datetime="2026-09-28">28/09/2026</time></td>
+              <td>Luz estroboscópica izquierda inoperativa.</td>
+              <td>Sustituida bombilla y fusible de 5A. Comprobación OK.</td>
+              <td>Téc. M. Arrieta</td>
+              <td><span class="badge badge-exito">Cerrada</span></td>
+            </tr>
+            <tr>
+              <td><span class="matricula-aero">EC-JMC</span></td>
+              <td><time datetime="2026-09-15">15/09/2026</time></td>
+              <td>Holgura en pedal derecho de dirección.</td>
+              <td>Ajustada tensión de cables según POH sección 7.</td>
+              <td>Jefe A. Ugarte</td>
+              <td><span class="badge badge-exito">Cerrada</span></td>
+            </tr>
+            <tr>
+              <td><span class="matricula-aero">EC-LPI</span></td>
+              <td><time datetime="2026-10-02">02/10/2026</time></td>
+              <td>Límite de horas alcanzado para cambio de bujías.</td>
+              <td>En proceso de sustitución de bujías del motor Rotax.</td>
+              <td>Téc. M. Arrieta</td>
+              <td><span class="badge badge-aviso">En Taller</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p><small>Documentación técnica de consulta: <a href="https://www.seguridadaerea.gob.es/" target="_blank" rel="noopener noreferrer">Agencia Estatal de Seguridad Aérea (AESA)</a> &bull; <a href="https://www.easa.europa.eu/" target="_blank" rel="noopener noreferrer">European Union Aviation Safety Agency (EASA)</a>.</small></p>
+    </section>
 
   </main>
 
   <!-- Pie de pagina -->
-  <footer id="pie-principal">
-    <div class="contenedor-pie">
-      <div class="seccion-pie">
-        <h3>AeroLink Aviación Bilbao</h3>
-        <p>Club de vuelo y escuela de pilotos en Bilbao.</p>
-        <p>Terminal de Aviación General, Aeropuerto de Bilbao (Loiu),<br>48180 Bizkaia.</p>
+  <footer class="app-footer">
+    <div class="footer-contenido">
+      <div class="footer-col">
+        <h3>AeroLink V2 Bilbao</h3>
+        <p>Sistema de gestión interna, despacho de operaciones y control de flota del Aeroclub de Bilbao (LEBB).</p>
+        <p><small>Versión del prototipo: <strong>v2.4</strong> &bull; Conforme a normativa EASA.</small></p>
       </div>
 
-      <div class="seccion-pie">
-        <h3>Navegación</h3>
+      <div class="footer-col">
+        <h3>Módulos del Sistema</h3>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="flota.html">Flota de Aeronaves</a></li>
-          <li><a href="detalle.html">Fichas Técnicas</a></li>
-          <li><a href="formulario.html">Formulario de Reserva</a></li>
+          <li><a href="index.html">Panel Operativo</a></li>
+          <li><a href="flota.html">Gestión de Flota</a></li>
+          <li><a href="detalle.html">Expedientes de Aeronaves</a></li>
+          <li><a href="formulario.html">Despacho de Vuelos</a></li>
+          <li><a href="protocolos.html">Procedimientos SOP &amp; FAQ</a></li>
         </ul>
       </div>
 
-      <div class="seccion-pie">
-        <h3>Información</h3>
-        <ul>
-          <li><a href="index.html#servicios">Seguridad y Normas</a></li>
-          <li><a href="formulario.html#aviso-legal">Protección de Datos</a></li>
-          <li><a href="index.html#bienvenida">Contacto</a></li>
-        </ul>
+      <div class="footer-col">
+        <h3>Base de Operaciones</h3>
+        <address>
+          <strong>Hangar de Aviación General - Puesto R</strong><br>
+          Aeropuerto de Bilbao (LEBB / BIO)<br>
+          Carretera de Loiu s/n, 48180 Loiu (Bizkaia)<br>
+          Teléfono: <a href="tel:+34944869000">+34 944 869 000</a><br>
+          Email: <a href="mailto:operaciones@aerolink-bilbao.com">operaciones@aerolink-bilbao.com</a>
+        </address>
       </div>
     </div>
 
-    <div class="copyright">
-      <p>&copy; 2026 AeroLink Aviación Bilbao - Entrega 1 de Ingeniería Web (Iñigo Fernandez - DNI: 79078777Q - fernandez.inigo@opendeusto.es)</p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AeroLink V2 &bull; Asignatura Ingeniería Web &bull; Universidad de Deusto. Todos los derechos reservados.</p>
+      <p>Base LEBB &bull; Estado: <span class="badge badge-exito">Operativo</span></p>
     </div>
   </footer>
 
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

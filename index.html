@@ -1,299 +1,385 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AeroLink | Club de Aviación y Escuela de Pilotos - Aeropuerto de Bilbao</title>
-  <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
+  <meta name="description" content="AeroLink V2 - Centro de Operaciones y Gestión del Aeroclub en el Aeropuerto de Bilbao (LEBB). Control de vuelos, flota y despacho operativo.">
+  <title>AeroLink V2 | Centro de Operaciones y Control de Vuelos</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
 </head>
 <body>
 
-  <!-- Cabecera -->
-  <header id="cabecera-principal">
-    <div class="contenedor-cabecera">
-      <a href="index.html" class="logotipo" aria-label="AeroLink Aviación Bilbao - Ir a la página de inicio">
-        <img src="img/logo.svg" alt="AeroLink Aviación Bilbao" width="180" height="45">
-      </a>
-      <nav id="menu-navegacion" aria-label="Menú principal">
+  <!-- Cabecera general -->
+  <header class="app-header">
+    <!-- Barra superior -->
+    <div class="barra-superior">
+      <div class="contenedor-barra">
+        <p><strong>Base Operativa:</strong> Aeropuerto de Bilbao (LEBB / BIO) | <strong>Torre:</strong> 118.500 MHz | <strong>Pista activa:</strong> 30</p>
+        <p>Operador: <strong>Cap. Iñigo Fernandez</strong> (Jefe de Vuelos)</p>
+      </div>
+    </div>
+
+    <!-- Barra principal con logo y navegacion -->
+    <div class="cabecera-principal">
+      <div class="bloque-marca">
+        <img src="img/logo.svg" alt="Emblema del Aeroclub AeroLink V2" class="logo-img" width="48" height="48">
+        <div class="marca-texto">
+          <h1>AeroLink V2</h1>
+          <p class="subtitulo-app">Gestión del Aeroclub de Bilbao</p>
+        </div>
+      </div>
+
+      <!-- Menu de navegacion -->
+      <nav class="nav-principal">
         <ul>
-          <li><a href="index.html" class="activo" aria-current="page">Inicio</a></li>
-          <li><a href="flota.html">Flota</a></li>
-          <li><a href="detalle.html">Ficha Técnica</a></li>
-          <li><a href="formulario.html">Reservas</a></li>
+          <li><a href="index.html" class="activo">Panel Operativo</a></li>
+          <li><a href="flota.html">Control de Flota</a></li>
+          <li><a href="detalle.html">Expediente de Aeronave</a></li>
+          <li><a href="formulario.html">Despacho de Vuelo</a></li>
+          <li><a href="protocolos.html">Manual SOP &amp; FAQ</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-
-    <!-- Indice de la pagina -->
-    <nav class="indice-pagina" aria-label="Índice interno">
-      <p>Apartados de esta página:</p>
+  <!-- Indice interno navegable -->
+  <aside class="subbarra-indice">
+    <nav class="indice-interno">
+      <span class="indice-etiqueta">Apartados de la pantalla:</span>
       <ul>
-        <li><a href="#bienvenida">1. Presentación</a></li>
-        <li><a href="#servicios">2. Seguridad y Escuela</a></li>
-        <li><a href="#aeronaves-destacadas">3. Nuestros Aviones</a></li>
-        <li><a href="#rutas-vuelo">4. Rutas de Vuelo</a></li>
-        <li><a href="#meteorologia">5. El Tiempo en Bilbao</a></li>
+        <li><a href="#kpis-operativos">1. Indicadores del Día</a></li>
+        <li><a href="#tabla-operaciones">2. Cuadrante de Vuelos</a></li>
+        <li><a href="#estado-flota-resumen">3. Disponibilidad en Rampa</a></li>
+        <li><a href="#meteo-operacional">4. Meteorología Operativa</a></li>
+        <li><a href="#notams-alertas">5. Alertas &amp; NOTAMs</a></li>
       </ul>
     </nav>
+  </aside>
 
-    <!-- Presentacion -->
-    <section id="bienvenida">
-      <div id="seccion-bienvenida">
-        <div class="bienvenida-texto">
-          <h1>AeroLink: Escuela y Club de Vuelo en Bilbao</h1>
-          <p>
-            Bienvenido a <strong>AeroLink</strong>, nuestro club de aviación y escuela de pilotos con base en el <strong>Aeropuerto de Bilbao (Loiu)</strong>. En nuestro centro puedes formarte para obtener la licencia de piloto privado PPL(A), hacer vuelos turísticos para conocer la costa vasca desde el aire o alquilar avionetas por horas si ya tienes licencia.
-          </p>
-          <p>
-            Despegamos desde la terminal de aviación general del aeropuerto con una flota de 4 avionetas revisadas periódicamente para volar con total tranquilidad.
-          </p>
-          <div class="botones-bienvenida">
-            <a href="flota.html" class="boton boton-principal">Ver nuestra flota</a>
-            <a href="formulario.html" class="boton boton-secundario">Solicitar reserva</a>
-          </div>
-        </div>
-        <div class="bienvenida-imagen">
-          <img src="img/hero-bilbao.jpg" alt="Pista y terminal del Aeropuerto de Bilbao en Loiu" width="500" height="300" decoding="async">
-        </div>
+  <!-- Contenido principal -->
+  <main class="contenedor-app">
+
+    <!-- Encabezado contextual de la pantalla actual -->
+    <section class="cabecera-seccion">
+      <div class="titular">
+        <h2>Centro de Mando Operativo &amp; Cuadrante Diario</h2>
+        <p>Control de vuelos, asignación de aeronaves y meteorología en Bilbao (LEBB).</p>
+      </div>
+      <div class="acciones-cabecera">
+        <a href="formulario.html" class="btn btn-primario">+ Despachar Vuelo</a>
+        <a href="flota.html" class="btn btn-secundario">Ver Flota</a>
       </div>
     </section>
 
-    <!-- Seguridad y escuela -->
-    <section id="servicios">
-      <h2>Seguridad y Clases de Vuelo en Bilbao</h2>
-      <p>
-        Para nosotros la <mark>seguridad es lo más importante</mark>. Todas las operaciones y cursos siguen la normativa oficial de la <a href="https://www.seguridadaerea.gob.es" target="_blank" rel="noopener noreferrer">Agencia Estatal de Seguridad Aérea (AESA)</a> y la normativa europea EASA.
-      </p>
+    <!-- Indicadores del dia -->
+    <section id="kpis-operativos">
+      <h3 class="subtitulo-bloque">Indicadores Operativos Clave</h3>
+      <div class="cuadricula-kpis">
+        <article class="tarjeta-kpi kpi-exito">
+          <h4 class="etiqueta-kpi">Aeronaves en Vuelo</h4>
+          <p class="valor-kpi">2 / 4</p>
+          <p class="detalle-kpi">EC-MRX y EC-LRF en espacio aéreo LEBB</p>
+        </article>
 
-      <blockquote>
-        <p>
-          "Aprender a volar en la costa cantábrica te enseña a interpretar el tiempo, a adaptarte al viento y a disfrutar de unos paisajes increíbles desde la cabina."
-        </p>
-        <cite>— Carlos Ruiz, instructor de vuelo en AeroLink Bilbao</cite>
+        <article class="tarjeta-kpi kpi-info">
+          <h4 class="etiqueta-kpi">Horas Voladas Hoy</h4>
+          <p class="valor-kpi">11.4 <abbr title="Horas">h</abbr></p>
+          <p class="detalle-kpi">+2.1 h respecto a la previsión matinal</p>
+        </article>
+
+        <article class="tarjeta-kpi kpi-aviso">
+          <h4 class="etiqueta-kpi">Vuelos Programados</h4>
+          <p class="valor-kpi">6 misiones</p>
+          <p class="detalle-kpi">4 instrucción dual, 2 alquiler privado</p>
+        </article>
+
+        <article class="tarjeta-kpi">
+          <h4 class="etiqueta-kpi">Combustible en Depósitos</h4>
+          <p class="valor-kpi">840 <abbr title="Litros">L</abbr></p>
+          <p class="detalle-kpi">AVGAS 100LL: 520 L | JET-A1: 320 L</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Cuadrante de vuelos del dia -->
+    <section id="tabla-operaciones" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>Registro Diario de Operaciones de Vuelo</h3>
+        <span class="badge badge-info">Fecha: <time datetime="2026-10-04">04/10/2026</time></span>
+      </div>
+      <p class="subtexto-seccion">Despegues, tomas y misiones programadas para la jornada de hoy.</p>
+
+      <div class="contenedor-tabla">
+        <table class="tabla-app">
+          <caption>Cuadrante diario de vuelos y control de calzos en el Aeropuerto de Bilbao</caption>
+          <thead>
+            <tr>
+              <th scope="col">Ref. Vuelo</th>
+              <th scope="col">Aeronave</th>
+              <th scope="col">Horario (Calzos)</th>
+              <th scope="col">Piloto al Mando (PIC)</th>
+              <th scope="col">Tipo de Misión</th>
+              <th scope="col">Ocupantes</th>
+              <th scope="col">Estado</th>
+              <th scope="col">Expediente</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">AO-101</th>
+              <td><a href="detalle.html#ec-mrx" class="matricula-aero">EC-MRX</a></td>
+              <td><time datetime="09:00">09:00</time> - <time datetime="10:30">10:30</time></td>
+              <td>Cap. I. Fernandez (Instructor)</td>
+              <td>Instrucción Dual (Toma y Despegue)</td>
+              <td>2 pax</td>
+              <td><span class="badge badge-exito">Completado</span></td>
+              <td><a href="detalle.html#ec-mrx" class="btn btn-secundario">Ver Ficha</a></td>
+            </tr>
+            <tr>
+              <th scope="row">AO-102</th>
+              <td><a href="detalle.html#ec-lrf" class="matricula-aero">EC-LRF</a></td>
+              <td><time datetime="10:45">10:45</time> - <time datetime="12:15">12:15</time></td>
+              <td>Alum. M. Etxebarria (Solo)</td>
+              <td>Navegación de Travesía (LEBB-LEVT)</td>
+              <td>1 pax</td>
+              <td><span class="badge badge-info">En Vuelo</span></td>
+              <td><a href="detalle.html#ec-lrf" class="btn btn-secundario">Ver Ficha</a></td>
+            </tr>
+            <tr>
+              <th scope="row">AO-103</th>
+              <td><a href="detalle.html#ec-jmc" class="matricula-aero">EC-JMC</a></td>
+              <td><time datetime="12:30">12:30</time> - <time datetime="14:00">14:00</time></td>
+              <td>Socio J. Ruiz (PPL-A)</td>
+              <td>Vuelo Turístico Costa Vasca</td>
+              <td>3 pax</td>
+              <td><span class="badge badge-aviso">Programado</span></td>
+              <td><a href="detalle.html#ec-jmc" class="btn btn-secundario">Ver Ficha</a></td>
+            </tr>
+            <tr>
+              <th scope="row">AO-104</th>
+              <td><a href="detalle.html#ec-lpi" class="matricula-aero">EC-LPI</a></td>
+              <td><time datetime="16:00">16:00</time> - <time datetime="17:30">17:30</time></td>
+              <td>Ing. A. Ugarte (Taller)</td>
+              <td>Vuelo de Verificación Técnica</td>
+              <td>1 pax</td>
+              <td><span class="badge badge-peligro">Hangar/Revisión</span></td>
+              <td><a href="detalle.html#ec-lpi" class="btn btn-secundario">Ver Ficha</a></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="2">Totales Acumulados</th>
+              <td><strong>6.0 h estimadas</strong></td>
+              <td colspan="2">Misiones duales, travesías y vuelos privados</td>
+              <td><strong>7 personas</strong></td>
+              <td colspan="2"><span class="badge badge-exito">Plataforma Normal</span></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </section>
+
+    <!-- Disponibilidad de la flota en rampa -->
+    <section id="estado-flota-resumen" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>Aeronaves Asignadas a la Base de Loiu</h3>
+        <a href="flota.html" class="btn btn-secundario">Ver Matriz Técnica Completa &rarr;</a>
+      </div>
+      <p class="subtexto-seccion">Disponibilidad en tiempo real de las aeronaves en la rampa de aviación general.</p>
+
+      <div class="cuadricula-flota">
+        <!-- Cessna 172S -->
+        <article class="tarjeta-avion">
+          <figure>
+            <img src="img/cessna172.jpg" alt="Cessna 172S Skyhawk SP matrícula EC-MRX en la plataforma de Loiu" width="400" height="200">
+            <figcaption>Cessna 172S Skyhawk SP &bull; EC-MRX</figcaption>
+          </figure>
+          <div class="cuerpo-tarjeta-avion">
+            <div class="cabecera-avion">
+              <h4>Cessna 172S (Ala Alta)</h4>
+              <span class="badge badge-exito">Apta / Operativa</span>
+            </div>
+            <ul class="datos-clave-avion">
+              <li><span>Horómetro total (TTAF):</span> <strong>2.450,4 h</strong></li>
+              <li><span>Próxima revisión:</span> <strong>Inspección 50 h</strong></li>
+              <li><span>Combustible a bordo:</span> <strong>160 L (AVGAS)</strong></li>
+            </ul>
+            <div class="pie-tarjeta-avion">
+              <small class="texto-mutado">Hangar 2 &bull; Puesto R-01</small>
+              <a href="detalle.html#ec-mrx" class="btn btn-primario">Consultar Ficha</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Piper PA-28 -->
+        <article class="tarjeta-avion">
+          <figure>
+            <img src="img/piper-pa28.jpg" alt="Piper PA-28-181 Archer III matrícula EC-JMC en rodadura" width="400" height="200">
+            <figcaption>Piper PA-28 Archer III &bull; EC-JMC</figcaption>
+          </figure>
+          <div class="cuerpo-tarjeta-avion">
+            <div class="cabecera-avion">
+              <h4>Piper Archer III (Ala Baja)</h4>
+              <span class="badge badge-exito">Apta / Operativa</span>
+            </div>
+            <ul class="datos-clave-avion">
+              <li><span>Horómetro total (TTAF):</span> <strong>3.120,8 h</strong></li>
+              <li><span>Próxima revisión:</span> <strong>Inspección 100 h</strong></li>
+              <li><span>Combustible a bordo:</span> <strong>120 L (AVGAS)</strong></li>
+            </ul>
+            <div class="pie-tarjeta-avion">
+              <small class="texto-mutado">Hangar 2 &bull; Puesto R-02</small>
+              <a href="detalle.html#ec-jmc" class="btn btn-primario">Consultar Ficha</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Diamond DA40 -->
+        <article class="tarjeta-avion">
+          <figure>
+            <img src="img/diamond-da40.jpg" alt="Diamond DA40 NG Star matrícula EC-LRF en plataforma" width="400" height="200">
+            <figcaption>Diamond DA40 NG Star &bull; EC-LRF</figcaption>
+          </figure>
+          <div class="cuerpo-tarjeta-avion">
+            <div class="cabecera-avion">
+              <h4>Diamond DA40 NG (Diésel)</h4>
+              <span class="badge badge-info">En Vuelo</span>
+            </div>
+            <ul class="datos-clave-avion">
+              <li><span>Horómetro total (TTAF):</span> <strong>1.180,2 h</strong></li>
+              <li><span>Próxima revisión:</span> <strong>Revisión Anual ARC</strong></li>
+              <li><span>Combustible a bordo:</span> <strong>110 L (JET-A1)</strong></li>
+            </ul>
+            <div class="pie-tarjeta-avion">
+              <small class="texto-mutado">En ruta LEBB-LEVT</small>
+              <a href="detalle.html#ec-lrf" class="btn btn-primario">Consultar Ficha</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tecnam P2002 -->
+        <article class="tarjeta-avion">
+          <figure>
+            <img src="img/tecnam_p2002.jpg" alt="Tecnam P2002 Sierra matrícula EC-LPI en hangar" width="400" height="200">
+            <figcaption>Tecnam P2002 Sierra &bull; EC-LPI</figcaption>
+          </figure>
+          <div class="cuerpo-tarjeta-avion">
+            <div class="cabecera-avion">
+              <h4>Tecnam P2002 (Biplaza)</h4>
+              <span class="badge badge-peligro">En Mantenimiento</span>
+            </div>
+            <ul class="datos-clave-avion">
+              <li><span>Horómetro total (TTAF):</span> <strong>980,5 h</strong></li>
+              <li><span>Próxima revisión:</span> <strong>Cambio bujías Rotax</strong></li>
+              <li><span>Combustible a bordo:</span> <strong>40 L (MOGAS)</strong></li>
+            </ul>
+            <div class="pie-tarjeta-avion">
+              <small class="texto-mutado">Taller CAMO &bull; Bancada 1</small>
+              <a href="detalle.html#ec-lpi" class="btn btn-primario">Consultar Ficha</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Informacion meteorologica -->
+    <section id="meteo-operacional" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>Información Meteorológica Oficial para Despacho</h3>
+        <span class="badge badge-exito">Condiciones VMC / VFR Operativo</span>
+      </div>
+      <p>Reporte meteorológico oficial de la estación de Loiu suministrado por la Agencia Estatal de Meteorología (<abbr title="Agencia Estatal de Meteorología">AEMET</abbr>):</p>
+
+      <pre><code>LEBB 041000Z 30010KT 9999 FEW025 SCT040 18/12 Q1018 NOSIG</code></pre>
+
+      <blockquote cite="https://metar-taf.com/LEBB">
+        <p><strong>Decodificación:</strong> Reporte del día <time datetime="2026-10-04T10:00:00Z">04 a las 10:00 UTC</time>. Viento de 300° a 10 kt, visibilidad &gt; 10 km, nubes a 2.500 ft (<code>FEW</code>) y 4.000 ft (<code>SCT</code>), temperatura 18 °C / rocío 12 °C, presión <em>QNH</em> = 1018 hPa (<code>NOSIG</code>).</p>
       </blockquote>
 
-      <p>
-        Nuestros aviones pasan revisiones de mantenimiento periódicas cada 50 y 100 horas de vuelo. Además, los instructores te acompañan paso a paso, desde las primeras clases teóricas hasta tu primer vuelo solo y el examen práctico para la licencia <em>PPL(A)</em>.
-      </p>
+      <p><mark>Aviso a tripulaciones:</mark> Posibles turbulencias en viento en cola de la Pista 30 en las proximidades de Artxanda.</p>
 
-      <figure>
-        <img src="img/hangar.jpg" alt="Instalaciones del hangar de AeroLink con avionetas en el aeropuerto de Bilbao" width="800" height="400" loading="lazy" decoding="async">
-        <figcaption>Hangar donde guardamos y revisamos nuestras avionetas en el Aeropuerto de Bilbao.</figcaption>
-      </figure>
+      <p><small>Fuentes oficiales: <a href="https://www.aemet.es" target="_blank" rel="noopener noreferrer">AEMET</a> &bull; <a href="https://www.enaire.es" target="_blank" rel="noopener noreferrer">ENAIRE</a>.</small></p>
     </section>
 
-    <hr>
-
-    <!-- Los 4 aviones destacados -->
-    <section id="aeronaves-destacadas">
-      <h2>Nuestros 4 Aviones en Bilbao</h2>
-      <p>
-        Esta es nuestra flota actual con base en el Aeropuerto de Bilbao (Loiu):
-      </p>
-
-      <div class="contenedor-tarjetas">
-
-        <article class="tarjeta">
-          <img src="img/cessna172.jpg" alt="Avioneta Cessna 172S Skyhawk matrícula EC-MRX en hangar de Bilbao" width="400" height="200" loading="lazy" decoding="async">
-          <div class="tarjeta-cuerpo">
-            <span class="etiqueta">Ala Alta • 4 Plazas • EC-MRX</span>
-            <h3>Cessna 172S Skyhawk</h3>
-            <p>
-              La avioneta de escuela más conocida del mundo. Es muy estable, fácil de volar y tiene una visibilidad muy buena para paseos.
-            </p>
-            <p><small>Base: <time datetime="2026-09-01">Aeropuerto de Bilbao (LEBB)</time></small></p>
-          </div>
-          <div class="tarjeta-pie">
-            <a href="detalle.html#cessna172" class="boton boton-secundario" aria-label="Ver ficha completa de la Cessna 172S Skyhawk">Ver ficha completa</a>
-          </div>
-        </article>
-
-        <article class="tarjeta">
-          <img src="img/piper-pa28.jpg" alt="Avioneta Piper PA-28-181 Archer III matrícula EC-JMC en aeródromo" width="400" height="200" loading="lazy" decoding="async">
-          <div class="tarjeta-cuerpo">
-            <span class="etiqueta">Ala Baja • Crucero • EC-JMC</span>
-            <h3>Piper PA-28 Archer</h3>
-            <p>
-              Avión monomotor de ala baja muy cómodo y rápido para realizar viajes y travesías entre aeropuertos del norte.
-            </p>
-            <p><small>Base: <time datetime="2026-09-01">Aeropuerto de Bilbao (LEBB)</time></small></p>
-          </div>
-          <div class="tarjeta-pie">
-            <a href="detalle.html#piper-pa28" class="boton boton-secundario" aria-label="Ver ficha completa de la Piper PA-28 Archer">Ver ficha completa</a>
-          </div>
-        </article>
-
-        <article class="tarjeta">
-          <img src="img/diamond-da40.jpg" alt="Avioneta moderna Diamond DA40 NG Star matrícula EC-LRF en plataforma" width="400" height="200" loading="lazy" decoding="async">
-          <div class="tarjeta-cuerpo">
-            <span class="etiqueta">Compuesto • Jet-A1 • EC-LRF</span>
-            <h3>Diamond DA40 Star</h3>
-            <p>
-              Avión moderno de fibra de carbono con motor turbodiésel de bajo consumo y cabina digital con pantallas Garmin G1000.
-            </p>
-            <p><small>Base: <time datetime="2026-09-01">Aeropuerto de Bilbao (LEBB)</time></small></p>
-          </div>
-          <div class="tarjeta-pie">
-            <a href="detalle.html#diamond-da40" class="boton boton-secundario" aria-label="Ver ficha completa de la Diamond DA40 Star">Ver ficha completa</a>
-          </div>
-        </article>
-
-        <article class="tarjeta">
-          <img src="img/tecnam_p2002.jpg" alt="Avioneta biplaza Tecnam P2002 Sierra matrícula EC-LPI en plataforma de Bilbao" width="400" height="200" loading="lazy" decoding="async">
-          <div class="tarjeta-cuerpo">
-            <span class="etiqueta">Biplaza LSA • Rotax 100 HP • EC-LPI</span>
-            <h3>Tecnam P2002 Sierra</h3>
-            <p>
-              Avioneta biplaza ligera y muy divertida de pilotar. Ideal para las primeras horas de clase y vuelos de iniciación más económicos.
-            </p>
-            <p><small>Base: <time datetime="2026-09-01">Aeropuerto de Bilbao (LEBB)</time></small></p>
-          </div>
-          <div class="tarjeta-pie">
-            <a href="detalle.html#tecnam-p2002" class="boton boton-secundario" aria-label="Ver ficha completa de la Tecnam P2002 Sierra">Ver ficha completa</a>
-          </div>
-        </article>
-
+    <!-- Avisos y NOTAMs -->
+    <section id="notams-alertas" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>Avisos a los Navegantes (NOTAMs) &amp; Circulares</h3>
       </div>
-    </section>
+      <p class="subtexto-seccion">Avisos y circulares vigentes para la jornada:</p>
 
-    <hr>
+      <details class="desplegable-app" open>
+        <summary>NOTAM B1402/26: Obras en calle de rodaje Delta (TWY D)</summary>
+        <div class="contenido-desplegable">
+          <p><strong>Periodo de validez:</strong> Del <time datetime="2026-10-01">01/10/2026</time> al <time datetime="2026-10-15">15/10/2026</time>.</p>
+          <p>Calle Delta cerrada para envergaduras superiores a 15 m de 08:00 a 14:00 h. Salidas coordinadas con <em>Bilbao Rodadura</em> (121.700 MHz) vía calle Eco (TWY E).</p>
+        </div>
+      </details>
 
-    <!-- Rutas y excursiones -->
-    <section id="rutas-vuelo">
-      <h2>Rutas Panorámicas Populares desde Bilbao</h2>
-      <p>
-        Saliendo desde el Aeropuerto de Bilbao solemos hacer estas rutas de vuelo visual por la costa y alrededores:
-      </p>
+      <details class="desplegable-app">
+        <summary>Circular CS-04/26: Drenaje de combustible obligatorio</summary>
+        <div class="contenido-desplegable">
+          <p>Obligatorio <strong>purgar los depósitos de combustible</strong> con el vaso decantador antes del primer vuelo del día para descartar agua o impurezas.</p>
+        </div>
+      </details>
 
-      <div class="contenedor-tarjetas">
-        <article class="tarjeta">
-          <div class="tarjeta-cuerpo">
-            <span class="etiqueta">Ruta Costera • 40 min</span>
-            <h3>Costa Vasca, Gaztelugatxe y Urdaibai</h3>
-            <p>
-              Salimos hacia la costa pasando por Plentzia, San Juan de Gaztelugatxe, el puerto de Bermeo y la ría de Urdaibai.
-            </p>
-            <ul class="lista-puntos">
-              <li><strong>Duración:</strong> unos 40 minutos</li>
-              <li><strong>Distancia:</strong> 65 km aproximadamente</li>
-              <li><strong>Altitud de vuelo:</strong> 2.500 pies (unos 750 metros)</li>
-            </ul>
-          </div>
-          <div class="tarjeta-pie">
-            <a href="formulario.html" class="boton boton-secundario" aria-label="Pedir la ruta Costa Vasca, Gaztelugatxe y Urdaibai">Pedir esta ruta</a>
-          </div>
-        </article>
+      <!-- Niveles de alerta -->
+      <article class="panel-alerta-niveles">
+        <h4>Niveles Operativos de Alerta</h4>
+        <h5>Clasificación Aeroportuaria</h5>
+        <h6>Nivel 1 &bull; Alerta Menor</h6>
+        <p>No interrumpe operaciones; requiere confirmación verbal con control.</p>
+      </article>
 
-        <article class="tarjeta">
-          <div class="tarjeta-cuerpo">
-            <span class="etiqueta">Costa Este • 1h 10 min</span>
-            <h3>San Sebastián y Bahía de La Concha</h3>
-            <p>
-              Seguimos la línea de costa hacia el este pasando por Zarautz, la Bahía de La Concha en Donostia y regreso a Bilbao.
-            </p>
-            <ul class="lista-puntos">
-              <li><strong>Duración:</strong> 1 hora y 10 minutos</li>
-              <li><strong>Distancia:</strong> 130 km aproximadamente</li>
-              <li><strong>Altitud de vuelo:</strong> 3.500 pies (unos 1.000 metros)</li>
-            </ul>
-          </div>
-          <div class="tarjeta-pie">
-            <a href="formulario.html" class="boton boton-secundario" aria-label="Pedir la ruta San Sebastián y Bahía de La Concha">Pedir esta ruta</a>
-          </div>
-        </article>
+      <hr>
 
-        <article class="tarjeta">
-          <div class="tarjeta-cuerpo">
-            <span class="etiqueta">Costa Oeste • 1h 30 min</span>
-            <h3>Castro Urdiales y Bahía de Santander</h3>
-            <p>
-              Vuelo hacia Cantabria sobrevolando Castro Urdiales, las playas de Laredo y la Bahía de Santander.
-            </p>
-            <ul class="lista-puntos">
-              <li><strong>Duración:</strong> 1 hora y 30 minutos (ida y vuelta)</li>
-              <li><strong>Distancia:</strong> 160 km aproximadamente</li>
-              <li><strong>Altitud de vuelo:</strong> 4.000 pies</li>
-            </ul>
-          </div>
-          <div class="tarjeta-pie">
-            <a href="formulario.html" class="boton boton-secundario" aria-label="Pedir la ruta Castro Urdiales y Bahía de Santander">Pedir esta ruta</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <hr>
-
-    <!-- Meteorologia y datos del aeropuerto -->
-    <section id="meteorologia">
-      <h2>El Tiempo y Datos del Aeropuerto de Bilbao</h2>
-
-      <div class="contenedor-columnas">
-        <article class="columna-principal">
-          <h3>Informe Meteorológico (METAR LEBB)</h3>
-          <p>
-            En aviación siempre consultamos el informe oficial del tiempo antes de subirnos al avión. Este es el formato que utilizamos:
-          </p>
-          <pre><code>LEBB 221130Z 32010KT 9999 FEW025 19/14 Q1017 NOSIG</code></pre>
-          <p>
-            <strong>¿Qué significa esto?</strong> Indica que en el aeropuerto de Bilbao hace viento del noroeste a 10 nudos, hay más de 10 kilómetros de visibilidad, pocas nubes a 2.500 pies, 19 grados de temperatura y buena presión atmosférica. Es un día ideal para volar en visual. Consulta también el parte oficial en <a href="https://www.aemet.es" target="_blank" rel="noopener noreferrer">AEMET Aviación</a>.
-          </p>
-        </article>
-
-        <aside class="columna-lateral">
-          <h3>Frecuencias de Radio de Bilbao</h3>
-          <p>Canales de comunicación del aeropuerto (Loiu):</p>
-          <p><strong>Torre de control (TWR):</strong> <code>118.500 MHz</code></p>
-          <p><strong>Rodaje en tierra (GND):</strong> <code>121.700 MHz</code></p>
-          <p><strong>Información del tiempo (ATIS):</strong> <code>125.625 MHz</code></p>
-          <p><small>Altitud del aeropuerto: 42 metros sobre el nivel del mar.</small></p>
-        </aside>
-      </div>
+      <!-- Aviso de seguridad en pista -->
+      <article class="caja-aviso">
+        <h4>Aviso de Seguridad en Pista (Runway Safety)</h4>
+        <p>Recordatorio reglamentario: Se requiere autorización expresa y colación obligatoria con <em>Bilbao Torre (118.500 MHz)</em> antes de cruzar o ingresar en la Pista 12/30.</p>
+      </article>
     </section>
 
   </main>
 
   <!-- Pie de pagina -->
-  <footer id="pie-principal">
-    <div class="contenedor-pie">
-      <div class="seccion-pie">
-        <h3>AeroLink Aviación Bilbao</h3>
-        <p>Club de vuelo y escuela de pilotos en Bilbao.</p>
-        <p>Terminal de Aviación General, Aeropuerto de Bilbao (Loiu),<br>48180 Bizkaia.</p>
+  <footer class="app-footer">
+    <div class="footer-contenido">
+      <div class="footer-col">
+        <h3>AeroLink V2 Bilbao</h3>
+        <p>Sistema de gestión interna, despacho de operaciones y control de flota del Aeroclub de Bilbao (LEBB).</p>
+        <p><small>Versión del prototipo: <strong>v2.4</strong> &bull; Conforme a normativa EASA.</small></p>
       </div>
 
-      <div class="seccion-pie">
-        <h3>Navegación</h3>
+      <div class="footer-col">
+        <h3>Módulos del Sistema</h3>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="flota.html">Flota de Aeronaves</a></li>
-          <li><a href="detalle.html">Fichas Técnicas</a></li>
-          <li><a href="formulario.html">Formulario de Reserva</a></li>
+          <li><a href="index.html">Panel Operativo</a></li>
+          <li><a href="flota.html">Gestión de Flota</a></li>
+          <li><a href="detalle.html">Expedientes de Aeronaves</a></li>
+          <li><a href="formulario.html">Despacho de Vuelos</a></li>
+          <li><a href="protocolos.html">Procedimientos SOP &amp; FAQ</a></li>
         </ul>
       </div>
 
-      <div class="seccion-pie">
-        <h3>Información</h3>
-        <ul>
-          <li><a href="index.html#servicios">Seguridad y Normas</a></li>
-          <li><a href="formulario.html#aviso-legal">Protección de Datos</a></li>
-          <li><a href="index.html#bienvenida">Contacto</a></li>
-        </ul>
+      <div class="footer-col">
+        <h3>Base de Operaciones</h3>
+        <address>
+          <strong>Hangar de Aviación General - Puesto R</strong><br>
+          Aeropuerto de Bilbao (LEBB / BIO)<br>
+          Carretera de Loiu s/n, 48180 Loiu (Bizkaia)<br>
+          Teléfono: <a href="tel:+34944869000">+34 944 869 000</a><br>
+          Email: <a href="mailto:operaciones@aerolink-bilbao.com">operaciones@aerolink-bilbao.com</a>
+        </address>
       </div>
     </div>
 
-    <div class="copyright">
-      <p>&copy; 2026 AeroLink Aviación Bilbao - Entrega 1 de Ingeniería Web (Iñigo Fernandez - DNI: 79078777Q - fernandez.inigo@opendeusto.es)</p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 AeroLink V2 &bull; Asignatura Ingeniería Web &bull; Universidad de Deusto. Todos los derechos reservados.</p>
+      <p>Base LEBB &bull; Estado: <span class="badge badge-exito">Operativo</span></p>
     </div>
   </footer>
 
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>

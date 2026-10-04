@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AeroLink V2 - Procedimientos normalizados de salida (SOP) en Bilbao LEBB, cuadro de radiofrecuencias ENAIRE y preguntas frecuentes de pilotos.">
+  <title>AeroLink V2 | Manual SOP &amp; FAQ del Aeroclub</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="img/logo.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Cabecera general -->
+  <header class="app-header">
+    <div class="barra-superior">
+      <div class="contenedor-barra">
+        <p><strong>Base Operativa:</strong> Aeropuerto de Bilbao (LEBB / BIO) | <strong>Torre:</strong> 118.500 MHz | <strong>Pista activa:</strong> 30</p>
+        <p>Operador: <strong>Cap. Iñigo Fernandez</strong> (Jefe de Vuelos)</p>
+      </div>
+    </div>
+
+    <div class="cabecera-principal">
+      <div class="bloque-marca">
+        <img src="img/logo.svg" alt="Emblema del Aeroclub AeroLink V2" class="logo-img" width="48" height="48">
+        <div class="marca-texto">
+          <h1>AeroLink V2</h1>
+          <p class="subtitulo-app">Gestión del Aeroclub de Bilbao</p>
+        </div>
+      </div>
+
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="index.html">Panel Operativo</a></li>
+          <li><a href="flota.html">Control de Flota</a></li>
+          <li><a href="detalle.html">Expediente de Aeronave</a></li>
+          <li><a href="formulario.html">Despacho de Vuelo</a></li>
+          <li><a href="protocolos.html" class="activo">Manual SOP &amp; FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Indice interno navegable -->
+  <aside class="subbarra-indice">
+    <nav class="indice-interno">
+      <span class="indice-etiqueta">Apartados:</span>
+      <ul>
+        <li><a href="#procedimientos-lebb">1. Salidas en Loiu</a></li>
+        <li><a href="#comunicaciones-frecuencias">2. Frecuencias ENAIRE</a></li>
+        <li><a href="#faq-operativa">3. Preguntas Frecuentes</a></li>
+        <li><a href="#normativa-seguridad">4. Seguridad &amp; Avisos</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Contenido principal -->
+  <main class="contenedor-app">
+
+    <section class="cabecera-seccion">
+      <div class="titular">
+        <h2>Manual de Procedimientos Normalizados (<abbr title="Standard Operating Procedures">SOP</abbr>) &amp; FAQ</h2>
+        <p>Guía operacional para despegues, rodajes en Loiu, frecuencias de radio y resolución de dudas comunes.</p>
+      </div>
+      <div class="acciones-cabecera">
+        <a href="formulario.html" class="btn btn-primario">Ir al Despacho de Vuelo</a>
+      </div>
+    </section>
+
+    <!-- Procedimientos de salida en Bilbao -->
+    <section id="procedimientos-lebb" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>1. Secuencia de Salida para Vuelos VFR en Bilbao (Loiu)</h3>
+        <span class="badge badge-info">Procedimiento Local ATO-01</span>
+      </div>
+      <p>Pasos reglamentarios que debe seguir la tripulación antes del despegue:</p>
+
+      <ol class="lista-procedimiento">
+        <li>
+          <strong>Información ATIS y puesta en marcha:</strong> Sintonizar <code>126.625 MHz</code>, anotar el QNH y solicitar puesta en marcha a <em>Bilbao Rodadura</em> (<code>121.700 MHz</code>).
+        </li>
+        <li>
+          <strong>Rodaje a punto de espera:</strong> Rodar a velocidad moderada (&le; 15 kt) hasta el punto de espera de la Pista 30 sin cruzar la línea de parada.
+        </li>
+        <li>
+          <strong>Prueba de motores (Run-up) e instrumentos:</strong>
+          Orientar el avión contra el viento, frenar y acelerar a 1.800 RPM para verificar:
+          <ul>
+            <li>Caída de magnetos: <em>&Delta;RPM &le; 150 RPM</em> y diferencia máxima de 50 RPM.</li>
+            <li>Calefacción de carburador / aire alternativo comprobado.</li>
+            <li>Presión y temperatura de aceite en arco verde.</li>
+            <li>Presión de bomba de vacío entre 4,5 y 5,5 pulgadas Hg.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Autorización de despegue con Torre:</strong> Pasar a <em>Bilbao Torre</em> (<code>118.500 MHz</code>) mediante tecla <strong>COM1 TRANSFER</strong> y solicitar entrada en pista.
+        </li>
+        <li>
+          <strong>Ascenso inicial y salida del CTR:</strong> Mantener eje de pista hasta 500 ft AGL antes de virar. Notificar abandono del espacio aéreo por los puntos visuales (Punta Galea o Bermeo).
+        </li>
+      </ol>
+    </section>
+
+    <!-- Frecuencias de radio -->
+    <section id="comunicaciones-frecuencias" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>2. Canales de Radiofrecuencia VHF en Bilbao (LEBB)</h3>
+        <span class="badge badge-exito">VHF Aire-Tierra</span>
+      </div>
+      <p>Frecuencias oficiales publicadas en la Publicación de Información Aeronáutica (<abbr title="Aeronautical Information Publication">AIP España</abbr>):</p>
+
+      <div class="contenedor-tabla">
+        <table class="tabla-app">
+          <caption>Frecuencias de control de tráfico aéreo en Bilbao</caption>
+          <thead>
+            <tr>
+              <th scope="col">Dependencia</th>
+              <th scope="col">Frecuencia</th>
+              <th scope="col">Horario</th>
+              <th scope="col">Servicio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Bilbao ATIS (Meteo)</th>
+              <td><strong>126.625 MHz</strong></td>
+              <td>Continuo (H24)</td>
+              <td>Pista en uso, viento, visibilidad y presión QNH</td>
+            </tr>
+            <tr>
+              <th scope="row">Bilbao Rodadura (GND)</th>
+              <td><strong>121.700 MHz</strong></td>
+              <td>06:00 - 23:00 LT</td>
+              <td>Autorización de encendido y calles de rodaje</td>
+            </tr>
+            <tr>
+              <th scope="row">Bilbao Torre (TWR)</th>
+              <td><strong>118.500 MHz</strong></td>
+              <td>Continuo (H24)</td>
+              <td>Alineación, despegues y aterrizajes en pista</td>
+            </tr>
+            <tr>
+              <th scope="row">Bilbao Aproximación (APP)</th>
+              <td><strong>120.700 MHz</strong></td>
+              <td>Continuo (H24)</td>
+              <td>Tráfico dentro del espacio aéreo controlado (CTR)</td>
+            </tr>
+            <tr>
+              <th scope="row">Emergencia Internacional</th>
+              <td><strong>121.500 MHz</strong></td>
+              <td>Continuo (H24)</td>
+              <td>Frecuencia de socorro (<code>MAYDAY</code> / <code>PAN-PAN</code>)</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row">Escala de Legibilidad</th>
+              <td colspan="3">Niveles de 1 (Ilegible) a 5 (Alto y claro). Colación obligatoria en autorizaciones de pista.</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+
+    </section>
+
+    <!-- Preguntas frecuentes -->
+    <section id="faq-operativa" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>3. Preguntas Frecuentes (<abbr title="Frequently Asked Questions">FAQ</abbr>)</h3>
+      </div>
+      <p>Resolución rápida de dudas sobre operaciones, repostaje e incidencias:</p>
+
+      <details class="desplegable-app" open>
+        <summary>¿Qué hacer si el horómetro no coincide con el libro de a bordo?</summary>
+        <div class="contenido-desplegable">
+          <p>Fotografíe el taquímetro con su móvil y anote la lectura exacta en el <a href="formulario.html">formulario de despacho de vuelo</a> antes de encender el motor para evitar descuadres en la facturación.</p>
+        </div>
+      </details>
+
+      <details class="desplegable-app">
+        <summary>¿Cuáles son los mínimos meteorológicos visuales (VMC) en Bilbao?</summary>
+        <div class="contenido-desplegable">
+          <p>Para salidas del aeroclub se requiere un mínimo de <strong>5.000 metros de visibilidad</strong> en superficie y techo de nubes a <strong>1.500 ft AGL</strong> o superior.</p>
+        </div>
+      </details>
+
+      <details class="desplegable-app">
+        <summary>¿Cómo se solicita el repostaje de combustible en plataforma?</summary>
+        <div class="contenido-desplegable">
+          <p>Solicite el camión cisterna con 30 minutos de antelación indicando la matrícula del avión. Firme el albarán y deposite la copia en el buzón del club en el Hangar 2.</p>
+        </div>
+      </details>
+
+      <details class="desplegable-app">
+        <summary>¿Dónde se notifican las pequeñas averías mecánicas (Squawks)?</summary>
+        <div class="contenido-desplegable">
+          <p>Anótelo en el libro técnico de cabina y regístrelo en el apartado de incidencias de <a href="detalle.html#registro-squawks">detalle.html</a> para que el taller CAMO realice la reparación.</p>
+        </div>
+      </details>
+    </section>
+
+    <!-- Protocolos de seguridad -->
+    <section id="normativa-seguridad" class="panel-modulo">
+      <div class="cabecera-panel">
+        <h3>4. Seguridad Operacional y Códigos de Transpondedor</h3>
+      </div>
+      <p>En caso de fallo técnico en vuelo, mantenga la velocidad de planeo y seleccione el código adecuado en el transpondedor:</p>
+
+      <aside class="caja-alerta-seguridad">
+        <h4>Códigos de Emergencia Aeronáutica (Squawk)</h4>
+        <ul>
+          <li><code>7700</code>: Emergencia general o fallo grave de motor.</li>
+          <li><code>7600</code>: Fallo total de radio comunicaciones (<abbr title="Radio Failure">NORDO</abbr>).</li>
+          <li><code>7500</code>: Interferencia ilícita a bordo.</li>
+        </ul>
+      </aside>
+    </section>
+
+  </main>
+
+  <!-- Pie de pagina -->
+  <footer class="app-footer">
+    <div class="footer-contenido">
+      <div class="footer-col">
+        <h3>AeroLink V2 Bilbao</h3>
+        <p>Sistema de gestión interna, despacho de operaciones y control de flota del Aeroclub de Bilbao (LEBB).</p>
+        <p><small>Versión del prototipo: <strong>v2.4</strong> &bull; Conforme a normativa EASA.</small></p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Módulos del Sistema</h3>
+        <ul>
+          <li><a href="index.html">Panel Operativo</a></li>
+          <li><a href="flota.html">Gestión de Flota</a></li>
+          <li><a href="detalle.html">Expedientes de Aeronaves</a></li>
+          <li><a href="formulario.html">Despacho de Vuelos</a></li>
+          <li><a href="protocolos.html">Procedimientos SOP &amp; FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Base de Operaciones</h3>
+        <address>
+          <strong>Hangar de Aviación General - Puesto R</strong><br>
+          Aeropuerto de Bilbao (LEBB / BIO)<br>
+          Carretera de Loiu s/n, 48180 Loiu (Bizkaia)<br>
+          Teléfono: <a href="tel:+34944869000">+34 944 869 000</a><br>
+          Email: <a href="mailto:operaciones@aerolink-bilbao.com">operaciones@aerolink-bilbao.com</a>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 AeroLink V2 &bull; Asignatura Ingeniería Web &bull; Universidad de Deusto. Todos los derechos reservados.</p>
+      <p>Base LEBB &bull; Estado: <span class="badge badge-exito">Operativo</span></p>
+    </div>
+  </footer>
+
+</body>
+</html>

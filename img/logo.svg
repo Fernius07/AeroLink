@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 60" width="250" height="60">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" role="img" aria-label="Emblema del Aeroclub AeroLink V2">
   <defs>
     <linearGradient id="gradAero" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0077b6" />
-      <stop offset="100%" stop-color="#023e8a" />
+      <stop offset="0%" stop-color="#1976d2" />
+      <stop offset="100%" stop-color="#0d47a1" />
     </linearGradient>
   </defs>
-  <!-- Icono de Alas e Instrumento -->
-  <g transform="translate(10, 8)">
-    <circle cx="22" cy="22" r="20" fill="none" stroke="#0077b6" stroke-width="2.5" />
-    <!-- Silueta de Avión Ascendiendo -->
-    <path d="M 22 8 L 26 20 L 37 25 L 37 28 L 26 26 L 24 33 L 28 36 L 28 38 L 22 36 L 16 38 L 16 36 L 20 33 L 18 26 L 7 28 L 7 25 L 18 20 Z" fill="url(#gradAero)" />
-    <!-- Línea de horizonte artificial -->
-    <line x1="6" y1="22" x2="12" y2="22" stroke="#f77f00" stroke-width="2" />
-    <line x1="32" y1="22" x2="38" y2="22" stroke="#f77f00" stroke-width="2" />
-  </g>
-  <!-- Texto AeroLink -->
-  <text x="65" y="34" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="23" font-weight="800" fill="#03045e">Aero<tspan fill="#0077b6">Link</tspan></text>
-  <text x="66" y="47" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-size="9" font-weight="700" fill="#f77f00" letter-spacing="1.5">AVIACIÓN &amp; ESCUELA DE VUELO</text>
+  <!-- Fondo circular del instrumento -->
+  <circle cx="30" cy="30" r="28" fill="#0d47a1" stroke="#ffffff" stroke-width="2" />
+  <!-- Horizonte artificial -->
+  <line x1="8" y1="30" x2="20" y2="30" stroke="#e65100" stroke-width="3" stroke-linecap="round" />
+  <line x1="40" y1="30" x2="52" y2="30" stroke="#e65100" stroke-width="3" stroke-linecap="round" />
+  <circle cx="30" cy="30" r="3" fill="#ffffff" />
+  <!-- Silueta de la aeronave -->
+  <path d="M 30 14 L 34 26 L 46 31 L 46 34 L 34 32 L 32 40 L 36 43 L 36 45 L 30 43 L 24 45 L 24 43 L 28 40 L 26 32 L 14 34 L 14 31 L 26 26 Z" fill="#ffffff" />
 </svg>
